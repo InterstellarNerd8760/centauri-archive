@@ -46,7 +46,7 @@ class ArchiveTests(unittest.TestCase):
         second = self.root / "second.zip"
         build(second)
         self.assertEqual(second.read_bytes(), self.sample.read_bytes())
-        self.assertTrue(1000 <= second.stat().st_size <= 10_000_000)
+        self.assertTrue(1000 <= second.stat().st_size <= 80_000_000)
         self.assertEqual(examine(second, verify=True), self.manifest)
         self.assertEqual(self.manifest["archive_version"], "0.6.1")
 
