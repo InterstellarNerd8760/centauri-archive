@@ -74,6 +74,21 @@ class ArchiveTests(unittest.TestCase):
             self.assertIn(b"Earth", package.read("content/earth/solar-system.txt"))
             self.assertIn(b"UNAPPROVED", package.read("content/messages/draft.txt"))
 
+    def test_multimedia_catalog_and_provenance(self):
+        with ZipFile(self.sample) as package:
+            catalog = json.loads(package.read("content/catalog.json"))
+        paths = {entry["path"] for entry in self.manifest["files"]} - {"content/catalog.json"}
+        catalog_paths = ["content/" + item["path"] for item in catalog["records"]]
+        self.assertEqual(paths, set(catalog_paths))
+        self.assertEqual(len(catalog_paths), len(set(catalog_paths)))
+        self.assertGreaterEqual(len(paths), 20)
+        self.assertGreaterEqual(sum(p.endswith(".svg") for p in paths), 3)
+        for item in catalog["records"]:
+            for field in ("title", "summary", "group", "status", "rights"):
+                self.assertTrue(item.get(field), (item["path"], field))
+            for source in item.get("sources", []):
+                self.assertTrue(source["url"].startswith("https://"))
+
     def test_calibration_raster_is_only_a_test_fixture(self):
         magic, dimensions, maximum, pixels = plate().split(b"\n", 3)
         self.assertEqual((magic, dimensions, maximum), (b"P5", b"1024 1024", b"255"))
@@ -153,6 +168,10 @@ class ArchiveTests(unittest.TestCase):
         self.assertTrue((site / "encyclopedia.txt").is_file())
         self.assertTrue((site / "library.html").is_file())
         self.assertTrue((site / "library.js").is_file())
+        self.assertTrue((site / "decoder.js").is_file())
+        self.assertTrue((site / "records/catalog.json").is_file())
+        self.assertIn("decoded-grid", (site / "guide.html").read_text())
+        self.assertIn("record-details", (site / "library.html").read_text())
         self.assertTrue((site / "guide.html").is_file())
         library = (site / "library.html").read_text()
         self.assertIn("Explore the", library)
@@ -165,7 +184,7 @@ class ArchiveTests(unittest.TestCase):
         self.assertIn("brief.html", html)
         self.assertIn("overview-grid", html)
         self.assertIn('id="carrier"', html)
-        self.assertIn("A small record of a living world.", html)
+        self.assertIn("An intelligible record of a living world.", html)
         style = (site / "style.css").read_text()
         self.assertIn("--bg:#05080f", style)
         self.assertIn("Instrument Serif", style)
