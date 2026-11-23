@@ -68,7 +68,9 @@ class ArchiveTests(unittest.TestCase):
         with ZipFile(self.sample) as package:
             for name in required:
                 self.assertGreater(len(package.read(name)), 150)
-            self.assertIn(b"not a complete", package.read("content/biology/foundations.txt").lower().replace(b"introductory", b"complete") if False else b"not a complete") if False else None
+            self.assertIn(b"DNA", package.read("content/biology/genetics.txt"))
+            self.assertIn(b"Earth", package.read("content/earth/solar-system.txt"))
+            self.assertIn(b"UNAPPROVED", package.read("content/messages/draft.txt"))
 
     def test_calibration_raster_is_only_a_test_fixture(self):
         magic, dimensions, maximum, pixels = plate().split(b"\n", 3)
