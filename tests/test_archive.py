@@ -148,7 +148,7 @@ class ArchiveTests(unittest.TestCase):
         self.assertNotIn("__EDITION__", html)
         self.assertNotIn("__SIZE__", html)
         self.assertIn("0.2.0", html)
-        self.assertIn("Physical primer", html)
+        self.assertIn("guide.html", html)
         self.assertTrue((site / "primer-panel.svg").is_file())
         self.assertTrue((site / "encyclopedia.txt").is_file())
         self.assertTrue((site / "library.html").is_file())
