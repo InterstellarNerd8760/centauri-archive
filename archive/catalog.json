@@ -1174,6 +1174,190 @@
           "url": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/145000/145555/dorian_amo_2019244_lrg.jpg"
         }
       ]
+    },
+    {
+      "path": "photos/bees-hexagonal-honeycomb.jpg",
+      "title": "Bees on a hexagonal wax honeycomb",
+      "summary": "Honeybees cluster on a wax comb inside a beekeeper's Langstroth frame. The repeating cells offer an accessible example of hexagonal organization in the natural world.",
+      "group": "photos",
+      "alt": "A vertical wooden beehive frame full of hexagonal wax cells, with many honeybees crawling across the comb.",
+      "caption": "Honeybees and their wax construction; a managed hive and human-made wooden frame are visible, but the hexagonal comb itself was built by insects.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0); link https://creativecommons.org/licenses/by-sa/4.0/ . Photo © Benlisquare; this re-encoded derivative is likewise CC BY-SA 4.0, attribution and modification notice required.",
+      "photographer": "Benlisquare",
+      "date": "2023-10-22",
+      "derivative": "The original photograph was sourced from Wikimedia Commons and resized to a maximum side length of 1800 pixels; its colors were retained and a JPEG quality-87 derivative was made for the development ZIP. The source page links to the uploaded original.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Italian_honeybee_honey_frame_from_Langstroth_hive.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Italian_honeybee_honey_frame_from_Langstroth_hive.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/bentley-snow-crystal.jpg",
+      "title": "A snow crystal under magnification",
+      "summary": "Wilson Alwyn Bentley documented the intricate sixfold form of one natural snow crystal using photomicrography. The original historic image is preserved by the Metropolitan Museum of Art.",
+      "group": "photos",
+      "alt": "An intricate six-armed white snow crystal with branching internal patterns, centered in a black circle on cream photographic paper.",
+      "caption": "Snow crystals reflect the molecular organization of frozen water and environmental growth conditions. One real crystal is shown rather than an idealized diagram.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons CC0 1.0 Universal Public Domain Dedication; see individual Wikimedia Commons file page for license declaration. Attribution retained as archival provenance.",
+      "photographer": "Wilson Alwyn Bentley / The Metropolitan Museum of Art",
+      "date": "circa 1900 (exact year not established)",
+      "derivative": "The original photograph was sourced from Wikimedia Commons and resized to a maximum side length of 1800 pixels; its colors were retained and a JPEG quality-87 derivative was made for the development ZIP. The source page links to the uploaded original.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:-Snow_Crystal-_MET_DP351890.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/-Snow_Crystal-_MET_DP351890.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/gram-positive-bacteria-micrograph.jpg",
+      "title": "Cultured bacteria viewed through an optical microscope",
+      "summary": "An amateur microscopy photograph, taken at a stated 100×, shows numerous violet-stained bacteria from a sample cultured from fermented pickles. Gram-stain interpretation is reported by the photographer and awaits specialist verification.",
+      "group": "photos",
+      "alt": "Dense small violet rodlike forms scattered across a bright circular microscope field.",
+      "caption": "This microscope image demonstrates cellular organisms too small to observe individually unaided. The specimen identification, staining and magnification are reported by the uploader, not independently validated.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons CC0 1.0 Universal Public Domain Dedication; see individual Wikimedia Commons file page for license declaration. Attribution retained as archival provenance.",
+      "photographer": "Habeebat08",
+      "date": "2025-03-12",
+      "derivative": "The original photograph was sourced from Wikimedia Commons and resized to a maximum side length of 1800 pixels; its colors were retained and a JPEG quality-87 derivative was made for the development ZIP. The source page links to the uploaded original.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Microscopic_Image_of_Gram_Postive_Bacteria.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Microscopic_Image_of_Gram_Postive_Bacteria.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/mushrooms-forest-floor.jpg",
+      "title": "Mushrooms on a forest floor",
+      "summary": "Several unidentified mushrooms are photographed among trees and leaf litter in a forest. Their fruiting bodies represent one visible stage in a fungal life cycle.",
+      "group": "photos",
+      "alt": "Brown mushrooms with broad overlapping caps growing from the leaf-covered forest floor beneath trees.",
+      "caption": "Mushrooms are reproductive fruiting bodies of fungi. Although many fungi decompose organic material, the exact identity and ecological role of these mushrooms is unverified.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons CC0 1.0 Universal Public Domain Dedication; see individual Wikimedia Commons file page for license declaration. Attribution retained as archival provenance.",
+      "photographer": "MarkBuckawicki",
+      "date": "2013-05-24",
+      "derivative": "The original photograph was sourced from Wikimedia Commons and resized to a maximum side length of 1800 pixels; its colors were retained and a JPEG quality-87 derivative was made for the development ZIP. The source page links to the uploaded original.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Forest_Mushroom.JPG"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Forest_Mushroom.JPG"
+        }
+      ]
+    },
+    {
+      "path": "photos/fern-frond-san-francisco.jpg",
+      "title": "Fern fronds in sunlight",
+      "summary": "Feathery green fern leaves photographed in San Francisco exemplify the complex fronds of spore-bearing vascular plants. Mosses, a different major lineage, are not shown in this particular frame.",
+      "group": "photos",
+      "alt": "Detailed green fern fronds with delicate branching leaflets brightly lit by sunlight, in front of dark brown wooden boards.",
+      "caption": "A fern specimen illustrates a lineage of vascular plants that reproduces by spores. The broader image slot also calls for mosses, which remain to be documented separately.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons CC0 1.0 Universal Public Domain Dedication; see individual Wikimedia Commons file page for license declaration. Attribution retained as archival provenance.",
+      "photographer": "Daderot",
+      "date": "2017-12-08",
+      "derivative": "The original photograph was sourced from Wikimedia Commons and resized to a maximum side length of 1800 pixels; its colors were retained and a JPEG quality-87 derivative was made for the development ZIP. The source page links to the uploaded original. A Wikimedia 1280-pixel derivative was the source for local JPEG processing.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Fern_-_San_Francisco,_CA_-_DSC02378.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Fern_-_San_Francisco%2C_CA_-_DSC02378.jpg/1280px-Fern_-_San_Francisco%2C_CA_-_DSC02378.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/butterfly-on-flowering-plant.jpg",
+      "title": "A butterfly visits flowering plants",
+      "summary": "A large yellow-and-black butterfly rests on a group of flowers, illustrating the ecological relationship between insects and flowering plants. Whether pollen transfer occurred in this instant cannot be established from the photograph alone.",
+      "group": "photos",
+      "alt": "Yellow and black butterfly perched on red flowers in front of many white blossoms.",
+      "caption": "An insect feeding or resting on a flowering plant can visit multiple flowers and, for some species, transfer pollen. This photograph does not prove a particular pollination event.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons CC0 1.0 Universal Public Domain Dedication; see individual Wikimedia Commons file page for license declaration. Attribution retained as archival provenance.",
+      "photographer": "Bruce Emmerling",
+      "date": "2010-08-03",
+      "derivative": "The original photograph was sourced from Wikimedia Commons and resized to a maximum side length of 1800 pixels; its colors were retained and a JPEG quality-87 derivative was made for the development ZIP. The source page links to the uploaded original.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:A_butterfly_on_a_flower.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/A_butterfly_on_a_flower.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/river-fish-underwater.jpg",
+      "title": "Fish beneath the water surface",
+      "summary": "Several fish are photographed in shallow river water, illustrating the aquatic context in which these animals move and feed. The particular location and fish species are not identified.",
+      "group": "photos",
+      "alt": "Several pale fish swimming above a light sandy riverbed in clear blue-tinted water.",
+      "caption": "Photographed fish underwater in a river. The uploader did not establish a precise species identification or river location.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons CC0 1.0 Universal Public Domain Dedication; see individual Wikimedia Commons file page for license declaration. Attribution retained as archival provenance.",
+      "photographer": "Goforgold23",
+      "date": "2014-05-18",
+      "derivative": "The original photograph was sourced from Wikimedia Commons and resized to a maximum side length of 1800 pixels; its colors were retained and a JPEG quality-87 derivative was made for the development ZIP. The source page links to the uploaded original.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Fish_under_water.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Fish_under_water.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/frog-in-wetland-pond.jpg",
+      "title": "Frog in a freshwater pond",
+      "summary": "A frog partly submerged amid aquatic vegetation illustrates amphibian adaptations to wetland environments.",
+      "group": "photos",
+      "alt": "Green and mottled frog with eyes above shallow pond water, surrounded by long green aquatic plants.",
+      "caption": "Amphibians occupy environments that connect land and water; many species depend on aquatic habitats during their life cycles. The species pictured here was not independently identified.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons CC0 1.0 Universal Public Domain Dedication; see individual Wikimedia Commons file page for license declaration. Attribution retained as archival provenance.",
+      "photographer": "I13Robin",
+      "date": "2013-09-05",
+      "derivative": "The original photograph was sourced from Wikimedia Commons and resized to a maximum side length of 1800 pixels; its colors were retained and a JPEG quality-87 derivative was made for the development ZIP. The source page links to the uploaded original.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:2013-09-05-frog-in-pond-1.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/2013-09-05-frog-in-pond-1.jpg"
+        }
+      ]
     }
   ]
 }

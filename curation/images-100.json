@@ -80,20 +80,20 @@
       "category": "primer",
       "title": "Honeycomb with repeating hexagonal cells",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/bees-hexagonal-honeycomb.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Italian_honeybee_honey_frame_from_Langstroth_hive.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-003",
       "category": "primer",
       "title": "Snowflake crystals under magnification",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/bentley-snow-crystal.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:-Snow_Crystal-_MET_DP351890.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-004",
@@ -530,10 +530,10 @@
       "category": "molecules",
       "title": "Photomicrograph of bacterial cells",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/gram-positive-bacteria-micrograph.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Microscopic_Image_of_Gram_Postive_Bacteria.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-048",
@@ -620,20 +620,20 @@
       "category": "life",
       "title": "Fungi and decomposition",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/mushrooms-forest-floor.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Forest_Mushroom.JPG",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-057",
       "category": "life",
       "title": "Mosses and ferns",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/fern-frond-san-francisco.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fern_-_San_Francisco,_CA_-_DSC02378.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-058",
@@ -680,30 +680,30 @@
       "category": "life",
       "title": "Insect on a flower",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/butterfly-on-flowering-plant.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_butterfly_on_a_flower.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-063",
       "category": "life",
       "title": "Fish in its habitat",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/river-fish-underwater.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fish_under_water.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-064",
       "category": "life",
       "title": "Amphibian at a wetland",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/frog-in-wetland-pond.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2013-09-05-frog-in-pond-1.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-065",
