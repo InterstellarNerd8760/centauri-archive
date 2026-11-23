@@ -35,7 +35,7 @@
     shown.forEach(record=>{
       const item=el("article",null,"atlas-image-item");
       const media=el("div",null,"atlas-item-media");
-      if(record.status==="included"&&record.asset&&/^[a-z0-9/_-]+\.svg$/.test(record.asset)){
+      if(record.status==="included"&&record.asset&&/^[a-z0-9/_-]+\.(?:jpe?g|png|webp)$/.test(record.asset)){
         const photo=el("img");photo.src="records/"+record.asset;photo.alt=record.title;
         photo.loading="lazy";media.append(photo);
       }else{
