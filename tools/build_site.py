@@ -20,11 +20,12 @@ def assemble(output):
                 path = output / "records" / item["path"].removeprefix("content/")
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_bytes(archive.read(item["path"]))
-    shutil.copyfile(ROOT / "docs/engineering.md", output / "engineering.txt")
+    for name in ("engineering", "physical-primer", "mission", "roadmap"):
+        shutil.copyfile(ROOT / f"docs/{name}.md", output / f"{name}.txt")
     index = output / "index.html"
     html = index.read_text(encoding="utf-8")
     html = html.replace("__EDITION__", manifest["archive_version"])
-    html = html.replace("__SIZE__", f"{package.stat().st_size / 1_000_000:.2f}")
+    html = html.replace("__SIZE__", f"{package.stat().st_size / 1_000_000:.3f}")
     index.write_text(html, encoding="utf-8")
 
 

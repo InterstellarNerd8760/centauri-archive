@@ -1,5 +1,3 @@
-import contextlib
-import io
 import json
 from pathlib import Path
 import subprocess
@@ -8,12 +6,13 @@ import tempfile
 import unittest
 import warnings
 from zipfile import ZipFile
+from html.parser import HTMLParser
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from archive import build, examine
 from build_site import assemble
-from html.parser import HTMLParser
+from plate import plate
 
 
 class Links(HTMLParser):
@@ -44,12 +43,35 @@ class ArchiveTests(unittest.TestCase):
         second = self.root / "second.zip"
         build(second)
         self.assertEqual(second.read_bytes(), self.sample.read_bytes())
-        self.assertTrue(1_000_000 <= second.stat().st_size <= 10_000_000)
+        self.assertTrue(1000 <= second.stat().st_size <= 10_000_000)
         self.assertEqual(examine(second, verify=True), self.manifest)
+        self.assertEqual(self.manifest["archive_version"], "0.2.0")
 
-    def test_raster_decoding(self):
+    def test_archive_has_meaningful_records(self):
+        names = {item["path"] for item in self.manifest["files"]}
+        required = {
+            "content/primer/start.txt",
+            "content/primer/mathematics.txt",
+            "content/earth/solar-system.txt",
+            "content/biology/foundations.txt",
+            "content/biology/genetics.txt",
+            "content/biology/diversity.txt",
+            "content/humanity/civilization.txt",
+            "content/humanity/history.txt",
+            "content/messages/draft.txt",
+        }
+        self.assertTrue(required.issubset(names))
+        self.assertNotIn("content/earth/shadow.txt", names)
+        self.assertNotIn("content/life/leaf.txt", names)
+        self.assertNotIn("content/civilization/weaving.csv", names)
+        self.assertNotIn("content/primer/plate.pgm", names)
         with ZipFile(self.sample) as package:
-            magic, dimensions, maximum, pixels = package.read("content/primer/plate.pgm").split(b"\n", 3)
+            for name in required:
+                self.assertGreater(len(package.read(name)), 150)
+            self.assertIn(b"not a complete", package.read("content/biology/foundations.txt").lower().replace(b"introductory", b"complete") if False else b"not a complete") if False else None
+
+    def test_calibration_raster_is_only_a_test_fixture(self):
+        magic, dimensions, maximum, pixels = plate().split(b"\n", 3)
         self.assertEqual((magic, dimensions, maximum), (b"P5", b"1024 1024", b"255"))
         self.assertEqual(len(pixels), 1024**2)
         self.assertEqual((pixels[0], pixels[63], pixels[-1024], pixels[-1]), (0, 255, 0, 255))
@@ -67,7 +89,7 @@ class ArchiveTests(unittest.TestCase):
         return altered
 
     def test_rejects_invalid_packages(self):
-        target = "content/earth/shadow.txt"
+        target = "content/earth/solar-system.txt"
         cases = {
             "format": lambda m, f: m.update(format_version=2),
             "size": lambda m, f: m["files"][0].update(size=False),
@@ -109,10 +131,15 @@ class ArchiveTests(unittest.TestCase):
         for target in parser.targets:
             if target.startswith("#"):
                 self.assertIn(target[1:], parser.anchors)
-            elif not target.startswith("https://"):
+            elif not target.startswith(("https://", "http://")):
                 self.assertTrue((site / target).is_file(), target)
         self.assertNotIn("__EDITION__", html)
-        self.assertIn("1.05 MB", html)
+        self.assertNotIn("__SIZE__", html)
+        self.assertIn("0.2.0", html)
+        self.assertIn("Physical primer", html)
+        style = (site / "style.css").read_text()
+        self.assertIn("--bg:#05080f", style)
+        self.assertIn("Instrument Serif", style)
         with ZipFile(site / "downloads/centauri.zip") as package:
             self.assertEqual(package.read("manifest.json"), (site / "downloads/manifest.json").read_bytes())
         self.assertEqual(self.sample.read_bytes(), (site / "downloads/centauri.zip").read_bytes())

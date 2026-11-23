@@ -1,10 +1,25 @@
 # Centauri Archive
 
-Centauri Archive is an independent experiment in making a compact record of Earth, life and human civilization readable long after its original software disappears. The Fermi Explorer interstellar mission inspired the project. The intended next step is a proposed payload contribution. Mission affiliation, payload acceptance, hardware selection and flight qualification have not been established.
+**A record of Earth, life, and human civilization for interstellar spacecraft.**
 
-## Try the prototype
+Centauri Archive is an independent, open engineering and curation project developing a compact archive that could be adapted for an interstellar mission. The initial target for a *proposed* contribution is **Fermi Explorer**. There is **no affiliation, flight approval, payload allocation, or integration agreement**.
 
-From the repository root with Python 3.10 or newer:
+The project has two horizons: a deliberately small **Fermi Edition** for a constrained spacecraft and a future, much larger **Ark Edition** for missions capable of carrying richer records.
+
+## What v0.2 actually is
+
+- A reproducible, inspectable **digital development package** containing original introductory records about mathematics, the Solar System, biology, civilization, and a provisional message.
+- A manifest with file lengths and SHA-256 digests. These detect changes; they **do not correct corruption**.
+- A documented proposal for a **physical decoding primer**, not yet fabricated or validated.
+- A minimalist website following the visual design of [westonrosch.com](https://westonrosch.com).
+
+**Not yet demonstrated:** decoding without knowledge of human languages and computing, radiation survival, error recovery, archive-health telemetry, physical carrier manufacture, or Fermi Explorer compatibility. The ZIP container is a convenient development transport, **not a proposed alien-readable flight format**.
+
+The prose and draft message are original provisional content, not a comprehensive or representative encyclopedia. Content selection, translations, imagery, recordings, and contributors' permissions require later review.
+
+## Quick start
+
+Python 3.10+; no third-party packages:
 
 ```sh
 python3 tools/archive.py build build/centauri.zip
@@ -15,21 +30,26 @@ python3 tools/build_site.py
 python3 -m http.server 8000 --directory build/site
 ```
 
-Open http://localhost:8000 for the website. An ordinary ZIP reader can open the package. Start with `content/primer/start.txt` and compare the files against `manifest.json`. No network, package installation or proprietary reader is required.
+Start reading at `content/primer/start.txt` *after* extracting the ZIP with an existing ZIP reader. The file explains the current limitations. The site is a presentation layer and is not needed to extract the package.
 
-## Design objectives
+## Repository map
 
-- Fit a meaningful prototype into 1–10 MB (decimal, including the container).
-- Make byte order, raster dimensions, units and file boundaries explicit.
-- Reproduce the same package bytes from the same source bytes. Detect accidental changes to contents using SHA-256.
-- Give a reader a path from visible marks to bits, from bits to pictures and from pictures to human descriptions. The physical stage is a design proposal.
-
-| Directory | Purpose |
+| Path | Purpose |
 | --- | --- |
-| [archive](archive/) | Original records and the in-package reading guide |
-| [tools](tools/) | Deterministic package builder, inspector, verifier and website assembly |
-| [docs](docs/) | [Package specification](docs/format.md), [engineering notes](docs/engineering.md) and [hosting guide](docs/hosting.md) |
-| [tests](tests/) | Automated package and website checks |
-| [website](website/) | Static public interface and original illustration |
+| `archive/primer/` | Explicit reader assumptions and mathematical/format foundations |
+| `archive/earth/` | Earth and Solar System |
+| `archive/biology/` | Life, genetics, diversity and evolution |
+| `archive/humanity/` | Human civilization and historical overview |
+| `archive/messages/` | Provisional, clearly labeled editorial draft |
+| `docs/physical-primer.md` | Proposed non-language-first physical decoding pathway |
+| `docs/mission.md` | Mission questions and unverified assumptions |
+| `docs/engineering.md` | Data integrity, radiation, redundancy, telemetry |
+| `docs/roadmap.md` | Milestones and acceptance criteria |
+| `tools/`, `tests/` | Reproducible tools and automated verification |
+| `website/` | Static information site, built to `build/site` |
 
-The first collection pairs short original texts with a deterministic grayscale test plate. The plate gives readers a known image against which to check their decoding. Current validation covers digital behavior. Survival, manufacturability and interpretation by unfamiliar readers remain open research questions.
+## Development principle
+
+**Meaning before megabytes.** Every item should answer a specific question about how to understand Earth or interpret the remaining archive. Proposed flight hardware must be defined only after obtaining real spacecraft constraints.
+
+See [roadmap](docs/roadmap.md) and [physical primer](docs/physical-primer.md).

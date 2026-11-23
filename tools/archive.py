@@ -1,4 +1,4 @@
-"""Build, inspect or verify a Centauri Archive v1 package."""
+"""Build, inspect or verify a Centauri Archive v1 development package."""
 import argparse
 import hashlib
 import json
@@ -8,8 +8,6 @@ import re
 import sys
 from tempfile import NamedTemporaryFile
 from zipfile import BadZipFile, ZIP_STORED, ZipFile, ZipInfo
-
-from plate import plate
 
 ROOT = Path(__file__).resolve().parents[1]
 LIMIT = 10_000_000
@@ -30,15 +28,15 @@ def build(output):
         if file.is_file():
             name = "content/" + file.relative_to(source).as_posix()
             records[name] = file.read_bytes()
-    generated = "content/primer/plate.pgm"
-    if generated in records:
-        raise ValueError("plate path is reserved for the generated raster")
-    records[generated] = plate()
+    if not records:
+        raise ValueError("no archive records")
     entries = []
     for name, data in sorted(records.items()):
+        if not PATH.fullmatch(name):
+            raise ValueError(f"invalid archive path: {name}")
         entries.append(dict(path=name, size=len(data), sha256=digest(data),
                             media_type=TYPES.get(Path(name).suffix, "application/octet-stream")))
-    manifest = dict(format_version=1, archive_version="0.1.0", files=entries)
+    manifest = dict(format_version=1, archive_version="0.2.0", files=entries)
     header = (json.dumps(manifest, indent=2, sort_keys=True) + "\n").encode()
     output = Path(output).resolve()
     if output.is_relative_to(source):
