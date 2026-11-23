@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "title": "Centauri Archive — one hundred real photographic images",
-  "status": "photographic acquisition list; 4 actual photos, 96 planned, project SVG diagrams tracked separately",
+  "title": "Centauri Archive photographic collection",
+  "status": "photographic acquisition list; acquired and planned photographs, project SVG diagrams tracked separately",
   "categories": [
     {
       "id": "primer",
@@ -42,13 +42,13 @@
     {
       "id": "body",
       "name": "Human body & life",
-      "target": 8,
+      "target": 9,
       "description": "Describe humans biologically without implying one appearance or culture represents everyone."
     },
     {
       "id": "civilization",
       "name": "History, science & technology",
-      "target": 10,
+      "target": 13,
       "description": "Describe selected technological and social transformations without claiming a single linear history."
     },
     {
@@ -410,10 +410,10 @@
       "category": "systems",
       "title": "River drainage from mountains to the sea",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/mississippi-delta.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/winter-transforms-the-mississippi-river-delta-154838/",
+      "curation_note": "Snow outlines the branching channels at the mouth of the Mississippi. Here the river divides as it carries water and sediment out to sea."
     },
     {
       "id": "IMG-036",
@@ -560,10 +560,10 @@
       "category": "molecules",
       "title": "Plant cells and chloroplasts under microscopy",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/elodea-leaf.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cloroplasti_Elodea.jpg",
+      "curation_note": "The green bodies inside these leaf cells are chloroplasts. Within them, the plant uses light energy to make sugars from carbon dioxide and water."
     },
     {
       "id": "IMG-051",
@@ -588,7 +588,7 @@
     {
       "id": "IMG-053",
       "category": "life",
-      "title": "Bacteria under microscopy",
+      "title": "Bacterial habitat paired with a documented specimen",
       "kind": "photograph, instrument image or photomicrograph",
       "status": "planned",
       "asset": null,
@@ -598,7 +598,7 @@
     {
       "id": "IMG-054",
       "category": "life",
-      "title": "Archaea under microscopy",
+      "title": "Archaeal habitat paired with a documented specimen",
       "kind": "photograph, instrument image or photomicrograph",
       "status": "planned",
       "asset": null,
@@ -660,10 +660,10 @@
       "category": "life",
       "title": "Coral reef ecosystem",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/big-momma-coral.jpg",
+      "source_url": "https://americansamoa.noaa.gov/science/corals.html",
+      "curation_note": "A boulder coral called Big Momma rises above the reef in American Samoa. The colony and the smaller corals around it provide habitat for fish."
     },
     {
       "id": "IMG-061",
@@ -850,10 +850,10 @@
       "category": "civilization",
       "title": "Independent writing systems across cultures",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/grain-tablet.jpg",
+      "source_url": "https://www.metmuseum.org/art/collection/search/327384",
+      "curation_note": "Someone pressed and drew marks into this clay about five thousand years ago. The Met interprets them as a probable account of barley and emmer wheat deliveries or distributions."
     },
     {
       "id": "IMG-080",
@@ -1000,10 +1000,10 @@
       "category": "culture",
       "title": "Clothing, weaving and textiles",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/navajo-weavers.jpg",
+      "source_url": "https://www.loc.gov/item/90708127/",
+      "curation_note": "Three Navajo women weave beneath a ledge where sheep are gathered. The frame brings the animals, the makers, and their work into a single view."
     },
     {
       "id": "IMG-095",
@@ -1064,6 +1064,47 @@
       "asset": null,
       "source_url": null,
       "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+    },
+    {
+      "id": "IMG-101",
+      "category": "civilization",
+      "title": "The first Super Heavy tower catch",
+      "kind": "photograph",
+      "status": "included",
+      "asset": "photos/super-heavy-catch.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Starship_5_Booster_Landing_on_Mechzilla.jpg",
+      "curation_note": "Starship’s fifth flight test returned its Super Heavy booster to the launch tower on 13 October 2024. The frame shows the booster alongside the catch arms with its engines still firing."
+    },
+    {
+      "id": "IMG-102",
+      "category": "body",
+      "title": "Before birth, seen with sound",
+      "kind": "ultrasound",
+      "status": "included",
+      "asset": "photos/prenatal-ultrasound.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Eco_-_12_semanas.jpg",
+      "curation_note": "Two ultrasound views show a human fetus at 12 weeks, as identified by the contributor. The bright outlines come from returning sound waves."
+    },
+    {
+      "id": "IMG-103",
+      "category": "civilization",
+      "title": "Twelve seconds at Kitty Hawk",
+      "kind": "photograph",
+      "status": "included",
+      "asset": "photos/wright-flyer.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wrightflyer.jpg",
+      "curation_note": "Orville Wright lies at the controls as the Flyer lifts off on 17 December 1903. Wilbur runs beside it. This first flight covered 120 feet in 12 seconds."
+    },
+    {
+      "id": "IMG-104",
+      "category": "civilization",
+      "title": "Gandhi picks up salt at Dandi",
+      "kind": "photograph",
+      "status": "included",
+      "asset": "photos/dandi-salt.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gandhi_picking_up_salt_at_Dandi.JPG",
+      "curation_note": "On 6 April 1930, Gandhi gathered salt at Dandi in defiance of British salt law. This surviving slide pairs the scene with a written title."
     }
-  ]
+  ],
+  "editorial_goal": 100
 }

@@ -439,6 +439,202 @@
           "url": "https://github.com/WebKit/Speedometer/blob/main/suites-experimental/pdf-viewer/assets/README.md"
         }
       ]
+    },
+    {
+      "path": "photos/mississippi-delta.jpg",
+      "title": "The Mississippi meets the sea",
+      "summary": "Snow outlines the branching channels at the mouth of the Mississippi. Here the river divides as it carries water and sediment out to sea.",
+      "group": "photos",
+      "alt": "Pale snow follows branching strips of land surrounded by dark coastal water.",
+      "caption": "Snow outlines the branching channels at the mouth of the Mississippi. Here the river divides as it carries water and sediment out to sea.",
+      "photographer": "NASA / Expedition 72 crew",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "NASA astronaut photography, public domain in the United States.",
+      "derivative": "NASA cropped the image, enhanced contrast and removed lens artifacts. Uncropped archive JPEG, maximum edge 1800 pixels.",
+      "sources": [
+        {
+          "label": "NASA Earth Observatory · original description by Elysia Viengkham",
+          "url": "https://science.nasa.gov/earth/earth-observatory/winter-transforms-the-mississippi-river-delta-154838/"
+        },
+        {
+          "label": "Source image",
+          "url": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/154000/154838/iss072e575684_lrg.jpg"
+        }
+      ],
+      "date": "2025-01-24"
+    },
+    {
+      "path": "photos/elodea-leaf.jpg",
+      "title": "Inside an Elodea leaf",
+      "summary": "The green bodies inside these leaf cells are chloroplasts. Within them, the plant uses light energy to make sugars from carbon dioxide and water.",
+      "group": "photos",
+      "alt": "Green chloroplasts cluster inside adjoining cells of a waterweed leaf.",
+      "caption": "The green bodies inside these leaf cells are chloroplasts. Within them, the plant uses light energy to make sugars from carbon dioxide and water.",
+      "photographer": "Cimice50",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC BY-SA 4.0, including this resized JPEG.",
+      "derivative": "Uncropped archive JPEG, maximum edge 1800 pixels.",
+      "sources": [
+        {
+          "label": "Wikimedia Commons · photographer’s description",
+          "url": "https://commons.wikimedia.org/wiki/File:Cloroplasti_Elodea.jpg"
+        },
+        {
+          "label": "Source image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Cloroplasti_Elodea.jpg"
+        },
+        {
+          "label": "Creative Commons Attribution-ShareAlike 4.0",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ],
+      "date": "2015-01-16"
+    },
+    {
+      "path": "photos/big-momma-coral.jpg",
+      "title": "A coral colony off Taʻū",
+      "summary": "A boulder coral called Big Momma rises above the reef in American Samoa. The colony and the smaller corals around it provide habitat for fish.",
+      "group": "photos",
+      "alt": "A large boulder coral towers above smaller corals on the seafloor.",
+      "caption": "A boulder coral called Big Momma rises above the reef in American Samoa. The colony and the smaller corals around it provide habitat for fish.",
+      "photographer": "Matt McIntosh / NOAA",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "NOAA photograph, public domain in the United States.",
+      "derivative": "Uncropped archive JPEG, maximum edge 1800 pixels.",
+      "sources": [
+        {
+          "label": "National Marine Sanctuary of American Samoa · Big Corals",
+          "url": "https://americansamoa.noaa.gov/science/corals.html"
+        },
+        {
+          "label": "Source image",
+          "url": "https://americansamoa.noaa.gov/media/img/20170401-tau-valley-of-the-giants-1000.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/grain-tablet.jpg",
+      "title": "Grain accounted for in clay",
+      "summary": "Someone pressed and drew marks into this clay about five thousand years ago. The Met interprets them as a probable account of barley and emmer wheat deliveries or distributions.",
+      "group": "photos",
+      "alt": "A clay tablet divided into fields with incised signs and impressed marks.",
+      "caption": "Someone pressed and drew marks into this clay about five thousand years ago. The Met interprets them as a probable account of barley and emmer wheat deliveries or distributions.",
+      "photographer": "The Metropolitan Museum of Art, accession 1988.433.2",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Public domain image, The Met Open Access (CC0).",
+      "derivative": "Subject dates to ca. 3100–2900 BCE. Uncropped archive JPEG, maximum edge 1800 pixels.",
+      "sources": [
+        {
+          "label": "The Metropolitan Museum of Art · object description",
+          "url": "https://www.metmuseum.org/art/collection/search/327384"
+        },
+        {
+          "label": "Source image",
+          "url": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/327384/1315127/main-image"
+        }
+      ]
+    },
+    {
+      "path": "photos/navajo-weavers.jpg",
+      "title": "Navajo weavers",
+      "summary": "Three Navajo women weave beneath a ledge where sheep are gathered. The frame brings the animals, the makers, and their work into a single view.",
+      "group": "photos",
+      "alt": "Three women working at looms below a flock of sheep.",
+      "caption": "Three Navajo women weave beneath a ledge where sheep are gathered. The frame brings the animals, the makers, and their work into a single view.",
+      "photographer": "Pennington & Rowland / Library of Congress",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Public domain in the United States. U.S. copyright registered in 1914.",
+      "derivative": "Uncropped archive JPEG, maximum edge 1800 pixels.",
+      "sources": [
+        {
+          "label": "Library of Congress · catalog description and attribution",
+          "url": "https://www.loc.gov/item/90708127/"
+        },
+        {
+          "label": "Source image",
+          "url": "https://tile.loc.gov/storage-services/service/pnp/ppmsc/00100/00135v.jpg"
+        }
+      ],
+      "date": "1914"
+    },
+    {
+      "path": "photos/super-heavy-catch.jpg",
+      "title": "The first Super Heavy tower catch",
+      "summary": "Starship’s fifth flight test returned its Super Heavy booster to the launch tower on 13 October 2024. The frame shows the booster alongside the catch arms with its engines still firing.",
+      "group": "photos",
+      "alt": "A rocket booster beside two tower arms with flame extending below.",
+      "caption": "Starship’s fifth flight test returned its Super Heavy booster to the launch tower on 13 October 2024. The frame shows the booster alongside the catch arms with its engines still firing.",
+      "photographer": "Steve Jurvetson, Bech and Prospectprospekt",
+      "status": "Acquired; editorial review pending",
+      "rights": "CC BY 2.0.",
+      "derivative": "Resized to fit 1800 pixels and encoded as JPEG.",
+      "sources": [
+        {
+          "label": "Source image, description and rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Starship_5_Booster_Landing_on_Mechzilla.jpg"
+        },
+        {
+          "label": "Creative Commons Attribution 2.0",
+          "url": "https://creativecommons.org/licenses/by/2.0/"
+        }
+      ],
+      "date": "2024-10-13"
+    },
+    {
+      "path": "photos/prenatal-ultrasound.jpg",
+      "title": "Before birth, seen with sound",
+      "summary": "Two ultrasound views show a human fetus at 12 weeks, as identified by the contributor. The bright outlines come from returning sound waves.",
+      "group": "photos",
+      "alt": "Two grayscale ultrasound sections of a fetus.",
+      "caption": "Two ultrasound views show a human fetus at 12 weeks, as identified by the contributor. The bright outlines come from returning sound waves.",
+      "photographer": "Isis, contributor",
+      "status": "Acquired; editorial review pending",
+      "rights": "Released into the public domain by contributor Isis.",
+      "derivative": "Cropped the equipment annotations from the upper and lower edges. Both scan views are retained.",
+      "sources": [
+        {
+          "label": "Source image, description and rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Eco_-_12_semanas.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/wright-flyer.jpg",
+      "title": "Twelve seconds at Kitty Hawk",
+      "summary": "Orville Wright lies at the controls as the Flyer lifts off on 17 December 1903. Wilbur runs beside it. This first flight covered 120 feet in 12 seconds.",
+      "group": "photos",
+      "alt": "The Wright Flyer just above a sandy field with Wilbur Wright to the side.",
+      "caption": "Orville Wright lies at the controls as the Flyer lifts off on 17 December 1903. Wilbur runs beside it. This first flight covered 120 feet in 12 seconds.",
+      "photographer": "John T. Daniels / Wright Brothers Collection, Library of Congress",
+      "status": "Acquired; editorial review pending",
+      "rights": "Public domain in the United States.",
+      "derivative": "Resized to fit 1800 pixels and encoded as JPEG.",
+      "sources": [
+        {
+          "label": "Source image, description and rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Wrightflyer.jpg"
+        }
+      ],
+      "date": "1903-12-17"
+    },
+    {
+      "path": "photos/dandi-salt.jpg",
+      "title": "Gandhi picks up salt at Dandi",
+      "summary": "On 6 April 1930, Gandhi gathered salt at Dandi in defiance of British salt law. This surviving slide pairs the scene with a written title.",
+      "group": "photos",
+      "alt": "A black-and-white slide shows Gandhi bending to the ground beside the title Breaking the Salt Law at Dandi.",
+      "caption": "On 6 April 1930, Gandhi gathered salt at Dandi in defiance of British salt law. This surviving slide pairs the scene with a written title.",
+      "photographer": "Photographer unidentified. Slide scanned by Yann.",
+      "status": "Acquired; editorial review pending",
+      "rights": "Public domain in India as identified by the source. The 1930 published work is also public domain in the United States.",
+      "derivative": "Resized to fit 1800 pixels and encoded as JPEG.",
+      "sources": [
+        {
+          "label": "Source image, description and rights",
+          "url": "https://commons.wikimedia.org/wiki/File:Gandhi_picking_up_salt_at_Dandi.JPG"
+        }
+      ],
+      "date": "1930-04-06"
     }
   ]
 }

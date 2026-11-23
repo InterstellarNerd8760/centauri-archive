@@ -25,7 +25,7 @@ No image in this batch was AI-generated, drawn as SVG, or hotlinked for display.
 
 ## What is not done
 
-- The full 100-image selection is not complete. Exactly four real photographs are in the collection; 96 slots are open.
+- The full 100-image selection is not complete. The first batch contributed four photographs. The current inventory is in archive/catalog.json.
 - The three original SVG science diagrams are *not* counted as these photographs. They remain useful explanatory records.
 - The originals / archival master scans are not stored locally; they must be preserved in a larger master collection before long-term preservation claims.
 - No physical encoding has been selected. JPEG decoding depends on Earth-designed conventions. The physical primer must teach a simpler raw format first.

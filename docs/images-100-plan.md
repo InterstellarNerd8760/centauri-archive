@@ -1,8 +1,8 @@
 # The first 100 images: selection and acquisition rules
 
-Status: **4 real photographs preserved, 96 still to acquire**. The 100-image plan is not a completed photo collection. Scientific diagrams are stored separately.
+Status: **13 documentary images preserved, 91 still to acquire**. The 100-image plan is not a completed photo collection. Scientific diagrams are stored separately.
 
-The canonical machine-readable list is `curation/images-100.json`. It defines 100 explicitly named image targets across ten categories. The public `images.html` reader displays them and distinguishes **included** records from **planned** subjects. Neither a placeholder nor a linked source candidate constitutes an archived image.
+The canonical machine-readable list is `curation/images-100.json`. It defines 104 explicitly named image targets across ten categories. The public `images.html` reader displays them and distinguishes **included** records from **planned** subjects. Neither a placeholder nor a linked source candidate constitutes an archived image.
 
 ## Categories and allocations
 
@@ -14,13 +14,13 @@ The canonical machine-readable list is `curation/images-100.json`. It defines 10
 | Earth systems & climate | 10 |
 | Matter, chemistry & cells | 12 |
 | Biodiversity & ecosystems | 14 |
-| Human body & life | 8 |
-| History, science & technology | 10 |
+| Human body & life | 9 |
+| History, science & technology | 13 |
 | Culture & everyday life | 12 |
 | Messages, stewardship & questions | 4 |
-| **Total** | **100** |
+| **Total** | **104** |
 
-An image is selected to explain a concept or convey a specific observation, not merely to occupy a slot. All 100 slots now target real photographs, spacecraft imagery or photomicrographs. Original explanatory diagrams belong in the separate scientific library. Composite, simulated, false-color and schematic imagery must always be identified accurately.
+An image is selected to explain a concept or convey a specific observation, not merely to occupy a slot. The original goal of 100 is flexible. The collection includes optical photographs and labeled scientific images such as ultrasound. Original explanatory diagrams belong in the separate scientific library. Composite, simulated, false-color and schematic imagery must always be identified accurately.
 
 ### First photograph acquisitions
 
@@ -29,7 +29,9 @@ An image is selected to explain a concept or convey a specific observation, not 
 - `photos/apollo11-launch.jpg` — the Apollo 11 launch.
 - `photos/grand-prismatic-spring.jpg` — a National Park Service aerial photograph of Yellowstone.
 
-Thus **4 of 100 photographic slots are included** in the verified ZIP; 96 are unfilled. The three original SVG diagrams remain available as educational supplements, not photographs. See [photographic acquisitions](photographic-acquisitions.md) for each image's provenance and processing history.
+The second batch adds the Mississippi Delta, Elodea cells, Big Momma coral, a grain-account tablet and Navajo weavers.
+
+Thus **13 of 104 named subjects are included** in the verified ZIP; 91 are unfilled. The three original SVG diagrams remain available as educational supplements, not photographs. See [photographic acquisitions](photographic-acquisitions.md) for each image's provenance and processing history.
 
 ## Minimum selection requirements
 

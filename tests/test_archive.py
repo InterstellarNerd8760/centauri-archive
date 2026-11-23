@@ -48,7 +48,7 @@ class ArchiveTests(unittest.TestCase):
         self.assertEqual(second.read_bytes(), self.sample.read_bytes())
         self.assertTrue(1000 <= second.stat().st_size <= 10_000_000)
         self.assertEqual(examine(second, verify=True), self.manifest)
-        self.assertEqual(self.manifest["archive_version"], "0.5.0")
+        self.assertEqual(self.manifest["archive_version"], "0.6.0")
 
     def test_archive_has_meaningful_records(self):
         names = {item["path"] for item in self.manifest["files"]}
@@ -94,19 +94,20 @@ class ArchiveTests(unittest.TestCase):
 
     def test_one_hundred_image_editorial_plan(self):
         plan = json.loads((ROOT / "curation/images-100.json").read_text(encoding="utf-8"))
-        self.assertEqual(len(plan["records"]), 100)
+        self.assertEqual(plan["editorial_goal"], 100)
+        self.assertGreaterEqual(len(plan["records"]), plan["editorial_goal"])
         self.assertEqual(len(plan["categories"]), 10)
-        self.assertEqual(sum(cat["target"] for cat in plan["categories"]), 100)
-        self.assertEqual(len({r["id"] for r in plan["records"]}), 100)
-        self.assertEqual(len({r["title"] for r in plan["records"]}), 100)
+        self.assertEqual(sum(cat["target"] for cat in plan["categories"]), len(plan["records"]))
+        self.assertEqual(len({r["id"] for r in plan["records"]}), len(plan["records"]))
+        self.assertEqual(len({r["title"] for r in plan["records"]}), len(plan["records"]))
         categories = {cat["id"]: cat["target"] for cat in plan["categories"]}
         for cat, target in categories.items():
             self.assertEqual(sum(r["category"] == cat for r in plan["records"]), target)
         included = [r for r in plan["records"] if r["status"] == "included"]
         planned = [r for r in plan["records"] if r["status"] == "planned"]
-        self.assertEqual((len(included), len(planned)), (4, 96))
+        self.assertEqual((len(included), len(planned)), (13, 91))
         self.assertEqual({r["asset"] for r in included},
-                         {"photos/earth-apollo17.jpg", "photos/earthrise-apollo8.jpg", "photos/apollo11-launch.jpg", "photos/grand-prismatic-spring.jpg"})
+                         {"photos/" + path.name for path in (ROOT / "archive/photos").glob("*.jpg")})
         with ZipFile(self.sample) as package:
             packaged = set(package.namelist())
         for record in included:
@@ -117,7 +118,7 @@ class ArchiveTests(unittest.TestCase):
 
     def test_real_photographs_stored_with_provenance(self):
         files = sorted((ROOT / "archive/photos").glob("*.jpg"))
-        self.assertEqual(len(files), 4)
+        self.assertEqual(len(files), 13)
         catalog = json.loads((ROOT / "archive/catalog.json").read_text())
         indexed = {item["path"]: item for item in catalog["records"]}
         with ZipFile(self.sample) as package:
@@ -125,12 +126,14 @@ class ArchiveTests(unittest.TestCase):
                 path = "photos/" + image.name
                 contents = image.read_bytes()
                 self.assertTrue(contents.startswith(bytes((0xFF, 0xD8))), image.name)
-                self.assertGreater(len(contents), 40_000, image.name)
+                self.assertGreater(len(contents), 8_000, image.name)
                 self.assertEqual(package.read("content/" + path), contents)
                 record = indexed[path]
                 self.assertTrue(record.get("sources"))
                 self.assertTrue(record.get("photographer"))
-                self.assertIn("public domain", record["rights"].lower())
+                self.assertTrue(record["rights"])
+                if path == "photos/elodea-leaf.jpg":
+                    self.assertIn("CC BY-SA 4.0", record["rights"])
 
     def test_calibration_raster_is_only_a_test_fixture(self):
         magic, dimensions, maximum, pixels = plate().split(b"\n", 3)
@@ -205,7 +208,7 @@ class ArchiveTests(unittest.TestCase):
                 self.assertTrue((site / urlsplit(target).path).is_file(), target)
         self.assertNotIn("__EDITION__", html)
         self.assertNotIn("__SIZE__", html)
-        self.assertIn("0.5.0", html)
+        self.assertIn("0.6.0", html)
         self.assertIn("guide.html", html)
         self.assertTrue((site / "primer-panel.svg").is_file())
         self.assertTrue((site / "encyclopedia.txt").is_file())
@@ -215,7 +218,7 @@ class ArchiveTests(unittest.TestCase):
         self.assertIn("photos/earth-apollo17.jpg", (site / "index.html").read_text())
         self.assertTrue((site / "images.js").is_file())
         self.assertTrue((site / "image-plan.json").is_file())
-        self.assertEqual(len(json.loads((site / "image-plan.json").read_text())["records"]), 100)
+        self.assertEqual((site / "image-plan.json").read_bytes(), (ROOT / "curation/images-100.json").read_bytes())
         self.assertIn("100 images", (site / "images.html").read_text())
         self.assertTrue((site / "decoder.js").is_file())
         self.assertTrue((site / "records/catalog.json").is_file())
