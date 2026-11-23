@@ -2140,6 +2140,75 @@
           "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/A_sign_language_interpreter_with_a_deaf_participant.jpg"
         }
       ]
+    },
+    {
+      "path": "photos/kenya-smallholder-field-farming-2017.jpg",
+      "title": "Farmer cultivates a rocky smallholding in Kenya",
+      "summary": "A farmer stands among his planted field and rocky terrain in western Kenya in August 2017. Small-scale food growing adapts to local soil, water and landscape conditions.",
+      "group": "photos",
+      "alt": "A farmer stands beside young green crops and large rocks on reddish earth with trees and village houses beyond the field.",
+      "caption": "One photographed smallholder agricultural landscape in Kenya. This image does not represent all rural communities or claim a particular conservation practice.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC BY-SA 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/). Photograph © Georg.Israel; resized derivative under same share-alike license. Subject's personal image-use consent was not independently confirmed; editorial review pending.",
+      "photographer": "Georg.Israel",
+      "date": "2017-08-25",
+      "derivative": "Source photograph resized to a maximum dimension of 1800 pixels and encoded as a JPEG at quality 87 for the development archive. Original source image and author preserved; no synthetic content.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Subsistence_farming_between_rocks.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Subsistence_farming_between_rocks.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/person-petting-brown-white-dog.jpg",
+      "title": "Human companionship with a domestic dog",
+      "summary": "The photographer's hand pets a brown-and-white domestic dog, illustrating one personal relationship between humans and other living species.",
+      "group": "photos",
+      "alt": "Close-up looking downward at a human hand gently touching the neck and head of a brown-and-white dog beside a fabric-covered object.",
+      "caption": "People and domestic dogs have longstanding relationships that include work, care and companionship. This is one ordinary interaction photographed in November 2025.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC0 1.0 Universal Public Domain Dedication by the photographer as stated on the linked Commons file page.",
+      "photographer": "JaredMcKenzie",
+      "date": "2025-11-21",
+      "derivative": "Source photograph resized to a maximum dimension of 1800 pixels and encoded as a JPEG at quality 87 for the development archive. Original source image and author preserved; no synthetic content.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Petting_my_dog.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Petting_my_dog.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/university-saskatchewan-astronomy-telescope.jpg",
+      "title": "A telescope oriented toward the unknown",
+      "summary": "An observatory telescope at the University of Saskatchewan sits under its open dome, showing a real instrument used to gather evidence about objects beyond Earth.",
+      "group": "photos",
+      "alt": "Large blue-and-gray astronomical telescope inside a white ribbed domed observatory, with the roof slit open to the sky.",
+      "caption": "Humanity still has many unanswered questions about the universe. This real telescope is one example of how observations can test hypotheses; the image does not itself demonstrate any specific discovery.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC0 1.0 Universal Public Domain Dedication granted by the photographer on the linked Wikimedia Commons file page.",
+      "photographer": "SSPWXR",
+      "date": "2022-05-10",
+      "derivative": "Source photograph resized to a maximum dimension of 1800 pixels and encoded as a JPEG at quality 87 for the development archive. Original source image and author preserved; no synthetic content.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Observatory_Telescope_at_the_University_of_Saskatchewan.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Observatory_Telescope_at_the_University_of_Saskatchewan.jpg"
+        }
+      ]
     }
   ]
 }

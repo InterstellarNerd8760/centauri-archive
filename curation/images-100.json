@@ -960,10 +960,10 @@
       "category": "culture",
       "title": "Rural communities and land stewardship",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/kenya-smallholder-field-farming-2017.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Subsistence_farming_between_rocks.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-091",
@@ -1040,10 +1040,10 @@
       "category": "messages",
       "title": "Humanity's relationship with other living species",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/person-petting-brown-white-dog.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Petting_my_dog.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-099",
@@ -1060,10 +1060,10 @@
       "category": "messages",
       "title": "Unanswered questions and the open future",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/university-saskatchewan-astronomy-telescope.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Observatory_Telescope_at_the_University_of_Saskatchewan.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-101",
