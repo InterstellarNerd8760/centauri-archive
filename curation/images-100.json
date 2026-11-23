@@ -480,10 +480,10 @@
       "category": "molecules",
       "title": "Atomic-resolution microscope image",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/stm-gold-atoms-au100.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Atomic_resolution_Au100.JPG",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-043",
@@ -540,10 +540,10 @@
       "category": "molecules",
       "title": "Photomicrograph of archaeal cells",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/methanococcus-maripaludis-electron-micrograph.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Electron_micrograph_of_Methanococcus_maripaludis.png",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-049",
@@ -570,10 +570,10 @@
       "category": "molecules",
       "title": "Microscopic image of DNA structure",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/afm-dna-double-crossover-array.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:DX_DNA_array.png",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-052",
@@ -760,10 +760,10 @@
       "category": "body",
       "title": "Brain, nerves and sensory systems",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/rat-neuronal-network-holotomography.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Live_Neuronal_Nettwork.png",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-071",
@@ -780,10 +780,10 @@
       "category": "body",
       "title": "Ear, hearing and sound",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/human-ear-teaching-model-fmvz.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Human_ear_(teaching_model_showing_internal_mechanisms).jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-073",
@@ -930,10 +930,10 @@
       "category": "culture",
       "title": "Children learning in a classroom",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/texas-classroom-leakey-1973.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:EPA18LeakeyStudents.png",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-088",

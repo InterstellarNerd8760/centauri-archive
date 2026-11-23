@@ -2209,6 +2209,144 @@
           "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Observatory_Telescope_at_the_University_of_Saskatchewan.jpg"
         }
       ]
+    },
+    {
+      "path": "photos/stm-gold-atoms-au100.jpg",
+      "title": "Atomic structure on a gold surface",
+      "summary": "A scanning tunneling microscopy measurement of the reconstructed Au(100) surface reveals individual gold atoms in closely spaced ridges, observed by Erwin Rossen at Eindhoven University of Technology.",
+      "group": "photos",
+      "alt": "Gold and rust-toned banded image consisting of parallel elevated rows with a granular pattern at atomic scale.",
+      "caption": "An STM electronic measurement visualizes the atomic lattice on clean gold, with contrast and shading assigned by the instrument. It is not a visible-light photograph or a literal picture taken with an ordinary camera.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Photographer/experimenter Erwin Rossen released this image to the public domain worldwide as documented at the Commons file page.",
+      "photographer": "Erwin Rossen / Eindhoven University of Technology",
+      "date": "2006",
+      "derivative": "Observed source image converted to a maximum 1800-pixel-wide quality-87 JPEG for the development archive. Source original retained by URL; no generated imagery or edits of scientific structures. Original instrument color mapping preserved.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Atomic_resolution_Au100.JPG"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Atomic_resolution_Au100.JPG"
+        }
+      ]
+    },
+    {
+      "path": "photos/methanococcus-maripaludis-electron-micrograph.jpg",
+      "title": "Electron micrograph of a methane-producing archaeon",
+      "summary": "A single Methanococcus maripaludis archaeal cell with thin surface filaments, or archaella, observed by electron microscopy. The original includes a 500-nanometer scale bar.",
+      "group": "photos",
+      "alt": "Gray electron micrograph showing one roughly round dark cell with many very thin hairlike filaments extending from its surface.",
+      "caption": "An archaeon is neither a bacterium nor a eukaryote. This real electron micrograph shows Methanococcus maripaludis and its motility structures. The bright-and-dark contrast is an electron imaging signal, not natural color.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC0 1.0 dedication recorded on Commons for this contributed research image. The named researchers are credited; independently verify downstream rights before any hardware archival publication.",
+      "photographer": "Dr. Ken F. Jarrell and Dr. Shin-Ichi Aizawa",
+      "date": "2007-09-19",
+      "derivative": "Observed source image converted to a maximum 1800-pixel-wide quality-87 JPEG for the development archive. Source original retained by URL; no generated imagery or edits of scientific structures. Electron microscope grayscale retained.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Electron_micrograph_of_Methanococcus_maripaludis.png"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Electron_micrograph_of_Methanococcus_maripaludis.png"
+        }
+      ]
+    },
+    {
+      "path": "photos/afm-dna-double-crossover-array.jpg",
+      "title": "DNA molecules in a nanotechnology array",
+      "summary": "Atomic force microscopy measurement of DNA double-crossover structures arranged on mica; the field width is 150 nanometers. Individual DX molecules are visible in the array.",
+      "group": "photos",
+      "alt": "Gold-orange rectangular field containing repeated small DNA-structure signals against dark rust-red background.",
+      "caption": "DNA molecular structures measured using atomic force microscopy, arranged as an artificial nanotechnology lattice on mica. This is not a direct microscope photograph of the entire genetic molecule inside a living cell.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0), © Antony-22. https://creativecommons.org/licenses/by-sa/3.0/ . Re-encoded archive derivative licensed identically with attribution and processing disclosed.",
+      "photographer": "Antony-22 / Wikimedia Commons",
+      "date": "2007-08",
+      "derivative": "Observed source image converted to a maximum 1800-pixel-wide quality-87 JPEG for the development archive. Source original retained by URL; no generated imagery or edits of scientific structures. Original false-color instrument visualization retained.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:DX_DNA_array.png"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/DX_DNA_array.png"
+        }
+      ]
+    },
+    {
+      "path": "photos/rat-neuronal-network-holotomography.jpg",
+      "title": "Cultured neurons forming a network",
+      "summary": "A label-free holotomography observation of rat cortical neurons on day 14 in a laboratory culture, visualizing cell bodies and connecting neurites.",
+      "group": "photos",
+      "alt": "Gray and black microscopy field showing a complex web of slender neuron projections connecting numerous round cellular bodies, with a small 20-micrometer scale bar.",
+      "caption": "Live cultured rat neurons observed by holotomography without fluorescent labeling. This illustrates neural tissue at a cellular scale, not the human brain or a complete nervous system.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC0 1.0 Universal Public Domain Dedication by the creator, documented on the Wikimedia Commons file page.",
+      "photographer": "YUKI ONNA DESU",
+      "date": "2024-03-08",
+      "derivative": "Observed source image converted to a maximum 1800-pixel-wide quality-87 JPEG for the development archive. Source original retained by URL; no generated imagery or edits of scientific structures. Holotomography grayscale and 20-micrometer scale retained.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Live_Neuronal_Nettwork.png"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Live_Neuronal_Nettwork.png"
+        }
+      ]
+    },
+    {
+      "path": "photos/human-ear-teaching-model-fmvz.jpg",
+      "title": "The ear's sound pathway shown in a teaching model",
+      "summary": "A real photograph of a large anatomical teaching model of the human ear at the Museum of Veterinary Anatomy, University of São Paulo, showing the outer ear, ear canal, eardrum, ossicles, cochlea and semicircular canals.",
+      "group": "photos",
+      "alt": "A physical sectional model of an ear on a table, showing the outer pinna at left, internal ossicle parts in the middle and a spiral cochlea on the right.",
+      "caption": "A photographed educational model, not living tissue. Sound vibration normally travels from the outer ear to the eardrum and middle-ear bones, then the fluid-filled cochlea; actual anatomy is more complex than this representation.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0), institution-approved. Credit must read Museum of Veterinary Anatomy FMVZ USP / Wagner Souza e Silva, https://creativecommons.org/licenses/by-sa/4.0/. Resized derivative remains CC BY-SA 4.0.",
+      "photographer": "Museum of Veterinary Anatomy FMVZ USP / Wagner Souza e Silva",
+      "date": "2017-05-29",
+      "derivative": "Observed source image converted to a maximum 1800-pixel-wide quality-87 JPEG for the development archive. Source original retained by URL; no generated imagery or edits of scientific structures.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Human_ear_(teaching_model_showing_internal_mechanisms).jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Human_ear_%28teaching_model_showing_internal_mechanisms%29.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/texas-classroom-leakey-1973.jpg",
+      "title": "Students participate in a Texas classroom",
+      "summary": "A 1973 US Environmental Protection Agency DOCUMERICA photograph by Marc St. Gil shows students in a classroom in Leakey, Texas. Two students raise their hands while another student is shown from behind.",
+      "group": "photos",
+      "alt": "A warm-toned color archival image of two school students raising hands beside wooden desks in a classroom with books and papers.",
+      "caption": "An ordinary classroom interaction in Leakey, Texas, 1973, documented by EPA photographer Marc St. Gil. This is one historic educational setting; publication does not establish whether the subjects gave separate model-release consent.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "US federal employee work, public domain in the United States under 17 USC 105, recorded on Wikimedia Commons source page. Subjects were minors; editorial/privacy review is still required before additional promotional use.",
+      "photographer": "Marc St. Gil / US Environmental Protection Agency, DOCUMERICA",
+      "date": "1973",
+      "derivative": "Observed source image converted to a maximum 1800-pixel-wide quality-87 JPEG for the development archive. Source original retained by URL; no generated imagery or edits of scientific structures. The original archival color balance and composition are preserved.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:EPA18LeakeyStudents.png"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/EPA18LeakeyStudents.png"
+        }
+      ]
     }
   ]
 }
