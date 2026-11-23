@@ -7,6 +7,7 @@ import unittest
 import warnings
 from zipfile import ZipFile
 from html.parser import HTMLParser
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
@@ -143,13 +144,21 @@ class ArchiveTests(unittest.TestCase):
             if target.startswith("#"):
                 self.assertIn(target[1:], parser.anchors)
             elif not target.startswith(("https://", "http://")):
-                self.assertTrue((site / target).is_file(), target)
+                self.assertTrue((site / urlsplit(target).path).is_file(), target)
         self.assertNotIn("__EDITION__", html)
         self.assertNotIn("__SIZE__", html)
         self.assertIn("0.2.0", html)
-        self.assertIn("Physical primer", html)
+        self.assertIn("guide.html", html)
         self.assertTrue((site / "primer-panel.svg").is_file())
         self.assertTrue((site / "encyclopedia.txt").is_file())
+        self.assertTrue((site / "library.html").is_file())
+        self.assertTrue((site / "library.js").is_file())
+        self.assertTrue((site / "guide.html").is_file())
+        library = (site / "library.html").read_text()
+        self.assertIn("Explore the", library)
+        self.assertIn("library.js", library)
+        self.assertIn('id="record-nav"', library)
+        self.assertIn("What actually goes on the probe?", (site / "guide.html").read_text())
         self.assertIn('id="carrier"', html)
         self.assertIn("A small record of a living world.", html)
         style = (site / "style.css").read_text()

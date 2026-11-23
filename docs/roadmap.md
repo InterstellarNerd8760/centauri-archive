@@ -10,6 +10,13 @@
 - [x] Align website with the visual language of westonrosch.com.
 - [ ] Review content for scientific and cultural accuracy with domain experts.
 
+## Website reading experience
+- [x] Present archived text as readable, navigable articles.
+- [x] Separate the development package, website and potential flight carrier.
+- [x] Explain the current primer assumptions and show the 8x8 example visually.
+- [ ] Add illustrations and linked learning sequences to the encyclopedia.
+- [ ] User-test chapter discovery, navigation and mobile readability.
+
 ## v0.3 — decode experiments
 - [ ] Design a physical primer panel and independently test each interpretation stage.
 - [ ] Specify a minimal raw bitstream framing independent of ZIP, JSON and UTF-8.

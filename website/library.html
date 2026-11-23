@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#05080f"><meta name="description" content="Browse and read the Centauri Archive development collection.">
+<title>Library · Centauri Archive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script defer src="library.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header">
+<a class="brand" href="index.html">Centauri Archive<span class="brand-dot">.</span></a>
+<nav aria-label="Main navigation"><a href="library.html" aria-current="page">Library</a><a href="guide.html">Decoding and spacecraft</a><a href="index.html">About</a><a href="https://github.com/InterstellarNerd8760/centauri-archive">GitHub</a></nav>
+</header>
+<main id="main" class="library-main">
+<div class="wrap library-intro">
+<p class="eyebrow">THE HUMAN-READABLE EDITION</p>
+<h1>Explore the <em>archive.</em></h1>
+<p class="library-lead">Read our early records like a book. Chapters on Earth, life and humanity are presented as articles, rather than raw text files.</p>
+<p class="reader-warning">Development collection · Scientific and cultural review still required · Not the proposed physical flight format</p>
+</div>
+<div class="wrap library-layout">
+<aside class="library-sidebar" aria-label="Archive contents">
+<label class="library-search-label" for="library-search">Find a record</label>
+<input id="library-search" type="search" placeholder="Search the collection" autocomplete="off">
+<nav id="record-nav" aria-label="Archive records"><p class="reader-loading">Loading chapter index…</p></nav>
+<a class="library-guide" href="guide.html">How could anyone decode this? <span aria-hidden="true">↗</span></a>
+</aside>
+<div class="library-reader">
+<div class="reader-topline"><span id="record-category" class="eyebrow">SELECT A RECORD</span><span id="record-count" class="reader-counter"></span></div>
+<h2 id="record-title">An archive to explore.</h2>
+<p id="record-summary" class="reader-summary">Select a chapter from the contents to begin reading.</p>
+<div id="reader-content" class="reader-prose" aria-live="polite"><p>The archive preserves plain text as one development source format. This site presents that content as readable HTML without changing its bytes.</p></div>
+<div class="reader-download"><span>Source and preservation</span><a id="record-raw" href="downloads/centauri.zip">Original file ↗</a><p>The source is part of the verifiable digital ZIP. The website is a separate presentation layer.</p></div>
+<div class="reader-pagination"><button type="button" id="record-prev">← Previous</button><button type="button" id="record-next">Next →</button></div>
+</div>
+</div>
+</main>
+<footer class="footer wrap"><span>Centauri Archive · Independent research project</span><a href="guide.html">Physical archive proposal ↗</a></footer>
+</body></html>

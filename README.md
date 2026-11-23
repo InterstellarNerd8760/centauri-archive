@@ -17,6 +17,15 @@ The project has two horizons: a deliberately small **Fermi Edition** for a const
 
 The prose and draft message are original provisional content, not a comprehensive or representative encyclopedia. Content selection, translations, imagery, recordings, and contributors' permissions require later review.
 
+## Reading the collection
+
+The public website includes a human-facing chapter reader at library.html
+and an explanation of the proposed primer and physical carrier at guide.html.
+These pages are deliberately separate from the verified source ZIP; a future
+interstellar reader cannot be assumed to understand HTML, text files or USB
+storage. For current engineering decisions see
+[docs/payload-architecture.md](docs/payload-architecture.md).
+
 ## Quick start
 
 Python 3.10+; no third-party packages:
