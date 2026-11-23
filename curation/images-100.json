@@ -840,10 +840,10 @@
       "category": "civilization",
       "title": "Settlements, architecture and early cities",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/mesa-verde-cliff-palace-2014.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mesa_Verde_Public_Domain.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-079",
@@ -950,10 +950,10 @@
       "category": "culture",
       "title": "Urban streets and public transit",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/lviv-city-tram-and-pedestrians.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Street_scene_with_tram_in_Lwiw.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-090",
@@ -970,10 +970,10 @@
       "category": "culture",
       "title": "Music and traditional instruments",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/metropolitan-museum-indian-sitar.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sitar_MET_259651.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-092",
@@ -1020,10 +1020,10 @@
       "category": "culture",
       "title": "Games, sports and recreation",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/australian-football-match-adelaide-1915.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Football_Match(GN05078).jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-097",
