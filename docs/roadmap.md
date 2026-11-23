@@ -45,8 +45,8 @@
 
 ## v0.6 — decode experiments
 - [ ] Design a physical primer panel and independently test each interpretation stage.
-- [ ] Specify a minimal raw bitstream framing independent of ZIP, JSON and UTF-8.
-- [ ] Build a reference decoder from that raw bitstream to a small image.
+- [x] Specify an **experimental software** raw frame independent of ZIP, JSON and UTF-8; physical encoding remains untested.
+- [x] Build a bounded raw binary image encoder/decoder, a fixed test vector and corruption tests (not universal decoding).
 - [ ] Record independent decoding attempts, including failures and revisions.
 
 ## v0.7 — meaningful collection
