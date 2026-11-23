@@ -1,6 +1,6 @@
 # The first 100 images: selection and acquisition rules
 
-Status: approved as an **editorial plan**, not a released image collection.
+Status: **4 real photographs preserved, 96 still to acquire**. The 100-image plan is not a completed photo collection. Scientific diagrams are stored separately.
 
 The canonical machine-readable list is `curation/images-100.json`. It defines 100 explicitly named image targets across ten categories. The public `images.html` reader displays them and distinguishes **included** records from **planned** subjects. Neither a placeholder nor a linked source candidate constitutes an archived image.
 
@@ -20,15 +20,16 @@ The canonical machine-readable list is `curation/images-100.json`. It defines 10
 | Messages, stewardship & questions | 4 |
 | **Total** | **100** |
 
-An image is selected to explain a concept or convey a specific observation, not merely to occupy a slot. Some slots should contain original diagrams with scale and units, while others require actual photographs or scientific microscopy. Composite, simulated, false-color and schematic imagery must always be identified accurately.
+An image is selected to explain a concept or convey a specific observation, not merely to occupy a slot. All 100 slots now target real photographs, spacecraft imagery or photomicrographs. Original explanatory diagrams belong in the separate scientific library. Composite, simulated, false-color and schematic imagery must always be identified accurately.
 
-### Existing original records
+### First photograph acquisitions
 
-- `visuals/solar-system.svg`, category **Cosmos**, represents the Solar System ordering.
-- `visuals/water-molecule.svg`, category **Matter**, demonstrates the structure of a water molecule.
-- `visuals/cell.svg`, category **Matter**, provides a simplified cell diagram.
+- `photos/earth-apollo17.jpg` — the Apollo 17 *Blue Marble*.
+- `photos/earthrise-apollo8.jpg` — the Apollo 8 *Earthrise*.
+- `photos/apollo11-launch.jpg` — the Apollo 11 launch.
+- `photos/grand-prismatic-spring.jpg` — a National Park Service aerial photograph of Yellowstone.
 
-Thus **3 of 100 slots are currently represented** in the development archive. The remaining 97 are proposals, not assets.
+Thus **4 of 100 photographic slots are included** in the verified ZIP; 96 are unfilled. The three original SVG diagrams remain available as educational supplements, not photographs. See [photographic acquisitions](photographic-acquisitions.md) for each image's provenance and processing history.
 
 ## Minimum selection requirements
 
@@ -40,7 +41,7 @@ The source-derived master image, web-optimized version, and potential flight-enc
 
 ## Practical first selection sequence
 
-1. Build an extremely simple bitstream/image primer in which the symbol mapping can be inferred.
+1. Develop a basic bitstream/image primer in which the symbol mapping can be inferred; use original diagrams as scientific teaching material, not as photographic evidence.
 2. Ingest source-verified NASA Earth and Solar System media plus original diagrams.
 3. Add a representative set of ecosystems, microbes, organisms and landscapes.
 4. Obtain appropriately licensed or consented cultural and human images with proper contextual review.
