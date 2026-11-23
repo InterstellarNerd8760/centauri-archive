@@ -1,0 +1,62 @@
+{
+  "batch_id": "commons-05",
+  "description": "Four verified microscope and physical-science source observations with license and image-processing disclosures.",
+  "images": [
+    {
+      "slot": "IMG-008",
+      "filename": "esselte-analog-oscilloscope.jpg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Esselte_oscilloscope.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Esselte_oscilloscope.jpg",
+      "title": "An analog oscilloscope shows changing voltage",
+      "summary": "An Esselte Type D-5 oscilloscope photographed on 20 December 2023 displays a blue trace across its cathode-ray-tube screen. An oscilloscope maps electrical signal voltage against time.",
+      "alt": "Beige analog oscilloscope with control knobs and a blue oscillating voltage trace on the gridded central screen.",
+      "caption": "A real oscilloscope displaying a changing electrical signal. The horizontal axis represents elapsed time at a user-selected scale; vertical deflection corresponds to voltage.",
+      "credit": "Unnerving duck",
+      "date": "2023-12-20",
+      "rights": "CC0 1.0 Universal Public Domain Dedication by Unnerving duck, documented at https://commons.wikimedia.org/wiki/File:Esselte_oscilloscope.jpg .",
+      "processing": "Resized from the Commons source JPEG to maximum 1800 pixels and re-encoded at JPEG quality 87 for the development archive; no synthetic content."
+    },
+    {
+      "slot": "IMG-041",
+      "filename": "real-element-specimens-periodic-table.jpg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/PeriodicTable-RealElements.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:PeriodicTable-RealElements.jpg",
+      "title": "Real samples of chemical elements arranged in a periodic table",
+      "summary": "A physical acrylic display contains selected actual element specimens arranged by atomic number, with labels and symbols. It was photographed by Achituv in October 2020.",
+      "alt": "Grid of individually labeled acrylic element display blocks across a large pale background, with some blocks containing visible metal or mineral samples.",
+      "caption": "A human-created physical periodic-table display contains many element samples. Some hazardous, unstable or gaseous elements are represented by symbols or empty blocks rather than loose specimens. The written labels are not a self-decoding alien primer.",
+      "credit": "Achituv",
+      "date": "2020-10-21",
+      "rights": "CC BY-SA 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/). Original photograph by Achituv; edited development JPEG derivative is also CC BY-SA 4.0 with attribution and modification indicated.",
+      "processing": "Original Commons photograph (perspective-corrected 2022 version) downsampled to maximum 1800px and encoded at JPEG quality 87; attribution retained."
+    },
+    {
+      "slot": "IMG-044",
+      "filename": "polarized-micrograph-ice-crystals.jpg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Ice_crystals_in_the_ice_cream_2.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ice_crystals_in_the_ice_cream_2.jpg",
+      "title": "Ice crystals revealed in polarized light",
+      "summary": "A real polarized-light microscopy image of ice crystals growing in ice cream after six months in storage; the sample contained added antifreeze protein. The geometric crystalline structures are physically observed.",
+      "alt": "Bright microscopic crystalline geometric forms in several vivid polarized-light interference colors.",
+      "caption": "Microscopy of actual frozen-water crystals in an ice-cream sample. The false-looking vivid interference colors arise from crossed polarization and are not the naked-eye colors of ice.",
+      "credit": "Maxim Bilovitskiy",
+      "date": "2015-11-03",
+      "rights": "CC BY-SA 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/). Photograph © Maxim Bilovitskiy; resized and re-encoded derivative shared under same license.",
+      "processing": "Source 6000x4000 polarized-light image reduced to maximum 1800px and quality-87 JPEG; optical colors preserved, no generated image."
+    },
+    {
+      "slot": "IMG-045",
+      "filename": "diamond-and-graphite-photographic-composite.jpg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Diamond-and-graphite-with-scale.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Diamond-and-graphite-with-scale.jpg",
+      "title": "Diamond and graphite: two forms of carbon",
+      "summary": "Two separate mineral specimen photographs by Rob Lavinsky are displayed together in a Commons comparative composite edited by Jynto. Diamond and graphite have the same chemical element but different crystal arrangements.",
+      "alt": "A small translucent octahedral diamond crystal on the left and a dark black lustrous graphite mineral fragment on the right, against a white background.",
+      "caption": "Diamond (left) and graphite (right) are both carbon but have different atomic structures and properties. This is a photographic composite of different specimens; the two objects are not shown at one reliable physical scale.",
+      "credit": "Rob Lavinsky / iRocks.com; comparison composite edited by Jynto",
+      "date": "before 2010-03",
+      "rights": "CC BY-SA 3.0 Unported (https://creativecommons.org/licenses/by-sa/3.0/). © Rob Lavinsky / iRocks.com, composite by Jynto; re-encoded derivative shared under compatible CC BY-SA 3.0 with credit and modification notice.",
+      "processing": "Photographic comparison assembled from two mineral photos by Jynto; scale is approximate. Development image locally re-encoded quality-87, not AI-generated."
+    }
+  ]
+}
