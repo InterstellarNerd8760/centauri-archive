@@ -6,7 +6,7 @@
 <title>Decoding & physical design · Centauri Archive</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head>
+<link rel="stylesheet" href="style.css"><script defer src="decoder.js"></script></head>
 <body><a class="skip" href="#main">Skip to content</a>
 <header class="header"><a class="brand" href="index.html">Centauri Archive<span class="brand-dot">.</span></a>
 <nav aria-label="Main navigation"><a href="brief.html">Project brief</a><a href="library.html">Library</a><a href="guide.html" aria-current="page">Decoding</a><a href="index.html">Home</a></nav></header>
@@ -32,6 +32,34 @@
 00011000
 00000001</pre></div>
 <div><div class="raster-grid" aria-label="Eight-by-eight pixel image reconstructed from eight binary rows" role="img" id="raster-grid"></div><small>Light = 1 · Dark = 0 · Row-major order</small></div></div>
+
+<section class="decoder-lab" aria-labelledby="decoder-lab-title">
+  <div class="decoder-lab-head">
+    <p class="eyebrow">HANDS-ON RECONSTRUCTION / STEP 03</p>
+    <h3 id="decoder-lab-title">A stream of marks becomes a picture.</h3>
+    <p>The encoded message contains 64 separate values. Decide where each value goes. If you choose the wrong reading order, the exact same data produces a different image. Select a square to change its encoded value.</p>
+  </div>
+  <div class="decoder-controls" aria-label="Reconstruction controls">
+    <button type="button" id="scan-row" class="selected" aria-pressed="true">Read across rows</button>
+    <button type="button" id="scan-column" aria-pressed="false">Read down columns</button>
+    <button type="button" id="scan-reset">Restore example</button>
+  </div>
+  <div class="decoder-layout">
+    <div>
+      <p class="decoder-label">A / ORDERED VALUES</p>
+      <pre id="bit-sequence" class="decoder-stream" aria-live="polite">Loading encoded example…</pre>
+      <p class="decoder-note">The symbols 0 and 1 represent two distinguishable marks. The character shapes themselves are a human convention.</p>
+    </div>
+    <div>
+      <p class="decoder-label">B / RECONSTRUCTED GRID</p>
+      <div id="decoded-grid" class="decoded-grid" role="group" aria-label="Click a cell to invert its encoded bit"></div>
+      <p id="pixel-description" class="decoder-note" aria-live="polite">Select a pixel to see its position in the bitstream.</p>
+    </div>
+  </div>
+  <div class="decoder-lesson"><strong id="decoder-result">Row-first reading maps values across each row.</strong>
+    <p>What this proves: given an agreed width, height, reading order and bit meaning, another computer can reconstruct the picture. What it does not prove: a reader unfamiliar with our conventions could independently discover those rules. That is why the physical plate must show multiple paired examples and be blind-tested.</p>
+  </div>
+</section>
 <p class="guide-small">A genuine primer must demonstrate that mapping through physical examples. The current English labels are explanations for human developers, not decoding instructions for an unknown civilization.</p>
 </section>
 <section class="wrap guide-section" id="carrier"><p class="eyebrow">02 / PHYSICAL ARCHITECTURE</p><h2>What actually goes on the probe?</h2>
