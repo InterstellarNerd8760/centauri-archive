@@ -29,6 +29,8 @@ def assemble(output):
     html = html.replace("__EDITION__", manifest["archive_version"])
     html = html.replace("__SIZE__", f"{package.stat().st_size / 1_000_000:.3f}")
     index.write_text(html, encoding="utf-8")
+    brief = output / "brief.html"
+    brief.write_text(brief.read_text(encoding="utf-8").replace("__EDITION__", manifest["archive_version"]), encoding="utf-8")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,46 @@
+name: Publish Centauri Archive website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: centauri-archive-pages
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Validate archive and website
+        run: python -m unittest discover -s tests -v
+      - name: Assemble static website
+        run: python tools/build_site.py
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/site
+      - name: Publish website
+        id: deployment
+        uses: actions/deploy-pages@v4

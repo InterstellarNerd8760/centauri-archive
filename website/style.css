@@ -68,3 +68,27 @@
 @media(max-width:900px){.library-layout{grid-template-columns:15rem minmax(0,1fr);gap:2rem}.guide-steps{grid-template-columns:1fr 1fr}}
 @media(max-width:700px){.library-layout{grid-template-columns:1fr}.library-sidebar{position:static}.library-reader{padding:1.4rem}.guide-experiment,.carrier-layers{grid-template-columns:1fr}.guide-section{padding-block:3rem}}
 @media(max-width:460px){.guide-steps{grid-template-columns:1fr 1fr;gap:.8rem}.reader-prose{font-size:.99rem}}
+
+/* Project overview and public research brief */
+.overview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.3rem}
+.overview-grid article{padding:1.8rem 1.5rem;background:linear-gradient(135deg,#0a1423,#070c15);border:1px solid var(--line);display:flex;flex-direction:column;min-height:19rem}
+.overview-grid h3{color:var(--white);font:400 1.65rem/1.18 var(--serif);margin:.5rem 0 1.1rem}
+.overview-grid p:not(.status-label){font:.9rem/1.75 var(--sans);color:var(--soft);margin-bottom:1.5rem}
+.overview-grid a,.project-distinction a{font:.8rem var(--sans);color:var(--sky);margin-top:auto;text-decoration:none}
+.project-distinction{display:grid;grid-template-columns:minmax(0,.4fr) minmax(0,.6fr);gap:2rem;border-top:1px solid var(--line);padding:2rem 0;margin-top:2.5rem}
+.project-distinction h3{font:400 clamp(1.9rem,3vw,2.9rem) var(--serif);color:var(--white);margin:0}
+.project-distinction p{max-width:43rem;color:var(--soft);margin:0}
+.brief-intro{padding-block:clamp(4rem,9vw,8rem) 4rem}
+.brief-intro h1{font-size:clamp(4rem,8vw,7.2rem);line-height:1;margin:1.4rem 0}
+.brief-intro .intro{max-width:49rem}
+.brief-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem;margin-bottom:4.5rem}
+.brief-panel{padding:1.8rem;border:1px solid var(--line);background:var(--bg-2)}
+.brief-panel h2{font-size:clamp(2rem,3vw,3rem);margin:1rem 0}
+.brief-panel p{color:var(--soft)}
+.brief-panel ul{padding-left:1.1rem;margin:0;color:var(--soft)}
+.brief-panel li{margin:.6rem 0}
+.brief-status{padding:2.5rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:5rem}
+.brief-status h2{font-size:clamp(2.4rem,4vw,4rem)}
+.brief-status p{max-width:52rem;color:var(--soft)}
+.brief-footnotes{font:.72rem/1.8 var(--mono);color:var(--soft);margin-top:1.3rem}
+@media(max-width:850px){.overview-grid{grid-template-columns:1fr}.overview-grid article{min-height:0}.project-distinction{grid-template-columns:1fr}.brief-grid{grid-template-columns:1fr}}
