@@ -1,18 +1,61 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="An independent interstellar archive prototype preserving a compact, readable record of Earth, life and civilization.">
-<title>Centauri Archive</title><link rel="stylesheet" href="style.css"><script defer src="carrier.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#05080f">
+  <meta name="description" content="Centauri Archive: a compact, independent proposal to preserve a record of Earth's biology, knowledge and humanity for interstellar missions.">
+  <title>Centauri Archive — A record of Earth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><a class="brand" href="#top"><span class="mark" aria-hidden="true">✳</span> CENTAURI ARCHIVE</a><nav aria-label="Main navigation"><a href="#collection">Collection</a><a href="#engineering">Engineering</a><a href="https://github.com/InterstellarNerd8760/centauri-archive">GitHub</a></nav></header>
-<main id="top">
-<section class="hero"><div class="intro"><p class="kicker">INTERSTELLAR RECORDS PROJECT</p><h1>Centauri<br><em>Archive</em></h1><p class="lead">A pocket-sized record of Earth, life and human civilization, designed to carry its own reading instructions.</p><a class="primary" href="downloads/centauri.zip" download>Download prototype</a> <a class="secondary" href="downloads/manifest.json">View manifest</a></div>
-<figure><div class="drawing"><canvas width="840" height="680" id="carrier" aria-label="An imagined engraved metal plate with a reading grid and circular alignment marks">Concept drawing of an engraved archive plate.</canvas></div><figcaption><span>Carrier study</span><span>Concept illustration</span></figcaption></figure></section>
-<div class="metrics"><div><small>CONTENT EDITION</small><strong>__EDITION__</strong></div><div><small>PACKAGE SIZE</small><strong>__SIZE__ MB</strong></div><div><small>INTEGRITY CHECK</small><strong>SHA-256</strong></div></div>
-<section class="paper" id="collection"><p class="kicker">INSIDE THE PACKAGE</p><h2>The first collection</h2><p class="section-lead">Three ways to describe our world, alongside a reading guide and a grayscale plate for testing a decoder.</p>
-<div class="records"><article><small>EARTH · FIELD PROCEDURE</small><h3>A moving shadow</h3><p>A stick, a level patch of ground and a way to record the changing direction of sunlight.</p><a href="records/earth/shadow.txt">Read the procedure</a></article><article><small>LIFE · OBSERVATION</small><h3>The shape of a leaf</h3><p>A tracing exercise that asks what survives when a living surface becomes a record.</p><a href="records/life/leaf.txt">Read the observation</a></article><article><small>CIVILIZATION · PATTERN</small><h3>Four threads across</h3><p>A plain weave expressed as sixteen crossings. Each cell describes the position of one thread.</p><a href="records/civilization/weaving.csv">Open the weaving table</a></article></div></section>
-<section id="engineering" class="engineering"><div><p class="kicker">ENGINEERING NOTES</p><h2>From marks<br>to meaning.</h2></div><div><p>Start with the reading guide, recover the image one byte at a time, then compare each file with its recorded checksum. The digital package can be tested today.</p><p>The physical primer, carrier material and redundancy scheme are proposals. Their readability and survival still need experiments.</p><a href="records/primer/start.txt">Read the decoding guide</a> <a href="engineering.txt">Explore open questions</a></div></section>
-</main><footer><b>Centauri Archive</b><p>An independent prototype inspired by Fermi Explorer. No mission affiliation, payload acceptance or flight qualification is claimed.</p></footer>
-</body></html>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header">
+  <a class="brand" href="#top">Centauri Archive<span class="brand-dot">.</span></a>
+  <nav aria-label="Main navigation"><a href="#archive">Archive</a><a href="#decoding">Decoding</a><a href="#engineering">Engineering</a><a href="https://westonrosch.com">Weston Rosch</a></nav>
+</header>
+<main id="main">
+  <section class="hero wrap" id="top">
+    <p class="eyebrow">INDEPENDENT INTERSTELLAR ARCHIVE PROJECT &nbsp;/&nbsp; EDITION __EDITION__</p>
+    <h1>A record<br>of <em>Earth.</em></h1>
+    <p class="intro">A compact archive of life, knowledge, and human civilization — developed as a potential contribution to Fermi Explorer and adaptable to future interstellar missions.</p>
+    <div class="actions"><a class="button" href="downloads/centauri.zip" download>Download prototype <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/InterstellarNerd8760/centauri-archive">View source ↗</a></div>
+    <p class="disclosure">Experimental digital edition. Not affiliated with or approved by Fermi Explorer. No flight hardware or extraterrestrial-readable format exists yet.</p>
+  </section>
+
+  <section class="section wrap" id="archive">
+    <div class="section-head"><p class="eyebrow">01 / CONTENTS</p><h2>What we want to preserve.</h2><p>A small, actual collection of original introductory records — not arbitrary demonstrations, not yet a complete encyclopedia.</p></div>
+    <div class="topic"><span class="topic-no">01</span><div><h3>Mathematics &amp; decoding</h3><p>Counting, repeated structure, how the current digital package works, and the limits of its readability.</p><a href="records/primer/start.txt">Read the guide ↗</a></div></div>
+    <div class="topic"><span class="topic-no">02</span><div><h3>Earth &amp; the Solar System</h3><p>Where we are, how our planet moves, and the environment in which terrestrial life evolved.</p><a href="records/earth/solar-system.txt">Read Earth record ↗</a></div></div>
+    <div class="topic"><span class="topic-no">03</span><div><h3>Biology &amp; the tree of life</h3><p>Cells, DNA, evolution and the biodiversity of Earth's biosphere. The priority for the expanded edition.</p><a href="records/biology/foundations.txt">Read biology record ↗</a></div></div>
+    <div class="topic"><span class="topic-no">04</span><div><h3>Humanity &amp; our message</h3><p>Human cultures, selected history and a clearly marked editorial message draft awaiting review.</p><a href="records/humanity/civilization.txt">Read humanity record ↗</a></div></div>
+  </section>
+
+  <section class="section wrap" id="decoding">
+    <div class="section-head"><p class="eyebrow">02 / INTERPRETATION</p><h2>How would anyone read it?</h2><p>We cannot assume the reader knows English, computers, ZIP files or the concept of a byte. The goal is a physical-to-digital learning sequence — currently a research plan.</p></div>
+    <ol class="steps">
+      <li><span>Recognize structure</span><p>Repeated marks, patterns, orientation and counting.</p></li>
+      <li><span>Establish shared references</span><p>Mathematical relationships, units and diagrams grounded in physics.</p></li>
+      <li><span>Decode stored information</span><p>Framing, ordered symbols, test images and error recovery.</p></li>
+      <li><span>Understand the record</span><p>The Solar System, chemistry, biology, and then human civilization.</p></li>
+    </ol>
+    <div class="doc-links"><a href="physical-primer.txt">Physical primer research specification ↗</a><a href="primer-panel.svg">See experimental primer panel ↗</a><a href="records/primer/raster-example.txt">View raster bits ↗</a></div>
+  </section>
+
+  <section class="section wrap" id="engineering">
+    <div class="section-head"><p class="eyebrow">03 / ENGINEERING</p><h2>Designed to be tested.</h2><p>Reproducible data, transparent assumptions, and a path from experiments to potential mission integration.</p></div>
+    <div class="status">
+      <div><p class="status-label">WORKING TODAY</p><h3>Digital package</h3><p>Build, inspect and verify original content and a manifest with file lengths and SHA-256 checksums. These detect corruption, not repair it.</p></div>
+      <div><p class="status-label">RESEARCH</p><h3>Physical preservation</h3><p>A passive decoding-primer concept. No fabricated carrier, lifetime estimate or tested extraterrestrial decoding yet.</p></div>
+      <div><p class="status-label">UNCONFIRMED</p><h3>Mission fit</h3><p>Mass, dimensions, environment, telemetry and any available payload allocation need direct confirmation from the mission team.</p></div>
+    </div>
+    <p class="meta">Digital edition __EDITION__ · __SIZE__ MB · Uncompressed development ZIP</p>
+    <div class="doc-links"><a href="engineering.txt">Engineering notes ↗</a><a href="mission.txt">Mission questions ↗</a><a href="roadmap.txt">Roadmap ↗</a><a href="downloads/manifest.json">Manifest ↗</a></div>
+  </section>
+</main>
+<footer class="footer wrap"><span>Centauri Archive / Independent project</span><span><a href="https://westonrosch.com">westonrosch.com</a> · <a href="https://github.com/InterstellarNerd8760/centauri-archive">GitHub</a></span></footer>
+</body>
+</html>
