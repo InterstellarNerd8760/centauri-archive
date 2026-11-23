@@ -15,7 +15,7 @@
 - [x] Separate the development package, website and potential flight carrier.
 - [x] Explain the current primer assumptions and show the 8x8 example visually.
 - [x] Add original illustrated records and a working multimedia reader.
-- [ ] Add externally sourced photographs with provenance, compatible licenses and exact archive copies.
+- [x] Add externally sourced photographs with provenance, usage notes and exact archive copies.
 - [ ] User-test chapter discovery, navigation and mobile readability.
 
 ## v0.3 — multimedia reader and decoding interface
