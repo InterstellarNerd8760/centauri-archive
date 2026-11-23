@@ -28,7 +28,7 @@ Order files by ASCII path. Write the manifest first, followed by content in
 path order. Serialize JSON with sorted keys, two-space indentation and a final
 LF. ZIP member timestamp is 1980-01-01 00:00:00, Unix creator and regular-file
 mode 0100644. Omit comments and extras. Reference readers enforce a
-10,000,000-byte container and total member-byte limit.
+80,000,000-byte container and total member-byte limit.
 
 This format requires prior knowledge of ZIP, bits/bytes and UTF-8. An experimental raw monochrome-image frame now exists separately from this ZIP
 (see [raw raster experiment](raw-raster-experiment.md)), but its byte conventions
@@ -37,5 +37,5 @@ Physical decoding remains a research milestone. Neither CRC nor SHA-256 is a sub
 
 All verified files are now copied to the static site's records directory, so the browser reader can display SVG and common image/audio files without changing source bytes. The catalog is stored at `content/catalog.json` in the ZIP. The browser interface is not a flight reader.
 
-The 10 MB limit is a **software prototype cap**, not a physical payload
+The 80 MB limit is a **software prototype cap**, not a physical payload
 allocation. A compact package may use fewer bytes without artificial padding.
