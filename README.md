@@ -6,21 +6,21 @@ Centauri Archive is an independent, open engineering and curation project develo
 
 The project has two horizons: a deliberately small **Fermi Edition** for a constrained spacecraft and a future, much larger **Ark Edition** for missions capable of carrying richer records.
 
-## What v0.3 actually is
+## What v0.4 actually is
 
 - A reproducible, inspectable **digital development package** containing original introductory records about mathematics, astronomy, matter, biology, humanity, and a provisional message; plus three original scientific SVG diagrams.
 - A manifest with file lengths and SHA-256 digests. These detect changes; they **do not correct corruption**.
 - A documented proposal for a **physical decoding primer**, not yet fabricated or validated. An experimental panel diagram and 8×8 reference raster/decoder demonstrate a small part of the learning ladder.
-- A minimalist website following the visual design of [westonrosch.com](https://westonrosch.com).
+- A public multimedia site with a beginner-level binary primer, an interactive 8×8 decoding lab, and a navigable editorial atlas of **100 proposed images in ten categories**. The image atlas does not claim planned images are archived.
 
 **Not yet demonstrated:** decoding without knowledge of human languages and computing, radiation survival, error recovery, archive-health telemetry, physical carrier manufacture, or Fermi Explorer compatibility. The ZIP container is a convenient development transport, **not a proposed alien-readable flight format**.
 
-The prose, original SVG diagrams and draft message are provisional content, not a comprehensive or representative encyclopedia. Photographs and field recordings are not yet included. Content selection, review, rights and permission tracking remain active work.
+The prose, original SVG diagrams and draft message are provisional content, not a comprehensive or representative encyclopedia. Photographs and field recordings are not yet included. The image plan defines 100 intended subjects, of which **three project-original diagrams** currently exist. Content selection, review, rights and permission tracking remain active work.
 
 ## Reading the collection
 
 The public website includes a human-facing multimedia chapter reader at library.html
-and an interactive 8×8 decoding laboratory at guide.html, alongside an explanation of the proposed primer and carrier.
+and an introductory binary explanation and 8×8 decoding laboratory at guide.html, alongside an explanation of the proposed primer and carrier. The separately published `images.html` inventories proposed imagery without inflating the verified payload.
 These pages are deliberately separate from the verified source ZIP; a future
 interstellar reader cannot be assumed to understand HTML, text files or USB
 storage. For current engineering decisions see
@@ -57,6 +57,7 @@ It does **not** establish universal readability.
 | Path | Purpose |
 | --- | --- |
 | `archive/primer/` | Explicit reader assumptions and mathematical/format foundations |
+| `curation/images-100.json` | Editorial plan for 100 images; separate from the verified ZIP |
 | `archive/catalog.json` | Editorial metadata, record titles, sources, rights and review status |
 | `archive/visuals/` | Original SVG diagrams for the human-facing edition |
 | `archive/science/`, `archive/experiences/` | Matter, energy and sound foundations |
@@ -75,4 +76,4 @@ It does **not** establish universal readability.
 
 **Meaning before megabytes.** Every item should answer a specific question about how to understand Earth or interpret the remaining archive. Proposed flight hardware must be defined only after obtaining real spacecraft constraints.
 
-See [roadmap](docs/roadmap.md), [physical primer](docs/physical-primer.md), [plain-language decoding explanation](docs/decoding-in-plain-language.md), [source policy](docs/source-policy.md), and [media candidates](docs/media-candidates.md).
+See [roadmap](docs/roadmap.md), [100-image plan](docs/images-100-plan.md), [content source workflow](docs/encyclopedia-sourcing.md), [physical primer](docs/physical-primer.md), [plain-language decoding explanation](docs/decoding-in-plain-language.md), [source policy](docs/source-policy.md), and [media candidates](docs/media-candidates.md).
