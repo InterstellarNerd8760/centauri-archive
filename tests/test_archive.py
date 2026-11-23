@@ -105,7 +105,7 @@ class ArchiveTests(unittest.TestCase):
             self.assertEqual(sum(r["category"] == cat for r in plan["records"]), target)
         included = [r for r in plan["records"] if r["status"] == "included"]
         planned = [r for r in plan["records"] if r["status"] == "planned"]
-        self.assertEqual((len(included), len(planned)), (13, 91))
+        self.assertEqual((len(included), len(planned)), (15, 89))
         self.assertEqual({r["asset"] for r in included},
                          {"photos/" + path.name for path in (ROOT / "archive/photos").glob("*.jpg")})
         with ZipFile(self.sample) as package:
@@ -118,7 +118,7 @@ class ArchiveTests(unittest.TestCase):
 
     def test_real_photographs_stored_with_provenance(self):
         files = sorted((ROOT / "archive/photos").glob("*.jpg"))
-        self.assertEqual(len(files), 13)
+        self.assertEqual(len(files), 15)
         catalog = json.loads((ROOT / "archive/catalog.json").read_text())
         indexed = {item["path"]: item for item in catalog["records"]}
         with ZipFile(self.sample) as package:

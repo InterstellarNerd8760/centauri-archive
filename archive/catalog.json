@@ -639,6 +639,58 @@
         }
       ],
       "date": "1930-04-06"
+    },
+    {
+      "path": "photos/pia00437.jpg",
+      "title": "Mercury through Mariner 10",
+      "summary": "Mariner 10 photographed Mercury in 1974. Along the boundary between daylight and darkness, shadows reveal the relief of the cratered surface.",
+      "group": "photos",
+      "alt": "A narrow sunlit portion of Mercury shows overlapping impact craters.",
+      "caption": "Mariner 10 photographed Mercury in 1974. Along the boundary between daylight and darkness, shadows reveal the relief of the cratered surface.",
+      "photographer": "NASA/JPL",
+      "status": "Acquired; editorial review pending",
+      "rights": "NASA Photojournal image, credited to NASA/JPL. See JPL Image Use Policy.",
+      "derivative": "Uncropped JPEG resized to fit 1600 pixels.",
+      "sources": [
+        {
+          "label": "NASA Photojournal PIA00437",
+          "url": "https://science.nasa.gov/photojournal/planet-mercury/"
+        },
+        {
+          "label": "Original JPEG",
+          "url": "https://images-assets.nasa.gov/image/PIA00437/PIA00437~orig.jpg"
+        },
+        {
+          "label": "JPL image use policy",
+          "url": "https://www.jpl.nasa.gov/jpl-image-use-policy/"
+        }
+      ]
+    },
+    {
+      "path": "photos/pia00407.jpg",
+      "title": "Mars from the Viking orbiters",
+      "summary": "This color mosaic combines Viking Orbiter images. The bright northern polar cap, the Tharsis volcanoes and the long canyon system Valles Marineris are visible in one projected view.",
+      "group": "photos",
+      "alt": "A rust-colored globe has a bright northern cap and a dark canyon system below center.",
+      "caption": "This color mosaic combines Viking Orbiter images. The bright northern polar cap, the Tharsis volcanoes and the long canyon system Valles Marineris are visible in one projected view.",
+      "photographer": "NASA/JPL/USGS",
+      "status": "Acquired; editorial review pending",
+      "rights": "NASA Photojournal image, credited to NASA/JPL/USGS. See JPL Image Use Policy.",
+      "derivative": "Uncropped JPEG resized to fit 1600 pixels.",
+      "sources": [
+        {
+          "label": "NASA Photojournal PIA00407",
+          "url": "https://science.nasa.gov/photojournal/global-color-views-of-mars/"
+        },
+        {
+          "label": "Original JPEG",
+          "url": "https://images-assets.nasa.gov/image/PIA00407/PIA00407~orig.jpg"
+        },
+        {
+          "label": "JPL image use policy",
+          "url": "https://www.jpl.nasa.gov/jpl-image-use-policy/"
+        }
+      ]
     }
   ]
 }

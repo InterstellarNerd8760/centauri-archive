@@ -200,10 +200,10 @@
       "category": "cosmos",
       "title": "Mercury's surface",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/pia00437.jpg",
+      "source_url": "https://science.nasa.gov/photojournal/planet-mercury/",
+      "curation_note": "Mariner 10 photographed Mercury in 1974. Along the boundary between daylight and darkness, shadows reveal the relief of the cratered surface."
     },
     {
       "id": "IMG-015",
@@ -230,10 +230,10 @@
       "category": "cosmos",
       "title": "Mars: global view and terrain",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/pia00407.jpg",
+      "source_url": "https://science.nasa.gov/photojournal/global-color-views-of-mars/",
+      "curation_note": "This color mosaic combines Viking Orbiter images. The bright northern polar cap, the Tharsis volcanoes and the long canyon system Valles Marineris are visible in one projected view."
     },
     {
       "id": "IMG-018",
