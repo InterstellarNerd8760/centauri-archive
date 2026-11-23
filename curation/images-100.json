@@ -240,10 +240,10 @@
       "category": "cosmos",
       "title": "Jupiter, Saturn, Uranus, Neptune and smaller bodies",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/voyager-family-portrait-1990.jpg",
+      "source_url": "https://science.nasa.gov/resource/solar-system-portrait-60-frame-mosaic/",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-019",
@@ -270,10 +270,10 @@
       "category": "geography",
       "title": "Topographic globe, ocean floors and elevation",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/nasa-earth-topography-bathymetry-2004.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-topography-bathymetry/",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-022",
@@ -360,10 +360,10 @@
       "category": "geography",
       "title": "Plate tectonics and continental movement",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/east-african-rift-topography.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/crater-highlands-tanzania-6316/",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-031",
@@ -400,10 +400,10 @@
       "category": "systems",
       "title": "Ocean currents and the global ocean",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/agulhas-benguela-ocean-currents.jpg",
+      "source_url": "https://oceancolor.gsfc.nasa.gov/gallery/531/",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-035",
