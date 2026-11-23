@@ -30,6 +30,10 @@ References: https://www.wikidata.org/wiki/Wikidata:Licensing and https://commons
 3. Wikipedia, Grokipedia and other tertiary sources as leads or cross-checks.
 4. Original archive prose written explicitly for the decoding sequence, with named assumptions, sources, uncertainty and review states.
 
+## Current acquisition workflow
+
+The research protocol in [encyclopedia-sourcing.md](encyclopedia-sourcing.md) distinguishes topic discovery, primary-source verification, new writing and rights tracking. Grokipedia pages were not copied into the development package; example page URLs could not be inspected reliably in the current research session. Any Grokipedia-derived content would require individual licensing and provenance review. The [100-image plan](images-100-plan.md) likewise distinguishes named subjects from media actually present.
+
 ## Metadata and responsibility
 
 `archive/catalog.json` is the editorial source of titles, groups, provenance links, review status and rights notes. A manifest's SHA-256 verifies bytes, not historical truth, scientific correctness, cultural representation or copyright compliance. The catalog and records should always be independently reviewed before calling them final.

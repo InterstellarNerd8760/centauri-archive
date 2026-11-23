@@ -11,6 +11,8 @@ def assemble(output):
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
     shutil.copytree(ROOT / "website", output, dirs_exist_ok=True)
+    # The 100-image acquisition plan is published separately from flight records.
+    shutil.copyfile(ROOT / "curation/images-100.json", output / "image-plan.json")
     package = output / "downloads" / "centauri.zip"
     manifest = build(package)
     with ZipFile(package) as archive:

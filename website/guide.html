@@ -9,12 +9,25 @@
 <link rel="stylesheet" href="style.css"><script defer src="decoder.js"></script></head>
 <body><a class="skip" href="#main">Skip to content</a>
 <header class="header"><a class="brand" href="index.html">Centauri Archive<span class="brand-dot">.</span></a>
-<nav aria-label="Main navigation"><a href="brief.html">Project brief</a><a href="library.html">Library</a><a href="guide.html" aria-current="page">Decoding</a><a href="index.html">Home</a></nav></header>
+<nav aria-label="Main navigation"><a href="brief.html">Project brief</a><a href="library.html">Library</a><a href="guide.html" aria-current="page">Decoding</a><a href="images.html">100 images</a><a href="index.html">Home</a></nav></header>
 <main id="main">
 <section class="wrap guide-intro"><p class="eyebrow">THE BIG ENGINEERING QUESTION</p>
 <h1>How could anyone <em>read it?</em></h1>
 <p class="guide-lead">There are two different challenges: storing the knowledge so it survives, and making it understandable to somebody who knows nothing about our computers, writing systems, or languages.</p>
 <p class="reader-warning">The current primer is a research concept, not a validated alien-readable design.</p></section>
+
+<section class="wrap guide-section binary-first" id="binary">
+<p class="eyebrow">START HERE / NO SPECIALIST BACKGROUND NEEDED</p>
+<h2>Binary is simple. Meaning is not.</h2>
+<p>A <strong>bit</strong> is a choice between two distinguishable physical states. A dark square or a light square. A hole or no hole. We write the states as <code>0</code> and <code>1</code>, but those shapes are human inventions. We have no evidence that another intelligence would immediately recognize our notation, an eight-bit byte, or a digital file.</p>
+<div class="binary-example">
+<article><p class="eyebrow">01 / PHYSICAL STATES</p><div class="binary-demo"><span class="binary-on" aria-label="dark mark"></span><span class="binary-off" aria-label="light mark"></span><span class="binary-on" aria-label="dark mark"></span></div><h3>Two states can carry a pattern.</h3><p>Three marks with two visibly different appearances: this is observable before anyone knows what it represents.</p></article>
+<article><p class="eyebrow">02 / RULES OF COUNTING</p><div class="binary-equation"><span>101</span><small>4 + 0 + 1 = 5</small></div><h3>Numbers require shared conventions.</h3><p>Once we establish a positional number system with powers of two, <code>101</code> can mean five. Without that convention, it is just three marks.</p></article>
+<article><p class="eyebrow">03 / RULES OF READING</p><div class="binary-demo-row" role="img" aria-label="Three adjacent light and dark image pixels"><span></span><span></span><span></span></div><h3>Exactly the same marks could be pixels.</h3><p>To reconstruct a picture, a reader must know its width, height, start corner, scan direction, and light/dark assignment.</p></article>
+</div>
+<p class="binary-key-point"><strong>The primer is a proposed teaching sequence, not an alien dictionary.</strong> It must demonstrate how to infer each convention from visible physical examples. Nothing currently proves that an unfamiliar intelligence could decode it.</p>
+<div class="binary-budget"><div><p class="eyebrow">AND WHAT ABOUT 100 IMAGES?</p><h3>Binary does not mean writing millions of digits on a plate.</h3><p>For one hundred uncompressed 1,000 × 1,000 images, one bit per pixel takes about 12.5 MB; eight-bit grayscale about 100 MB; and 24-bit color about 300 MB. Compression can reduce the file sizes, but a future reader would need to be taught how to decompress them. The archive's current 10 MB ZIP ceiling is only a software-prototype limit.</p></div><a class="text-link" href="images.html">View the 100-image plan ↗</a></div>
+</section>
 <section class="wrap guide-section" id="primer"><p class="eyebrow">01 / THE PRIMER</p><h2>Teach the reader how to read.</h2>
 <p>We cannot open with a sentence in English. We would need to build common ground using repeated physical marks, relationships and pictures. Each stage depends on the previous one.</p>
 <div class="guide-steps">
@@ -67,7 +80,7 @@
 <div class="carrier-layers">
 <article><small>A / EXTERNAL</small><h3>A passive reference surface</h3><p>A recognizable primer, orientation cues and examples of how to interpret the remaining data, readable without electrical power.</p></article>
 <article><small>B / STORAGE</small><h3>Microscopic information</h3><p>A possible etched carrier containing diagrams and images. More detail requires greater magnification. No material or manufacturing process has been selected or tested.</p></article>
-<article><small>C / OPTIONAL</small><h3>Additional digital storage</h3><p>A denser library, but only with a physically documented method for reading its bitstream, along with redundancy and error correction. A normal USB drive alone would not solve this.</p></article>
+<article><small>C / CANDIDATE</small><h3>Two independent digital copies</h3><p>Investigate two separately protected copies of a denser library, with recoverable encodings and error correction. Different media may reduce common failures, but both must be tested for the actual mission environment. No hardware or allocation is yet approved.</p></article>
 </div>
 <p class="guide-small">These are candidates, not an approved design. We still need spacecraft mass and space allocations, mounting conditions, environmental limits and evidence that the data remains recoverable.</p></section>
 <section class="wrap guide-section"><p class="eyebrow">03 / WHAT WE KNOW</p><h2>Learn from earlier archives.</h2>
