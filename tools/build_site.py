@@ -16,10 +16,10 @@ def assemble(output):
     with ZipFile(package) as archive:
         (package.parent / "manifest.json").write_bytes(archive.read("manifest.json"))
         for item in manifest["files"]:
-            if item["media_type"].startswith("text/"):
-                path = output / "records" / item["path"].removeprefix("content/")
-                path.parent.mkdir(parents=True, exist_ok=True)
-                path.write_bytes(archive.read(item["path"]))
+            # Every verified record is copied, including graphics and recordings.
+            path = output / "records" / item["path"].removeprefix("content/")
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(archive.read(item["path"]))
     for name in ("engineering", "physical-primer", "mission", "roadmap"):
         shutil.copyfile(ROOT / f"docs/{name}.md", output / f"{name}.txt")
     shutil.copyfile(ROOT / "docs/primer-panel.svg", output / "primer-panel.svg")
