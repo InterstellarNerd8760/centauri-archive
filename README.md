@@ -8,14 +8,14 @@ The project has two horizons: a deliberately small **Fermi Edition** for a const
 
 ## What v0.6 actually is
 
-- A reproducible, inspectable **digital development package** containing original introductory records about mathematics, astronomy, matter, biology, humanity, and a provisional message; three original scientific SVG diagrams; and fifteen credited documentary images, including an ultrasound.
+- A reproducible, inspectable **digital development package** containing original introductory records about mathematics, astronomy, matter, biology, humanity, and a provisional message; three original scientific SVG diagrams; and credited documentary images, including an ultrasound.
 - A manifest with file lengths and SHA-256 digests. These detect changes; they **do not correct corruption**.
 - A documented proposal for a **physical decoding primer**, not yet fabricated or validated. An experimental panel diagram and 8×8 reference raster/decoder demonstrate a small part of the learning ladder.
 - A public multimedia site with a beginner-level binary primer, an interactive 8×8 decoding lab, and a navigable editorial atlas of **100 proposed photographs in ten categories**. The image atlas does not claim planned images are archived.
 
 **Not yet demonstrated:** decoding without knowledge of human languages and computing, radiation survival, error recovery, archive-health telemetry, physical carrier manufacture, or Fermi Explorer compatibility. The ZIP container is a convenient development transport, **not a proposed alien-readable flight format**.
 
-The prose, original SVG diagrams and draft message are provisional content, not a comprehensive or representative encyclopedia. Real photographs have been added; recorded audio is not yet included. The image plan defines a working goal of 100 images and currently names 104 subjects. **Fifteen sourced JPEG images** are now stored in the verified archive; 89 remain unfilled. The three original scientific SVGs are separate explanatory assets, not counted as photographs. Content selection, review, rights and permission tracking remain active work.
+The prose, original SVG diagrams and draft message are provisional content, not a comprehensive or representative encyclopedia. Real photographs have been added; recorded audio is not yet included. The image plan defines a working goal of 100 images and currently names 104 subjects. The number of sourced JPEG images and unfilled slots changes with each acquisition batch and is derived from `curation/images-100.json`; only records marked `included` have actual image files in the verified archive. The three original scientific SVGs are separate explanatory assets, not counted as photographs. Content selection, review, rights and permission tracking remain active work.
 
 ## Reading the collection
 
