@@ -1,6 +1,6 @@
 # The first 100 images: selection and acquisition rules
 
-Status: **13 documentary images preserved, 91 still to acquire**. The 100-image plan is not a completed photo collection. Scientific diagrams are stored separately.
+Status: active curation. For current acquisition totals, consult `curation/images-100.json`, the verified source of truth. The 100-image plan is not a completed photo collection. Scientific diagrams are stored separately.
 
 The canonical machine-readable list is `curation/images-100.json`. It defines 104 explicitly named image targets across ten categories. The public `images.html` reader displays them and distinguishes **included** records from **planned** subjects. Neither a placeholder nor a linked source candidate constitutes an archived image.
 
@@ -31,7 +31,7 @@ An image is selected to explain a concept or convey a specific observation, not 
 
 The second batch adds the Mississippi Delta, Elodea cells, Big Momma coral, a grain-account tablet and Navajo weavers.
 
-Thus **13 of 104 named subjects are included** in the verified ZIP; 91 are unfilled. The three original SVG diagrams remain available as educational supplements, not photographs. See [photographic acquisitions](photographic-acquisitions.md) for each image's provenance and processing history.
+The collection has **104 named subjects**. Inclusion counts are determined from the `status` and `asset` fields in `curation/images-100.json`; planned placeholders do not count as acquired photographs. The three original SVG diagrams remain available as educational supplements, not photographs. See [photographic acquisitions](photographic-acquisitions.md) for each image's provenance and processing history.
 
 ## Minimum selection requirements
 
