@@ -289,6 +289,60 @@
       ],
       "status": "Original concept illustration",
       "rights": "Original project SVG; open-reuse license not yet assigned"
+    },
+    {
+      "path": "primer/binary-conventions.txt",
+      "title": "Binary is not a universal language",
+      "summary": "Two physical states are simple; the rules of interpreting them must be demonstrated.",
+      "group": "primer",
+      "sources": [
+        {
+          "label": "NASA / Voyager Golden Record cover",
+          "url": "https://science.nasa.gov/mission/voyager/golden-record-cover/"
+        },
+        {
+          "label": "NASA / Instructions for aliens",
+          "url": "https://www.nasa.gov/image-article/instructions-for-aliens/"
+        }
+      ],
+      "status": "Unreviewed original editorial synthesis",
+      "rights": "Original project text; reuse license not yet assigned"
+    },
+    {
+      "path": "earth/planetary-profile.txt",
+      "title": "Earth: a planetary profile",
+      "summary": "Earth's structure, oceans, atmosphere, rotation, life and measurement conventions.",
+      "group": "earth",
+      "sources": [
+        {
+          "label": "NASA / Earth facts",
+          "url": "https://science.nasa.gov/earth/facts/"
+        },
+        {
+          "label": "NASA / Earth fact sheet",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+        }
+      ],
+      "status": "Unreviewed original editorial synthesis",
+      "rights": "Original project text; reuse license not yet assigned"
+    },
+    {
+      "path": "humanity/everyday-life.txt",
+      "title": "Everyday human life",
+      "summary": "Homes, families, work, communication and cultural diversity, with an ethical image-selection approach.",
+      "group": "humanity",
+      "sources": [
+        {
+          "label": "UNESCO / Intangible cultural heritage",
+          "url": "https://ich.unesco.org/en/what-isintangible-heritage-00003"
+        },
+        {
+          "label": "UNESCO / Cultural heritage and community",
+          "url": "https://ich.unesco.org/en/faq-01058"
+        }
+      ],
+      "status": "Unreviewed original editorial synthesis",
+      "rights": "Original project text; reuse license not yet assigned"
     }
   ]
 }
