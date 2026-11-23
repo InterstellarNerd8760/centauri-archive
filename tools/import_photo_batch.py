@@ -48,10 +48,12 @@ def retrieve(url):
         if response.headers.get("Content-Type", "").lower().startswith("text/"):
             raise ValueError("Server returned text instead of a JPEG")
     if not (8_000 <= len(content) <= MAX_DOWNLOAD and (
-            (content[:2] == b"\xff\xd8" and content[-2:] == b"\xff\xd9")
+            content[:2] == b"\xff\xd8"
             or content[:8] == b"\x89PNG\r\n\x1a\n"
             or (content[:4] == b"RIFF" and content[8:12] == b"WEBP"))):
-        raise ValueError("Invalid or suspicious source image")
+        raise ValueError(f"Invalid source image signature: first bytes {content[:16].hex()}, size={len(content)}")
+    # Some valid camera JPEGs contain trailing metadata after the EOI marker.
+    # Use Pillow's full decode below rather than requiring the last bytes to be EOI.
     # Keep the acquisition JPEG high quality while enforcing the small
     # prototype ZIP budget. Original source URL stays in provenance metadata.
     from PIL import Image, ImageOps
