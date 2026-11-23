@@ -5,7 +5,7 @@ physical or alien-decoding format.**
 
 The container is a single-disk unencrypted ZIP with stored, uncompressed
 members. `manifest.json` is UTF-8 JSON at the root. Every record lives under
-`content/`. The current edition contains UTF-8 English texts, editorial metadata in JSON, and original SVG diagrams. The development tool can also package JPEG, PNG, WebP, WAV and Ogg media, but no recorded audio or external photographs are yet included.
+`content/`. The current edition contains UTF-8 English texts, editorial metadata in JSON, original SVG diagrams, and sourced JPEG photographs. The development tool can also package PNG, WebP, WAV and Ogg media. Recorded audio has not yet been included.
 
 | Field | Meaning |
 | --- | --- |
