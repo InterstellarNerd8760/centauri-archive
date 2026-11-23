@@ -10,7 +10,7 @@ from tempfile import NamedTemporaryFile
 from zipfile import BadZipFile, ZIP_STORED, ZipFile, ZipInfo
 
 ROOT = Path(__file__).resolve().parents[1]
-LIMIT = 10_000_000
+LIMIT = 80_000_000
 PATH = re.compile(r"content/(?:[a-z0-9][a-z0-9._-]*/)*[a-z0-9][a-z0-9._-]*")
 TYPES = {".txt": "text/plain", ".csv": "text/csv", ".json": "application/json",
          ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg",
