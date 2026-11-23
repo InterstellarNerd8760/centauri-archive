@@ -1,0 +1,62 @@
+{
+  "batch_id": "nasa-04",
+  "description": "Four NASA observational scientific images: Voyager Solar System mosaic, Earth topography/bathymetry, East African Rift elevation model and Agulhas ocean color. Computed visualizations are explicitly distinguished from natural photographs.",
+  "images": [
+    {
+      "slot": "IMG-018",
+      "filename": "voyager-family-portrait-1990.jpg",
+      "asset_url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia00/pia00451/PIA00451.jpg",
+      "source_page": "https://science.nasa.gov/resource/solar-system-portrait-60-frame-mosaic/",
+      "title": "Voyager 1's distant portrait of the Solar System",
+      "summary": "From approximately 6.4 billion kilometers away, Voyager 1 looked back on 14 February 1990 and made a 60-frame mosaic. Jupiter, Saturn, Uranus and Neptune appear as tiny lights in enlarged image insets.",
+      "alt": "Black space with a sweeping arc of pale gray Voyager camera frames and labeled small insets of six planets, including four giant planets.",
+      "caption": "This is the Solar System as actually seen by Voyager 1, with multiple exposures arranged in a mosaic. The enlarged inset planets and gray-frame layout are a NASA presentation, not natural scale or a single shot.",
+      "credit": "NASA / JPL / Voyager 1 Imaging Team",
+      "date": "1990-02-14",
+      "rights": "NASA/JPL space mission product generally public domain in the US under NASA image use policy; confirm NASA/JPL credits and caption before flight use.",
+      "processing": "NASA Voyager mosaic composed of 60 photographic frames and enlargements, not a single exposure. NASA source pixels resized to a maximum 1800-pixel side and saved as quality-87 JPEG without adding or generating structures. Original source link preserved."
+    },
+    {
+      "slot": "IMG-021",
+      "filename": "nasa-earth-topography-bathymetry-2004.jpg",
+      "asset_url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/bmng/bmng-topography-bathymetry/february/world.topo.bathy.200402.3x5400x2700.jpg",
+      "source_page": "https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-topography-bathymetry/",
+      "title": "Earth's mountains and seafloor from space-based data",
+      "summary": "NASA Blue Marble: Next Generation combines a February 2004 surface image with digital elevation shading over continents and bathymetric shading beneath oceans.",
+      "alt": "A map of Earth with land cover, snow and ice, dark blue seafloor relief, and the continents in naturalistic colors.",
+      "caption": "A global map with topographic and seafloor relief. The underlying view combines many satellite observations and elevation datasets; it is not a single full-disk photograph.",
+      "credit": "NASA Earth Observatory / Reto Stöckli / Robert Simmon; bathymetry and topography data providers",
+      "date": "2004-02",
+      "rights": "NASA Earth Observatory composite based on US-government and partner bathymetry data; upstream partner reuse terms require final review.",
+      "processing": "NASA multi-observation Blue Marble data product incorporating shaded land and ocean elevation; resampled for display. NASA source pixels resized to a maximum 1800-pixel side and saved as quality-87 JPEG without adding or generating structures. Original source link preserved."
+    },
+    {
+      "slot": "IMG-030",
+      "filename": "east-african-rift-topography.jpg",
+      "asset_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/6000/6316/PIA06669_lrg.jpg?fit=clip&h=1600&w=1600",
+      "source_page": "https://science.nasa.gov/earth/earth-observatory/crater-highlands-tanzania-6316/",
+      "title": "East African Rift in the Crater Highlands",
+      "summary": "Shuttle Radar Topography Mission data depict the Crater Highlands of northern Tanzania, where movement between the African and Somali crustal plates, volcanism and erosion shape a dramatic landscape.",
+      "alt": "Scientific three-dimensional perspective image of cratered highlands and volcanic cones in northern Tanzania with green valleys and tan mountain slopes.",
+      "caption": "Computer-rendered terrain from the SRTM elevation dataset, February 2000; elevation color is coded and vertical relief is exaggerated twofold. This visualization is measured data, not a natural-color aerial photograph.",
+      "credit": "NASA / JPL / NGA Shuttle Radar Topography Mission team",
+      "date": "2000-02",
+      "rights": "NASA/JPL/NGA scientific data rendering; official mission-source attribution provided; partner rights must be checked.",
+      "processing": "SRTM elevation rendering with color-coded height and 2x vertical exaggeration by NASA/JPL. NASA source pixels resized to a maximum 1800-pixel side and saved as quality-87 JPEG without adding or generating structures. Original source link preserved."
+    },
+    {
+      "slot": "IMG-034",
+      "filename": "agulhas-benguela-ocean-currents.jpg",
+      "asset_url": "https://oceancolor.gsfc.nasa.gov/gallery/feature/images/V2018036.SouthAfrica.jpg",
+      "source_page": "https://oceancolor.gsfc.nasa.gov/gallery/531/",
+      "title": "Ocean currents and blooms off southern Africa",
+      "summary": "Suomi-NPP VIIRS satellite imagery from 5 February 2018 shows swirling phytoplankton-rich water off South Africa, where warm and cold currents interact near the Cape of Good Hope.",
+      "alt": "Wide satellite view of southern Africa with turquoise and green ribbons swirling through dark blue ocean water, and a long white cloud band offshore.",
+      "caption": "The interaction of the Agulhas and Benguela ocean-current systems becomes visible through phytoplankton and water-color differences in this satellite composite; the image does not directly measure water speed.",
+      "credit": "NASA Goddard Ocean Biology Processing Group / NOAA-NASA Suomi NPP VIIRS",
+      "date": "2018-02-05",
+      "rights": "NASA Ocean Biology/NOAA-NASA mission observation; verify US government publication terms and instrument partner credits.",
+      "processing": "Processed multi-band ocean-color satellite imagery, not a view of ocean current velocity. NASA source pixels resized to a maximum 1800-pixel side and saved as quality-87 JPEG without adding or generating structures. Original source link preserved."
+    }
+  ]
+}
