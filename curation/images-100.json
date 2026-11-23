@@ -520,10 +520,10 @@
       "category": "molecules",
       "title": "Crystal structure under polarized light",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/polarized-salt-microscopy-fonseca.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Polarized_light_microscopy_-_01.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-047",
@@ -550,10 +550,10 @@
       "category": "molecules",
       "title": "Fluorescent microscopy of an animal cell",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/hela-ii-fluorescence-nih.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:HeLa-II.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-050",
@@ -610,10 +610,10 @@
       "category": "life",
       "title": "Single-celled eukaryotes in water",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/paramecium-bursaria-picturepest.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Paramecium_bursaria_-_400x_(13263096305).jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-056",
@@ -740,20 +740,20 @@
       "category": "body",
       "title": "Skeleton and joints",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/museum-human-skeleton.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Human-Skeleton.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-069",
       "category": "body",
       "title": "Hands and fine motor function",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/human-hands-shaping-pottery.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Making_pottery_(Unsplash).jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-070",
@@ -770,10 +770,10 @@
       "category": "body",
       "title": "Eye and visual perception",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/brown-human-iris-closeup.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_human_male_brown_eye.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-072",

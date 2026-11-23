@@ -1473,6 +1473,144 @@
           "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Vase_sculpture_in_the_Vatican_museum.JPG"
         }
       ]
+    },
+    {
+      "path": "photos/polarized-salt-microscopy-fonseca.jpg",
+      "title": "Salt crystals in polarized light",
+      "summary": "Crystalline salt specimens photographed through a polarized-light microscope by Juan Carlos Fonseca Mata in Mexico in 2020. Different optical properties produce vivid interference colors.",
+      "group": "photos",
+      "alt": "Small salt crystals appearing iridescent green, blue and orange against a pale peach microscope field.",
+      "caption": "Real polarized-light micrograph of crystalline salts. The vivid optical colors come from specimen-light interactions under polarization, not the natural naked-eye colors of table salt.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC BY-SA 4.0 International. © Juan Carlos Fonseca Mata. https://creativecommons.org/licenses/by-sa/4.0/ . This resized JPEG derivative is shared under CC BY-SA 4.0; modification disclosed.",
+      "photographer": "Juan Carlos Fonseca Mata / Universidad de Guanajuato",
+      "date": "2020-12-20",
+      "derivative": "Original observational image converted to a development JPEG, maximum edge 1800 px, quality 87, source image URL and photographer retained. No AI generation.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Polarized_light_microscopy_-_01.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Polarized_light_microscopy_-_01.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/hela-ii-fluorescence-nih.jpg",
+      "title": "Fluorescent microscopy of human HeLa cells",
+      "summary": "A multiphoton fluorescence micrograph from the US National Institutes of Health reveals the actin cytoskeleton, microtubules and nuclei in cultured HeLa cells.",
+      "group": "photos",
+      "alt": "Interlocking cells with bright cyan microtubule networks, red actin filaments and blue-violet nuclei on black.",
+      "caption": "Human-derived HeLa cells, named after Henrietta Lacks, imaged in culture. Red staining marks actin, cyan marks microtubules and blue marks nuclei. These are fluorescence label colors.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "US federal government official work, public domain in the United States per Wikimedia Commons file documentation; review partner contribution rights separately.",
+      "photographer": "US National Institutes of Health / National Center for Microscopy and Imaging Research",
+      "date": "2011-04-28",
+      "derivative": "Original observational image converted to a development JPEG, maximum edge 1800 px, quality 87, source image URL and photographer retained. No AI generation. NIH multiphoton microscopy false-color channels preserved.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:HeLa-II.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/HeLa-II.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/paramecium-bursaria-picturepest.jpg",
+      "title": "A unicellular ciliate with green algal symbionts",
+      "summary": "A light-microscope photograph at a stated 400× magnification shows Paramecium bursaria, a free-living aquatic ciliate that commonly contains green algal cells inside its body.",
+      "group": "photos",
+      "alt": "Single oblong translucent ciliate surrounded by fine cilia, containing many small green algal symbionts.",
+      "caption": "Paramecium bursaria, a single-celled eukaryote photographed with light microscopy. Internal green algal symbionts share space within this ciliate.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC BY 2.0 Generic (https://creativecommons.org/licenses/by/2.0/). Photograph © Picturepest; credited and linked, with resizing declared.",
+      "photographer": "Picturepest (Flickr), CC BY 2.0; license reviewed by FlickreviewR in 2015",
+      "date": "2014-03-18",
+      "derivative": "Original observational image converted to a development JPEG, maximum edge 1800 px, quality 87, source image URL and photographer retained. No AI generation.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Paramecium_bursaria_-_400x_(13263096305).jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Paramecium_bursaria_-_400x_%2813263096305%29.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/museum-human-skeleton.jpg",
+      "title": "An articulated human skeleton",
+      "summary": "An articulated human skeleton on exhibit at the Museum of Osteology in Oklahoma City, photographed in March 2010, demonstrates how bones form a structural framework.",
+      "group": "photos",
+      "alt": "Pale beige articulated human skull, rib cage, spine, pelvis, arms and upper legs on a dark gray background.",
+      "caption": "Exhibit skeleton photographed in Oklahoma City. Major features visible include skull, clavicles, ribs, vertebrae, pelvis and limb bones; this is a prepared display specimen.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons CC0 1.0 Universal Public Domain Dedication, as recorded on the linked Commons file page. Photographer credited for provenance.",
+      "photographer": "Sklmsta / Museum of Osteology",
+      "date": "2010-03",
+      "derivative": "Original observational image converted to a development JPEG, maximum edge 1800 px, quality 87, source image URL and photographer retained. No AI generation.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Human-Skeleton.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Human-Skeleton.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/human-hands-shaping-pottery.jpg",
+      "title": "Human hands shape a rotating clay vessel",
+      "summary": "Hands control and shape wet clay on a spinning potter's wheel in Springdale, Arkansas, photographed by Jared Sluyter in March 2017.",
+      "group": "photos",
+      "alt": "Close view from above of two clay-covered human hands shaping the opening of a spinning pottery vessel.",
+      "caption": "The coordinated movement of fingers and thumbs lets people manipulate material precisely. This photograph shows pottery production using a rotating wheel.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC0 1.0 dedication by photographer on Unsplash before June 5, 2017 license change; Wikimedia Commons original record documents historic CC0 publication.",
+      "photographer": "Jared Sluyter",
+      "date": "2017-03-29",
+      "derivative": "Original observational image converted to a development JPEG, maximum edge 1800 px, quality 87, source image URL and photographer retained. No AI generation.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Making_pottery_(Unsplash).jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Making_pottery_%28Unsplash%29.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/brown-human-iris-closeup.jpg",
+      "title": "A human iris and pupil",
+      "summary": "An intimate close-up photograph of a person's brown iris, black pupil, white sclera and surrounding eyelids and eyelashes. These visible structures participate in vision.",
+      "group": "photos",
+      "alt": "Extreme close-up of a brown human iris surrounding a black round pupil, with reflection on the eye and eyelashes visible.",
+      "caption": "The iris regulates how much light reaches the lens by changing the pupil's diameter. Eye coloration and anatomy vary among individuals; this is one example.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons CC0 1.0 Universal Public Domain Dedication, as recorded on the linked Commons file page. Photographer credited for provenance.",
+      "photographer": "Bobbyphotographer (Wikimedia Commons)",
+      "date": "2025-06-05",
+      "derivative": "Original observational image converted to a development JPEG, maximum edge 1800 px, quality 87, source image URL and photographer retained. No AI generation.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:A_human_male_brown_eye.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/A_human_male_brown_eye.jpg"
+        }
+      ]
     }
   ]
 }
