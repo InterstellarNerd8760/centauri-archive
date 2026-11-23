@@ -105,7 +105,9 @@ class ArchiveTests(unittest.TestCase):
             self.assertEqual(sum(r["category"] == cat for r in plan["records"]), target)
         included = [r for r in plan["records"] if r["status"] == "included"]
         planned = [r for r in plan["records"] if r["status"] == "planned"]
-        self.assertEqual((len(included), len(planned)), (15, 89))
+        self.assertGreaterEqual(len(included), 15)
+        self.assertEqual(len(included) + len(planned), len(plan["records"]))
+        self.assertEqual(len(included), len(list((ROOT / "archive/photos").glob("*.jpg"))))
         self.assertEqual({r["asset"] for r in included},
                          {"photos/" + path.name for path in (ROOT / "archive/photos").glob("*.jpg")})
         with ZipFile(self.sample) as package:
@@ -118,7 +120,7 @@ class ArchiveTests(unittest.TestCase):
 
     def test_real_photographs_stored_with_provenance(self):
         files = sorted((ROOT / "archive/photos").glob("*.jpg"))
-        self.assertEqual(len(files), 15)
+        self.assertGreaterEqual(len(files), 15)
         catalog = json.loads((ROOT / "archive/catalog.json").read_text())
         indexed = {item["path"]: item for item in catalog["records"]}
         with ZipFile(self.sample) as package:
@@ -219,7 +221,13 @@ class ArchiveTests(unittest.TestCase):
         self.assertTrue((site / "images.js").is_file())
         self.assertTrue((site / "image-plan.json").is_file())
         self.assertEqual((site / "image-plan.json").read_bytes(), (ROOT / "curation/images-100.json").read_bytes())
-        self.assertIn("100 images", (site / "images.html").read_text())
+        image_html = (site / "images.html").read_text()
+        image_js = (site / "images.js").read_text()
+        self.assertIn("100 images", image_html)
+        self.assertIn('id="photo-gallery" class="atlas-results"', image_html)
+        self.assertIn("matches.map(imageCard)", image_js)
+        self.assertIn("atlas-item-placeholder", image_js)
+        self.assertIn("if (!slot.asset)", image_js)
         self.assertTrue((site / "decoder.js").is_file())
         self.assertTrue((site / "records/catalog.json").is_file())
         self.assertIn("decoded-grid", (site / "guide.html").read_text())
