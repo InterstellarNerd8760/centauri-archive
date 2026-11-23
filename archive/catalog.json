@@ -1,0 +1,294 @@
+{
+  "catalog_version": 1,
+  "description": "Editorial metadata for the human-facing prototype. This JSON is not extraterrestrial-readable.",
+  "groups": [
+    {
+      "id": "earth",
+      "label": "01 / Earth & the Solar System"
+    },
+    {
+      "id": "science",
+      "label": "02 / Matter & physical science"
+    },
+    {
+      "id": "biology",
+      "label": "03 / Life & evolution"
+    },
+    {
+      "id": "humanity",
+      "label": "04 / Humanity"
+    },
+    {
+      "id": "visuals",
+      "label": "05 / Images & diagrams"
+    },
+    {
+      "id": "experiences",
+      "label": "06 / Sounds & experiences"
+    },
+    {
+      "id": "primer",
+      "label": "07 / Reading experiments"
+    },
+    {
+      "id": "messages",
+      "label": "08 / Messages"
+    }
+  ],
+  "records": [
+    {
+      "path": "earth/solar-system.txt",
+      "title": "Our Solar System",
+      "summary": "A star, planets and the location of Earth.",
+      "group": "earth",
+      "status": "Unreviewed editorial draft",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "earth/water.txt",
+      "title": "Water on Earth",
+      "summary": "Water's molecular structure, phases, and place in Earth's systems.",
+      "group": "earth",
+      "status": "Unreviewed editorial draft",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "biology/foundations.txt",
+      "title": "The nature of life",
+      "summary": "Cells, chemical processes, energy, and reproduction.",
+      "group": "biology",
+      "status": "Unreviewed editorial draft",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "biology/genetics.txt",
+      "title": "DNA and heredity",
+      "summary": "The information carried across biological generations.",
+      "group": "biology",
+      "status": "Unreviewed editorial draft",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "biology/diversity.txt",
+      "title": "The diversity of life",
+      "summary": "Microbes, plants, animals and other living lineages.",
+      "group": "biology",
+      "status": "Unreviewed editorial draft",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "humanity/civilization.txt",
+      "title": "Human civilizations",
+      "summary": "Societies, technologies and ways of living.",
+      "group": "humanity",
+      "status": "Unreviewed editorial draft",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "humanity/history.txt",
+      "title": "A brief human history",
+      "summary": "Selected developments in human history.",
+      "group": "humanity",
+      "status": "Unreviewed editorial draft",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "primer/start.txt",
+      "title": "Start here",
+      "summary": "Assumptions and limitations of this digital collection.",
+      "group": "primer",
+      "status": "Unreviewed editorial draft",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "primer/mathematics.txt",
+      "title": "Counting and mathematics",
+      "summary": "Early ideas for a shared quantitative vocabulary.",
+      "group": "primer",
+      "status": "Unreviewed editorial draft",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "primer/format.txt",
+      "title": "Digital format",
+      "summary": "The existing storage format and the decoding problem.",
+      "group": "primer",
+      "status": "Unreviewed editorial draft",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "primer/raster-example.txt",
+      "title": "Eight-by-eight raster",
+      "summary": "Known input data for an image reconstruction example.",
+      "group": "primer",
+      "status": "Unreviewed editorial draft",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "messages/draft.txt",
+      "title": "Unapproved message draft",
+      "summary": "Provisional text, not an authorized message from a person or humanity.",
+      "group": "messages",
+      "status": "Unreviewed editorial draft",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "science/atoms.txt",
+      "title": "Atoms, elements and molecules",
+      "summary": "How matter is structured, how elements differ, and how molecules form.",
+      "group": "science",
+      "sources": [
+        {
+          "label": "NIST / Atomic Spectra Database",
+          "url": "https://physics.nist.gov/asd"
+        },
+        {
+          "label": "NCBI / The Chemical Components of a Cell",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK26883/"
+        }
+      ],
+      "status": "Unreviewed original synthesis",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "science/energy.txt",
+      "title": "Energy and physical change",
+      "summary": "Motion, thermal energy, light and transformations in physical systems.",
+      "group": "science",
+      "sources": [
+        {
+          "label": "OpenStax / Physics",
+          "url": "https://openstax.org/details/books/college-physics-2e"
+        }
+      ],
+      "status": "Unreviewed original synthesis",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "earth/geography.txt",
+      "title": "The surface of Earth",
+      "summary": "Geology, oceans, water cycles, ecosystems, and the limits of maps.",
+      "group": "earth",
+      "sources": [
+        {
+          "label": "USGS / The water cycle",
+          "url": "https://www.usgs.gov/water-science-school/water-cycle-diagrams"
+        },
+        {
+          "label": "NASA / Earth science",
+          "url": "https://science.nasa.gov/earth/"
+        }
+      ],
+      "status": "Unreviewed original synthesis",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "earth/atmosphere.txt",
+      "title": "Atmosphere and climate",
+      "summary": "Air, weather, greenhouse gases and planetary climate.",
+      "group": "earth",
+      "sources": [
+        {
+          "label": "NASA / Earth's atmosphere",
+          "url": "https://science.nasa.gov/earth/earths-atmosphere/"
+        },
+        {
+          "label": "NASA / Climate science",
+          "url": "https://science.nasa.gov/climate-change/"
+        }
+      ],
+      "status": "Unreviewed original synthesis",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "biology/cells.txt",
+      "title": "Cells: the units of life",
+      "summary": "Membranes, nuclei, microbes, and life's microscopic machinery.",
+      "group": "biology",
+      "sources": [
+        {
+          "label": "NCBI Bookshelf / Origin and Evolution of Cells",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK9841/"
+        }
+      ],
+      "status": "Unreviewed original synthesis",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "humanity/languages.txt",
+      "title": "Human languages",
+      "summary": "Speech, sign, writing, cultural meaning, and language diversity.",
+      "group": "humanity",
+      "sources": [
+        {
+          "label": "Smithsonian / Language and Symbols",
+          "url": "https://humanorigins.si.edu/human-characteristics/language-symbols"
+        }
+      ],
+      "status": "Unreviewed original synthesis",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "experiences/sound.txt",
+      "title": "What is sound?",
+      "summary": "Pressure waves, sound perception and a plan for reproducible recordings.",
+      "group": "experiences",
+      "sources": [
+        {
+          "label": "NOAA / Sound in the Sea",
+          "url": "https://dosits.org/science/what-is-sound/"
+        }
+      ],
+      "status": "Unreviewed original synthesis",
+      "rights": "Original project text; open-reuse license not yet assigned"
+    },
+    {
+      "path": "visuals/solar-system.svg",
+      "title": "The Solar System — visual study",
+      "summary": "The Sun and eight planets, shown in orbital order.",
+      "group": "visuals",
+      "alt": "Schematic Sun and eight planets, ordered Mercury through Neptune",
+      "caption": "Original project schematic. Sizes, distances and locations are not to scale.",
+      "sources": [
+        {
+          "label": "NASA / Solar System facts",
+          "url": "https://science.nasa.gov/solar-system/solar-system-facts/"
+        }
+      ],
+      "status": "Original concept illustration",
+      "rights": "Original project SVG; open-reuse license not yet assigned"
+    },
+    {
+      "path": "visuals/water-molecule.svg",
+      "title": "Water — molecular diagram",
+      "summary": "A schematic of two hydrogen atoms bonded to one oxygen atom.",
+      "group": "visuals",
+      "alt": "One oxygen atom and two hydrogen atoms linked at an angle",
+      "caption": "Original project illustration. Relative atomic size and bond appearance are schematic.",
+      "sources": [
+        {
+          "label": "USGS / Water Science School",
+          "url": "https://www.usgs.gov/water-science-school"
+        }
+      ],
+      "status": "Original concept illustration",
+      "rights": "Original project SVG; open-reuse license not yet assigned"
+    },
+    {
+      "path": "visuals/cell.svg",
+      "title": "A living cell — visual study",
+      "summary": "Generalized animal eukaryotic cell with selected structures.",
+      "group": "visuals",
+      "alt": "Simplified animal cell, nucleus, mitochondrion and membrane",
+      "caption": "Original schematic, not to scale; no single image represents all cell types.",
+      "sources": [
+        {
+          "label": "NCBI Bookshelf / Origin and Evolution of Cells",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK9841/"
+        }
+      ],
+      "status": "Original concept illustration",
+      "rights": "Original project SVG; open-reuse license not yet assigned"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ physical or alien-decoding format.**
 
 The container is a single-disk unencrypted ZIP with stored, uncompressed
 members. `manifest.json` is UTF-8 JSON at the root. Every record lives under
-`content/`. The current edition's records are UTF-8 English text.
+`content/`. The current edition contains UTF-8 English texts, editorial metadata in JSON, and original SVG diagrams. The development tool can also package JPEG, PNG, WebP, WAV and Ogg media, but no recorded audio or external photographs are yet included.
 
 | Field | Meaning |
 | --- | --- |
@@ -33,6 +33,8 @@ mode 0100644. Omit comments and extras. Reference readers enforce a
 This format requires prior knowledge of ZIP, bits/bytes and UTF-8. The
 physical decoding and standalone raw framing scheme are future research
 milestones. Neither CRC nor SHA-256 is a substitute for explaining encoding.
+
+All verified files are now copied to the static site's records directory, so the browser reader can display SVG and common image/audio files without changing source bytes. The catalog is stored at `content/catalog.json` in the ZIP. The browser interface is not a flight reader.
 
 The 10 MB limit is a **software prototype cap**, not a physical payload
 allocation. A compact package may use fewer bytes without artificial padding.

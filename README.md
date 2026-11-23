@@ -6,21 +6,21 @@ Centauri Archive is an independent, open engineering and curation project develo
 
 The project has two horizons: a deliberately small **Fermi Edition** for a constrained spacecraft and a future, much larger **Ark Edition** for missions capable of carrying richer records.
 
-## What v0.2 actually is
+## What v0.3 actually is
 
-- A reproducible, inspectable **digital development package** containing original introductory records about mathematics, the Solar System, biology, civilization, and a provisional message.
+- A reproducible, inspectable **digital development package** containing original introductory records about mathematics, astronomy, matter, biology, humanity, and a provisional message; plus three original scientific SVG diagrams.
 - A manifest with file lengths and SHA-256 digests. These detect changes; they **do not correct corruption**.
 - A documented proposal for a **physical decoding primer**, not yet fabricated or validated. An experimental panel diagram and 8×8 reference raster/decoder demonstrate a small part of the learning ladder.
 - A minimalist website following the visual design of [westonrosch.com](https://westonrosch.com).
 
 **Not yet demonstrated:** decoding without knowledge of human languages and computing, radiation survival, error recovery, archive-health telemetry, physical carrier manufacture, or Fermi Explorer compatibility. The ZIP container is a convenient development transport, **not a proposed alien-readable flight format**.
 
-The prose and draft message are original provisional content, not a comprehensive or representative encyclopedia. Content selection, translations, imagery, recordings, and contributors' permissions require later review.
+The prose, original SVG diagrams and draft message are provisional content, not a comprehensive or representative encyclopedia. Photographs and field recordings are not yet included. Content selection, review, rights and permission tracking remain active work.
 
 ## Reading the collection
 
-The public website includes a human-facing chapter reader at library.html
-and an explanation of the proposed primer and physical carrier at guide.html.
+The public website includes a human-facing multimedia chapter reader at library.html
+and an interactive 8×8 decoding laboratory at guide.html, alongside an explanation of the proposed primer and carrier.
 These pages are deliberately separate from the verified source ZIP; a future
 interstellar reader cannot be assumed to understand HTML, text files or USB
 storage. For current engineering decisions see
@@ -57,6 +57,9 @@ It does **not** establish universal readability.
 | Path | Purpose |
 | --- | --- |
 | `archive/primer/` | Explicit reader assumptions and mathematical/format foundations |
+| `archive/catalog.json` | Editorial metadata, record titles, sources, rights and review status |
+| `archive/visuals/` | Original SVG diagrams for the human-facing edition |
+| `archive/science/`, `archive/experiences/` | Matter, energy and sound foundations |
 | `archive/earth/` | Earth and Solar System |
 | `archive/biology/` | Life, genetics, diversity and evolution |
 | `archive/humanity/` | Human civilization and historical overview |
@@ -72,4 +75,4 @@ It does **not** establish universal readability.
 
 **Meaning before megabytes.** Every item should answer a specific question about how to understand Earth or interpret the remaining archive. Proposed flight hardware must be defined only after obtaining real spacecraft constraints.
 
-See [roadmap](docs/roadmap.md) and [physical primer](docs/physical-primer.md).
+See [roadmap](docs/roadmap.md), [physical primer](docs/physical-primer.md), [plain-language decoding explanation](docs/decoding-in-plain-language.md), [source policy](docs/source-policy.md), and [media candidates](docs/media-candidates.md).

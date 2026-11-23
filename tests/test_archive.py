@@ -1,4 +1,5 @@
 import json
+import xml.etree.ElementTree as ET
 from pathlib import Path
 import subprocess
 import sys
@@ -47,7 +48,7 @@ class ArchiveTests(unittest.TestCase):
         self.assertEqual(second.read_bytes(), self.sample.read_bytes())
         self.assertTrue(1000 <= second.stat().st_size <= 10_000_000)
         self.assertEqual(examine(second, verify=True), self.manifest)
-        self.assertEqual(self.manifest["archive_version"], "0.2.0")
+        self.assertEqual(self.manifest["archive_version"], "0.3.0")
 
     def test_archive_has_meaningful_records(self):
         names = {item["path"] for item in self.manifest["files"]}
@@ -73,6 +74,23 @@ class ArchiveTests(unittest.TestCase):
             self.assertIn(b"DNA", package.read("content/biology/genetics.txt"))
             self.assertIn(b"Earth", package.read("content/earth/solar-system.txt"))
             self.assertIn(b"UNAPPROVED", package.read("content/messages/draft.txt"))
+
+    def test_multimedia_catalog_and_provenance(self):
+        with ZipFile(self.sample) as package:
+            catalog = json.loads(package.read("content/catalog.json"))
+        paths = {entry["path"] for entry in self.manifest["files"]} - {"content/catalog.json"}
+        catalog_paths = ["content/" + item["path"] for item in catalog["records"]]
+        self.assertEqual(paths, set(catalog_paths))
+        self.assertEqual(len(catalog_paths), len(set(catalog_paths)))
+        self.assertGreaterEqual(len(paths), 20)
+        self.assertGreaterEqual(sum(p.endswith(".svg") for p in paths), 3)
+        for path in (ROOT / "archive/visuals").glob("*.svg"):
+            ET.parse(path)
+        for item in catalog["records"]:
+            for field in ("title", "summary", "group", "status", "rights"):
+                self.assertTrue(item.get(field), (item["path"], field))
+            for source in item.get("sources", []):
+                self.assertTrue(source["url"].startswith("https://"))
 
     def test_calibration_raster_is_only_a_test_fixture(self):
         magic, dimensions, maximum, pixels = plate().split(b"\n", 3)
@@ -147,12 +165,16 @@ class ArchiveTests(unittest.TestCase):
                 self.assertTrue((site / urlsplit(target).path).is_file(), target)
         self.assertNotIn("__EDITION__", html)
         self.assertNotIn("__SIZE__", html)
-        self.assertIn("0.2.0", html)
+        self.assertIn("0.3.0", html)
         self.assertIn("guide.html", html)
         self.assertTrue((site / "primer-panel.svg").is_file())
         self.assertTrue((site / "encyclopedia.txt").is_file())
         self.assertTrue((site / "library.html").is_file())
         self.assertTrue((site / "library.js").is_file())
+        self.assertTrue((site / "decoder.js").is_file())
+        self.assertTrue((site / "records/catalog.json").is_file())
+        self.assertIn("decoded-grid", (site / "guide.html").read_text())
+        self.assertIn("record-details", (site / "library.html").read_text())
         self.assertTrue((site / "guide.html").is_file())
         library = (site / "library.html").read_text()
         self.assertIn("Explore the", library)
@@ -165,10 +187,13 @@ class ArchiveTests(unittest.TestCase):
         self.assertIn("brief.html", html)
         self.assertIn("overview-grid", html)
         self.assertIn('id="carrier"', html)
-        self.assertIn("A small record of a living world.", html)
+        self.assertIn("An intelligible record of a living world.", html)
         style = (site / "style.css").read_text()
         self.assertIn("--bg:#05080f", style)
         self.assertIn("Instrument Serif", style)
         with ZipFile(site / "downloads/centauri.zip") as package:
             self.assertEqual(package.read("manifest.json"), (site / "downloads/manifest.json").read_bytes())
         self.assertEqual(self.sample.read_bytes(), (site / "downloads/centauri.zip").read_bytes())
+        for entry in self.manifest["files"]:
+            path = entry["path"].removeprefix("content/")
+            self.assertEqual((site / "records" / path).read_bytes(), (ROOT / "archive" / path).read_bytes())

@@ -12,7 +12,10 @@ from zipfile import BadZipFile, ZIP_STORED, ZipFile, ZipInfo
 ROOT = Path(__file__).resolve().parents[1]
 LIMIT = 10_000_000
 PATH = re.compile(r"content/(?:[a-z0-9][a-z0-9._-]*/)*[a-z0-9][a-z0-9._-]*")
-TYPES = {".txt": "text/plain", ".csv": "text/csv", ".pgm": "image/x-portable-graymap"}
+TYPES = {".txt": "text/plain", ".csv": "text/csv", ".json": "application/json",
+         ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg",
+         ".jpeg": "image/jpeg", ".webp": "image/webp", ".wav": "audio/wav",
+         ".ogg": "audio/ogg", ".pgm": "image/x-portable-graymap"}
 
 
 def digest(data):
@@ -36,7 +39,7 @@ def build(output):
             raise ValueError(f"invalid archive path: {name}")
         entries.append(dict(path=name, size=len(data), sha256=digest(data),
                             media_type=TYPES.get(Path(name).suffix, "application/octet-stream")))
-    manifest = dict(format_version=1, archive_version="0.2.0", files=entries)
+    manifest = dict(format_version=1, archive_version="0.3.0", files=entries)
     header = (json.dumps(manifest, indent=2, sort_keys=True) + "\n").encode()
     output = Path(output).resolve()
     if output.is_relative_to(source):
