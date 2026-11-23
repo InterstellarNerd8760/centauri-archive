@@ -1,0 +1,48 @@
+{
+  "batch_id": "commons-08",
+  "description": "Three linked documentary photographs of smallholder cultivation in Kenya, human–dog companionship, and an active astronomical research telescope.",
+  "images": [
+    {
+      "slot": "IMG-090",
+      "filename": "kenya-smallholder-field-farming-2017.jpg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Subsistence_farming_between_rocks.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Subsistence_farming_between_rocks.jpg",
+      "title": "Farmer cultivates a rocky smallholding in Kenya",
+      "summary": "A farmer stands among his planted field and rocky terrain in western Kenya in August 2017. Small-scale food growing adapts to local soil, water and landscape conditions.",
+      "alt": "A farmer stands beside young green crops and large rocks on reddish earth with trees and village houses beyond the field.",
+      "caption": "One photographed smallholder agricultural landscape in Kenya. This image does not represent all rural communities or claim a particular conservation practice.",
+      "credit": "Georg.Israel",
+      "date": "2017-08-25",
+      "rights": "CC BY-SA 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/). Photograph © Georg.Israel; resized derivative under same share-alike license. Subject's personal image-use consent was not independently confirmed; editorial review pending.",
+      "processing": "Source photograph resized to a maximum dimension of 1800 pixels and encoded as a JPEG at quality 87 for the development archive. Original source image and author preserved; no synthetic content."
+    },
+    {
+      "slot": "IMG-098",
+      "filename": "person-petting-brown-white-dog.jpg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Petting_my_dog.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Petting_my_dog.jpg",
+      "title": "Human companionship with a domestic dog",
+      "summary": "The photographer's hand pets a brown-and-white domestic dog, illustrating one personal relationship between humans and other living species.",
+      "alt": "Close-up looking downward at a human hand gently touching the neck and head of a brown-and-white dog beside a fabric-covered object.",
+      "caption": "People and domestic dogs have longstanding relationships that include work, care and companionship. This is one ordinary interaction photographed in November 2025.",
+      "credit": "JaredMcKenzie",
+      "date": "2025-11-21",
+      "rights": "CC0 1.0 Universal Public Domain Dedication by the photographer as stated on the linked Commons file page.",
+      "processing": "Source photograph resized to a maximum dimension of 1800 pixels and encoded as a JPEG at quality 87 for the development archive. Original source image and author preserved; no synthetic content."
+    },
+    {
+      "slot": "IMG-100",
+      "filename": "university-saskatchewan-astronomy-telescope.jpg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Observatory_Telescope_at_the_University_of_Saskatchewan.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Observatory_Telescope_at_the_University_of_Saskatchewan.jpg",
+      "title": "A telescope oriented toward the unknown",
+      "summary": "An observatory telescope at the University of Saskatchewan sits under its open dome, showing a real instrument used to gather evidence about objects beyond Earth.",
+      "alt": "Large blue-and-gray astronomical telescope inside a white ribbed domed observatory, with the roof slit open to the sky.",
+      "caption": "Humanity still has many unanswered questions about the universe. This real telescope is one example of how observations can test hypotheses; the image does not itself demonstrate any specific discovery.",
+      "credit": "SSPWXR",
+      "date": "2022-05-10",
+      "rights": "CC0 1.0 Universal Public Domain Dedication granted by the photographer on the linked Wikimedia Commons file page.",
+      "processing": "Source photograph resized to a maximum dimension of 1800 pixels and encoded as a JPEG at quality 87 for the development archive. Original source image and author preserved; no synthetic content."
+    }
+  ]
+}
