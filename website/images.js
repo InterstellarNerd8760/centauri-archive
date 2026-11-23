@@ -21,13 +21,20 @@ async function initAtlas() {
   function imageCard(slot) {
     const record = records.get(slot.asset);
     const card = node("article", "", "atlas-image-item");
+    if (!slot.asset) {
+      const placeholder = node("div", slot.id, "atlas-item-placeholder");
+      placeholder.style.aspectRatio = "4 / 3";
+      placeholder.style.height = "auto";
+      card.append(placeholder, node("h3", slot.title), node("p", "Planned"));
+      return card;
+    }
     const link = node("a");
     link.href = "library.html?record=" + encodeURIComponent(slot.asset);
     const photo = node("img");
     photo.src = "records/" + slot.asset;
     photo.alt = record.alt;
     photo.loading = "lazy";
-    link.append(photo, node("h3", record.title));
+    link.append(photo, node("h3", slot.id + " · " + record.title));
     const source = node("a", record.photographer);
     source.href = record.sources[0].url;
     card.append(link, node("p", record.summary), source);
@@ -47,27 +54,8 @@ async function initAtlas() {
     const matches = plan.records.filter(slot => (all || slot.category === selected.id) &&
       [slot.id, slot.title, records.get(slot.asset)?.title, records.get(slot.asset)?.summary, records.get(slot.asset)?.photographer, slot.category, slot.kind].join(" ").toLowerCase().includes(query));
     get("atlas-count").textContent = matches.length + (matches.length === 1 ? " subject" : " subjects");
-    const photos = matches.filter(slot => slot.asset);
-    get("photo-gallery").replaceChildren(...photos.map(imageCard));
-    get("photo-gallery").hidden = photos.length === 0;
-
-    const sections = [];
-    for (const topic of plan.categories) {
-      const planned = matches.filter(slot => slot.category === topic.id && !slot.asset);
-      if (!planned.length) continue;
-      const section = node("section", "", "topic-collection");
-      section.append(node("h2", topic.name), node("p", topic.description));
-      const list = node("ul", "", "plan-list");
-      for (const slot of planned) {
-        const row = node("li");
-        row.append(node("small", slot.id), node("span", slot.title), node("small", "Planned"));
-        list.append(row);
-      }
-      section.append(list);
-      sections.push(section);
-    }
-    get("planned-subjects").replaceChildren(...sections);
-    get("subject-plan").hidden = sections.length === 0;
+    get("photo-gallery").replaceChildren(...matches.map(imageCard));
+    get("photo-gallery").hidden = matches.length === 0;
     get("empty-result").hidden = matches.length > 0;
     get("reset-category").hidden = matches.length > 0 || all;
   }
