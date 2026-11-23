@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#05080f">
+<meta name="description" content="A readable explanation of the Centauri Archive decoding primer and proposed physical spacecraft carrier.">
+<title>Decoding & physical design · Centauri Archive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="header"><a class="brand" href="index.html">Centauri Archive<span class="brand-dot">.</span></a>
+<nav aria-label="Main navigation"><a href="library.html">Library</a><a href="guide.html" aria-current="page">Decoding &amp; spacecraft</a><a href="index.html">About</a></nav></header>
+<main id="main">
+<section class="wrap guide-intro"><p class="eyebrow">THE BIG ENGINEERING QUESTION</p>
+<h1>How could anyone <em>read it?</em></h1>
+<p class="guide-lead">There are two different challenges: storing the knowledge so it survives, and making it understandable to somebody who knows nothing about our computers, writing systems, or languages.</p>
+<p class="reader-warning">The current primer is a research concept, not a validated alien-readable design.</p></section>
+<section class="wrap guide-section" id="primer"><p class="eyebrow">01 / THE PRIMER</p><h2>Teach the reader how to read.</h2>
+<p>We cannot open with a sentence in English. We would need to build common ground using repeated physical marks, relationships and pictures. Each stage depends on the previous one.</p>
+<div class="guide-steps">
+<div><small>01</small><h3>Counting</h3><p>One mark, two marks, three marks. Repeated groups establish quantities.</p></div>
+<div><small>02</small><h3>Measurement</h3><p>Relationships, geometry and reference phenomena establish scales.</p></div>
+<div><small>03</small><h3>Images</h3><p>Repeated examples demonstrate how ordered symbols map to a picture.</p></div>
+<div><small>04</small><h3>Interpretation</h3><p>Build from physics and astronomy to molecules, biology and human culture.</p></div>
+</div>
+<div class="guide-experiment"><div><p class="eyebrow">CURRENT TEST / 8 × 8 RASTER</p><h3>One tiny example</h3><p>In our experimental software, each character is a bit. The eight rows of eight symbols can be reconstructed as light or dark squares. This only works if you already know which character means which value and how to scan the image.</p><pre>00010000
+00111000
+01111100
+11111110
+00011000
+00011000
+00011000
+00000001</pre></div>
+<div><div class="raster-grid" aria-label="Eight-by-eight pixel image reconstructed from eight binary rows" role="img" id="raster-grid"></div><small>Light = 1 · Dark = 0 · Row-major order</small></div></div>
+<p class="guide-small">A genuine primer must demonstrate that mapping through physical examples. The current English labels are explanations for human developers, not decoding instructions for an unknown civilization.</p>
+</section>
+<section class="wrap guide-section" id="carrier"><p class="eyebrow">02 / PHYSICAL ARCHITECTURE</p><h2>What actually goes on the probe?</h2>
+<p>Our website and Python code do not need to travel. A proposed artifact would need a permanent physical representation of the information.</p>
+<div class="carrier-layers">
+<article><small>A / EXTERNAL</small><h3>A passive reference surface</h3><p>A recognizable primer, orientation cues and examples of how to interpret the remaining data, readable without electrical power.</p></article>
+<article><small>B / STORAGE</small><h3>Microscopic information</h3><p>A possible etched carrier containing diagrams and images. More detail requires greater magnification. No material or manufacturing process has been selected or tested.</p></article>
+<article><small>C / OPTIONAL</small><h3>Additional digital storage</h3><p>A denser library, but only with a physically documented method for reading its bitstream, along with redundancy and error correction. A normal USB drive alone would not solve this.</p></article>
+</div>
+<p class="guide-small">These are candidates, not an approved design. We still need spacecraft mass and space allocations, mounting conditions, environmental limits and evidence that the data remains recoverable.</p></section>
+<section class="wrap guide-section"><p class="eyebrow">03 / WHAT WE KNOW</p><h2>Learn from earlier archives.</h2>
+<p>Voyager's Golden Record carries a physically engraved guide to playback and constructing its images. The Rosetta Disk uses microscopic etched pages. Both provide useful design precedents, but neither is proof that our design would survive Fermi Explorer's journey.</p>
+<div class="doc-links"><a href="https://science.nasa.gov/mission/voyager/golden-record-cover/">NASA · Golden Record instructions ↗</a><a href="https://rosettaproject.org/disk/technology/">Rosetta Disk technology ↗</a><a href="https://www.fermiexplorer.org/">Fermi Explorer mission ↗</a></div>
+<p>Fermi Explorer's public objectives include a payload measuring at least 10 × 10 × 10 cm with a mass of at least 1 kg. That describes an overall mission target, <strong>not an allocation to Centauri Archive</strong>. The mission has discussed carrying its own Golden Record copy; our contribution would need a distinct purpose.</p>
+</section>
+<section class="wrap guide-section guide-last"><p class="eyebrow">04 / WHERE WE GO NEXT</p><h2>Build a test, not a claim.</h2>
+<p>First fabricate an experimental primer panel and ask people to interpret it without instructions. Independently test the step from physical symbols to image reconstruction. Then compare passive materials, readout requirements, mass, environmental risks and error recovery.</p>
+<a class="button" href="library.html">Browse the development collection <span aria-hidden="true">↗</span></a></section>
+</main>
+<footer class="footer wrap"><span>Centauri Archive · Independent, unapproved research</span><a href="index.html">Home ↗</a></footer>
+<script>
+const rows=["00010000","00111000","01111100","11111110","00011000","00011000","00011000","00000001"];
+const grid=document.getElementById("raster-grid");
+for(const row of rows)for(const bit of row){const cell=document.createElement("span");cell.className=bit==="1"?"raster-pixel lit":"raster-pixel";grid.append(cell);}
+</script>
+</body></html>
