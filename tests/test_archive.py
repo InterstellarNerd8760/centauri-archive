@@ -124,7 +124,7 @@ class ArchiveTests(unittest.TestCase):
             for image in files:
                 path = "photos/" + image.name
                 contents = image.read_bytes()
-                self.assertTrue(contents.startswith(b"\\xff\\xd8"), image.name)
+                self.assertTrue(contents.startswith(bytes((0xFF, 0xD8))), image.name)
                 self.assertGreater(len(contents), 40_000, image.name)
                 self.assertEqual(package.read("content/" + path), contents)
                 record = indexed[path]
