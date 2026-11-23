@@ -52,6 +52,22 @@ Compare the rendered result with [the panel concept](docs/primer-panel.svg).
 This exercise assumes a human already understands the symbols and the file.
 It does **not** establish universal readability.
 
+## Experimental raw binary image frame
+
+The separate, deliberately minimal raster experiment packs 1-bit images into
+byte-framed records without ZIP, JSON, JPEG or UTF-8. It includes a fixed
+8-by-8 sample vector, simple complement-based corruption detection, a parser
+and a human-side PGM preview:
+
+```sh
+python3 tools/raw_raster.py encode archive/primer/raster-example.txt build/example.bin
+python3 tools/raw_raster.py decode build/example.bin build/example.pgm
+```
+
+This is **not an alien-readable format**. A real physical primer still needs
+to establish how to identify the frame, measure its units, interpret bits and
+reconstruct images. See [raw raster experiment](docs/raw-raster-experiment.md).
+
 ## Repository map
 
 | Path | Purpose |
@@ -77,4 +93,4 @@ It does **not** establish universal readability.
 
 **Meaning before megabytes.** Every item should answer a specific question about how to understand Earth or interpret the remaining archive. Proposed flight hardware must be defined only after obtaining real spacecraft constraints.
 
-See [roadmap](docs/roadmap.md), [acquired photo provenance](docs/photographic-acquisitions.md), [100-photograph plan](docs/images-100-plan.md), [content source workflow](docs/encyclopedia-sourcing.md), [physical primer](docs/physical-primer.md), [plain-language decoding explanation](docs/decoding-in-plain-language.md), [source policy](docs/source-policy.md), and [media candidates](docs/media-candidates.md).
+See [engineering validation gates](docs/engineering-validation-plan.md), [roadmap](docs/roadmap.md), [acquired photo provenance](docs/photographic-acquisitions.md), [100-photograph plan](docs/images-100-plan.md), [content source workflow](docs/encyclopedia-sourcing.md), [physical primer](docs/physical-primer.md), [plain-language decoding explanation](docs/decoding-in-plain-language.md), [source policy](docs/source-policy.md), and [media candidates](docs/media-candidates.md).
