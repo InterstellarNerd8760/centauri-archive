@@ -1,4 +1,5 @@
 import json
+import xml.etree.ElementTree as ET
 from pathlib import Path
 import subprocess
 import sys
@@ -83,6 +84,8 @@ class ArchiveTests(unittest.TestCase):
         self.assertEqual(len(catalog_paths), len(set(catalog_paths)))
         self.assertGreaterEqual(len(paths), 20)
         self.assertGreaterEqual(sum(p.endswith(".svg") for p in paths), 3)
+        for path in (ROOT / "archive/visuals").glob("*.svg"):
+            ET.parse(path)
         for item in catalog["records"]:
             for field in ("title", "summary", "group", "status", "rights"):
                 self.assertTrue(item.get(field), (item["path"], field))
