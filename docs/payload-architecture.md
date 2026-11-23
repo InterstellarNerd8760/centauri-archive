@@ -14,9 +14,24 @@ The proposed flight archive would be a **physical information artifact** with a 
 
 1. Exterior, passive: inspectable orientation marks, counting patterns, physical reference phenomena, an example of a reconstructed image, and how to access the rest.
 2. Core, passive: micro-etched diagrams, pictures and/or encoded data on a material selected for the actual exposure conditions. Magnification requirements, accessibility and readout demonstrations matter at least as much as capacity.
-3. Optional, active or dense digital: a memory module only when its physical interface, acquisition process, error correction, mounting and readout can be clearly specified and are justified by mission constraints.
+3. Optional digital archive: investigate at least two independently protected copies if a payload allocation permits. A simple, clearly specified low-complexity digital edition and a richer compressed edition could coexist. Distinguish *two encoded versions* from *two physical copies*. All media, readout, redundancy, mounting, controller dependencies and environmental survivability remain unselected, untested and subject to engineering review.
 
 The carrier drawing on the homepage is an artistic **concept study**. It is not a dimensioned schematic or a proof of decodeability.
+
+## Candidate digital redundancy study (not a hardware decision)
+
+Two different meanings must be separated:
+
+- **Copies:** two or more independent physical specimens carrying the same verified data, ideally avoiding a single common failure.
+- **Representations:** a transparent, easily described raw-format core alongside a denser, more convenient multimedia version, potentially with different encoding and error-correction methods.
+
+These approaches can be combined. A prospective configuration could have one permanently inspectable engraved primer, a small raw-data edition with demonstrated image reconstruction, and two independently stored instances of an expanded digital edition. Such a proposal must be evaluated against mass and volume limits, radiation-induced bit errors, thermal and shock exposure, readout-interface obsolescence, long-term material changes, and whether a reader can identify and access the storage without power from the original spacecraft.
+
+A duplicated USB device is *not* an independently interpretable archive. Neither is an error-correcting code a guarantee that data survives tens of thousands of years. Engineers must determine medium and shielding, and the decoding research must establish its interpretation separately.
+
+### Digital volume isn't the same as engraved marks
+
+If 100 images are each 1,000 by 1,000 pixels, the uncompressed image data alone are 12.5 MB at one bit per pixel, 100 MB at eight-bit grayscale, or 300 MB at 24-bit color (decimal MB). Compression and resolution selection change those figures, and metadata and redundancy add overhead. Dense physical digital storage can encode many bits in microscopic areas, while a directly inspectable engraving prioritizes interpretability over bit density. The current ZIP is a reproducible Earth-side development format, not a proposed flight payload.
 
 ## Experimental primer ladder
 
