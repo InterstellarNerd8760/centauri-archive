@@ -640,20 +640,20 @@
       "category": "life",
       "title": "Flowering plant and pollination",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/bumblebee-zinnia-pollination.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bee_pollinating_flower.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-059",
       "category": "life",
       "title": "Mature forest tree and its roots",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/india-western-ghats-buttress-roots.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Buttress_Roots001.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-060",
@@ -670,10 +670,10 @@
       "category": "life",
       "title": "Marine plankton and food webs",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/noaa-star-stick-diatom.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Star_stick_diatom.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-062",
@@ -720,10 +720,10 @@
       "category": "life",
       "title": "Mammals in contrasting ecosystems",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/uganda-kidepo-elephants-savannah.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Elephants_Finding_Respite_in_the_Vast_Savannah.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-067",
@@ -820,20 +820,20 @@
       "category": "civilization",
       "title": "Rock art and early symbolic expression",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/hawaii-puako-petroglyph-2011.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Petroglyphs_in_Puako_Petroglyph_Archaeological_District_1346.JPG",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-077",
       "category": "civilization",
       "title": "Agriculture and domesticated crops",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/usda-texas-rice-harvest.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:20200724-NRCS-LSC-0032-Rice_Harvesting.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-078",
@@ -890,10 +890,10 @@
       "category": "civilization",
       "title": "Industrial machines, power and transportation",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/munich-deutsches-museum-steam-flywheel.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Stationary_steam_engine_flywheel,_Deutsches_Museum.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-084",
@@ -1050,10 +1050,10 @@
       "category": "messages",
       "title": "Conservation, restoration and planetary stewardship",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/usfws-native-stream-restoration-2018.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Planting_native_plants_(49305794546).jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-100",
