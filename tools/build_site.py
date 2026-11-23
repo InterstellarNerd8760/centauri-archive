@@ -23,6 +23,7 @@ def assemble(output):
     for name in ("engineering", "physical-primer", "mission", "roadmap"):
         shutil.copyfile(ROOT / f"docs/{name}.md", output / f"{name}.txt")
     shutil.copyfile(ROOT / "docs/primer-panel.svg", output / "primer-panel.svg")
+    shutil.copyfile(ROOT / "docs/encyclopedia-mvp.md", output / "encyclopedia.txt")
     index = output / "index.html"
     html = index.read_text(encoding="utf-8")
     html = html.replace("__EDITION__", manifest["archive_version"])
