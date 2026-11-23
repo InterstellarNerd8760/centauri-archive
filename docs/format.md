@@ -30,9 +30,10 @@ LF. ZIP member timestamp is 1980-01-01 00:00:00, Unix creator and regular-file
 mode 0100644. Omit comments and extras. Reference readers enforce a
 10,000,000-byte container and total member-byte limit.
 
-This format requires prior knowledge of ZIP, bits/bytes and UTF-8. The
-physical decoding and standalone raw framing scheme are future research
-milestones. Neither CRC nor SHA-256 is a substitute for explaining encoding.
+This format requires prior knowledge of ZIP, bits/bytes and UTF-8. An experimental raw monochrome-image frame now exists separately from this ZIP
+(see [raw raster experiment](raw-raster-experiment.md)), but its byte conventions
+have not been physically taught, independently validated or tested on any carrier.
+Physical decoding remains a research milestone. Neither CRC nor SHA-256 is a substitute for explaining encoding.
 
 All verified files are now copied to the static site's records directory, so the browser reader can display SVG and common image/audio files without changing source bytes. The catalog is stored at `content/catalog.json` in the ZIP. The browser interface is not a flight reader.
 
