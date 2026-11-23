@@ -39,7 +39,7 @@ def build(output):
             raise ValueError(f"invalid archive path: {name}")
         entries.append(dict(path=name, size=len(data), sha256=digest(data),
                             media_type=TYPES.get(Path(name).suffix, "application/octet-stream")))
-    manifest = dict(format_version=1, archive_version="0.4.0", files=entries)
+    manifest = dict(format_version=1, archive_version="0.5.0", files=entries)
     header = (json.dumps(manifest, indent=2, sort_keys=True) + "\n").encode()
     output = Path(output).resolve()
     if output.is_relative_to(source):

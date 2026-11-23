@@ -19,20 +19,24 @@
       "label": "04 / Humanity"
     },
     {
+      "id": "photos",
+      "label": "05 / Photography of the living world"
+    },
+    {
       "id": "visuals",
-      "label": "05 / Images & diagrams"
+      "label": "06 / Images & diagrams"
     },
     {
       "id": "experiences",
-      "label": "06 / Sounds & experiences"
+      "label": "07 / Sounds & experiences"
     },
     {
       "id": "primer",
-      "label": "07 / Reading experiments"
+      "label": "08 / Reading experiments"
     },
     {
       "id": "messages",
-      "label": "08 / Messages"
+      "label": "09 / Messages"
     }
   ],
   "records": [
@@ -343,6 +347,98 @@
       ],
       "status": "Unreviewed original editorial synthesis",
       "rights": "Original project text; reuse license not yet assigned"
+    },
+    {
+      "path": "photos/earth-apollo17.jpg",
+      "title": "Earth, photographed by Apollo 17",
+      "summary": "One sunlit face of Earth, captured by the Apollo 17 crew on 7 December 1972.",
+      "group": "photos",
+      "alt": "Full disk Earth surrounded by black space, Africa and oceans visible.",
+      "caption": "Our planet seen from space. The frame shows Africa, oceans, and swirling cloud systems.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "US federal government photograph, public domain in the United States; verify conditions internationally",
+      "photographer": "NASA / Apollo 17 crew",
+      "date": "1972-12-07",
+      "derivative": "Processed 1400px-class JPEG copied without re-encoding from WebKit/Speedometer's public photo test assets; source original is available at the Wikimedia Commons file page.",
+      "sources": [
+        {
+          "label": "Source photograph and file rights — Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg"
+        },
+        {
+          "label": "Documented derivative provenance — WebKit/Speedometer",
+          "url": "https://github.com/WebKit/Speedometer/blob/main/suites-experimental/pdf-viewer/assets/README.md"
+        }
+      ]
+    },
+    {
+      "path": "photos/earthrise-apollo8.jpg",
+      "title": "Earthrise over the Moon",
+      "summary": "Earth rising above the Moon's horizon, photographed by William Anders during Apollo 8 on 24 December 1968.",
+      "group": "photos",
+      "alt": "Blue-and-white Earth above a stark gray lunar horizon.",
+      "caption": "The curved lunar foreground and distant Earth reveal two distinct worlds in a single frame.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "US federal government photograph, public domain in the United States; verify conditions internationally",
+      "photographer": "NASA / William Anders / Apollo 8",
+      "date": "1968-12-24",
+      "derivative": "Processed 1400px-class JPEG copied without re-encoding from WebKit/Speedometer's public photo test assets; source original is available at the Wikimedia Commons file page.",
+      "sources": [
+        {
+          "label": "Source photograph and file rights — Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:NASA-Apollo8-Dec24-Earthrise.jpg"
+        },
+        {
+          "label": "Documented derivative provenance — WebKit/Speedometer",
+          "url": "https://github.com/WebKit/Speedometer/blob/main/suites-experimental/pdf-viewer/assets/README.md"
+        }
+      ]
+    },
+    {
+      "path": "photos/apollo11-launch.jpg",
+      "title": "The launch of Apollo 11",
+      "summary": "A Saturn V rocket lifting off on 16 July 1969 to carry humans toward their first lunar landing.",
+      "group": "photos",
+      "alt": "Apollo 11 Saturn V rocket lifting off beneath a plume of exhaust.",
+      "caption": "Apollo 11 lifts off from Earth, demonstrating engineering and human exploration beyond the home planet.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "US federal government photograph, public domain in the United States; verify conditions internationally",
+      "photographer": "NASA / Kennedy Space Center",
+      "date": "1969-07-16",
+      "derivative": "Processed 1400px-class JPEG copied without re-encoding from WebKit/Speedometer's public photo test assets; source original is available at the Wikimedia Commons file page.",
+      "sources": [
+        {
+          "label": "Source photograph and file rights — Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Apollo_11_Launch_-_GPN-2000-000630.jpg"
+        },
+        {
+          "label": "Documented derivative provenance — WebKit/Speedometer",
+          "url": "https://github.com/WebKit/Speedometer/blob/main/suites-experimental/pdf-viewer/assets/README.md"
+        }
+      ]
+    },
+    {
+      "path": "photos/grand-prismatic-spring.jpg",
+      "title": "Grand Prismatic Spring",
+      "summary": "Aerial photograph of Yellowstone's geothermal hot spring and its colored microbial environments, 22 June 2006.",
+      "group": "photos",
+      "alt": "Aerial view of a deep blue geothermal pool surrounded by orange, yellow and rust-colored margins.",
+      "caption": "The colors surrounding the geothermal spring include microbial communities adapted to different temperatures.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "US federal government photograph, public domain in the United States; verify conditions internationally",
+      "photographer": "US National Park Service / Jim Peaco",
+      "date": "2006-06-22",
+      "derivative": "Processed 1400px-class JPEG copied without re-encoding from WebKit/Speedometer's public photo test assets; source original is available at the Wikimedia Commons file page.",
+      "sources": [
+        {
+          "label": "Source photograph and file rights — Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Excelsior_Geyser_and_Grand_Prismatic_Spring_(23320428202).jpg"
+        },
+        {
+          "label": "Documented derivative provenance — WebKit/Speedometer",
+          "url": "https://github.com/WebKit/Speedometer/blob/main/suites-experimental/pdf-viewer/assets/README.md"
+        }
+      ]
     }
   ]
 }

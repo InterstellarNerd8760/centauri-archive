@@ -34,20 +34,29 @@
 - [ ] Acquire, verify and license the remaining images.
 - [ ] Validate image content with scientific and cultural reviewers.
 
-## v0.5 — decode experiments
+## v0.5 — genuine photography
+- [x] Include and verify four real sourced photographs as binary JPEG files.
+- [x] Replace the homepage illustration gallery with documentary photography.
+- [x] Separate three coded explanatory diagrams from the 100-photo acquisition target.
+- [x] Document image origin, credit, rights and derivative processing.
+- [ ] Preserve original full-resolution masters in a dedicated master-media edition.
+- [ ] Acquire additional varied scientific, ecological and human imagery.
+- [ ] Independently review image captions and worldwide reuse terms.
+
+## v0.6 — decode experiments
 - [ ] Design a physical primer panel and independently test each interpretation stage.
 - [ ] Specify a minimal raw bitstream framing independent of ZIP, JSON and UTF-8.
 - [ ] Build a reference decoder from that raw bitstream to a small image.
 - [ ] Record independent decoding attempts, including failures and revisions.
 
-## v0.6 — meaningful collection
+## v0.7 — meaningful collection
 - [ ] Add diagrams and scientifically sourced biological information.
 - [ ] Choose image/audio formats with long-term readability in mind.
 - [ ] Collect provenance, licenses, permissions and accessible descriptions.
 - [ ] Draft and approve the founder's personal message; add other voices fairly.
 - [ ] Define curation rules and a policy for community contributions.
 
-## v0.7 — engineering evidence
+## v0.8 — engineering evidence
 - [ ] Implement, benchmark and test error correction and interleaving.
 - [ ] Fabricate physical samples and measure feature sizes and durability.
 - [ ] Quantify mass, geometry and tradeoffs for candidate carriers.
