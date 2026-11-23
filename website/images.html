@@ -7,7 +7,7 @@
 <title>Image library · Centauri Archive</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"><script defer src="images.js"></script>
+<link rel="stylesheet" href="style.css?v=gallery-grid"><script defer src="images.js?v=gallery-grid"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -22,7 +22,8 @@
 <div id="atlas-filters" class="atlas-filters" role="group" aria-label="Filter by category"></div>
 <div class="atlas-searchbar"><label id="scope-label" for="image-search">Search all subjects</label><input id="image-search" type="search"></div>
 <p id="atlas-count" aria-live="polite"></p><p id="empty-result" hidden>No matching subjects.</p><button id="reset-category" type="button" hidden>Search all subjects</button>
-<div id="photo-gallery"></div>
+<div id="photo-gallery" class="atlas-results"></div>
+<details id="subject-plan" hidden><summary>Planned subjects</summary><div id="planned-subjects"></div></details>
 </section>
 <section class="wrap atlas-section atlas-standards">
 <p class="eyebrow">THE CURATION STANDARD</p><h2>Evidence, not decoration.</h2>

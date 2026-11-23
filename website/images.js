@@ -47,31 +47,27 @@ async function initAtlas() {
     const matches = plan.records.filter(slot => (all || slot.category === selected.id) &&
       [slot.id, slot.title, records.get(slot.asset)?.title, records.get(slot.asset)?.summary, records.get(slot.asset)?.photographer, slot.category, slot.kind].join(" ").toLowerCase().includes(query));
     get("atlas-count").textContent = matches.length + (matches.length === 1 ? " subject" : " subjects");
+    const photos = matches.filter(slot => slot.asset);
+    get("photo-gallery").replaceChildren(...photos.map(imageCard));
+    get("photo-gallery").hidden = photos.length === 0;
+
     const sections = [];
     for (const topic of plan.categories) {
-      const subjects = matches.filter(slot => slot.category === topic.id);
-      if (!subjects.length) continue;
+      const planned = matches.filter(slot => slot.category === topic.id && !slot.asset);
+      if (!planned.length) continue;
       const section = node("section", "", "topic-collection");
       section.append(node("h2", topic.name), node("p", topic.description));
-      const photos = subjects.filter(slot => slot.asset);
-      if (photos.length) {
-        const grid = node("div", "", "atlas-results");
-        grid.append(...photos.map(imageCard));
-        section.append(grid);
+      const list = node("ul", "", "plan-list");
+      for (const slot of planned) {
+        const row = node("li");
+        row.append(node("small", slot.id), node("span", slot.title), node("small", "Planned"));
+        list.append(row);
       }
-      const planned = subjects.filter(slot => !slot.asset);
-      if (planned.length) {
-        const list = node("ul", "", "plan-list");
-        for (const slot of planned) {
-          const row = node("li");
-          row.append(node("small", slot.id), node("span", slot.title), node("small", "Planned"));
-          list.append(row);
-        }
-        section.append(list);
-      }
+      section.append(list);
       sections.push(section);
     }
-    get("photo-gallery").replaceChildren(...sections);
+    get("planned-subjects").replaceChildren(...sections);
+    get("subject-plan").hidden = sections.length === 0;
     get("empty-result").hidden = matches.length > 0;
     get("reset-category").hidden = matches.length > 0 || all;
   }
