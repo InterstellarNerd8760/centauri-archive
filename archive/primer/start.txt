@@ -1,0 +1,23 @@
+CENTAURI ARCHIVE / READING GUIDE / EDITION 0.1.0
+
+This guide assumes a reader can recover bytes and read English. Physical marks
+that might teach those steps are described in the engineering notes.
+
+Open manifest.json at the ZIP root. Each path begins at that root. Size counts
+eight-bit bytes. SHA-256 identifies the expected byte sequence of each file.
+The manifest uses UTF-8. The sample prose and table use its ASCII subset.
+
+Read content/earth/shadow.txt, content/life/leaf.txt and
+content/civilization/weaving.csv for examples of the records.
+
+To view content/primer/plate.pgm without image software, find its first three
+line feeds (byte value 10). The three lines are P5, 1024 1024, and 255.
+The remaining 1048576 bytes are brightness samples. Start at the upper left,
+move right for 1024 samples, then move down one row. Zero is black. 255 is white.
+Two sets of circular bands cross. A black-to-white ramp occupies the bottom
+64 rows. The top left corner contains a small white square with a black inset
+in its upper left quadrant. Use these features to check orientation and polarity.
+
+All records and the plate are original material created for this prototype.
+The weaving table is an illustrative design. The plate is synthetic.
+Neither contains instrument measurements.
