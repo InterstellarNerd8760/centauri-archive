@@ -33,7 +33,7 @@ def checked_url(value):
     url = urlparse(value)
     if url.scheme != "https" or url.hostname not in {
         "assets.science.nasa.gov", "images-assets.nasa.gov", "eol.jsc.nasa.gov",
-        "science.nasa.gov", "eoimages.gsfc.nasa.gov"
+        "science.nasa.gov", "eoimages.gsfc.nasa.gov", "cdn.eso.org"
     }:
         raise ValueError(f"Not a permitted NASA media host: {value}")
     return value
@@ -101,14 +101,14 @@ def import_batch(batch_path):
         print(f"Retrieving {entry['slot']}: {filename}", flush=True)
         binaries[path] = retrieve(entry["asset_url"])
         slot.update(status="included", asset=path, source_url=entry["source_page"],
-                    curation_note="NASA source and acquisition documented; independent editorial review pending.")
+                    curation_note="Source and acquisition documented; independent editorial review pending.")
         catalog["records"].append({
             "path": path, "title": entry["title"], "summary": entry["summary"],
             "group": "photos", "alt": entry["alt"], "caption": entry["caption"],
             "status": "Photograph acquired; editorial review pending",
             "rights": entry["rights"], "photographer": entry["credit"],
             "date": entry["date"], "derivative": entry["processing"],
-            "sources": [{"label": "NASA source description and credits", "url": entry["source_page"]},
+            "sources": [{"label": "Source description and credits", "url": entry["source_page"]},
                         {"label": "Source image before documented JPEG derivative", "url": entry["asset_url"]}],
         })
         imported.append((entry["slot"], path, entry["source_page"]))
