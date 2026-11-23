@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MAX_DOWNLOAD = 20_000_000
 MAX_OUTPUT = 3_000_000
 MAX_DIMENSION = 1800
-MAX_ARCHIVE_BYTES = 10_000_000
+MAX_ARCHIVE_BYTES = 80_000_000
 
 
 def read_json(path):
@@ -82,14 +82,17 @@ def import_batch(batch_path):
         if any(not isinstance(entry.get(key), str) or not entry[key].strip() for key in required):
             raise ValueError(f"Incomplete provenance for {entry.get('slot')}")
         slot = slots.get(entry["slot"])
-        if slot is None or slot["status"] != "planned" or slot["asset"] is not None:
-            raise ValueError(f"Slot not available: {entry['slot']}")
+        if slot is None:
+            raise ValueError(f"Unknown slot: {entry['slot']}")
         filename = entry["filename"]
         if not filename.endswith(".jpg") or "/" in filename or "\\" in filename or filename.startswith("."):
             raise ValueError(f"Invalid filename: {filename}")
         path = "photos/" + filename
-        if path in paths or path in binaries:
-            raise ValueError(f"Duplicate image: {path}")
+        if slot["status"] == "included" and slot["asset"] == path and path in paths:
+            # Already imported by a previous successful batch run.
+            continue
+        if slot["status"] != "planned" or slot["asset"] is not None or path in paths or path in binaries:
+            raise ValueError(f"Duplicate or unavailable image: {path}")
         if urlparse(entry["source_page"]).scheme != "https":
             raise ValueError("Source page must use HTTPS")
         print(f"Retrieving {entry['slot']}: {filename}", flush=True)
