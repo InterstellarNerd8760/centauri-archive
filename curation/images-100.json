@@ -190,10 +190,10 @@
       "category": "cosmos",
       "title": "Solar System orbital order",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/jpl-planetary-montage-pia00545.jpg",
+      "source_url": "https://science.nasa.gov/photojournal/solar-system-montage/",
+      "curation_note": "NASA source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-014",
@@ -210,10 +210,10 @@
       "category": "cosmos",
       "title": "Venus's cloud deck and mapped surface",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/venus-magellan-radar-pia00478.jpg",
+      "source_url": "https://science.nasa.gov/photojournal/venus-global-view-centered-at-180-degrees/",
+      "curation_note": "NASA source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-016",
@@ -260,10 +260,10 @@
       "category": "geography",
       "title": "Complete color globe mosaic with processing explained",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/earth-blue-marble-2005-africa.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation-5935/",
+      "curation_note": "NASA source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-021",
@@ -290,20 +290,20 @@
       "category": "geography",
       "title": "African landscapes and major regions",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/zambezi-victoria-falls-iss.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/victoria-falls-zambezi-river-3813/",
+      "curation_note": "NASA source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-024",
       "category": "geography",
       "title": "Asian landscapes and major regions",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/mount-everest-ali-2011.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/the-worlds-tallest-mountain-82578/",
+      "curation_note": "NASA source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-025",
@@ -330,10 +330,10 @@
       "category": "geography",
       "title": "South American landscapes and major regions",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/amazon-river-sunglint-iss.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/amazon-meanders-in-sunglint-92370/",
+      "curation_note": "NASA source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-028",
@@ -350,10 +350,10 @@
       "category": "geography",
       "title": "Australian and Pacific island landscapes",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/great-barrier-reef-whitsundays-iss.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/great-barrier-reef-near-whitsunday-islands-88109/",
+      "curation_note": "NASA source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-030",
@@ -430,30 +430,30 @@
       "category": "systems",
       "title": "Glaciers, snow and polar ice",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/greenland-kong-oscar-glacier.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/kong-oscar-glacier-greenland-45431/",
+      "curation_note": "NASA source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-038",
       "category": "systems",
       "title": "Desert and arid ecosystem",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/namib-desert-landsat.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/namib-naukluft-national-park-namibia-2804/",
+      "curation_note": "NASA source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-039",
       "category": "systems",
       "title": "Tropical forest canopy and rainfall",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/amazon-transpiration-popcorn-clouds.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/afternoon-clouds-over-the-amazon-rainforest-39936/",
+      "curation_note": "NASA source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-040",
