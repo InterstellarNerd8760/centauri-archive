@@ -140,10 +140,10 @@
       "category": "primer",
       "title": "Photographed analog oscilloscope waveform",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/esselte-analog-oscilloscope.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Esselte_oscilloscope.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-009",
@@ -470,10 +470,10 @@
       "category": "molecules",
       "title": "Physical samples of chemical elements",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/real-element-specimens-periodic-table.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PeriodicTable-RealElements.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-042",
@@ -500,20 +500,20 @@
       "category": "molecules",
       "title": "Frozen water crystals under microscopy",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/polarized-micrograph-ice-crystals.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ice_crystals_in_the_ice_cream_2.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-045",
       "category": "molecules",
       "title": "Carbon crystals: diamond and graphite",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/diamond-and-graphite-photographic-composite.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Diamond-and-graphite-with-scale.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-046",
