@@ -1358,6 +1358,121 @@
           "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/2013-09-05-frog-in-pond-1.jpg"
         }
       ]
+    },
+    {
+      "path": "photos/lahore-astrolabe-1666.jpg",
+      "title": "Astrolabe from Lahore, 1666",
+      "summary": "A richly engraved brass astrolabe made by Jamal al-Din ibn Muqim in Lahore in 1666, now in the Science Museum in London. This instrument exemplifies historic astronomical observation and mathematical craftsmanship.",
+      "group": "photos",
+      "alt": "Intricate round golden-brass astrolabe with ring, engraved circles and patterned cutouts, photographed in a museum display case.",
+      "caption": "The astrolabe embodies mathematical and astronomical practices. Its markings and components require additional explanations for a reader unfamiliar with historical instrument design.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons CC0 1.0 Universal Public Domain Dedication, verified on the individual Wikimedia Commons file page; uploader credit and original link retained as provenance.",
+      "photographer": "Daderot / Science Museum London (artifact by Jamal al-Din ibn Muqim)",
+      "date": "Photographed circa 2024; artifact dated 1666",
+      "derivative": "Resized to a maximum 1800-pixel edge and re-encoded at JPEG quality 87 for the development archive; no synthetic elements added. Original source is linked.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Astrolabe_by_Jamal_al-Din_ibn_Muqim,_Lahore,_1666_AD_-_Science_Museum,_London_-_DSC05549.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Astrolabe_by_Jamal_al-Din_ibn_Muqim%2C_Lahore%2C_1666_AD_-_Science_Museum%2C_London_-_DSC05549.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/adriatic-sailboat.jpg",
+      "title": "Sailboat on the Adriatic Sea",
+      "summary": "A modern sailing vessel appears against sunlit open water in the Adriatic Sea. Sailing demonstrates one means by which humans traverse bodies of water using wind and maritime navigation.",
+      "group": "photos",
+      "alt": "A dark sailboat silhouette on sparkling silver sea beneath an overcast sky.",
+      "caption": "A modern example of wind-powered ocean travel. It does not represent the diversity of vessels or seafaring traditions across history.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons CC0 1.0 Universal Public Domain Dedication, verified on the individual Wikimedia Commons file page; uploader credit and original link retained as provenance.",
+      "photographer": "Altitonantis",
+      "date": "2023-04-30",
+      "derivative": "Resized to a maximum 1800-pixel edge and re-encoded at JPEG quality 87 for the development archive; no synthetic elements added. Original source is linked.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:A_sailboat_on_Adriatic_sea.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/A_sailboat_on_Adriatic_sea.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/printing-press-chinese-writing-museum.jpg",
+      "title": "Historic printing press at the Chinese Writing Museum",
+      "summary": "A printing press displayed in the Chinese Writing Museum in Anyang, China. Mechanical reproduction of text enabled books and other written materials to be copied repeatedly.",
+      "group": "photos",
+      "alt": "Large dark metal printing machine displayed in museum, with Chinese character panels behind it.",
+      "caption": "A historical printing machine exhibited in Anyang; this is an example of text reproduction, rather than a claim that printing originated with this specific machine.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons CC0 1.0 Universal Public Domain Dedication, verified on the individual Wikimedia Commons file page; uploader credit and original link retained as provenance.",
+      "photographer": "Gary Lee Todd",
+      "date": "2011-12-13",
+      "derivative": "Resized to a maximum 1800-pixel edge and re-encoded at JPEG quality 87 for the development archive; no synthetic elements added. Original source is linked.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Printing_Press_(10194330985).jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Printing_Press_%2810194330985%29.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/onitsha-market-nigeria.jpg",
+      "title": "Street market in Onitsha, Nigeria",
+      "summary": "A street market in Onitsha, Anambra State, Nigeria, photographed in 2026. Stalls, customers and fish sellers illustrate everyday local trade and exchange.",
+      "group": "photos",
+      "alt": "Several round basins filled with fresh fish and people beside them at a daytime street market in Onitsha.",
+      "caption": "Trading and food distribution at a specific urban market in southeastern Nigeria. The image should be understood as one local scene, not as a proxy for all African marketplaces.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons CC0 1.0 Universal Public Domain Dedication, verified on the individual Wikimedia Commons file page; uploader credit and original link retained as provenance.",
+      "photographer": "Ngostary2k",
+      "date": "2026-03-14",
+      "derivative": "Resized to a maximum 1800-pixel edge and re-encoded at JPEG quality 87 for the development archive; no synthetic elements added. Original source is linked.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Open_air_market_in_Onitsha_02.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Open_air_market_in_Onitsha_02.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/vatican-stone-vase-sculpture.jpg",
+      "title": "Decorative stone vase in a museum",
+      "summary": "A sculpted ornamental vase on display in the Vatican Museums shows intentional shaping and surface patterning of stone into a decorative object.",
+      "group": "photos",
+      "alt": "Large pale gray and cream marble-like urn with curved handles and organic banded patterns on a stone pedestal.",
+      "caption": "A photographed sculptural object in the Vatican Museums; its exact maker, historical period and stone composition have not been independently established.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Creative Commons CC0 1.0 Universal Public Domain Dedication, verified on the individual Wikimedia Commons file page; uploader credit and original link retained as provenance.",
+      "photographer": "Alf van Beem",
+      "date": "2012-05-02",
+      "derivative": "Resized to a maximum 1800-pixel edge and re-encoded at JPEG quality 87 for the development archive; no synthetic elements added. Original source is linked.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Vase_sculpture_in_the_Vatican_museum.JPG"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Vase_sculpture_in_the_Vatican_museum.JPG"
+        }
+      ]
     }
   ]
 }

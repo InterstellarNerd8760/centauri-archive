@@ -860,30 +860,30 @@
       "category": "civilization",
       "title": "Mathematics, astronomy and observation instruments",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/lahore-astrolabe-1666.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Astrolabe_by_Jamal_al-Din_ibn_Muqim,_Lahore,_1666_AD_-_Science_Museum,_London_-_DSC05549.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-081",
       "category": "civilization",
       "title": "Ocean navigation and seafaring",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/adriatic-sailboat.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_sailboat_on_Adriatic_sea.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-082",
       "category": "civilization",
       "title": "Printing, books and knowledge transmission",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/printing-press-chinese-writing-museum.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Printing_Press_(10194330985).jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-083",
@@ -940,10 +940,10 @@
       "category": "culture",
       "title": "Open-air market and exchange",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/onitsha-market-nigeria.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Open_air_market_in_Onitsha_02.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-089",
@@ -990,10 +990,10 @@
       "category": "culture",
       "title": "Painting, sculpture and handmade art",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/vatican-stone-vase-sculpture.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vase_sculpture_in_the_Vatican_museum.JPG",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-094",
