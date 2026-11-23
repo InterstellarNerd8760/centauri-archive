@@ -110,10 +110,10 @@
       "category": "primer",
       "title": "Star trails photographed over time",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/iss-star-trails-christina-koch.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/a-trail-of-night-lights-145750/",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-006",
@@ -150,30 +150,30 @@
       "category": "cosmos",
       "title": "The observable universe and cosmic distance",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/hubble-ultra-deep-field-2014.jpg",
+      "source_url": "https://science.nasa.gov/image-detail/hubble-ultra-deep-field/",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-010",
       "category": "cosmos",
       "title": "Milky Way and the Sun's approximate location",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/milky-way-2mass-allsky-pia04250.jpg",
+      "source_url": "https://science.nasa.gov/photojournal/point-source-all-sky/",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-011",
       "category": "cosmos",
       "title": "Nearby stars and Alpha Centauri",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/alpha-centauri-ab-hubble-eso.jpg",
+      "source_url": "https://www.eso.org/public/images/eso1629v/",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-012",
@@ -310,20 +310,20 @@
       "category": "geography",
       "title": "European landscapes and major regions",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/swiss-alps-aletsch-glacier-2024.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/glacial-losses-in-the-swiss-alps-154043/",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-026",
       "category": "geography",
       "title": "North American landscapes and major regions",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/alaska-kobuk-sand-dunes.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/an-unexpected-expanse-of-sand-in-alaska-147600/",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-027",
@@ -370,20 +370,20 @@
       "category": "systems",
       "title": "Atmosphere layers and vertical structure",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/iss-atmosphere-limb-crescent-moon.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/earths-limb-with-a-crescent-moon-150240/",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-032",
       "category": "systems",
       "title": "Cloud systems viewed from orbit",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/hurricane-dorian-from-aqua-2019.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/hurricane-dorian-pounds-the-bahamas-145555/",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-033",
