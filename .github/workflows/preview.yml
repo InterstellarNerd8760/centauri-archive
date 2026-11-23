@@ -1,0 +1,43 @@
+name: Publish archive preview
+
+on:
+  push:
+    branches:
+      - revise/meaningful-archive-v0.2
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: centauri-archive-pages
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout preview branch
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Test archive
+        run: python -m unittest discover -s tests -v
+      - name: Build static site
+        run: python tools/build_site.py
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/site
+      - name: Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
