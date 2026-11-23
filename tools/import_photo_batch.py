@@ -33,7 +33,8 @@ def checked_url(value):
     url = urlparse(value)
     if url.scheme != "https" or url.hostname not in {
         "assets.science.nasa.gov", "images-assets.nasa.gov", "eol.jsc.nasa.gov",
-        "science.nasa.gov", "eoimages.gsfc.nasa.gov", "cdn.eso.org", "upload.wikimedia.org", "thumb.wikimedia.org"
+        "science.nasa.gov", "eoimages.gsfc.nasa.gov", "cdn.eso.org", "upload.wikimedia.org", "thumb.wikimedia.org",
+        "oceancolor.gsfc.nasa.gov"
     }:
         raise ValueError(f"Not a permitted NASA media host: {value}")
     return value
