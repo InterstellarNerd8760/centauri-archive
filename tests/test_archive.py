@@ -82,8 +82,8 @@ class ArchiveTests(unittest.TestCase):
     def test_simple_raster_decoding_exercise(self):
         path = ROOT / "archive/primer/raster-example.txt"
         rendered = decode_rows(path.read_text().splitlines())
-        self.assertTrue(rendered.startswith(b"P5\\n8 8\\n255\\n"))
-        self.assertEqual(len(rendered.split(b"\\n", 3)[3]), 64)
+        self.assertTrue(rendered.startswith(b"P5\n8 8\n255\n"))
+        self.assertEqual(len(rendered.split(b"\n", 3)[3]), 64)
         with ZipFile(self.sample) as package:
             self.assertEqual(package.read("content/primer/raster-example.txt"), path.read_bytes())
 
