@@ -120,9 +120,14 @@ async function display(path, push = false) {
   [record.media_type, record.status || "Unreviewed", record.rights || "Rights unknown"].forEach((value) =>
     details.append(element("span", value)));
   renderSources(record);
-  navigation(byId("library-search").value);
+  for (const button of nav.querySelectorAll("[data-path]")) {
+    button.setAttribute("aria-current", button.dataset.path === path ? "page" : "false");
+  }
   if (push) {
-    if (narrow.matches) { byId("contents").open = false; byId("record-title").scrollIntoView(); }
+    if (narrow.matches) byId("contents").open = false;
+    const heading = byId("record-title");
+    heading.focus({preventScroll:true});
+    heading.scrollIntoView({behavior:"instant", block:"start"});
     const url = new URL(location.href);
     url.searchParams.set("record", record.path);
     history.pushState({}, "", url);

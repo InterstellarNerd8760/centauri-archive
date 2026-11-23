@@ -260,8 +260,7 @@
 .plan-list small { color:var(--sky) }
 .guide-intro .decoder-lab { text-align:left }
 @media(max-width:700px) {
-  .library-layout .library-reader { grid-row:1 }
-  .library-sidebar { grid-row:2 }
+  .library-layout { display:block }
   .library-intro { padding-block:1.5rem }
 }
 
@@ -269,3 +268,21 @@
 .topic-collection h2 { font-size:clamp(1.8rem,4vw,3rem); margin-bottom:.5rem }
 .topic-collection > p { max-width:64ch }
 .image-atlas-intro .atlas-filters { margin-block:1.25rem }
+
+
+.record-library .header { position:relative }
+.library-sidebar { position:sticky; top:.5rem; z-index:5; background:var(--bg) }
+#contents[open] #record-nav {
+  display:block;
+  overflow-y:auto;
+  max-height:calc(100vh - 15rem);
+  max-height:max(5rem,calc(100dvh - 15rem));
+  overscroll-behavior:contain;
+  scrollbar-gutter:stable;
+}
+#record-title { scroll-margin-top:.75rem }
+@media(max-width:700px) {
+  .library-sidebar { top:0; padding:.35rem .75rem; border:1px solid var(--line) }
+  #contents[open] #record-nav { max-height:40vh; max-height:40dvh }
+  #record-title { scroll-margin-top:3.75rem }
+}
