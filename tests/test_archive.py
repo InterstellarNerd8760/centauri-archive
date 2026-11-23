@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 from archive import build, examine
 from build_site import assemble
 from plate import plate
+from decode_raster import decode_rows
 
 
 class Links(HTMLParser):
@@ -78,6 +79,14 @@ class ArchiveTests(unittest.TestCase):
         self.assertEqual(len(pixels), 1024**2)
         self.assertEqual((pixels[0], pixels[63], pixels[-1024], pixels[-1]), (0, 255, 0, 255))
 
+    def test_simple_raster_decoding_exercise(self):
+        path = ROOT / "archive/primer/raster-example.txt"
+        rendered = decode_rows(path.read_text().splitlines())
+        self.assertTrue(rendered.startswith(b"P5\\n8 8\\n255\\n"))
+        self.assertEqual(len(rendered.split(b"\\n", 3)[3]), 64)
+        with ZipFile(self.sample) as package:
+            self.assertEqual(package.read("content/primer/raster-example.txt"), path.read_bytes())
+
     def repack(self, mutate):
         with ZipFile(self.sample) as source:
             files = {name: source.read(name) for name in source.namelist()}
@@ -139,6 +148,7 @@ class ArchiveTests(unittest.TestCase):
         self.assertNotIn("__SIZE__", html)
         self.assertIn("0.2.0", html)
         self.assertIn("Physical primer", html)
+        self.assertTrue((site / "primer-panel.svg").is_file())
         style = (site / "style.css").read_text()
         self.assertIn("--bg:#05080f", style)
         self.assertIn("Instrument Serif", style)

@@ -55,5 +55,16 @@ material is the best choice. Geometry, radiation, dust exposure, thermal
 cycling, mounting, contamination, impact shielding and readout conditions
 depend on the actual mission.
 
-The next implementable task is to create a small, printable, explicitly
-**experimental** primer-panel diagram and run an independent decoding trial.
+## Experiment A: implemented illustration, not validated
+
+The repository includes `docs/primer-panel.svg` (a printable **concept**
+drawing), `archive/primer/raster-example.txt` (eight rows of eight 0/1
+symbols), and `tools/decode_raster.py` (a reference decoder that produces a
+portable grayscale image). This creates a concrete correspondence between a
+row-major sequence and a two-dimensional image.
+
+The SVG's English annotations and printed binary digits are there for human
+developers, not a solution to the language-independent decoding problem.
+The underlying marks need to be redesigned, manufactured and blind-tested.
+The next experiment must ask people unfamiliar with the construction method
+to infer the mapping **without** the explanatory text.

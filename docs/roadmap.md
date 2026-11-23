@@ -5,6 +5,7 @@
       primer, Earth, biology, civilization and provisional message records.
 - [x] Remove oversized calibration fixture from the archive itself.
 - [x] Retain deterministic build, integrity verification and automated tests.
+- [x] Add a small raster-decoding exercise and printable conceptual panel.
 - [x] Document physical primer as separate, unfinished research.
 - [x] Align website with the visual language of westonrosch.com.
 - [ ] Review content for scientific and cultural accuracy with domain experts.

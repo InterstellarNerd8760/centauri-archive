@@ -22,6 +22,7 @@ def assemble(output):
                 path.write_bytes(archive.read(item["path"]))
     for name in ("engineering", "physical-primer", "mission", "roadmap"):
         shutil.copyfile(ROOT / f"docs/{name}.md", output / f"{name}.txt")
+    shutil.copyfile(ROOT / "docs/primer-panel.svg", output / "primer-panel.svg")
     index = output / "index.html"
     html = index.read_text(encoding="utf-8")
     html = html.replace("__EDITION__", manifest["archive_version"])

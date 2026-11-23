@@ -10,7 +10,7 @@ The project has two horizons: a deliberately small **Fermi Edition** for a const
 
 - A reproducible, inspectable **digital development package** containing original introductory records about mathematics, the Solar System, biology, civilization, and a provisional message.
 - A manifest with file lengths and SHA-256 digests. These detect changes; they **do not correct corruption**.
-- A documented proposal for a **physical decoding primer**, not yet fabricated or validated.
+- A documented proposal for a **physical decoding primer**, not yet fabricated or validated. An experimental panel diagram and 8×8 reference raster/decoder demonstrate a small part of the learning ladder.
 - A minimalist website following the visual design of [westonrosch.com](https://westonrosch.com).
 
 **Not yet demonstrated:** decoding without knowledge of human languages and computing, radiation survival, error recovery, archive-health telemetry, physical carrier manufacture, or Fermi Explorer compatibility. The ZIP container is a convenient development transport, **not a proposed alien-readable flight format**.
@@ -31,6 +31,17 @@ python3 -m http.server 8000 --directory build/site
 ```
 
 Start reading at `content/primer/start.txt` *after* extracting the ZIP with an existing ZIP reader. The file explains the current limitations. The site is a presentation layer and is not needed to extract the package.
+
+## One decoding exercise
+
+```sh
+python3 tools/decode_raster.py archive/primer/raster-example.txt build/raster-example.pgm
+```
+
+This converts 8 rows of ASCII 0/1 symbols to a 64-pixel PGM raster.
+Compare the rendered result with [the panel concept](docs/primer-panel.svg).
+This exercise assumes a human already understands the symbols and the file.
+It does **not** establish universal readability.
 
 ## Repository map
 
