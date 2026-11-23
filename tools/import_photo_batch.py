@@ -32,7 +32,8 @@ def write_json(path, value):
 def checked_url(value):
     url = urlparse(value)
     if url.scheme != "https" or url.hostname not in {
-        "assets.science.nasa.gov", "images-assets.nasa.gov", "eol.jsc.nasa.gov"
+        "assets.science.nasa.gov", "images-assets.nasa.gov", "eol.jsc.nasa.gov",
+        "science.nasa.gov", "eoimages.gsfc.nasa.gov"
     }:
         raise ValueError(f"Not a permitted NASA media host: {value}")
     return value
@@ -46,9 +47,11 @@ def retrieve(url):
             raise ValueError("Image exceeds 20 MB source download limit")
         if response.headers.get("Content-Type", "").lower().startswith("text/"):
             raise ValueError("Server returned text instead of a JPEG")
-    if not (8_000 <= len(content) <= MAX_DOWNLOAD and content[:2] == b"\xff\xd8"
-            and content[-2:] == b"\xff\xd9"):
-        raise ValueError("Invalid or suspicious JPEG image")
+    if not (8_000 <= len(content) <= MAX_DOWNLOAD and (
+            (content[:2] == b"\xff\xd8" and content[-2:] == b"\xff\xd9")
+            or content[:8] == b"\x89PNG\r\n\x1a\n"
+            or (content[:4] == b"RIFF" and content[8:12] == b"WEBP"))):
+        raise ValueError("Invalid or suspicious source image")
     # Keep the acquisition JPEG high quality while enforcing the small
     # prototype ZIP budget. Original source URL stays in provenance metadata.
     from PIL import Image, ImageOps
@@ -106,7 +109,7 @@ def import_batch(batch_path):
             "rights": entry["rights"], "photographer": entry["credit"],
             "date": entry["date"], "derivative": entry["processing"],
             "sources": [{"label": "NASA source description and credits", "url": entry["source_page"]},
-                        {"label": "NASA image file (acquired bytes)", "url": entry["asset_url"]}],
+                        {"label": "Source image before documented JPEG derivative", "url": entry["asset_url"]}],
         })
         imported.append((entry["slot"], path, entry["source_page"]))
     # Check bytes before changing on-disk state. The existing prototype uses
