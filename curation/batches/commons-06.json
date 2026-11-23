@@ -1,0 +1,62 @@
+{
+  "batch_id": "commons-06",
+  "description": "Four rights-reviewed original documentary images of built settlement, urban transport, historic musical instrument and recreational sport.",
+  "images": [
+    {
+      "slot": "IMG-078",
+      "filename": "mesa-verde-cliff-palace-2014.jpg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Mesa_Verde_Public_Domain.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Mesa_Verde_Public_Domain.jpg",
+      "title": "Ancestral Pueblo architecture at Mesa Verde",
+      "summary": "Stone masonry rooms built into an overhanging cliff alcove are part of the Ancestral Pueblo archaeological complex at Mesa Verde in Colorado. This 2014 photograph shows a protected architectural landscape.",
+      "alt": "Warm sandstone cliff alcove enclosing multi-story tan stone and reddish mortar buildings with square windows and a series of walls.",
+      "caption": "Historic cliff dwellings at Mesa Verde, built by Ancestral Pueblo peoples. Their long-lived cultural descendants include contemporary Pueblo communities; descriptions of the site need relevant cultural review.",
+      "credit": "Lisafern, photographer; Ancestral Pueblo architects and makers",
+      "date": "2014-06-20",
+      "rights": "CC0 1.0 Universal Public Domain Dedication for photographer Lisafern's image; cultural heritage is not rendered ownerless by its photo copyright status. Commons source file verified.",
+      "processing": "The original Commons-sourced photograph was resized to a maximum of 1800 pixels on each axis and saved as quality-87 JPEG; no objects were created or removed. Original source and credit retained."
+    },
+    {
+      "slot": "IMG-089",
+      "filename": "lviv-city-tram-and-pedestrians.jpg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Street_scene_with_tram_in_Lwiw.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Street_scene_with_tram_in_Lwiw.jpg",
+      "title": "A tram moves through central Lviv",
+      "summary": "A yellow-and-black electric tram shares a cobbled street in central Lviv, Ukraine with walkers, outdoor tables and older city buildings. The tram connects dense urban neighborhoods.",
+      "alt": "Yellow and dark street tram traveling beneath overhead power lines down a cobblestone street among pedestrians and tall historic shopfronts.",
+      "caption": "Public transport and daily life in the center of Lviv, Ukraine. This single street view cannot characterize every city or time period.",
+      "credit": "Tobias1984",
+      "date": "2018-10-12 (file publication; exact exposure date not listed)",
+      "rights": "CC BY-SA 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/). Photograph © Tobias1984, derivative also offered under CC BY-SA 4.0; author and Commons source credited, resizing disclosed.",
+      "processing": "The original Commons-sourced photograph was resized to a maximum of 1800 pixels on each axis and saved as quality-87 JPEG; no objects were created or removed. Original source and credit retained."
+    },
+    {
+      "slot": "IMG-091",
+      "filename": "metropolitan-museum-indian-sitar.jpg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Sitar_MET_259651.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sitar_MET_259651.jpg",
+      "title": "Indian sitar made in the eighteenth century",
+      "summary": "A long-necked Indian plucked-string instrument of painted wood and gourds, made in the eighteenth century, preserved as Metropolitan Museum of Art accession 1994.63.",
+      "alt": "A historic black-and-white museum photograph of a long Indian sitar, with many tuning pegs on the neck and two large polished gourd resonators.",
+      "caption": "A sitar in the Metropolitan Museum of Art. Its strings vibrate to produce sound; the instrument represents one regional music-making tradition among many globally.",
+      "credit": "The Metropolitan Museum of Art / accession 1994.63; original maker unknown",
+      "date": "18th century (object); photographed date unspecified",
+      "rights": "Metropolitan Museum of Art Open Access image CC0 1.0 Universal Public Domain Dedication, documented on the Commons source page.",
+      "processing": "The original Commons-sourced photograph was resized to a maximum of 1800 pixels on each axis and saved as quality-87 JPEG; no objects were created or removed. Original source and credit retained. Museum photograph itself is monochrome."
+    },
+    {
+      "slot": "IMG-096",
+      "filename": "australian-football-match-adelaide-1915.jpg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Football_Match%28GN05078%29.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Football_Match(GN05078).jpg",
+      "title": "Crowds watch an Australian football match, circa 1915",
+      "summary": "An archival glass-plate negative from South Australia shows players and spectators gathered around a football field at Adelaide Oval in approximately 1915. Team identities are unconfirmed.",
+      "alt": "Black-and-white wide view of a grassy oval with scattered football players and large crowds filling stands and the near field perimeter.",
+      "caption": "Organized team sport as part of social life in South Australia approximately 1915. The exact game and teams cannot be confirmed from the archival photograph.",
+      "credit": "State Government Photographer / History Trust of South Australia, accession GN05078",
+      "date": "circa 1915",
+      "rights": "History Trust of South Australia release under CC0 1.0 Universal Public Domain Dedication, confirmed on individual Commons file page.",
+      "processing": "Archival black-and-white glass-negative scan reproduced in a resized quality-87 JPEG for development display; no invented color. The original Commons-sourced photograph was resized to a maximum of 1800 pixels on each axis and saved as quality-87 JPEG; no objects were created or removed. Original source and credit retained."
+    }
+  ]
+}
