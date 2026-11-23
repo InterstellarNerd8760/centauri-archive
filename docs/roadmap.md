@@ -25,20 +25,29 @@
 - [x] Create an interactive row-first vs column-first decoding explanation.
 - [ ] Independently validate the interpretation method with human testers.
 
-## v0.4 — decode experiments
+## v0.4 — image curation and binary teaching
+- [x] Add a beginner explanation of binary states versus their interpretation.
+- [x] Publish an honest, searchable plan for 100 images across ten categories.
+- [x] Link the three project-original diagrams to cataloged image positions.
+- [x] Expand Earth, human life and binary-decoding articles with sourced summaries.
+- [x] Document two separate digital versions/copies as an engineering option, not approved hardware.
+- [ ] Acquire, verify and license the remaining images.
+- [ ] Validate image content with scientific and cultural reviewers.
+
+## v0.5 — decode experiments
 - [ ] Design a physical primer panel and independently test each interpretation stage.
 - [ ] Specify a minimal raw bitstream framing independent of ZIP, JSON and UTF-8.
 - [ ] Build a reference decoder from that raw bitstream to a small image.
 - [ ] Record independent decoding attempts, including failures and revisions.
 
-## v0.5 — meaningful collection
+## v0.6 — meaningful collection
 - [ ] Add diagrams and scientifically sourced biological information.
 - [ ] Choose image/audio formats with long-term readability in mind.
 - [ ] Collect provenance, licenses, permissions and accessible descriptions.
 - [ ] Draft and approve the founder's personal message; add other voices fairly.
 - [ ] Define curation rules and a policy for community contributions.
 
-## v0.6 — engineering evidence
+## v0.7 — engineering evidence
 - [ ] Implement, benchmark and test error correction and interleaving.
 - [ ] Fabricate physical samples and measure feature sizes and durability.
 - [ ] Quantify mass, geometry and tradeoffs for candidate carriers.
