@@ -47,7 +47,7 @@ class ArchiveTests(unittest.TestCase):
         self.assertEqual(second.read_bytes(), self.sample.read_bytes())
         self.assertTrue(1000 <= second.stat().st_size <= 10_000_000)
         self.assertEqual(examine(second, verify=True), self.manifest)
-        self.assertEqual(self.manifest["archive_version"], "0.2.0")
+        self.assertEqual(self.manifest["archive_version"], "0.3.0")
 
     def test_archive_has_meaningful_records(self):
         names = {item["path"] for item in self.manifest["files"]}
@@ -147,7 +147,7 @@ class ArchiveTests(unittest.TestCase):
                 self.assertTrue((site / urlsplit(target).path).is_file(), target)
         self.assertNotIn("__EDITION__", html)
         self.assertNotIn("__SIZE__", html)
-        self.assertIn("0.2.0", html)
+        self.assertIn("0.3.0", html)
         self.assertIn("guide.html", html)
         self.assertTrue((site / "primer-panel.svg").is_file())
         self.assertTrue((site / "encyclopedia.txt").is_file())
@@ -172,3 +172,6 @@ class ArchiveTests(unittest.TestCase):
         with ZipFile(site / "downloads/centauri.zip") as package:
             self.assertEqual(package.read("manifest.json"), (site / "downloads/manifest.json").read_bytes())
         self.assertEqual(self.sample.read_bytes(), (site / "downloads/centauri.zip").read_bytes())
+        for entry in self.manifest["files"]:
+            path = entry["path"].removeprefix("content/")
+            self.assertEqual((site / "records" / path).read_bytes(), (ROOT / "archive" / path).read_bytes())
