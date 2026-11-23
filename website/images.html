@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#05080f">
 <meta name="description" content="A curated plan for one hundred images of Earth, life, science and human civilization, with accurate acquisition status.">
-<title>One hundred images · Centauri Archive</title>
+<title>Image gallery · Centauri Archive</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css"><script defer src="images.js"></script>
@@ -12,26 +12,20 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="header"><a class="brand" href="index.html">Centauri Archive<span class="brand-dot">.</span></a>
-<nav aria-label="Main navigation"><a href="brief.html">Project brief</a><a href="library.html">Library</a><a href="images.html" aria-current="page">100 images</a><a href="guide.html">Decoding</a><a href="index.html">Home</a></nav></header>
+<nav aria-label="Main navigation"><a href="brief.html">Project brief</a><a href="library.html">Library</a><a href="images.html" aria-current="page">Image gallery</a><a href="guide.html">Decoding</a><a href="index.html">Home</a></nav></header>
 <main id="main">
 <section class="wrap image-atlas-intro">
-<p class="eyebrow">IMAGE COLLECTION / EDITORIAL PLAN 001–100</p>
-<h1>One hundred photographs<br>of a <em>living world.</em></h1>
-<p class="intro">An evolving photographic record of the universe, our planet, life, and human civilization. Every photograph should be visually compelling, scientifically meaningful, and carefully sourced.</p>
-<p class="reader-warning">The list below is a <strong>curation plan</strong>, not a claim that all 100 photographs are already preserved. Only verified photographic files are shown as archived; technical diagrams remain in the separate library. All other entries are subject to selection, accurate sourcing, rights review and preservation testing.</p>
-<div class="atlas-stats" aria-live="polite"><div><strong id="atlas-target">100</strong><span>planned positions</span></div><div><strong id="atlas-included">4</strong><span>acquired photographs</span></div><div><strong id="atlas-remaining">96</strong><span>awaiting selection</span></div></div>
+<h1>Images of <em>Earth.</em></h1>
+<p class="intro"><span id="atlas-included">13</span> images in the archive · <span id="atlas-remaining">91</span> subjects still to gather. <a href="#subject-plan" onclick="document.getElementById('subject-plan').open=true">Browse the subject plan ↓</a></p>
+<p id="atlas-error" hidden>The gallery could not load. <a href="library.html">Browse the library</a>.</p>
+<p>Our working goal is 100 images. Voyager paired views of our world with human development and everyday life. This collection follows that sequence across photographs and scientific imaging. <a href="https://science.nasa.gov/mission/voyager/golden-record-contents/images/">Voyager image list ↗</a></p>
+<div id="photo-gallery" class="atlas-results"></div>
 </section>
-<section class="wrap atlas-section">
-<div class="atlas-head"><div><p class="eyebrow">BROWSE THE COLLECTION</p><h2>Every image has a purpose.</h2></div>
-<a class="text-link" href="library.html">Current verified library ↗</a></div>
-<div class="atlas-filter-label">Choose a category</div>
-<div id="atlas-filters" class="atlas-filters" role="group" aria-label="Image categories"><span class="reader-loading">Loading categories…</span></div>
-<div class="atlas-searchbar"><label for="image-search">Find a topic</label><input id="image-search" type="search" placeholder="Search all one hundred subjects" autocomplete="off"></div>
-<div class="atlas-category-heading"><div><p class="eyebrow" id="atlas-subtitle">ALL SUBJECTS</p><h3 id="atlas-category-title">The full image plan</h3><p id="atlas-category-description">Select a topic category or search for a subject.</p></div><span class="atlas-result-count" id="atlas-count"></span></div>
-<div id="atlas-results" class="atlas-results" aria-live="polite"></div>
-<div class="atlas-pagination"><button id="atlas-more" type="button" hidden>Show more subjects</button></div>
-<p class="showcase-footnote">A named slot is not an acquired photograph. Source media, credit, license, image description, processing history and whether an image is decoded in the proposed flight format must be recorded before an item can move into the archive.</p>
-</section>
+<details id="subject-plan" class="wrap atlas-section"><summary>Explore the subject plan</summary>
+<div id="atlas-filters" class="atlas-filters" role="group" aria-label="Filter by category"></div>
+<div class="atlas-searchbar"><label id="scope-label" for="image-search">Search all subjects</label><input id="image-search" type="search"></div>
+<p id="atlas-count" aria-live="polite"></p><p id="empty-result" hidden>No matching subjects.</p><button id="reset-category" type="button" hidden>Search all subjects</button>
+<ul id="atlas-results" class="plan-list"></ul></details>
 <section class="wrap atlas-section atlas-standards">
 <p class="eyebrow">THE CURATION STANDARD</p><h2>Evidence, not decoration.</h2>
 <div class="atlas-standards-grid"><div><h3>Scientific context</h3><p>Every image should have a clear claim, scale, relationship or observation and disclose when it is schematic, composite, enhanced or not to scale.</p></div><div><h3>Representative selection</h3><p>Show microorganisms, ecosystems and different human societies—not just famous monuments, astronauts and large mammals.</p></div><div><h3>Preservation proof</h3><p>Each selected image needs legal redistribution rights, source provenance, a tested readout encoding and a smaller fallback where appropriate.</p></div></div>

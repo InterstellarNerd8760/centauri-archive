@@ -1,75 +1,73 @@
-/* The atlas is an editorial plan; planned subjects are not archive files. */
 "use strict";
-(() => {
-  const $ = id => document.getElementById(id);
-  const buttons=$("atlas-filters"), output=$("atlas-results"), more=$("atlas-more"), search=$("image-search");
-  let index=null,category="all",limit=24;
-  function el(tag,text,name){
-    const n=document.createElement(tag);if(text!==undefined&&text!==null)n.textContent=text;
-    if(name)n.className=name;return n;
+
+const get = id => document.getElementById(id);
+function node(tag, text, className) {
+  const element = document.createElement(tag);
+  if (text) element.textContent = text;
+  if (className) element.className = className;
+  return element;
+}
+async function loadJSON(url) {
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(url);
+  return response.json();
+}
+async function initAtlas() {
+  const [plan, catalog] = await Promise.all([loadJSON("image-plan.json"), loadJSON("records/catalog.json")]);
+  const records = new Map(catalog.records.map(record => [record.path, record]));
+  const included = plan.records.filter(slot => slot.status === "included");
+  get("atlas-included").textContent = included.length;
+  get("atlas-remaining").textContent = plan.records.length - included.length;
+  for (const slot of included) {
+    const record = records.get(slot.asset);
+    const card = node("article", "", "atlas-image-item");
+    const link = node("a");
+    link.href = "library.html?record=" + encodeURIComponent(slot.asset);
+    const photo = node("img");
+    photo.src = "records/" + slot.asset;
+    photo.alt = record.alt;
+    photo.loading = "lazy";
+    link.append(photo, node("h3", record.title));
+    const source = node("a", record.photographer);
+    source.href = record.sources[0].url;
+    card.append(link, node("p", record.summary), source);
+    get("photo-gallery").append(card);
   }
-  function paintFilters(){
-    buttons.replaceChildren();
-    const defs=[{id:"all",name:"All categories",target:100},...index.categories];
-    defs.forEach(c=>{
-      const button=el("button",c.name+" · "+c.target,"atlas-filter");
-      button.type="button";button.setAttribute("aria-pressed",String(category===c.id));
-      button.addEventListener("click",()=>{category=c.id;limit=24;paint();});
-      buttons.append(button);
+  const categories = [{id:"all",name:"All categories"}, ...plan.categories];
+  const filters = get("atlas-filters");
+  const search = get("image-search");
+  let selected = categories[0];
+  function renderPlan() {
+    for (const button of filters.children) {
+      button.setAttribute("aria-pressed", String(button.dataset.category === selected.id));
+    }
+    const all = selected.id === "all";
+    get("scope-label").textContent = all ? "Search all subjects" : "Search within " + selected.name;
+    const query = search.value.trim().toLowerCase();
+    const matches = plan.records.filter(slot => (all || slot.category === selected.id) &&
+      [slot.id, slot.title, records.get(slot.asset)?.title, slot.category, slot.kind].join(" ").toLowerCase().includes(query));
+    get("atlas-count").textContent = matches.length + (matches.length === 1 ? " subject" : " subjects");
+    const rows = matches.map(slot => {
+      const row = node("li");
+      const title = node(slot.asset ? "a" : "span", slot.title);
+      if (slot.asset) title.href = "library.html?record=" + encodeURIComponent(slot.asset);
+      row.append(node("small", slot.id), title, node("small", slot.asset ? "Archived" : "Planned"));
+      return row;
     });
+    get("atlas-results").replaceChildren(...rows);
+    get("empty-result").hidden = matches.length > 0;
+    get("reset-category").hidden = matches.length > 0 || all;
   }
-  function paint(){
-    if(!index)return;
-    paintFilters();
-    const current=index.categories.find(c=>c.id===category);
-    $("atlas-category-title").textContent=current?current.name:"The full image plan";
-    $("atlas-category-description").textContent=current?current.description:"One hundred deliberate subjects grouped into ten teaching sequences. Browse a section or search across the whole collection.";
-    $("atlas-subtitle").textContent=current?"COLLECTION / "+current.id.toUpperCase():"ALL SUBJECTS / 001–100";
-    const q=search.value.trim().toLocaleLowerCase();
-    const matches=index.records.filter(r=>(category==="all"||r.category===category)&&
-      [r.id,r.title,r.kind,r.category].join(" ").toLocaleLowerCase().includes(q));
-    $("atlas-count").textContent=matches.length+" image "+(matches.length===1?"subject":"subjects");
-    output.replaceChildren();
-    const shown=matches.slice(0,limit);
-    if(!shown.length)output.append(el("p","No matching subjects. Try a different category or search term.","reader-loading"));
-    shown.forEach(record=>{
-      const item=el("article",null,"atlas-image-item");
-      const media=el("div",null,"atlas-item-media");
-      if(record.status==="included"&&record.asset&&/^[a-z0-9/_-]+\.(?:jpe?g|png|webp)$/.test(record.asset)){
-        const photo=el("img");photo.src="records/"+record.asset;photo.alt=record.title;
-        photo.loading="lazy";media.append(photo);
-      }else{
-        const marker=el("div",record.id,"atlas-item-placeholder");
-        marker.setAttribute("aria-label","No image acquired yet");media.append(marker);
-      }
-      item.append(media);
-      const body=el("div",null,"atlas-item-body");
-      body.append(el("span",record.id,"atlas-item-id"));
-      const state=el("span",record.status==="included"?"IN ARCHIVE":"PLANNED","atlas-item-status"+(record.status==="included"?" archived":""));
-      body.append(state);
-      body.append(el("h4",record.title));
-      body.append(el("p",record.kind+" · "+record.curation_note));
-      if(record.status==="included"&&record.asset){
-        const a=el("a","View verified record ↗","text-link");
-        a.href="library.html?record="+encodeURIComponent(record.asset);body.append(a);
-      }
-      item.append(body);output.append(item);
-    });
-    more.hidden=matches.length<=limit;
-    more.textContent="Show "+Math.min(24,matches.length-limit)+" more of "+matches.length;
+  filters.replaceChildren();
+  for (const category of categories) {
+    const button = node("button", category.name, "atlas-filter");
+    button.type = "button";
+    button.dataset.category = category.id;
+    button.onclick = () => { selected = category; renderPlan(); };
+    filters.append(button);
   }
-  search.addEventListener("input",()=>{limit=24;paint();});
-  more.addEventListener("click",()=>{limit+=24;paint();});
-  fetch("image-plan.json").then(r=>{if(!r.ok)throw Error("Plan missing");return r.json();}).then(data=>{
-    if(!Array.isArray(data.categories)||!Array.isArray(data.records)||data.records.length!==100)throw Error("Invalid plan");
-    index=data;
-    const live=data.records.filter(r=>r.status==="included").length;
-    $("atlas-target").textContent=data.records.length;
-    $("atlas-included").textContent=live;
-    $("atlas-remaining").textContent=data.records.length-live;
-    paint();
-  }).catch(()=>{
-    buttons.textContent="Image categories unavailable.";
-    output.textContent="The image plan could not be loaded. The current archive remains accessible from the library.";
-  });
-})();
+  search.oninput = renderPlan;
+  get("reset-category").onclick = () => { selected = categories[0]; renderPlan(); search.focus(); };
+  renderPlan();
+}
+initAtlas().catch(() => { get("atlas-error").hidden = false; });

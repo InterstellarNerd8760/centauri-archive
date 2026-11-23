@@ -39,6 +39,10 @@ function renderParagraphs(raw, path) {
     }
   });
 }
+const narrow = matchMedia("(max-width:700px)");
+function sizeContents() { byId("contents").open = !narrow.matches; }
+sizeContents();
+narrow.addEventListener("change", sizeContents);
 function renderMedia(record) {
   clear(panel);
   const figure = element("figure", null, "media-figure");
@@ -46,7 +50,7 @@ function renderMedia(record) {
   if (record.media_type.startsWith("image/") && record.media_type !== "image/x-portable-graymap") {
     const image = element("img");
     image.src = source; image.alt = record.alt || record.title; image.loading = "lazy";
-    figure.append(image);
+    const full = element("a"); full.href = source; full.append(image); figure.append(full);
   } else if (record.media_type.startsWith("audio/")) {
     const audio = element("audio");
     audio.controls = true; audio.preload = "metadata"; audio.src = source;
@@ -56,7 +60,8 @@ function renderMedia(record) {
     panel.append(element("p", "No preview available. Open the original record to inspect this file."));
     return;
   }
-  if (record.caption) figure.append(element("figcaption", record.caption));
+  if (record.caption && record.caption !== record.summary) figure.append(element("figcaption", record.caption));
+  if (record.photographer) figure.append(element("figcaption", [record.photographer, record.date].filter(Boolean).join(" · ")));
   panel.append(figure);
   panel.append(element("p", "This is a digital development asset. Independent physical decoding remains a separate experiment.", "media-note"));
 }
@@ -66,6 +71,7 @@ function renderSources(record) {
   const links = Array.isArray(record.sources) ? record.sources : [];
   if (!links.length) return;
   target.append(element("h3", "Sources and provenance"));
+  if (record.derivative) target.append(element("p", record.derivative));
   const list = element("ul");
   links.forEach((source) => {
     const url = safeExternal(source.url);
@@ -116,6 +122,7 @@ async function display(path, push = false) {
   renderSources(record);
   navigation(byId("library-search").value);
   if (push) {
+    if (narrow.matches) { byId("contents").open = false; byId("record-title").scrollIntoView(); }
     const url = new URL(location.href);
     url.searchParams.set("record", record.path);
     history.pushState({}, "", url);

@@ -22,23 +22,24 @@
     result.textContent = scan === "row" ?
       "Row-first: the first eight symbols form the top row, left to right." :
       "Column-first: the first eight symbols form the left column, top to bottom. Notice the changed image.";
-    grid.replaceChildren();
+
     for (let y = 0; y < 8; y++) {
       for (let x = 0; x < 8; x++) {
         const index = scan === "row" ? y * 8 + x : x * 8 + y;
-        const button = document.createElement("button");
+        const position = y * 8 + x;
+        const button = grid.children[position] || document.createElement("button");
         button.type = "button";
         button.className = "decoded-pixel" + (bits[index] === "1" ? " lit" : "");
         button.setAttribute("aria-label", "Row " + (y+1) + ", column " + (x+1) +
           ". Bit " + (index+1) + " is " + bits[index] + ". Toggle this bit.");
         button.title = "Encoded bit #" + (index+1);
-        button.addEventListener("click", () => {
+        button.onclick = () => {
           bits[index] = bits[index] === "1" ? "0" : "1";
           redraw();
           description.textContent = "Changed encoded symbol #" + (index+1) +
             " at row " + (y+1) + ", column " + (x+1) + ".";
-        });
-        grid.append(button);
+        };
+        if (!button.parentNode) grid.append(button);
       }
     }
   }
