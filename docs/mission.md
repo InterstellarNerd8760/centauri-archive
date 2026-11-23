@@ -1,6 +1,8 @@
 # Mission fit — open questions
 
-**Status:** This is an independent proposal. Fermi Explorer has not approved,
+**Status:** This is an independent proposal. See [the dated PSI and public-source brief](fermi-mission-sources-2026.md) for the conflicting July study, current official FAQ, and calculator assumptions.
+
+ Fermi Explorer has not approved,
 requested or endorsed Centauri Archive. Launch year, trajectory, spacecraft
 dimensions, payload mass and any ability to host an archive must be confirmed
 directly with the mission team. A previously discussed 2029 target is an
