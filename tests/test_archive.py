@@ -48,7 +48,7 @@ class ArchiveTests(unittest.TestCase):
         self.assertEqual(second.read_bytes(), self.sample.read_bytes())
         self.assertTrue(1000 <= second.stat().st_size <= 10_000_000)
         self.assertEqual(examine(second, verify=True), self.manifest)
-        self.assertEqual(self.manifest["archive_version"], "0.3.0")
+        self.assertEqual(self.manifest["archive_version"], "0.4.0")
 
     def test_archive_has_meaningful_records(self):
         names = {item["path"] for item in self.manifest["files"]}
@@ -91,6 +91,29 @@ class ArchiveTests(unittest.TestCase):
                 self.assertTrue(item.get(field), (item["path"], field))
             for source in item.get("sources", []):
                 self.assertTrue(source["url"].startswith("https://"))
+
+    def test_one_hundred_image_editorial_plan(self):
+        plan = json.loads((ROOT / "curation/images-100.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(plan["records"]), 100)
+        self.assertEqual(len(plan["categories"]), 10)
+        self.assertEqual(sum(cat["target"] for cat in plan["categories"]), 100)
+        self.assertEqual(len({r["id"] for r in plan["records"]}), 100)
+        self.assertEqual(len({r["title"] for r in plan["records"]}), 100)
+        categories = {cat["id"]: cat["target"] for cat in plan["categories"]}
+        for cat, target in categories.items():
+            self.assertEqual(sum(r["category"] == cat for r in plan["records"]), target)
+        included = [r for r in plan["records"] if r["status"] == "included"]
+        planned = [r for r in plan["records"] if r["status"] == "planned"]
+        self.assertEqual((len(included), len(planned)), (3, 97))
+        self.assertEqual({r["asset"] for r in included},
+                         {"visuals/solar-system.svg", "visuals/water-molecule.svg", "visuals/cell.svg"})
+        with ZipFile(self.sample) as package:
+            packaged = set(package.namelist())
+        for record in included:
+            self.assertIn("content/" + record["asset"], packaged)
+        for record in planned:
+            self.assertIsNone(record["asset"])
+        self.assertNotIn("content/images-100.json", packaged)
 
     def test_calibration_raster_is_only_a_test_fixture(self):
         magic, dimensions, maximum, pixels = plate().split(b"\n", 3)
@@ -165,12 +188,17 @@ class ArchiveTests(unittest.TestCase):
                 self.assertTrue((site / urlsplit(target).path).is_file(), target)
         self.assertNotIn("__EDITION__", html)
         self.assertNotIn("__SIZE__", html)
-        self.assertIn("0.3.0", html)
+        self.assertIn("0.4.0", html)
         self.assertIn("guide.html", html)
         self.assertTrue((site / "primer-panel.svg").is_file())
         self.assertTrue((site / "encyclopedia.txt").is_file())
         self.assertTrue((site / "library.html").is_file())
         self.assertTrue((site / "library.js").is_file())
+        self.assertTrue((site / "images.html").is_file())
+        self.assertTrue((site / "images.js").is_file())
+        self.assertTrue((site / "image-plan.json").is_file())
+        self.assertEqual(len(json.loads((site / "image-plan.json").read_text())["records"]), 100)
+        self.assertIn("100 images", (site / "images.html").read_text())
         self.assertTrue((site / "decoder.js").is_file())
         self.assertTrue((site / "records/catalog.json").is_file())
         self.assertIn("decoded-grid", (site / "guide.html").read_text())
