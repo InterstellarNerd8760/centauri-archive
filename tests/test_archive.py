@@ -7,6 +7,7 @@ import unittest
 import warnings
 from zipfile import ZipFile
 from html.parser import HTMLParser
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
@@ -143,7 +144,7 @@ class ArchiveTests(unittest.TestCase):
             if target.startswith("#"):
                 self.assertIn(target[1:], parser.anchors)
             elif not target.startswith(("https://", "http://")):
-                self.assertTrue((site / target).is_file(), target)
+                self.assertTrue((site / urlsplit(target).path).is_file(), target)
         self.assertNotIn("__EDITION__", html)
         self.assertNotIn("__SIZE__", html)
         self.assertIn("0.2.0", html)
