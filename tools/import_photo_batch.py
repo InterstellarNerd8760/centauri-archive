@@ -9,12 +9,15 @@ into archive/photos; never hotlinked in the final gallery.
 """
 import argparse
 import json
+from io import BytesIO
 from pathlib import Path
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
-MAX_DOWNLOAD = 3_000_000
+MAX_DOWNLOAD = 20_000_000
+MAX_OUTPUT = 3_000_000
+MAX_DIMENSION = 1800
 MAX_ARCHIVE_BYTES = 10_000_000
 
 
@@ -40,13 +43,25 @@ def retrieve(url):
     with urlopen(request, timeout=35) as response:
         content = response.read(MAX_DOWNLOAD + 1)
         if len(content) > MAX_DOWNLOAD:
-            raise ValueError("Image exceeds 3 MB batch download limit")
+            raise ValueError("Image exceeds 20 MB source download limit")
         if response.headers.get("Content-Type", "").lower().startswith("text/"):
             raise ValueError("Server returned text instead of a JPEG")
     if not (8_000 <= len(content) <= MAX_DOWNLOAD and content[:2] == b"\xff\xd8"
             and content[-2:] == b"\xff\xd9"):
         raise ValueError("Invalid or suspicious JPEG image")
-    return content
+    # Keep the acquisition JPEG high quality while enforcing the small
+    # prototype ZIP budget. Original source URL stays in provenance metadata.
+    from PIL import Image, ImageOps
+    with Image.open(BytesIO(content)) as original:
+        original.load()
+        image = ImageOps.exif_transpose(original).convert("RGB")
+        image.thumbnail((MAX_DIMENSION, MAX_DIMENSION), Image.Resampling.LANCZOS)
+        output = BytesIO()
+        image.save(output, format="JPEG", quality=87, optimize=True)
+        converted = output.getvalue()
+    if len(converted) > MAX_OUTPUT:
+        raise ValueError("Downsampled JPEG exceeds 3 MB payload budget")
+    return converted
 
 
 def import_batch(batch_path):
@@ -77,6 +92,7 @@ def import_batch(batch_path):
             raise ValueError(f"Duplicate image: {path}")
         if urlparse(entry["source_page"]).scheme != "https":
             raise ValueError("Source page must use HTTPS")
+        print(f"Retrieving {entry['slot']}: {filename}", flush=True)
         binaries[path] = retrieve(entry["asset_url"])
         slot.update(status="included", asset=path, source_url=entry["source_page"],
                     curation_note="NASA source and acquisition documented; independent editorial review pending.")
