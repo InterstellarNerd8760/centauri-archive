@@ -10,7 +10,7 @@
 .hero-grid h1{font-size:clamp(4.5rem,7.4vw,8.2rem)}
 .hero-tagline{font:italic 400 clamp(1.45rem,2.5vw,2.15rem)/1.2 var(--serif);color:var(--white);margin-bottom:1.2rem}
 .hero-note{font-size:.87rem;color:var(--soft);max-width:34rem}
-.carrier-figure{margin:0;min-width:0}.carrier-frame{background:radial-gradient(ellipse at 50% 45%,#172231 0%,#0a111c 58%,transparent 75%);border:1px solid var(--line);border-radius:5px;overflow:hidden}
+.carrier-figure{margin:0;min-width:0}.carrier-frame{background:#080e17;border:1px solid var(--line);border-radius:5px;overflow:hidden}
 .carrier-frame canvas{display:block;width:100%;height:auto;aspect-ratio:840/680}
 .carrier-figure figcaption{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;font:.64rem var(--mono);color:var(--soft);margin-top:.8rem}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.carrier-figure{width:min(100%,34rem)}.hero-grid h1{font-size:clamp(4.5rem,11vw,8rem)}}
@@ -98,7 +98,6 @@
 .header{position:sticky;top:0;z-index:20;background:rgba(5,8,15,.91);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
 .header nav a{transition:color .2s ease}.header nav a[aria-current=page]{color:var(--sky)}
 .hero{position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;pointer-events:none;inset:-15% -30% auto 45%;height:36rem;border-radius:50%;background:radial-gradient(ellipse,rgba(42,100,145,.13),transparent 65%)}
 .hero-copy,.carrier-figure{position:relative}
 .hero-copy .eyebrow{letter-spacing:.21em}
 .hero .intro{font-weight:300}
@@ -115,7 +114,7 @@
 .reader-sources a{color:var(--sky);text-decoration:none;overflow-wrap:anywhere}
 .reader-sources a:hover{text-decoration:underline}
 .media-figure{margin:1rem 0;display:flex;flex-direction:column;gap:.75rem}
-.media-figure img{width:100%;max-height:530px;object-fit:contain;padding:2rem;background:radial-gradient(ellipse at center,#172b40,#060c15);border:1px solid var(--line)}
+.media-figure img{width:100%;max-height:530px;object-fit:contain;padding:2rem;background:#080e17;border:1px solid var(--line)}
 .media-figure audio{width:100%;margin:2rem 0}
 .media-figure figcaption,.media-note{color:var(--soft);font:.8rem/1.6 var(--mono)}
 .media-note{margin-top:1.2rem}
@@ -123,7 +122,7 @@
 .showcase-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
 .showcase-card{border:1px solid var(--line);background:#080f1a;color:inherit;text-decoration:none;min-width:0;transition:transform .2s,border-color .2s}
 .showcase-card:hover{transform:translateY(-4px);border-color:var(--sky)}
-.showcase-card img{display:block;width:100%;aspect-ratio:1.45;object-fit:contain;padding:1.2rem;background:radial-gradient(ellipse at 50% 50%,#19304a 0%,#070d17 70%)}
+.showcase-card img{display:block;width:100%;aspect-ratio:1.45;object-fit:contain;padding:1.2rem;background:#080e17}
 .showcase-card-body{padding:1rem 1.2rem 1.4rem}
 .showcase-card h3{font:400 1.7rem/1.2 var(--serif);color:var(--white);margin:.5rem 0}
 .showcase-card p{font-size:.88rem;color:var(--soft);margin:0}
@@ -179,9 +178,9 @@
 .atlas-category-heading h3{font:400 clamp(2rem,3.7vw,3.2rem)/1.12 var(--serif);color:var(--white);margin:.6rem 0}
 .atlas-category-heading p:last-child{max-width:37rem;color:var(--soft);margin:0}
 .atlas-result-count{color:var(--sky);font:.75rem var(--mono);white-space:nowrap}
-.atlas-results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.atlas-results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
 .atlas-image-item{background:#08131f;border:1px solid var(--line);min-width:0}
-.atlas-item-media{height:145px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 50% 70%,#1d3549,#080f1c 80%);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.atlas-item-media{height:145px;border-bottom:1px solid var(--line);background:#080e17;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .atlas-item-media img{width:100%;height:100%;object-fit:contain;padding:.55rem}
 .atlas-item-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#56728a;letter-spacing:.25em;font:400 1.9rem var(--mono);background-image:linear-gradient(45deg,transparent 48%,rgba(100,151,181,.07) 49%,rgba(100,151,181,.07) 51%,transparent 52%);background-size:54px 54px}
 .atlas-item-body{padding:1rem 1.1rem 1.3rem}
@@ -249,14 +248,14 @@
 .earth-cover figcaption, #photo-gallery article > a:last-child { font-size:.85rem; color:var(--sky) }
 .image-atlas-intro { padding-block:3rem }
 #photo-gallery { margin-top:2rem }
-#photo-gallery article { padding-bottom:1.25rem }
+#photo-gallery article { min-width:0; overflow-wrap:anywhere; padding-bottom:1.25rem }
 #photo-gallery article > a:first-child { display:block; text-decoration:none }
-#photo-gallery img { width:100%; height:clamp(13rem,20vw,20rem); object-fit:contain; display:block; background:#05080f }
+#photo-gallery img { width:100%; aspect-ratio:4 / 3; height:auto; object-fit:contain; display:block; background:#05080f }
 #photo-gallery h3, #photo-gallery p, #photo-gallery article > a:last-child { margin:1rem 1.2rem 0 }
 #photo-gallery article > a:last-child { display:inline-block }
 #subject-plan summary, #contents summary { cursor:pointer; color:var(--white); font-size:1.2rem; padding:.75rem 0 }
 .plan-list { list-style:none; padding:0 }
-.plan-list li { display:grid; grid-template-columns:auto 1fr auto; align-items:baseline; gap:1rem; padding:.8rem 0; border-bottom:1px solid var(--line) }
+.plan-list li { display:grid; grid-template-columns:auto minmax(0,1fr) auto; overflow-wrap:anywhere; align-items:baseline; gap:1rem; padding:.8rem 0; border-bottom:1px solid var(--line) }
 .plan-list small { color:var(--sky) }
 .guide-intro .decoder-lab { text-align:left }
 @media(max-width:700px) {
@@ -286,3 +285,5 @@
   #contents[open] #record-nav { max-height:40vh; max-height:40dvh }
   #record-title { scroll-margin-top:3.75rem }
 }
+
+@media (min-width:901px) and (max-width:1050px) { .atlas-results { grid-template-columns:repeat(3,minmax(0,1fr)) } }
