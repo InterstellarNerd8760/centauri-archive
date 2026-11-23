@@ -14,7 +14,7 @@
       "credit": "NASA / GSFC / Solar Dynamics Observatory",
       "date": "2025-09-10",
       "rights": "NASA science image; generally not subject to U.S. copyright, subject to NASA Media Usage Guidelines.",
-      "processing": "Source NASA JPEG (PIA26681) copied without additional processing; gold false-color rendering originates with the source scientific image."
+      "processing": "NASA false-color 171-angstrom scientific image; resized to maximum edge 1800 pixels and saved as quality-87 JPEG without additional color remapping. NASA source original is linked."
     },
     {
       "slot": "IMG-028",
@@ -28,7 +28,7 @@
       "credit": "NASA Earth Observatory / MODIS Rapid Response Team, NASA GSFC",
       "date": "2009-01-27",
       "rights": "NASA Earth Observatory imagery; generally not subject to U.S. copyright, subject to NASA Media Usage Guidelines.",
-      "processing": "NASA MODIS mosaic of several passes; NASA 1536-pixel presentation derivative acquired without local re-encoding."
+      "processing": "NASA MODIS composite of multiple orbital passes. Downsampled to maximum edge 1800 pixels and saved as quality-87 JPEG; original acquisition link retained."
     },
     {
       "slot": "IMG-040",
@@ -42,7 +42,7 @@
       "credit": "NASA / Expedition 75 crew / ISS Crew Earth Observations Facility",
       "date": "2026-09-07",
       "rights": "NASA astronaut photograph; generally not subject to U.S. copyright, subject to NASA Media Usage Guidelines.",
-      "processing": "NASA cropped and enhanced contrast and removed lens artifacts. The NASA large JPEG is copied without further local re-encoding."
+      "processing": "NASA cropped image, enhanced contrast and removed lens artifacts; the NASA derivative is resized to maximum edge 1800 pixels and saved as quality-87 JPEG."
     }
   ]
 }
