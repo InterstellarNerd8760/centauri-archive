@@ -18,7 +18,7 @@ async function initAtlas() {
   const included = plan.records.filter(slot => slot.status === "included");
   get("atlas-included").textContent = included.length;
   get("atlas-remaining").textContent = plan.records.length - included.length;
-  for (const slot of included) {
+  function imageCard(slot) {
     const record = records.get(slot.asset);
     const card = node("article", "", "atlas-image-item");
     const link = node("a");
@@ -31,7 +31,7 @@ async function initAtlas() {
     const source = node("a", record.photographer);
     source.href = record.sources[0].url;
     card.append(link, node("p", record.summary), source);
-    get("photo-gallery").append(card);
+    return card;
   }
   const categories = [{id:"all",name:"All categories"}, ...plan.categories];
   const filters = get("atlas-filters");
@@ -45,16 +45,33 @@ async function initAtlas() {
     get("scope-label").textContent = all ? "Search all subjects" : "Search within " + selected.name;
     const query = search.value.trim().toLowerCase();
     const matches = plan.records.filter(slot => (all || slot.category === selected.id) &&
-      [slot.id, slot.title, records.get(slot.asset)?.title, slot.category, slot.kind].join(" ").toLowerCase().includes(query));
+      [slot.id, slot.title, records.get(slot.asset)?.title, records.get(slot.asset)?.summary, records.get(slot.asset)?.photographer, slot.category, slot.kind].join(" ").toLowerCase().includes(query));
     get("atlas-count").textContent = matches.length + (matches.length === 1 ? " subject" : " subjects");
-    const rows = matches.map(slot => {
-      const row = node("li");
-      const title = node(slot.asset ? "a" : "span", slot.title);
-      if (slot.asset) title.href = "library.html?record=" + encodeURIComponent(slot.asset);
-      row.append(node("small", slot.id), title, node("small", slot.asset ? "Archived" : "Planned"));
-      return row;
-    });
-    get("atlas-results").replaceChildren(...rows);
+    const sections = [];
+    for (const topic of plan.categories) {
+      const subjects = matches.filter(slot => slot.category === topic.id);
+      if (!subjects.length) continue;
+      const section = node("section", "", "topic-collection");
+      section.append(node("h2", topic.name), node("p", topic.description));
+      const photos = subjects.filter(slot => slot.asset);
+      if (photos.length) {
+        const grid = node("div", "", "atlas-results");
+        grid.append(...photos.map(imageCard));
+        section.append(grid);
+      }
+      const planned = subjects.filter(slot => !slot.asset);
+      if (planned.length) {
+        const list = node("ul", "", "plan-list");
+        for (const slot of planned) {
+          const row = node("li");
+          row.append(node("small", slot.id), node("span", slot.title), node("small", "Planned"));
+          list.append(row);
+        }
+        section.append(list);
+      }
+      sections.push(section);
+    }
+    get("photo-gallery").replaceChildren(...sections);
     get("empty-result").hidden = matches.length > 0;
     get("reset-category").hidden = matches.length > 0 || all;
   }

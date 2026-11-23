@@ -1068,12 +1068,12 @@
     {
       "id": "IMG-101",
       "category": "civilization",
-      "title": "The first Super Heavy tower catch",
+      "title": "Ship 42’s tower catch on Flight 15",
       "kind": "photograph",
       "status": "included",
-      "asset": "photos/super-heavy-catch.jpg",
-      "source_url": "https://commons.wikimedia.org/wiki/File:Starship_5_Booster_Landing_on_Mechzilla.jpg",
-      "curation_note": "Starship’s fifth flight test returned its Super Heavy booster to the launch tower on 13 October 2024. The frame shows the booster alongside the catch arms with its engines still firing."
+      "asset": "photos/ship-42-catch.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Starship_Flight_15.jpg",
+      "curation_note": "After returning from orbit on 14 November 2026, Ship 42 descends beside the launch tower at Starbase, Texas. Its engines are still firing as the arms reach underneath the spacecraft."
     },
     {
       "id": "IMG-102",

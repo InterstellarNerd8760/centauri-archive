@@ -558,27 +558,31 @@
       "date": "1914"
     },
     {
-      "path": "photos/super-heavy-catch.jpg",
-      "title": "The first Super Heavy tower catch",
-      "summary": "Starship’s fifth flight test returned its Super Heavy booster to the launch tower on 13 October 2024. The frame shows the booster alongside the catch arms with its engines still firing.",
+      "path": "photos/ship-42-catch.jpg",
+      "title": "Ship 42’s tower catch on Flight 15",
+      "summary": "After returning from orbit on 14 November 2026, Ship 42 descends beside the launch tower at Starbase, Texas. Its engines are still firing as the arms reach underneath the spacecraft.",
       "group": "photos",
-      "alt": "A rocket booster beside two tower arms with flame extending below.",
-      "caption": "Starship’s fifth flight test returned its Super Heavy booster to the launch tower on 13 October 2024. The frame shows the booster alongside the catch arms with its engines still firing.",
-      "photographer": "Steve Jurvetson, Bech and Prospectprospekt",
+      "alt": "Ship 42 upright beside the tower arms, with a bright plume beneath its engines.",
+      "caption": "After returning from orbit on 14 November 2026, Ship 42 descends beside the launch tower at Starbase, Texas. Its engines are still firing as the arms reach underneath the spacecraft.",
+      "photographer": "SpaceX",
       "status": "Acquired; editorial review pending",
-      "rights": "CC BY 2.0.",
-      "derivative": "Resized to fit 1800 pixels and encoded as JPEG.",
+      "rights": "Wikimedia Commons lists this SpaceX photograph under CC BY 4.0.",
+      "derivative": "Full composition retained. Resized to 1200 × 1800 pixels and encoded as JPEG.",
       "sources": [
         {
-          "label": "Source image, description and rights",
-          "url": "https://commons.wikimedia.org/wiki/File:Starship_5_Booster_Landing_on_Mechzilla.jpg"
+          "label": "Photograph, description and license · Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Starship_Flight_15.jpg"
         },
         {
-          "label": "Creative Commons Attribution 2.0",
-          "url": "https://creativecommons.org/licenses/by/2.0/"
+          "label": "SpaceX · original post",
+          "url": "https://x.com/SpaceX/status/2122352509721190612"
+        },
+        {
+          "label": "Creative Commons Attribution 4.0",
+          "url": "https://creativecommons.org/licenses/by/4.0/"
         }
       ],
-      "date": "2024-10-13"
+      "date": "2026-11-14"
     },
     {
       "path": "photos/prenatal-ultrasound.jpg",
