@@ -2071,6 +2071,75 @@
           "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Football_Match%28GN05078%29.jpg"
         }
       ]
+    },
+    {
+      "path": "photos/namibia-mahangu-porridge-communal-cooking.jpg",
+      "title": "Two cooks prepare mahangu porridge together",
+      "summary": "Two women in Namibia cook mahangu porridge over an outdoor fire, working together as one stirs and the other adds flour to the large pot. This photo was taken in 2023.",
+      "group": "photos",
+      "alt": "Two women in dark blue clothing prepare porridge together in a large black pot over a wood fire in an outdoor cooking area.",
+      "caption": "Shared cooking as part of everyday human life. The people are preparing mahangu porridge, a meal associated with millet in Namibia; the photographer documents this one specific scene.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Wikimedia Commons photo originally released as CC0 1.0 Universal Public Domain Dedication by its photographer. Photographer credited in record; identifiable subjects' individual consent is not independently documented; review required before interstellar-flight selection.",
+      "photographer": "Gwasheya",
+      "date": "2023-12-02",
+      "derivative": "Original source image resized to maximum 1800px and saved as JPEG quality 87 for development archive, with original URL retained. No AI generation.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Kitchen_Companions,_Cooking_Together.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Kitchen_Companions%2C_Cooking_Together.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/kalbelia-dance-chandigarh-2023.jpg",
+      "title": "Kalbelia dance performance in Chandigarh",
+      "summary": "A performer in elaborate colorful clothing executes a turning movement during a Kalbelia dance at a craft fair in Chandigarh, India in 2023.",
+      "group": "photos",
+      "alt": "Kalbelia performer in vibrant green, pink, orange and gold costume dancing with a dramatically twirling translucent fabric skirt on a dark stage.",
+      "caption": "A documented Kalbelia cultural performance at a Chandigarh craft fair, photographed December 2023. One specific dance tradition cannot represent all music or dance worldwide.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Wikimedia Commons photo originally released as CC0 1.0 Universal Public Domain Dedication by its photographer. Photographer credited in record; identifiable subjects' individual consent is not independently documented; review required before interstellar-flight selection.",
+      "photographer": "YashinderBahga",
+      "date": "2023-12-05",
+      "derivative": "Original source image resized to maximum 1800px and saved as JPEG quality 87 for development archive, with original URL retained. No AI generation.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Kalbelia_traditional_Dance.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Kalbelia_traditional_Dance.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/tanzania-sign-language-wiki4inclusion-2024.jpg",
+      "title": "Tanzanian Sign Language in conversation",
+      "summary": "An interpreter communicates with a deaf participant at a Wiki4Inclusion training event in Dar es Salaam, Tanzania in July 2024. The image illustrates visual-spatial language in use.",
+      "group": "photos",
+      "alt": "Two adults standing face-to-face at an inclusion training event; one person uses a signed gesture while the other watches attentively.",
+      "caption": "A documented Tanzanian Sign Language (TSL) interaction. Sign languages are full natural languages with their own grammars, not hand-rendered versions of one global spoken language.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "Wikimedia Commons photo originally released as CC0 1.0 Universal Public Domain Dedication by its photographer. Photographer credited in record; identifiable subjects' individual consent is not independently documented; review required before interstellar-flight selection.",
+      "photographer": "Rwebogora",
+      "date": "2024-07-20",
+      "derivative": "Original source image resized to maximum 1800px and saved as JPEG quality 87 for development archive, with original URL retained. No AI generation.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:A_sign_language_interpreter_with_a_deaf_participant.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/A_sign_language_interpreter_with_a_deaf_participant.jpg"
+        }
+      ]
     }
   ]
 }

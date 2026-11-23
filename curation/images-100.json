@@ -910,10 +910,10 @@
       "category": "culture",
       "title": "People cooking and sharing food",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/namibia-mahangu-porridge-communal-cooking.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kitchen_Companions,_Cooking_Together.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-086",
@@ -980,10 +980,10 @@
       "category": "culture",
       "title": "Dance and communal celebration",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/kalbelia-dance-chandigarh-2023.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kalbelia_traditional_Dance.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-093",
@@ -1010,10 +1010,10 @@
       "category": "culture",
       "title": "Spoken and signed languages in use",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/tanzania-sign-language-wiki4inclusion-2024.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_sign_language_interpreter_with_a_deaf_participant.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-096",
