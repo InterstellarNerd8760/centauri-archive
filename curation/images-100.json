@@ -180,10 +180,10 @@
       "category": "cosmos",
       "title": "The Sun and its apparent surface",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/sun-sdo-pia26681.jpg",
+      "source_url": "https://science.nasa.gov/photojournal/image-of-sun-from-nasas-solar-dynamics-observatory/",
+      "curation_note": "NASA source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-013",
@@ -340,10 +340,10 @@
       "category": "geography",
       "title": "Antarctic ice sheet and surrounding ocean",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/antarctica-modis-2009.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/antarctica-36839/",
+      "curation_note": "NASA source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-029",
@@ -460,10 +460,10 @@
       "category": "systems",
       "title": "Aurora and Earth's magnetic environment",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/iss-aurora-2026.jpg",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/purple-haze-aurora/",
+      "curation_note": "NASA source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-041",

@@ -691,6 +691,75 @@
           "url": "https://www.jpl.nasa.gov/jpl-image-use-policy/"
         }
       ]
+    },
+    {
+      "path": "photos/sun-sdo-pia26681.jpg",
+      "title": "The Sun in extreme ultraviolet",
+      "summary": "NASA's Solar Dynamics Observatory imaged the Sun on September 10, 2025. The golden color represents ultraviolet intensity rather than the Sun's visible-light color.",
+      "group": "photos",
+      "alt": "Detailed glowing yellow-gold solar disk with active regions and wisps of corona against black space.",
+      "caption": "A view of the Sun in a 171-angstrom extreme-ultraviolet band. This instrument image is rendered in false color, allowing hot solar structures to be seen.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "NASA science image; generally not subject to U.S. copyright, subject to NASA Media Usage Guidelines.",
+      "photographer": "NASA / GSFC / Solar Dynamics Observatory",
+      "date": "2025-09-10",
+      "derivative": "NASA false-color 171-angstrom scientific image; resized to maximum edge 1800 pixels and saved as quality-87 JPEG without additional color remapping. NASA source original is linked.",
+      "sources": [
+        {
+          "label": "NASA source description and credits",
+          "url": "https://science.nasa.gov/photojournal/image-of-sun-from-nasas-solar-dynamics-observatory/"
+        },
+        {
+          "label": "NASA image file (acquired bytes)",
+          "url": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26681/PIA26681.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/antarctica-modis-2009.jpg",
+      "title": "Antarctica in summer, from orbit",
+      "summary": "NASA Aqua MODIS imagery acquired January 27, 2009 depicts the continent's ice, surrounding seas and clouds. Several orbital passes were combined to form this mosaic.",
+      "group": "photos",
+      "alt": "Large ice-white Antarctic continent surrounded by dark southern ocean and pale swirling cloud systems.",
+      "caption": "A satellite mosaic shows Antarctica during the continuous summer daylight. This is a composite of several overpasses, not a single camera exposure.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "NASA Earth Observatory imagery; generally not subject to U.S. copyright, subject to NASA Media Usage Guidelines.",
+      "photographer": "NASA Earth Observatory / MODIS Rapid Response Team, NASA GSFC",
+      "date": "2009-01-27",
+      "derivative": "NASA MODIS composite of multiple orbital passes. Downsampled to maximum edge 1800 pixels and saved as quality-87 JPEG; original acquisition link retained.",
+      "sources": [
+        {
+          "label": "NASA source description and credits",
+          "url": "https://science.nasa.gov/earth/earth-observatory/antarctica-36839/"
+        },
+        {
+          "label": "NASA image file (acquired bytes)",
+          "url": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/36000/36839/Antarctica_AMO_2009027_lrg.jpg?crop=faces%2Cfocalpoint&fit=crop&h=1536&w=1536"
+        }
+      ]
+    },
+    {
+      "path": "photos/iss-aurora-2026.jpg",
+      "title": "Aurora over Earth's night side",
+      "summary": "Photographed from the International Space Station on September 7, 2026, auroral light glows above Earth's limb. Atmospheric atoms and molecules radiate after excitation associated with the solar wind.",
+      "group": "photos",
+      "alt": "Thin green and purple auroral arcs above the dark curve of Earth, with distant city lights visible.",
+      "caption": "An ISS view of a green and purple aurora. NASA cropped the photograph, enhanced contrast and removed lens artifacts.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "NASA astronaut photograph; generally not subject to U.S. copyright, subject to NASA Media Usage Guidelines.",
+      "photographer": "NASA / Expedition 75 crew / ISS Crew Earth Observations Facility",
+      "date": "2026-09-07",
+      "derivative": "NASA cropped image, enhanced contrast and removed lens artifacts; the NASA derivative is resized to maximum edge 1800 pixels and saved as quality-87 JPEG.",
+      "sources": [
+        {
+          "label": "NASA source description and credits",
+          "url": "https://science.nasa.gov/earth/earth-observatory/purple-haze-aurora/"
+        },
+        {
+          "label": "NASA image file (acquired bytes)",
+          "url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/purple-haze-aurora/ISS075-E-88592_lrg.jpg"
+        }
+      ]
     }
   ]
 }
