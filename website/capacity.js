@@ -11,7 +11,9 @@ function estimateCapacity(input) {
   const rawBytes = Number(cells * usablePerThousand / 8000n);
   const logicalBytes = Math.round(input.logicalMB * 1_000_000);
   const correctionPerThousand = BigInt(Math.round(input.correction * 10));
-  const correctionBytes = Number((BigInt(logicalBytes) * correctionPerThousand + 999n) / 1000n);
+  const correctionBytes = input.protectedOverride >= logicalBytes
+    ? input.protectedOverride - logicalBytes
+    : Number((BigInt(logicalBytes) * correctionPerThousand + 999n) / 1000n);
   const protectedBytes = logicalBytes + correctionBytes;
   const substrateVolume = area * input.thickness / 1000;
   const shieldVolume = area * input.shieldThickness / 1000;
@@ -45,6 +47,7 @@ function connectCapacityForm(form) {
   const update = (event) => {
     event.preventDefault();
     const input = Object.fromEntries([...new FormData(form)].map(([name, value]) => [name, Number(value)]));
+    if (form.dataset.protectedBytes) input.protectedOverride = Number(form.dataset.protectedBytes);
     const result = estimateCapacity(input);
     const remainingBytes = result.rawBytes - result.protectedBytes;
 

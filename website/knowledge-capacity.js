@@ -16,13 +16,32 @@ if (typeof document !== "undefined") {
   const summary = document.getElementById("knowledge-source-summary");
   const graph = document.getElementById("knowledge-projection");
   let expanded;
+  const basis = document.getElementById("capacity-basis");
+  const percentBasis = "Current estimate uses the selected overhead percentage.";
+  const expandedOption = preset.querySelector('[value="expanded"]');
+  expandedOption.disabled = true;
+  function chooseCustom() {
+    delete capacity.dataset.protectedBytes;
+    preset.value = "custom";
+    basis.textContent = percentBasis;
+  }
   preset.addEventListener("change", () => {
     const sizes = { core: 100_000_000, expanded: expanded?.logical_bytes, extended: 64_000_000_000 };
-    if (!sizes[preset.value]) return;
+    delete capacity.dataset.protectedBytes;
+    basis.textContent = percentBasis;
+    if (preset.value === "expanded" && expanded) {
+      capacity.dataset.protectedBytes = expanded.protected_bytes;
+      basis.textContent = "Curated preset uses the calculated per-record CAX1 and CAEC byte count. Edit content or the percentage to switch to the custom model.";
+    }
+    if (!sizes[preset.value]) {
+      capacity.requestSubmit();
+      return;
+    }
     capacity.elements.logicalMB.value = sizes[preset.value] / 1_000_000;
     capacity.requestSubmit();
   });
-  capacity.elements.logicalMB.addEventListener("input", () => { preset.value = "custom"; });
+  capacity.elements.logicalMB.addEventListener("input", chooseCustom);
+  capacity.elements.correction.addEventListener("input", chooseCustom);
   mix.addEventListener("submit", event => {
     event.preventDefault();
     const data = Object.fromEntries([...new FormData(mix)].map(([name, value]) => [name, Number(value)]));
@@ -31,7 +50,7 @@ if (typeof document !== "undefined") {
       document.getElementById("content-mix-result").textContent = "The content mix exceeds the calculator’s range.";
       return;
     }
-    preset.value = "custom";
+    chooseCustom();
     capacity.elements.logicalMB.value = result.logical / 1_000_000;
     capacity.requestSubmit();
     document.getElementById("content-mix-result").textContent =
@@ -43,6 +62,7 @@ if (typeof document !== "undefined") {
     return response.json();
   }).then(data => {
     expanded = data.scenarios.find(scenario => scenario.articles === 3000);
+    expandedOption.disabled = !expanded;
     const maximum = Math.max(...data.scenarios.map(scenario => scenario.encoded_bytes));
     summary.textContent = data.articles + " current drafts · " + format(data.logical_source_bytes) + " source records.";
     for (const scenario of data.scenarios) {
