@@ -390,10 +390,10 @@
       "category": "systems",
       "title": "Rainfall, evaporation and the water cycle",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/noaa-shelf-cloud-rain-shaft.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nssl0389_-_Flickr_-_NOAA_Photo_Library.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-034",
@@ -490,10 +490,10 @@
       "category": "molecules",
       "title": "Ice, water and water vapor in natural settings",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/iceland-foggy-iceberg-glacier-lagoon.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Foggy_Iceberg_at_Glacier_Lagoon.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-044",
@@ -710,10 +710,10 @@
       "category": "life",
       "title": "Reptile and bird in natural habitats",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/botswana-egyptian-geese-crocodile.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Egyptian_Geese_family_behind_a_Crocodile,_Chobe_National_Park,_Botswana.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-066",
