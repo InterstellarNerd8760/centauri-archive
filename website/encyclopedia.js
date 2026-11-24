@@ -114,6 +114,25 @@ function select(id,push=false){
   showCategories();
   if(push){const url=new URL(location.href);url.searchParams.set("article",id);url.hash="";history.pushState({}, "", url);get("enc-title").focus({preventScroll:true});get("enc-reader").scrollIntoView({block:"start"});}
 }
+function renderCoverage(){
+  const root=get("enc-coverage"), summary=get("enc-review-summary");
+  if(!root||!summary)return;
+  root.replaceChildren();
+  const checked=a=>a.review_stage==="source-checked";
+  const categories=data.categories.map(c=>({category:c, articles:data.articles.filter(a=>a.category===c.id)}));
+  const max=Math.max(1,...categories.map(c=>c.articles.length));
+  const count=data.articles.filter(checked).length;
+  summary.textContent=data.articles.length+" articles · "+count+" source-checked drafts · "+(data.articles.length-count)+" in other review stages.";
+  for(const {category,articles} of categories){
+    const n=articles.filter(checked).length;
+    const row=node("div"), head=node("div",null,"explain-bar-head"), track=node("div",null,"explain-track");
+    head.append(node("span",category.title),node("span",n+" checked / "+articles.length));
+    track.setAttribute("aria-hidden","true");
+    const done=node("span"), pending=node("span",null,"explain-pending");
+    done.style.width=(100*n/max)+"%"; pending.style.width=(100*(articles.length-n)/max)+"%";
+    track.append(done,pending); row.append(head,track);root.append(row);
+  }
+}
 async function init(){
   try{
     const responses=await Promise.all([fetch("records/encyclopedia/index.json"),fetch("image-plan.json"),fetch("records/catalog.json")]);
@@ -121,6 +140,7 @@ async function init(){
     data=await responses[0].json();const plan=await responses[1].json();const catalog=await responses[2].json();
     photos=new Map(plan.records.map(p=>[p.id,p]));articleMap=new Map(data.articles.map(a=>[a.id,a]));
     records=new Map(catalog.records.map(record=>[record.path,record]));
+    renderCoverage();
     const requested=new URL(location.href).searchParams.get("article");select(articleMap.has(requested)?requested:data.articles[0].id);
     search.addEventListener("input",showCategories);
     addEventListener("popstate",()=>{
