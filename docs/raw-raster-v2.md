@@ -116,4 +116,24 @@ The following exact byte counts were computed from the dimensions of 104 include
 | 1,024 px | 9,672,169 | 77,338,036 | 232,002,876 |
 | Native | 23,146,409 | 185,131,952 | 555,384,624 |
 
+To reproduce the full 64-pixel batch and its measured totals, run this from the repository root after installing Pillow.
+
+```sh
+PYTHONPATH=tools python - <<'PYTHON'
+from pathlib import Path
+from tempfile import TemporaryDirectory
+from photo_raster import MODE_NAMES, batch, collection_budget, read_frame
+
+with TemporaryDirectory() as directory:
+    output = Path(directory) / "frames"
+    batch(output, ids=None, edge=64, modes=[1, 8, 24])
+    totals = dict.fromkeys(MODE_NAMES.values(), 0)
+    for path in output.glob("*.car"):
+        mode = MODE_NAMES[read_frame(path).mode]
+        totals[mode] += path.stat().st_size
+    assert totals == collection_budget(None, [64])["scenarios"][0]["frame_bytes"]
+    print(totals)
+PYTHON
+```
+
 For example, keeping source JPEGs and all 512-pixel RGB frames would consume 96,641,848 logical bytes before other content. At 256 pixels, the same pair uses 51,518,392 bytes. Choosing a useful mix for Centauri Core requires reviewing legibility at candidate resolutions, especially on photographs with small annotations, scale bars or fine anatomical detail.
