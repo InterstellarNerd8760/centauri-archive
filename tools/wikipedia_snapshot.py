@@ -30,8 +30,9 @@ HEADINGS = set("h1 h2 h3 h4 h5 h6".split())
 BLOCKS = {
     "p": "paragraph", "li": "list-item", "dt": "term", "dd": "definition",
     "blockquote": "quotation", "pre": "preformatted", "figcaption": "caption",
-    "caption": "caption", "tr": "table-row",
+    "caption": "caption",
 }
+DISPLAY_NONE = re.compile(r"(?:^|;)\s*display\s*:\s*none\b", re.IGNORECASE)
 
 
 def json_line(value):
@@ -166,6 +167,11 @@ def compact(value):
     return " ".join(value.split())
 
 
+def omit(node):
+    return (node.tag in OMIT or bool(node.classes & CHROME) or "hidden" in node.attrs
+            or DISPLAY_NONE.search(node.attrs.get("style") or "") is not None)
+
+
 class ArticleContent:
     def __init__(self, source_url):
         self.source_url = source_url
@@ -221,12 +227,47 @@ class ArticleContent:
         for item in items or [node]:
             links = [url for child in descendants(item) if child.tag == "a" and child.attrs.get("href")
                      if (url := self.url(child.attrs["href"]))]
-            self.references.append({"anchor": item.attrs.get("id"), "text": compact(visible_text(item)),
+            body = next((child for child in descendants(item) if child.classes & {"mw-reference-text",
+                         "reference-text"}), item)
+            text = " ".join(block["text"] for block in self.capture(body))
+            self.references.append({"anchor": item.attrs.get("id"), "text": text,
                                     "links": list(dict.fromkeys(links))})
+
+    def capture(self, node):
+        """Read a container's child blocks without mixing them into the surrounding text."""
+        blocks, fragments = self.blocks, self.fragments
+        self.blocks, self.fragments = [], []
+        try:
+            for child in node.children:
+                self.walk(child)
+            self.flush()
+            return self.blocks
+        finally:
+            self.blocks, self.fragments = blocks, fragments
+
+    def table_row(self, node):
+        self.flush()
+        cells = []
+        for child in node.children:
+            if not isinstance(child, Node) or child.tag not in ("th", "td") or omit(child):
+                continue
+            cell = {"kind": "header" if child.tag == "th" else "data", "blocks": self.capture(child)}
+            for attr in ("id", "headers", "scope"):
+                if child.attrs.get(attr):
+                    cell[attr] = child.attrs[attr]
+            for attr in ("colspan", "rowspan"):
+                raw = child.attrs.get(attr) or ""
+                if re.fullmatch(r"[0-9]{1,5}", raw) and (attr == "rowspan" or int(raw) > 0):
+                    cell[attr] = int(raw)
+            cells.append(cell)
+        if cells:
+            self.blocks.append({"kind": "table-row",
+                                "text": " | ".join(" ".join(block["text"] for block in cell["blocks"])
+                                                   for cell in cells), "cells": cells})
 
     def inline(self, node):
         """Return true when an element has already been handled."""
-        if node.tag in OMIT or node.classes & CHROME:
+        if omit(node):
             return True
         if "mw:Extension/ref" in node.types or "mw-ref" in node.classes or "reference" in node.classes:
             anchor = node.find("a")
@@ -252,6 +293,9 @@ class ArticleContent:
             return
         if self.inline(node):
             return
+        if node.tag == "tr":
+            self.table_row(node)
+            return
         kind = "heading" if node.tag in HEADINGS else BLOCKS.get(node.tag)
         container = node.tag in ("div", "section", "table", "ul", "ol", "dl")
         if kind or container:
@@ -260,10 +304,7 @@ class ArticleContent:
             self.list_depth += 1
         if node.tag in ("sub", "sup"):
             self.fragments.append("_(" if node.tag == "sub" else "^(")
-        for i, child in enumerate(node.children):
-            if node.tag == "tr" and i and isinstance(child, Node) and child.tag in ("th", "td"):
-                if compact("".join(self.fragments)):
-                    self.fragments.append(" | ")
+        for child in node.children:
             self.walk(child)
         if node.tag in ("sub", "sup"):
             self.fragments.append(")")
@@ -349,6 +390,8 @@ def parse_article(article, project, snapshot_id, snapshot_date):
                    "licenses": licenses, "provided_attribution": attribution, "license_notices": license_notices},
         **content,
     }
+    if timestamp := article["version"].get("date_modified"):
+        record["source"]["revision_timestamp"] = timestamp
     return page, revision, "article", record
 
 

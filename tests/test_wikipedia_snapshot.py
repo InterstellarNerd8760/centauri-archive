@@ -124,6 +124,36 @@ class WikipediaSnapshotTests(unittest.TestCase):
         self.assertEqual(source["history_url"], "https://en.wikipedia.org/w/index.php?curid=12&action=history")
         self.assertEqual(source["licenses"], article["license"])
 
+    def test_nested_cells_and_formulae_in_notes_keep_their_structure(self):
+        article = json.loads(FIXTURE.read_bytes().splitlines()[0])
+        article["article_body"]["html"] = (
+            '<body><p>Intro</p><table><tr><th rowspan="2" scope="row" id="label">Station</th>'
+            '<td headers="label" colspan="3"><p>Alpha</p><ul><li>Beta</li></ul>'
+            '<span style="color: red; DISPLAY : none">sortable key</span></td><td></td></tr>'
+            '<tr><td>Gamma<table><tr><td>Internal data</td></tr></table></td></tr></table>'
+            '<ol class="references"><li id="cite_note-1"><a href="#cite_ref-1">backlink</a>'
+            '<span class="mw-reference-text">Velocity <span typeof="mw:Extension/math">'
+            '<math><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation>'
+            '</semantics></math></span></span></li></ol></body>'
+        )
+        source = self.root / "tables.ndjson"
+        source.write_text(json.dumps(article) + "\n", encoding="utf-8")
+        self.build(source)
+        record = self.records()[0]
+        rows = [block for block in record["blocks"] if block["kind"] == "table-row"]
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(rows[0]["text"], "Station | Alpha Beta | ")
+        self.assertEqual(rows[0]["cells"][0]["rowspan"], 2)
+        self.assertEqual(rows[0]["cells"][0]["scope"], "row")
+        self.assertEqual(rows[0]["cells"][1]["headers"], "label")
+        self.assertEqual(rows[0]["cells"][1]["colspan"], 3)
+        self.assertEqual([block["kind"] for block in rows[0]["cells"][1]["blocks"]],
+                         ["paragraph", "list-item"])
+        self.assertEqual(rows[0]["cells"][2]["blocks"], [])
+        self.assertEqual(rows[1]["cells"][0]["blocks"][1]["cells"][0]["blocks"][0]["text"], "Internal data")
+        self.assertEqual(record["references"][0]["text"], "Velocity ⟦math:1⟧")
+        self.assertEqual(record["formulae"][0]["tex"], "v")
+
     def test_fetch_requires_https_limits_bytes_and_checks_integrity(self):
         body = b"pinned snapshot sample"
         target = self.root / "sample"
