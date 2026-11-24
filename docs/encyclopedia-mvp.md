@@ -36,3 +36,7 @@ The first 25 entries constitute an introductory skeleton, not comprehensive know
 ## Public collection consolidation
 
 The Image Library and Encyclopedia are the two public collection interfaces. Earlier plain-text records remain in the archive and are linked as supplementary source files, not treated as independently verified references. Revision 2 of the water, cells, history and everyday-experience articles incorporates substantive material from the existing project drafts. The old raw-file reader remains reachable by legacy URL only; no primary navigation links to it. Photo metadata and provenance are displayed in the Image Library itself.
+
+### Collection cross-reference pass — November 23, 2026
+
+All 104 planned photographic IDs now have at least one relevant encyclopedia article link. The remaining introductory primer and unapproved message drafts are linked as supplementary records; they retain their original bytes and editorial status. Links are thematic navigation aids, not independent evidence for article claims. Image inclusion metadata does not substitute for a verified package, a rights review, or scientific and cultural review.
