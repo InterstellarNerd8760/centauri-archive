@@ -5,6 +5,12 @@ from tempfile import TemporaryDirectory
 from zipfile import ZipFile
 
 from archive import ROOT, build
+from build_knowledge import publish_knowledge
+from knowledge_budget import compact_json, measure
+from physical_damage_study import run_study
+from physical_recovery import encode_specimen
+from physical_surface import Surface, measure as measure_surface
+from research_archive import assemble as assemble_records, frame, sample_records
 
 
 def assemble(output):
@@ -22,20 +28,33 @@ def assemble(output):
             path = output / "records" / item["path"].removeprefix("content/")
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(archive.read(item["path"]))
+    publish_knowledge(output)
+    (output / "knowledge/budget.json").write_bytes(compact_json(measure()))
+    sample = sample_records()
+    framed = {record.id: frame(record) for record in sample}
+    (package.parent / "phase-ii.cax").write_bytes(assemble_records(sample))
+    (package.parent / "phase-ii.cas").write_bytes(encode_specimen(framed))
+    damage = run_study(framed, logical_index_id=506)
+    damage["geometry"] = measure_surface(Surface(40_000, 40_000, 80))
+    (output / "surface-study.json").write_bytes(compact_json(damage))
     public_documents = (
         "archive-editions", "blind-primer-experiment", "engineering", "error-correction",
         "fermi-explorer-proposal", "mission", "mission-integration", "physical-primer",
         "primer-ladder", "raw-raster-v2", "roadmap", "visual-vocabulary",
+        "knowledge-architecture", "knowledge-budget", "physical-recovery", "primer-c2",
+        "research-archive-format",
     )
     for name in public_documents:
         shutil.copyfile(ROOT / f"docs/{name}.md", output / f"{name}.txt")
     primer_panels = (
         "primer-panel", "primer-blind-panel", "primer-ladder",
         "primer-ladder-annotated", "primer-ladder-trial",
+        "primer-c2", "primer-c2-annotated",
     )
     for name in primer_panels:
         shutil.copyfile(ROOT / f"docs/{name}.svg", output / f"{name}.svg")
     shutil.copyfile(ROOT / "docs/encyclopedia-mvp.md", output / "encyclopedia.txt")
+    shutil.copyfile(ROOT / "docs/primer-c2-conventions.json", output / "primer-c2-conventions.json")
     vector_directory = package.parent / "raster-vectors"
     vector_directory.mkdir(exist_ok=True)
     for vector in sorted((ROOT / "tests/fixtures/photo-raster-v2").glob("*.car")):

@@ -24,10 +24,16 @@ The July 2026 Physical Superintelligence report commissioned by Fermi Explorer u
 
 | Edition | Logical content study target | Contents and independence |
 | --- | ---: | --- |
-| **Centauri Core** | Approximately 100 MB or less | Physical mathematics and science primer, curated photographic collection with provenance, explanatory diagrams, essential encyclopedia, trial visual vocabulary and language bridge, cultural and historical records, selected human messages, format specifications, and test vectors. Each complete Core copy would carry its own primer, index, framing and recovery instructions. |
+| **Centauri Core** | Approximately 100 MB or less | Physical mathematics and science primer, curated photographic collection with provenance, explanatory diagrams, essential encyclopedia, selected expanded articles if the budget permits, trial visual vocabulary and language bridge, cultural and historical records, selected human messages, format specifications, and test vectors. Each complete Core copy would carry its own primer, index, framing and recovery instructions. |
 | **Centauri Extended** | Approximately 64 GB or more, subject to a measured corpus and capacity trade | A self-contained Core copy plus full or nearly full English Wikipedia article text with preserved attribution, more scientific, historical and cultural records, and optional multilingual or multimedia additions. Expansion records would have independently recoverable framing, indexes and specifications. |
 
 MB and GB are decimal throughout. Logical byte counts measure record content and framing, including its indexes and attribution. Protection bytes, physical copy count, area, volume, and carrier mass are separate engineering outputs. Media resolution and encoding are variables. Core is the initial proposal because it can be considered independently of Extended. Wikipedia inclusion depends on reproducible extraction, licensing and attribution review, measured size, and an appropriate carrier.
+
+## Progressive knowledge and a first-read path
+
+The proposed first encounter starts at a macroscopic orientation and access witness. Repeated coarse and fine patches point to a passive reading surface. Mathematics, physical references and image reconstruction establish a route to paired glyphs and language. The Essential encyclopedia targets 100–300 curated records. The Expanded encyclopedia targets 1,000–5,000 and can contribute selected records to Core. The optional Wikipedia corpus is a separate reference module with attribution and its own retrieval conventions. Earlier layers remain useful when later records or copies are lost. [Discovery-to-knowledge architecture](knowledge-architecture.md)
+
+A source-ledger model projects that thousands of articles at current draft lengths could fit a 100 MB logical target alongside the source reproduction assets. Protection and redundant copies are counted separately. Longer articles, richer diagrams, physical alignment structures and material constraints could change the result. The budget does not identify a feasible carrier or favor a published spacecraft allocation. [Content and protection model](knowledge-budget.md)
 
 ## Physical architecture and installation concepts
 
@@ -43,7 +49,9 @@ Protect each header and payload together, then verify the reconstructed record a
 
 ## Development status and milestones
 
-The current team maintains a reproducible Earth-side package, a provenance-linked photographic collection, introductory encyclopedia drafts, and experimental image, primer and recovery tools. The ZIP and the public website serve developers and readers on Earth. The encyclopedia requires human editorial review. A displayable SVG primer and digital corruption trials establish bench methods. Physical readout, environmental performance, interpretation trials, and spacecraft compatibility remain open.
+The development package includes 104 credited photographic records and 56 source-checked encyclopedia drafts. The photographs can be decoded in independent software implementations. The C2 primer adds paired coarse/fine patterns and a held-out readout exercise. A mixed CAX1 prototype frames actual mathematical, photographic, vocabulary and science records with citations and provenance. CAS v1 recovered a complete logical specimen from complementary damaged digital readouts even when the initial bit phase was unknown. With no surviving physical slot map, verified records may be recovered while completeness stays unknown. These tests start after a signal has been sampled. Physical mark acquisition and environmental testing are open. [CAX1 specification](research-archive-format.md) · [CAS experiment](physical-recovery.md)
+
+Propose a small marked coupon with observable orientation witnesses, two feature pitches, a paired thumbnail, and short protected records duplicated in accessible parts of the coupon. Measure optical contrast, feature classification and usable density. Ask independent readers to infer the sequence and separate readout success from interpretation. Collect scientific and cultural review and resolve rights before any edition is approved. The mission team would need to provide current engineering constraints before spacecraft compatibility could be evaluated.
 
 | Milestone | Evidence to bring to review |
 | --- | --- |

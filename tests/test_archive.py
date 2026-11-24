@@ -48,7 +48,7 @@ class ArchiveTests(unittest.TestCase):
         self.assertEqual(second.read_bytes(), self.sample.read_bytes())
         self.assertTrue(1000 <= second.stat().st_size <= 80_000_000)
         self.assertEqual(examine(second, verify=True), self.manifest)
-        self.assertEqual(self.manifest["archive_version"], "0.7.0")
+        self.assertEqual(self.manifest["archive_version"], "0.8.0")
 
     def test_archive_has_meaningful_records(self):
         names = {item["path"] for item in self.manifest["files"]}
@@ -229,7 +229,7 @@ class ArchiveTests(unittest.TestCase):
                             self.assertTrue(set(values) <= image_targets)
         self.assertNotIn("__EDITION__", html)
         self.assertNotIn("__SIZE__", html)
-        self.assertIn("0.7.0", html)
+        self.assertIn("0.8.0", html)
         self.assertIn("guide.html", html)
         self.assertTrue((site / "primer-panel.svg").is_file())
         self.assertTrue((site / "encyclopedia.txt").is_file())

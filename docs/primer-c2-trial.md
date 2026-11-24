@@ -16,4 +16,4 @@ Stage F uses the same two-state markings as C1. Score target matching, orientati
 
 The requested region is the upper-right tile. Its tag is `0110` (six). At the recorded orientation the large fiducial mark precedes the small mark along the row axis. The intended enlargement is fourfold. The three held-out rows are `10111000`, `00101110`, and `11000001`, in that order. For alternate views, undo the applied transformation before comparing to the key. Comparison is on the inset state. No display-color assumptions enter into the score.
 
-Retain small sample uncertainty, non-completions and discordant cases in the report. Results apply to the recruited human population, supplied tools and tested specimen. No trial results have been collected.
+Retain small sample uncertainty, non-completions and discordant cases in the report. Results apply to the recruited human population, supplied tools and tested specimen. No human trial results have been collected. A separately documented software-viewing pilot used a context-isolated AI participant.

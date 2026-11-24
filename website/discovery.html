@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A conceptual discovery sequence from physically observable marks to a recovered archive.">
+  <title>If someone finds the spacecraft · Centauri Archive</title>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="mission-study.css"><link rel="stylesheet" href="discovery.css">
+  <script defer src="discovery.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header"><a class="brand" href="index.html">Centauri Archive<span class="brand-dot">.</span></a>
+  <nav aria-label="Main navigation"><a href="index.html">Overview</a><a href="encyclopedia.html">Encyclopedia</a><a href="images.html">Image Library</a><a href="guide.html">Decoding</a><a href="engineering.html">Engineering</a><a href="proposal.html">Mission Proposal</a></nav>
+</header>
+<main id="main" class="wrap mission-study">
+  <section class="study-intro">
+    <p class="eyebrow">Archive discovery and readout</p>
+    <h1>If someone finds<br><em>the spacecraft.</em></h1>
+    <p class="intro">A recipient may first encounter an unpowered object. A repeated mark might invite closer inspection. The archive would need to teach how to find, measure and verify smaller marks before any picture or written record could be read.</p>
+    <p class="reader-warning">Physical concept. Spacecraft geometry, mounting, material and access remain unconfirmed.</p>
+    <div class="actions"><a class="button" href="#readout">Explore the software readout</a><a href="knowledge-architecture.txt">Read the architecture</a></div>
+  </section>
+  <section class="study-section" id="representations">
+    <h2>Four views of one archive</h2>
+    <figure class="study-figure">
+      <img src="discovery-sequence.svg" alt="Four schematic panels show the human website, the development package, an instrument viewing a marked plate, and reconstructed verified records." width="900" height="306">
+      <figcaption>The surface and readout window illustrate a proposed inspection path at arbitrary scales.</figcaption>
+    </figure>
+    <dl class="discovery-views">
+      <div><dt>Modern website</dt><dd>Navigation, annotated figures, photographs and simulations for contemporary readers.</dd></div>
+      <div><dt>Development package</dt><dd>Editable source records, provenance, JSON, photographs and a manifest for Earth-side tools.</dd></div>
+      <div><dt>Hypothetical physical readout</dt><dd>A passive reference surface with repeated witness marks. Seek the same local geometry at smaller pitches and compare candidate directions and mark polarity.</dd></div>
+      <div><dt>Reconstructed records</dt><dd>Complete bit sequences with verified framing. Decoding their bytes and understanding the intended content are separate tasks.</dd></div>
+    </dl>
+  </section>
+  <section class="study-section" id="knowledge-layers">
+    <h2>Start with evidence, then build meaning</h2>
+    <ol class="discovery-layers" start="0">
+      <li><strong>Discovery and orientation.</strong> Match two unequal patterns across the marker and first reading surface. Use the repeated targets to reject rotations or mirror hypotheses.</li>
+      <li><strong>Mathematics and physical foundations.</strong> Compare quantities and measurements. Infer how sequences of two distinguishable marks map to raster cells before reading longer frames.</li>
+      <li><strong>Visual vocabulary and language.</strong> Compare paired pictures and candidate glyphs. Contrast distinct examples and keep the last image for an interpretation test.</li>
+      <li><strong>Essential encyclopedia.</strong> Read foundational scientific and cultural records with their prerequisites, images and references. The target is 100–300 curated articles.</li>
+      <li><strong>Expanded encyclopedia.</strong> Extend the curated collection to a target of 1,000–5,000 records when budget and review permit.</li>
+      <li><strong>Optional reference corpus.</strong> A separately packaged Wikipedia-derived collection with explicit provenance and offline attribution.</li>
+    </ol>
+    <p>Later layers depend on earlier ones. A recipient should still be able to begin if the expanded collection or optional corpus is missing.</p>
+    <p class="study-citations"><a href="primer-c2.svg">Text-free C2 specimen</a><a href="primer-c2-annotated.svg">Annotated C2 specimen</a><a href="primer-c2.txt">Magnification and alignment study</a><a href="vocabulary.html">Visual vocabulary</a></p>
+  </section>
+  <section class="study-section" id="readout">
+    <h2>Read a damaged specimen</h2>
+    <p>This software experiment begins with sampled bits. Each square in the map represents one protected slot. A reader searches for either of two synchronization witnesses, tries eight possible bit phases and accepts a block only after correction and integrity checks.</p>
+    <div class="readout-key"><span class="map">Map slot</span><span class="photo">Earth photo slot</span><span class="normal">Other record</span><span class="fixed">Corrected</span><span class="missing">No verified slot at this position</span></div>
+    <figure class="study-figure"><figcaption>Before damage</figcaption><div id="readout-before" class="surface-grid"></div></figure>
+    <label for="readout-case">Damage scenario</label>
+    <select id="readout-case" disabled><option>Loading sampled data…</option></select>
+    <p id="readout-result" role="status">Loading the fixed-seed study.</p>
+    <div id="readout-after"></div>
+    <p id="surface-geometry">See the separate geometry study for a sampled scratch across a modeled surface.</p>
+    <p>These plots show sampled slot locations and verified results. Deleting bits shifts later marks in the readout. The simulation supplies explicit damage patterns and cannot establish a storage medium's performance.</p>
+    <p class="study-citations"><a href="downloads/phase-ii.cax" download>Logical specimen</a><a href="downloads/phase-ii.cas" download>Protected specimen</a><a href="research-archive-format.txt">Logical record format</a><a href="physical-recovery.txt">Physical recovery specification</a></p>
+  </section>
+</main>
+<footer class="footer wrap"><span>Centauri Archive / Independent research</span><a href="engineering.html">Engineering study</a></footer>
+</body>
+</html>
