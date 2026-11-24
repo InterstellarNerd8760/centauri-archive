@@ -67,7 +67,8 @@
       "subcategory": "Numbers",
       "prerequisites": [],
       "images": [
-        "IMG-001"
+        "IMG-001",
+        "IMG-006"
       ],
       "records": [
         "primer/mathematics.txt"
@@ -76,7 +77,7 @@
         "Distinct objects can be grouped and counted. Two groups have the same cardinality when every member of one can be paired with exactly one member of the other. Numbers express this abstract relationship independently of the objects counted."
       ],
       "limitations": "The written numerals and reading direction are human conventions.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -117,14 +118,15 @@
       ],
       "images": [
         "IMG-002",
-        "IMG-003"
+        "IMG-003",
+        "IMG-004"
       ],
       "records": [],
       "body": [
         "Geometry describes relationships among positions, shapes, distances and angles. A length ratio compares two distances without needing a particular unit. Coordinate systems assign numerical descriptions to positions relative to chosen references."
       ],
       "limitations": "Ideal Euclidean geometry is a mathematical model, not a guarantee about physical spacetime.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -145,13 +147,14 @@
       ],
       "records": [
         "primer/binary-conventions.txt",
-        "primer/raster-example.txt"
+        "primer/raster-example.txt",
+        "primer/format.txt"
       ],
       "body": [
         "A binary alphabet has two distinguishable symbols. In positional base-two notation successive places have weights that are powers of two. A sequence of symbols can encode other structures only when a mapping and boundaries are defined."
       ],
       "limitations": "Two physical states do not intrinsically specify orientation, ordering or meaning.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -255,7 +258,13 @@
         "IMG-010",
         "IMG-011",
         "IMG-012",
-        "IMG-013"
+        "IMG-013",
+        "IMG-005",
+        "IMG-014",
+        "IMG-015",
+        "IMG-016",
+        "IMG-017",
+        "IMG-018"
       ],
       "records": [
         "earth/solar-system.txt",
@@ -265,7 +274,7 @@
         "Stars are luminous astronomical bodies powered for much of their lives by nuclear fusion. Galaxies contain stars, gas, dust and other matter. Earth orbits the Sun, one star in the Milky Way galaxy."
       ],
       "limitations": "Astronomical images may combine wavelengths or represent different scales.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -283,7 +292,15 @@
       "images": [
         "IMG-019",
         "IMG-021",
-        "IMG-022"
+        "IMG-022",
+        "IMG-020",
+        "IMG-023",
+        "IMG-024",
+        "IMG-025",
+        "IMG-026",
+        "IMG-027",
+        "IMG-028",
+        "IMG-029"
       ],
       "records": [
         "earth/planetary-profile.txt",
@@ -293,7 +310,7 @@
         "Earth is a rocky planet with a solid interior structure, liquid surface water and a surrounding atmosphere. Its rotation produces a repeating day-night cycle; its orbit and axial tilt influence seasonal illumination."
       ],
       "limitations": "Geographic coordinates are conventions; the planet itself provides physical reference features.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -312,7 +329,8 @@
       "images": [
         "IMG-033",
         "IMG-035",
-        "IMG-043"
+        "IMG-043",
+        "IMG-044"
       ],
       "records": [
         "earth/water.txt"
@@ -322,7 +340,7 @@
         "At a pressure of approximately 101,325 pascals, pure water freezes near 273.15 kelvin and boils near 373.15 kelvin. Pressure and dissolved substances affect these transitions. Water dissolves many substances and participates in the chemistry of known terrestrial life; this does not establish that all possible life requires water."
       ],
       "limitations": "Clouds and fog consist of droplets or ice; water vapor is invisible.",
-      "revision": 2,
+      "revision": 3,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -343,7 +361,10 @@
         "IMG-030",
         "IMG-031",
         "IMG-034",
-        "IMG-037"
+        "IMG-037",
+        "IMG-032",
+        "IMG-036",
+        "IMG-040"
       ],
       "records": [
         "earth/atmosphere.txt",
@@ -353,7 +374,7 @@
         "Earth's atmosphere exchanges energy with the surface and space. Climate describes statistical patterns of weather over time. Geological processes reshape the solid surface, while water and organisms also alter it."
       ],
       "limitations": "A single photograph cannot establish a long-term climate trend.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -373,7 +394,8 @@
         "IMG-047",
         "IMG-048",
         "IMG-049",
-        "IMG-050"
+        "IMG-050",
+        "IMG-052"
       ],
       "records": [
         "biology/cells.txt",
@@ -384,7 +406,7 @@
         "Bacteria and archaea generally lack a membrane-enclosed nucleus, whereas eukaryotic cells contain a nucleus and often other membrane-bound structures. Mitochondria in most eukaryotes and chloroplasts in plants and algae have bacterial evolutionary origins. Enzymes accelerate reactions; ribosomes build proteins using genetic instructions. Multicellular organisms contain specialized cells that communicate and form tissues."
       ],
       "limitations": "Viruses and other noncellular replicators complicate definitions of life.",
-      "revision": 2,
+      "revision": 3,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -430,7 +452,9 @@
         "IMG-055",
         "IMG-057",
         "IMG-065",
-        "IMG-066"
+        "IMG-066",
+        "IMG-063",
+        "IMG-064"
       ],
       "records": [
         "biology/diversity.txt",
@@ -440,7 +464,7 @@
         "Populations change across generations as inherited variation changes in frequency. Natural selection, genetic drift, mutation and gene flow contribute to evolution. Common ancestry connects the diversity of known terrestrial organisms."
       ],
       "limitations": "Evolution is not a progression toward a single predetermined goal.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -462,7 +486,14 @@
         "IMG-054",
         "IMG-060",
         "IMG-061",
-        "IMG-062"
+        "IMG-062",
+        "IMG-038",
+        "IMG-039",
+        "IMG-056",
+        "IMG-058",
+        "IMG-059",
+        "IMG-098",
+        "IMG-099"
       ],
       "records": [
         "biology/diversity.txt"
@@ -471,7 +502,7 @@
         "An ecosystem includes organisms and their physical surroundings. Energy enters many ecosystems through photosynthesis or chemical reactions and passes among organisms. Matter cycles through living and nonliving reservoirs."
       ],
       "limitations": "Food webs are variable and interdependent, not simple linear chains.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -544,7 +575,9 @@
         "IMG-070",
         "IMG-071",
         "IMG-072",
-        "IMG-095"
+        "IMG-095",
+        "IMG-079",
+        "IMG-082"
       ],
       "records": [
         "humanity/languages.txt"
@@ -553,7 +586,7 @@
         "Human nervous systems process sensory information and support memory, learning and action. Languages use shared symbolic systems to communicate meaning; spoken, signed and written forms differ in their physical signals."
       ],
       "limitations": "Language does not map one-to-one onto universal concepts; cognition is still an active field of research.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -572,7 +605,9 @@
       "images": [
         "IMG-075",
         "IMG-076",
-        "IMG-078"
+        "IMG-078",
+        "IMG-080",
+        "IMG-081"
       ],
       "records": [
         "humanity/history.txt"
@@ -582,7 +617,7 @@
         "The existing archive chronology traces the emergence of Homo sapiens in Africa hundreds of thousands of years ago, independent agricultural traditions beginning roughly twelve thousand years ago, early writing systems in several societies more than five thousand years ago, and industrialization in parts of the world beginning in the eighteenth century. These are approximate milestones, not a universal timeline. Sputnik 1 orbited Earth in 1957; humans first landed on the Moon in 1969."
       ],
       "limitations": "No single region or linear timeline adequately represents human history.",
-      "revision": 2,
+      "revision": 3,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -710,7 +745,10 @@
         "IMG-092",
         "IMG-093",
         "IMG-094",
-        "IMG-096"
+        "IMG-096",
+        "IMG-086",
+        "IMG-087",
+        "IMG-089"
       ],
       "records": [
         "experiences/sound.txt",
@@ -721,7 +759,7 @@
         "People live in cities, towns, villages, farms and mobile settlements. Homes, meals, clothing and relationships differ with environment, resources and social practices. Knowledge is transmitted by speech, signing, writing, teaching, observation and performance. Cultures continue to change; no country's customs represent humanity as a whole. Cooperation coexists with inequality and conflict. Communities should be able to describe their own practices, and restrictions on sensitive cultural materials deserve respect."
       ],
       "limitations": "Meaning and aesthetic experience vary across people and cultures; an image or sound is only a partial record.",
-      "revision": 2,
+      "revision": 3,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -743,12 +781,15 @@
         "IMG-097",
         "IMG-100"
       ],
-      "records": [],
+      "records": [
+        "primer/start.txt",
+        "messages/draft.txt"
+      ],
       "body": [
         "Centauri Archive is an independent research project developing a durable, intelligible record of Earth. Its development package and photographic collection are not a flight-qualified artifact. Voyager's Golden Record provides a historical precedent for interstellar messages."
       ],
       "limitations": "Fermi Explorer integration is proposed, not approved. Physical survival and interpretation by unknown readers remain open engineering and research questions.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
