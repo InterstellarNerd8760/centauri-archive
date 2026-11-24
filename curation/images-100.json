@@ -130,10 +130,10 @@
       "category": "primer",
       "title": "Physical information encoding: historical punched card",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "Provisional documentary substitute; an original photographed 8-by-8 engraved test plate remains a physical-primer research deliverable."
+      "status": "included",
+      "asset": "photos/ibm-80-column-punched-card.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Punch_card_80_columns_(2).jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-008",
@@ -1030,10 +1030,10 @@
       "category": "messages",
       "title": "Humanity's interstellar message: preparation of Voyager's Golden Record",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "Provisional documentary substitute; an attributed contributor portrait with informed consent remains optional for a future edition."
+      "status": "included",
+      "asset": "photos/voyager-golden-record-preparation-1977.jpg",
+      "source_url": "https://science.nasa.gov/image-detail/the-golden-record-30269492703-o/",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-098",

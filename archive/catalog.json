@@ -2692,6 +2692,52 @@
           "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/GEO_Globe_Image.jpg"
         }
       ]
+    },
+    {
+      "path": "photos/ibm-80-column-punched-card.jpg",
+      "title": "Physical encoding on a historical punched card",
+      "summary": "A digitized 80-column IBM-standard punched card, showing how human information can be stored as the presence or absence of holes at defined positions.",
+      "group": "photos",
+      "alt": "Pink rectangular card with printed rows of digits and rectangular punched holes.",
+      "caption": "A historical example of information encoded in physical material. Reading the holes as characters requires a convention. This is not Centauri Archive's proposed 8-by-8 engraved plate, which remains an unmanufactured research deliverable.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC BY-SA 3.0, Harke; https://creativecommons.org/licenses/by-sa/3.0/. Archive derivative retains the same license.",
+      "photographer": "Harke / Wikimedia Commons",
+      "date": "2010-09-07 (source digitization)",
+      "derivative": "Source documentary image converted by the archive importer to an orientation-corrected JPEG, maximum 1800 pixels, quality 87. No synthetic content or compositional changes. Original source retained by URL.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Punch_card_80_columns_(2).jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Punch_card_80_columns_%282%29.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/voyager-golden-record-preparation-1977.jpg",
+      "title": "Preparing humanity's Golden Record for interstellar travel",
+      "summary": "NASA archival photograph documenting preparation of the Voyager Golden Record in 1977.",
+      "group": "photos",
+      "alt": "A gloved cleanroom worker holds a gold-colored record beside a second circular metal component on a covered table.",
+      "caption": "The Voyager mission carried recorded images and sounds from Earth into interstellar space. This photograph documents the historical undertaking, not Centauri Archive personnel or a claim of affiliation with NASA. An original contributor portrait may be considered separately with documented informed consent.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "NASA/JPL-Caltech image made available for reuse under NASA and JPL image-use policies; credit required, no implied endorsement. https://www.jpl.nasa.gov/jpl-image-use-policy/ . No claim of individual model-release consent.",
+      "photographer": "NASA/JPL-Caltech",
+      "date": "1977",
+      "derivative": "Source documentary image converted by the archive importer to an orientation-corrected JPEG, maximum 1800 pixels, quality 87. No synthetic content or compositional changes. Original source retained by URL.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://science.nasa.gov/image-detail/the-golden-record-30269492703-o/"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://science.nasa.gov/wp-content/uploads/2024/03/the-golden-record-30269492703-o.jpg"
+        }
+      ]
     }
   ]
 }
