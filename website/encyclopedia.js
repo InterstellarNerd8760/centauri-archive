@@ -34,8 +34,8 @@ function select(id,push=false){
   listLinks("Prerequisite concepts",a.prerequisites.map(id=>articleLink(articleMap.get(id))));
   listLinks("Continue learning",data.articles.filter(b=>b.prerequisites.includes(id)).map(b=>articleLink(b)));
   const related=a.images.map(id=>photos.get(id)).filter(p=>p&&p.asset);
-  if(related.length){body.append(node("h3","Related photographic records"));const grid=node("div",null,"enc-images");for(const p of related){const link=node("a",null,"enc-image");link.href="library.html?record="+encodeURIComponent(p.asset);const img=node("img");img.src="records/"+p.asset;img.alt=p.title;img.loading="lazy";link.append(img,node("span",p.id+" · "+p.title));grid.append(link);}body.append(grid);}
-  listLinks("Contextual archive records",a.records.map(path=>{const link=node("a",path);link.href="library.html?record="+encodeURIComponent(path);return link;}));
+  if(related.length){body.append(node("h3","Related photographic records"));const grid=node("div",null,"enc-images");for(const p of related){const link=node("a",null,"enc-image");link.href="images.html?record="+encodeURIComponent(p.asset);const img=node("img");img.src="records/"+p.asset;img.alt=p.title;img.loading="lazy";link.append(img,node("span",p.id+" · "+p.title));grid.append(link);}body.append(grid);}
+  listLinks("Original archive records (supplementary source files)",a.records.map(path=>{const link=node("a",path);link.href="records/"+path;return link;}));
   body.append(node("h3","References and review"));
   if(!a.sources.length)body.append(node("p","Independent source verification pending. Related archive records are context, not independently verified citations."));
   else listLinks("Sources",a.sources.map(s=>{const link=node("a",s.label);const url=new URL(s.url);if(url.protocol==="https:")link.href=url.href;return link;}));

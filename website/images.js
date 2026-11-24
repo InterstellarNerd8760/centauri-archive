@@ -18,6 +18,35 @@ async function initAtlas() {
   const included = plan.records.filter(slot => slot.status === "included");
   get("atlas-included").textContent = included.length;
   get("atlas-remaining").textContent = plan.records.length - included.length;
+  const dialog = get("image-detail");
+  function showDetail(slot, updateUrl = false) {
+    const record = records.get(slot.asset);
+    if (!record) return;
+    get("image-detail-id").textContent = slot.id;
+    get("image-detail-title").textContent = record.title;
+    const content = get("image-detail-content");
+    content.replaceChildren();
+    const image = node("img"); image.src = "records/" + slot.asset; image.alt = record.alt || record.title;
+    content.append(image, node("p", record.caption || record.summary));
+    const credit = [record.photographer, record.date].filter(Boolean).join(" · ");
+    if (credit) content.append(node("p", credit, "image-detail-credit"));
+    for (const [heading, value] of [["Editorial status",record.status],["Rights",record.rights],["Processing",record.derivative]]) {
+      if (value) content.append(node("h3",heading),node("p",value));
+    }
+    const links = node("ul");
+    const original = node("a","Archived JPEG"); original.href = "records/" + slot.asset;
+    const li = node("li"); li.append(original); links.append(li);
+    for (const source of record.sources || []) {
+      let url;
+      try {url = new URL(source.url);if(url.protocol !== "https:")continue;}catch{continue;}
+      const a = node("a",source.label || "Source"); a.href = url.href; a.rel = "noopener noreferrer"; a.target = "_blank";
+      const item = node("li"); item.append(a); links.append(item);
+    }
+    content.append(node("h3","Source and provenance"),links);
+    if (!dialog.open) dialog.showModal();
+    if (updateUrl) {const url = new URL(location.href);url.searchParams.set("record",slot.asset);history.replaceState({}, "", url);}
+  }
+  dialog.addEventListener("close",()=>{const url=new URL(location.href);url.searchParams.delete("record");history.replaceState({}, "", url);});
   function imageCard(slot) {
     const record = records.get(slot.asset);
     const card = node("article", "", "atlas-image-item");
@@ -29,7 +58,8 @@ async function initAtlas() {
       return card;
     }
     const link = node("a");
-    link.href = "library.html?record=" + encodeURIComponent(slot.asset);
+    link.href = "images.html?record=" + encodeURIComponent(slot.asset);
+    link.addEventListener("click",event=>{if(event.button||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();showDetail(slot,true);});
     const photo = node("img");
     photo.src = "records/" + slot.asset;
     photo.alt = record.alt;
@@ -70,5 +100,8 @@ async function initAtlas() {
   search.oninput = renderPlan;
   get("reset-category").onclick = () => { selected = categories[0]; renderPlan(); search.focus(); };
   renderPlan();
+  const requested = new URL(location.href).searchParams.get("record");
+  const target = plan.records.find(slot => slot.asset && (slot.asset === requested || slot.id === requested));
+  if (target) showDetail(target);
 }
 initAtlas().catch(() => { get("atlas-error").hidden = false; });

@@ -318,10 +318,11 @@
         "earth/water.txt"
       ],
       "body": [
-        "Water circulates through oceans, land, organisms and the atmosphere. Evaporation, condensation, precipitation, runoff and freezing transfer water between reservoirs. These processes depend on energy and environmental conditions."
+        "Water circulates through oceans, land, organisms and the atmosphere. Evaporation, condensation, precipitation, runoff and freezing transfer water between reservoirs. These processes depend on energy and environmental conditions.",
+        "At a pressure of approximately 101,325 pascals, pure water freezes near 273.15 kelvin and boils near 373.15 kelvin. Pressure and dissolved substances affect these transitions. Water dissolves many substances and participates in the chemistry of known terrestrial life; this does not establish that all possible life requires water."
       ],
       "limitations": "Clouds and fog consist of droplets or ice; water vapor is invisible.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -379,10 +380,11 @@
         "visuals/cell.svg"
       ],
       "body": [
-        "Cells are the fundamental units of known cellular life. Their boundaries separate internal chemistry from the surrounding environment. Metabolism includes the reactions by which organisms obtain materials and energy and maintain their organization."
+        "Cells are the fundamental units of known cellular life. Their boundaries separate internal chemistry from the surrounding environment. Metabolism includes the reactions by which organisms obtain materials and energy and maintain their organization.",
+        "Bacteria and archaea generally lack a membrane-enclosed nucleus, whereas eukaryotic cells contain a nucleus and often other membrane-bound structures. Mitochondria in most eukaryotes and chloroplasts in plants and algae have bacterial evolutionary origins. Enzymes accelerate reactions; ribosomes build proteins using genetic instructions. Multicellular organisms contain specialized cells that communicate and form tissues."
       ],
       "limitations": "Viruses and other noncellular replicators complicate definitions of life.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -576,10 +578,11 @@
         "humanity/history.txt"
       ],
       "body": [
-        "Human communities have changed over long periods through migration, cooperation, conflict, environmental changes and invention. Archaeology, historical records and oral traditions provide different evidence about the past."
+        "Human communities have changed over long periods through migration, cooperation, conflict, environmental changes and invention. Archaeology, historical records and oral traditions provide different evidence about the past.",
+        "The existing archive chronology traces the emergence of Homo sapiens in Africa hundreds of thousands of years ago, independent agricultural traditions beginning roughly twelve thousand years ago, early writing systems in several societies more than five thousand years ago, and industrialization in parts of the world beginning in the eighteenth century. These are approximate milestones, not a universal timeline. Sputnik 1 orbited Earth in 1957; humans first landed on the Moon in 1969."
       ],
       "limitations": "No single region or linear timeline adequately represents human history.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",
@@ -714,10 +717,11 @@
         "humanity/everyday-life.txt"
       ],
       "body": [
-        "Humans express experience through visual forms, sound, movement, stories, craft and play. Everyday practices communicate cultural knowledge as well as serving practical needs."
+        "Humans express experience through visual forms, sound, movement, stories, craft and play. Everyday practices communicate cultural knowledge as well as serving practical needs.",
+        "People live in cities, towns, villages, farms and mobile settlements. Homes, meals, clothing and relationships differ with environment, resources and social practices. Knowledge is transmitted by speech, signing, writing, teaching, observation and performance. Cultures continue to change; no country's customs represent humanity as a whole. Cooperation coexists with inequality and conflict. Communities should be able to describe their own practices, and restrictions on sensitive cultural materials deserve respect."
       ],
       "limitations": "Meaning and aesthetic experience vary across people and cultures; an image or sound is only a partial record.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "status": "draft — independent source and editorial review pending",
       "credit": "Centauri Archive editorial draft",

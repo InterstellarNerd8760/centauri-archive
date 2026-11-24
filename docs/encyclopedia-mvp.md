@@ -32,3 +32,7 @@ Existing records and image links are contextual material, not substitutes for in
 - Develop a simpler physical/raw representation; JSON and ZIP alone are not universal decoding methods.
 
 The first 25 entries constitute an introductory skeleton, not comprehensive knowledge. Future batches should fill gaps in mathematics, physics, chemistry, planetary science, anatomy, reproduction, history, medicine, engineering, world cultures, mission context and language.
+
+## Public collection consolidation
+
+The Image Library and Encyclopedia are the two public collection interfaces. Earlier plain-text records remain in the archive and are linked as supplementary source files, not treated as independently verified references. Revision 2 of the water, cells, history and everyday-experience articles incorporates substantive material from the existing project drafts. The old raw-file reader remains reachable by legacy URL only; no primary navigation links to it. Photo metadata and provenance are displayed in the Image Library itself.
