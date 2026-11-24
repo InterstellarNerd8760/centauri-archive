@@ -15,12 +15,11 @@ The project has two horizons: a deliberately small **Fermi Edition** for a const
 
 **Not yet demonstrated:** decoding without knowledge of human languages and computing, radiation survival, error recovery, archive-health telemetry, physical carrier manufacture, or Fermi Explorer compatibility. The ZIP container is a convenient development transport, **not a proposed alien-readable flight format**.
 
-The prose, original SVG diagrams and draft message are provisional content, not a comprehensive or representative encyclopedia. Real photographs have been added; recorded audio is not yet included. The image plan defines a working goal of 100 images and currently names 104 subjects. The number of sourced JPEG images and unfilled slots changes with each acquisition batch and is derived from `curation/images-100.json`; only records marked `included` have actual image files in the verified archive. The three original scientific SVGs are separate explanatory assets, not counted as photographs. Content selection, review, rights and permission tracking remain active work.
+The prose, original SVG diagrams and draft message are provisional content, not a comprehensive or representative encyclopedia. Real photographs have been added; recorded audio is not yet included. The image plan defines an original goal of 100 images and currently names 104 subjects. As of November 23, 2026, all 104 are marked included in `curation/images-100.json`; actual package integrity and independent editorial review remain separate checks. Only records marked `included` are counted as acquired. The three original scientific SVGs are separate explanatory assets, not counted as photographs. Content selection, review, rights and permission tracking remain active work.
 
 ## Reading the collection
 
-The public website includes a human-facing multimedia chapter reader at library.html
-and an introductory binary explanation and 8×8 decoding laboratory at guide.html, alongside an explanation of the proposed primer and carrier. The separately published `images.html` inventories proposed imagery without inflating the verified payload.
+The two public collection interfaces are the [Encyclopedia](https://interstellarnerd8760.github.io/centauri-archive/encyclopedia.html) and [Image Library](https://interstellarnerd8760.github.io/centauri-archive/images.html). The encyclopedia organizes 25 introductory drafts and links all 104 planned photographic records and the earlier supplementary text files. The legacy raw-file reader remains available at `library.html` for compatibility. The binary explanation and 8×8 decoding laboratory at `guide.html` are separate engineering resources.
 These pages are deliberately separate from the verified source ZIP; a future
 interstellar reader cannot be assumed to understand HTML, text files or USB
 storage. For current engineering decisions see
