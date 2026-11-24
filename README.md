@@ -19,7 +19,7 @@ The prose, original SVG diagrams and draft message are provisional content, not 
 
 ## Reading the collection
 
-The two public collection interfaces are the [Encyclopedia](https://interstellarnerd8760.github.io/centauri-archive/encyclopedia.html) and [Image Library](https://interstellarnerd8760.github.io/centauri-archive/images.html). The encyclopedia organizes 25 introductory drafts and links all 104 planned photographic records and the earlier supplementary text files. The legacy raw-file reader remains available at `library.html` for compatibility. The binary explanation and 8×8 decoding laboratory at `guide.html` are separate engineering resources.
+The two public collection interfaces are the [Encyclopedia](https://interstellarnerd8760.github.io/centauri-archive/encyclopedia.html) and [Image Library](https://interstellarnerd8760.github.io/centauri-archive/images.html). The encyclopedia organizes 29 introductory drafts and links all 104 planned photographic records and the earlier supplementary text files. The legacy raw-file reader remains available at `library.html` for compatibility. The binary explanation and 8×8 decoding laboratory at `guide.html` are separate engineering resources.
 These pages are deliberately separate from the verified source ZIP; a future
 interstellar reader cannot be assumed to understand HTML, text files or USB
 storage. For current engineering decisions see
@@ -66,6 +66,8 @@ python3 tools/raw_raster.py decode build/example.bin build/example.pgm
 This is **not an alien-readable format**. A real physical primer still needs
 to establish how to identify the frame, measure its units, interpret bits and
 reconstruct images. See [raw raster experiment](docs/raw-raster-experiment.md).
+
+An independent JavaScript implementation can be exercised with `node tests/raw_raster_independent.cjs`. A separate [text-free panel and blind-test protocol](docs/blind-primer-experiment.md) proposes a first human interpretation trial; no trial results exist yet.
 
 ## Repository map
 
