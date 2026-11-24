@@ -11,7 +11,7 @@ def assemble(output):
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
     shutil.copytree(ROOT / "website", output, dirs_exist_ok=True)
-    # The 100-image acquisition plan is published separately from flight records.
+    # The curation plan is published alongside the development package.
     shutil.copyfile(ROOT / "curation/images-100.json", output / "image-plan.json")
     package = output / "downloads" / "centauri.zip"
     manifest = build(package)
@@ -22,12 +22,24 @@ def assemble(output):
             path = output / "records" / item["path"].removeprefix("content/")
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(archive.read(item["path"]))
-    for name in ("engineering", "physical-primer", "mission", "roadmap"):
+    public_documents = (
+        "archive-editions", "blind-primer-experiment", "engineering", "error-correction",
+        "fermi-explorer-proposal", "mission", "mission-integration", "physical-primer",
+        "primer-ladder", "raw-raster-v2", "roadmap", "visual-vocabulary",
+    )
+    for name in public_documents:
         shutil.copyfile(ROOT / f"docs/{name}.md", output / f"{name}.txt")
-    shutil.copyfile(ROOT / "docs/primer-panel.svg", output / "primer-panel.svg")
-    shutil.copyfile(ROOT / "docs/primer-blind-panel.svg", output / "primer-blind-panel.svg")
-    shutil.copyfile(ROOT / "docs/blind-primer-experiment.md", output / "blind-primer-experiment.txt")
+    primer_panels = (
+        "primer-panel", "primer-blind-panel", "primer-ladder",
+        "primer-ladder-annotated", "primer-ladder-trial",
+    )
+    for name in primer_panels:
+        shutil.copyfile(ROOT / f"docs/{name}.svg", output / f"{name}.svg")
     shutil.copyfile(ROOT / "docs/encyclopedia-mvp.md", output / "encyclopedia.txt")
+    vector_directory = package.parent / "raster-vectors"
+    vector_directory.mkdir(exist_ok=True)
+    for vector in sorted((ROOT / "tests/fixtures/photo-raster-v2").glob("*.car")):
+        shutil.copyfile(vector, vector_directory / vector.name)
     index = output / "index.html"
     html = index.read_text(encoding="utf-8")
     html = html.replace("__EDITION__", manifest["archive_version"])

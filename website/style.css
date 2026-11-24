@@ -1173,6 +1173,47 @@ h1 {
   }
 }
 
+.edition-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 1.5rem;
+  margin-block: 2rem;
+}
+
+.edition-summary > div {
+  border-top: 1px solid var(--line);
+  padding-top: 1.25rem;
+}
+
+.channel-controls {
+  display: grid;
+  gap: .5rem;
+  max-width: 19rem;
+}
+
+.channel-controls label {
+  display: grid;
+  grid-template-columns: 4rem minmax(0, 1fr);
+  align-items: center;
+  gap: .5rem;
+}
+
+.channel-swatch {
+  display: inline-block;
+  width: 2.25rem;
+  height: 1.25rem;
+  vertical-align: middle;
+  margin: 1rem .5rem 1rem 0;
+  border: 1px solid var(--line);
+  background: rgb(192, 192, 192);
+}
+
+#hamming-bits button[aria-pressed="true"] {
+  border-color: var(--sky);
+  color: var(--bg);
+  background: var(--sky);
+}
+
 /* Decoding lab: conventions become visible and adjustable. */
 .decoder-lab {
   border:1px solid rgba(110,175,198,.45);
