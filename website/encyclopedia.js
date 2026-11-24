@@ -3,6 +3,45 @@ const get = id => document.getElementById(id);
 const node = (tag, text, cls) => {const e=document.createElement(tag); if(text!=null)e.textContent=text;if(cls)e.className=cls;return e;};
 const search=get("enc-search"), categories=get("enc-categories"), body=get("enc-body");
 let data, photos=new Map(), records=new Map(), articleMap=new Map(), current=null;
+const articleCache = new Map();
+const pageSize = 24;
+let selection = 0;
+let bodyIndex;
+let indexRequest;
+
+async function getJSON(url) {
+  const response = await fetch(url);
+  if (!response.ok) throw Error("Request failed: " + url);
+  return response.json();
+}
+
+function loadSearch() {
+  if (indexRequest) return;
+  indexRequest = Promise.all(data.categories.map(category =>
+    getJSON("knowledge/search-" + category.id + ".json")
+  )).then(shards => {
+    bodyIndex = Object.assign({}, ...shards);
+    showCategories();
+  }).catch(() => {
+    get("enc-search-note").textContent = "Full-text search is temporarily unavailable. Titles and categories are searchable.";
+    indexRequest = null;
+  });
+}
+
+function appendPage(list, start, into) {
+  const count = Math.min(start + pageSize, list.length);
+  for (const article of list.slice(start, count)) into.append(articleLink(article, "enc-article-link"));
+  if (count >= list.length) return;
+  const more = node("button", "Show " + Math.min(pageSize, list.length - count) + " more", "enc-more");
+  more.type = "button";
+  more.addEventListener("click", () => {
+    const firstNew = into.children.length - 1;
+    more.remove();
+    appendPage(list, count, into);
+    into.children[firstNew]?.focus();
+  }, { once: true });
+  into.append(more);
+}
 function articleLink(article, cls) {
   const a=node("a",article.title,cls);a.href="?article="+encodeURIComponent(article.id);
   a.dataset.article=article.id;if(current===article.id)a.setAttribute("aria-current","page");
@@ -11,17 +50,24 @@ function articleLink(article, cls) {
 function showCategories(){
   const query=search.value.trim().toLowerCase();categories.replaceChildren();let count=0;
   for(const category of data.categories){
-    const list=data.articles.filter(a=>a.category===category.id&&[a.id,a.title,a.subcategory,category.title,category.description,...a.body,a.limitations].join(" ").toLowerCase().includes(query));
+    const list=data.articles.filter(article => article.category === category.id &&
+      (!query || [article.id, article.title, article.subcategory, category.title,
+        category.description, bodyIndex?.[article.id]].join(" ").toLowerCase().includes(query)));
     if(!list.length)continue;count+=list.length;
     const detail=node("details",null,"enc-category");detail.open=Boolean(query)||list.some(a=>a.id===current);
     const summary=node("summary"), symbol=node("span",category.symbol,"enc-symbol");symbol.setAttribute("aria-hidden","true");
     const copy=node("span");copy.append(node("span",category.id+" — "+category.title,"enc-category-name"),node("span",category.description,"enc-category-description"));
     summary.append(symbol,copy);detail.append(summary);
-    for(const a of list)detail.append(articleLink(a,"enc-article-link"));
+    const listBody = node("div");
+    const selectedIndex = list.findIndex(article => article.id === current);
+    const start = selectedIndex < 0 ? 0 : Math.floor(selectedIndex / pageSize) * pageSize;
+    appendPage(start ? [...list.slice(start), ...list.slice(0, start)] : list, 0, listBody);
+    detail.append(listBody);
     categories.append(detail);
   }
   get("enc-count").textContent=count+" / "+data.articles.length+" articles";
-  if(!count)categories.append(node("p","No matching articles."));
+  if(!count)categories.append(node("p", query && !bodyIndex ? "Checking article text…" : "No matching articles."));
+  if (bodyIndex) get("enc-search-note").textContent = "Searching titles, topics, terms and article text.";
 }
 function listLinks(title,items){if(!items.length)return;body.append(node("h3",title));const ul=node("ul");for(const item of items){const li=node("li");li.append(item);ul.append(li);}body.append(ul);}
 function renderParagraphs(article) {
@@ -96,16 +142,41 @@ function renderDiagrams(paths) {
     body.append(figure);
   }
 }
-function select(id,push=false){
-  const a=articleMap.get(id);if(!a)return;current=id;
+async function select(id,push=false){
+  if (!articleMap.has(id)) return;
+  const request = ++selection;
+  let a;
+  try {
+    if (!articleCache.has(id)) {
+      const pending = getJSON("knowledge/articles/" + encodeURIComponent(id) + ".json");
+      articleCache.set(id, pending);
+      // Keep a few recently opened records for navigation.
+      if (articleCache.size > 12) articleCache.delete(articleCache.keys().next().value);
+    }
+    a = await articleCache.get(id);
+    if (a.id !== id) throw Error("Unexpected article identifier");
+  } catch {
+    articleCache.delete(id);
+    if (request === selection) body.textContent = "Unable to load this article. Choose a record to try again.";
+    return;
+  }
+  if (request !== selection) return;
+  current=id;
   get("enc-id").textContent=a.id+" / "+data.categories.find(c=>c.id===a.category).title;
   get("enc-title").textContent=a.title;body.replaceChildren();
   body.append(node("p",a.subcategory+" · Revision "+a.revision+" · "+a.status,"enc-meta"));
+  if (a.purpose) body.append(node("p", a.purpose, "enc-purpose"));
   renderParagraphs(a);
   renderTerms(a.terms);
   body.append(node("h3","Interpretation and limitations"),node("p",a.limitations));
   listLinks("Prerequisite concepts",a.prerequisites.map(id=>articleLink(articleMap.get(id))));
   listLinks("Continue learning",data.articles.filter(b=>b.prerequisites.includes(id)).map(b=>articleLink(b)));
+  listLinks("Related concepts", (a.related ?? []).map(id => articleLink(articleMap.get(id))));
+  listLinks("Visual vocabulary", (a.vocabulary ?? []).map(id => {
+    const link = node("a", id);
+    link.href = "vocabulary.html#" + encodeURIComponent(id);
+    return link;
+  }));
   const related=a.images.map(id=>photos.get(id)).filter(p=>p&&p.asset);
   if(related.length){body.append(node("h3","Related photographic records"));const grid=node("div",null,"enc-images");for(const p of related){const link=node("a",null,"enc-image");link.href="images.html?record="+encodeURIComponent(p.asset);const img=node("img");img.src="records/"+p.asset;img.alt=p.title;img.loading="lazy";img.decoding="async";link.append(img,node("span",p.id+" · "+p.title));grid.append(link);}body.append(grid);}
   renderDiagrams(a.records);
@@ -135,18 +206,22 @@ function renderCoverage(){
 }
 async function init(){
   try{
-    const responses=await Promise.all([fetch("records/encyclopedia/index.json"),fetch("image-plan.json"),fetch("records/catalog.json")]);
-    if(responses.some(r=>!r.ok))throw Error("Index unavailable");
-    data=await responses[0].json();const plan=await responses[1].json();const catalog=await responses[2].json();
+    const [knowledge, plan, catalog] = await Promise.all([
+      getJSON("knowledge/catalog.json"), getJSON("image-plan.json"), getJSON("records/catalog.json"),
+    ]);
+    data = knowledge;
     photos=new Map(plan.records.map(p=>[p.id,p]));articleMap=new Map(data.articles.map(a=>[a.id,a]));
     records=new Map(catalog.records.map(record=>[record.path,record]));
     renderCoverage();
     const requested=new URL(location.href).searchParams.get("article");select(articleMap.has(requested)?requested:data.articles[0].id);
-    search.addEventListener("input",showCategories);
+    search.addEventListener("input", () => {
+      if (search.value.trim() && !bodyIndex) loadSearch();
+      showCategories();
+    });
     addEventListener("popstate",()=>{
       const id=new URL(location.href).searchParams.get("article");
       const selected=articleMap.has(id)?id:data.articles[0].id;
-      if(selected!==current)select(selected);
+      select(selected);
     });
   }catch(e){get("enc-count").textContent="Unavailable";categories.textContent="Unable to load the encyclopedia.";body.textContent="The source dataset is available in the downloadable archive.";}
 }
