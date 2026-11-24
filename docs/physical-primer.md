@@ -26,8 +26,8 @@ operational survival of the spacecraft's computers.
    the sequence of cells from which it is constructed. Repeat patterns with
    mirrored and asymmetric features to reveal orientation and bit ordering.
 5. **Ground units in reproducible physical phenomena.** Candidate reference
-   scales include atomic spectral transitions. Specific choices, drawings,
-   numerical definitions and feasibility remain to be worked out.
+   scales include atomic spectral transitions. C1 illustrates and defines a
+   candidate hydrogen reference. How to teach and measure it remains open.
 6. **Bridge to physical diagrams.** Use scaled diagrams and repeated pairs of
    visual representations and symbols. Slowly introduce Earth, the Solar
    System, chemistry, cells and organisms before human culture.
@@ -66,5 +66,17 @@ row-major sequence and a two-dimensional image.
 The SVG's English annotations and printed binary digits are there for human
 developers, not a solution to the language-independent decoding problem.
 The underlying marks need to be redesigned, manufactured and blind-tested.
-The next experiment must ask people unfamiliar with the construction method
-to infer the mapping **without** the explanatory text.
+The later specimens below support testing whether unfamiliar readers can
+infer the mapping **without** the explanatory text.
+
+## Experiments B and C1
+
+Experiment B tests the progression from physical counts to asymmetric,
+rectangular binary rasters. Preserve it as a simple comparison specimen for
+the expanded [primer C1](primer-ladder.md). C1 adds a structured, reproducible
+sequence for orientation, arithmetic, geometry, a candidate hydrogen
+reference and toy raster records with dimensions, identity, grayscale and
+color channels. The [blind interpretation protocol](blind-primer-experiment.md)
+covers both specimens. A manufactured plate, measured readout, completed
+interpretation trials and a physical-to-archive decoding demonstration remain
+development milestones.
