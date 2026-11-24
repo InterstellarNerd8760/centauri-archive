@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "status": "Unvalidated visual vocabulary prototype",
+  "sheet": "vocabulary/marks.svg",
+  "entries": [
+    {
+      "id": "V-001",
+      "label": "Two",
+      "examples": [
+        "two-disks",
+        "two-squares"
+      ],
+      "images": [],
+      "articles": [
+        "CA-01.001"
+      ],
+      "ambiguity": "The invariant is the number of marks. The repeated arrangement could instead suggest a pair, symmetry, or equal spacing."
+    },
+    {
+      "id": "V-002",
+      "label": "Inside",
+      "examples": [
+        "disk-inside",
+        "triangle-inside"
+      ],
+      "images": [],
+      "articles": [
+        "CA-01.003"
+      ],
+      "ambiguity": "A closed boundary contains a mark in each positive example. A 2D diagram cannot by itself distinguish containment from projected overlap."
+    },
+    {
+      "id": "V-003",
+      "label": "Change of position",
+      "examples": [
+        "disk-moves",
+        "square-moves"
+      ],
+      "images": [],
+      "articles": [
+        "CA-01.003",
+        "CA-02.002"
+      ],
+      "ambiguity": "Successive frames suggest one object changing position. A reader may see separate objects or infer the reverse order. Frame order depends on the primer."
+    },
+    {
+      "id": "V-004",
+      "label": "Earth",
+      "examples": [],
+      "images": [
+        "IMG-019",
+        "IMG-020"
+      ],
+      "articles": [
+        "CA-03.001"
+      ],
+      "ambiguity": "The two views show the same planet from different perspectives. The shared shape may suggest the class of planets instead of this individual body."
+    },
+    {
+      "id": "V-005",
+      "label": "Plant",
+      "examples": [],
+      "images": [
+        "IMG-057",
+        "IMG-059"
+      ],
+      "articles": [
+        "CA-04.001",
+        "CA-04.003"
+      ],
+      "ambiguity": "The fern and tree show two examples of plants. Backgrounds and different scales make it unclear which pictured feature carries the label."
+    },
+    {
+      "id": "V-006",
+      "label": "Human",
+      "examples": [],
+      "images": [
+        "IMG-073",
+        "IMG-085"
+      ],
+      "articles": [
+        "CA-05.001"
+      ],
+      "ambiguity": "Groups in varied settings show multiple humans. The examples cannot independently teach species membership, cultural roles, or the range of human variation."
+    }
+  ],
+  "statements": [
+    {
+      "id": "VS-001",
+      "label": "Two inside",
+      "tokens": [
+        "V-001",
+        "V-002"
+      ],
+      "examples": [
+        "two-disks-inside",
+        "two-triangles-inside"
+      ],
+      "ambiguity": "The trial convention places quantity before relationship. The sequence alone leaves the object type and enclosing boundary implicit."
+    },
+    {
+      "id": "VS-002",
+      "label": "Two move",
+      "tokens": [
+        "V-001",
+        "V-003"
+      ],
+      "examples": [
+        "two-disks-move",
+        "two-squares-move"
+      ],
+      "ambiguity": "These examples hold the number constant as positions change. They do not establish tense, agency, cause or simultaneous movement."
+    }
+  ],
+  "illustrations": {
+    "two-disks": "Two filled disks, spaced apart on one line.",
+    "two-squares": "Two filled squares, one above and left of the other.",
+    "disk-inside": "A disk lies within a rounded rectangle.",
+    "triangle-inside": "A triangle lies within a circle.",
+    "disk-moves": "In the first frame a disk is near the lower left. In the next frame it is near the upper right.",
+    "square-moves": "A square is near the upper right in the first frame and near the lower left in the next.",
+    "two-disks-inside": "Two disks lie within a rounded rectangle.",
+    "two-triangles-inside": "Two triangles lie within a circle.",
+    "two-disks-move": "The first frame has two disks near the bottom. The second has two disks near the top.",
+    "two-squares-move": "The first frame has two squares on its right side. The second has two squares on its left side."
+  }
+}

@@ -1,9 +1,10 @@
 """Structural validation of the human-readable encyclopedia."""
+from datetime import date
 import json
-import re
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
+from urllib.parse import urlsplit
 from zipfile import ZipFile
 import sys
 
@@ -48,6 +49,51 @@ class EncyclopediaTests(unittest.TestCase):
             visited.add(key)
         for key in by_id:
             visit(key)
+        self.assertEqual(images, {image for a in self.articles for image in a["images"]})
+
+    def test_editorial_evidence_matches_article_status(self):
+        stages = {
+            "ai-drafted": "AI-drafted",
+            "source-checked": "Source-checked draft",
+            "independently-reviewed": "Independently reviewed",
+            "publication-ready": "Publication-ready",
+        }
+        for article in self.articles:
+            with self.subTest(article=article["id"]):
+                stage = article["review_stage"]
+                self.assertIn(stage, stages)
+                self.assertTrue(article["status"].startswith(stages[stage]))
+                history = article["revision_history"]
+                revisions = [entry["revision"] for entry in history]
+                self.assertEqual(revisions, sorted(set(revisions)))
+                self.assertEqual(revisions[-1], article["revision"])
+                for entry in history:
+                    self.assertTrue(entry["change"].strip())
+                    if "date" in entry:
+                        date.fromisoformat(entry["date"])
+                terms = article.get("terms", [])
+                self.assertEqual(len(terms), len({term["term"].casefold() for term in terms}))
+                for term in terms:
+                    self.assertTrue(term["term"].strip())
+                    self.assertTrue(term["definition"].strip())
+
+                if stage != "ai-drafted":
+                    covered_paragraphs = set()
+                    for source in article["sources"]:
+                        self.assertTrue(urlsplit(source["url"]).hostname)
+                        self.assertTrue(source["label"].strip())
+                        date.fromisoformat(source["accessed"])
+                        self.assertTrue(source["paragraphs"])
+                        self.assertTrue(all(type(p) is int for p in source["paragraphs"]))
+                        covered_paragraphs.update(source["paragraphs"])
+                    self.assertEqual(covered_paragraphs, set(range(1, len(article["body"]) + 1)))
+                if stage in ("independently-reviewed", "publication-ready"):
+                    review = article["human_review"]
+                    self.assertEqual(review["revision"], article["revision"])
+                    self.assertTrue(review["reviewer"].strip() and review["evidence"].strip())
+                    date.fromisoformat(review["date"])
+                if stage == "publication-ready":
+                    self.assertTrue(article["publication_record"].strip())
 
     def test_site_and_package_share_source_bytes(self):
         with TemporaryDirectory() as temp:
