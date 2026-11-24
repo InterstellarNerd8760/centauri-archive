@@ -1,0 +1,20 @@
+{
+  "batch_id": "commons-12",
+  "description": "Photographed terrestrial globe with geographic coordinate references.",
+  "images": [
+    {
+      "slot": "IMG-022",
+      "filename": "terrestrial-globe-coordinate-grid.jpg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/GEO_Globe_Image.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:GEO_Globe_Image.jpg",
+      "title": "A terrestrial globe and geographic coordinates",
+      "summary": "A photograph of a physical Earth globe mounted on a tilted axis, showing Asia and the Indian Ocean with geographic reference lines.",
+      "alt": "A blue globe on a black stand with colored continents, printed reference lines and geographic labels.",
+      "caption": "Latitude measures angular distance north or south of the equator; longitude measures angular position relative to a conventional reference meridian. The globe is a human-made model, and its political boundaries are historical conventions, not physical divisions.",
+      "credit": "Harshul.phadke",
+      "date": "2015-05-18",
+      "rights": "CC BY-SA 4.0, Harshul.phadke; https://creativecommons.org/licenses/by-sa/4.0/. Archive derivative retains this license. Review any underlying cartographic rights before flight.",
+      "processing": "Source photograph re-encoded by the existing importer as an orientation-corrected JPEG, maximum 1800 pixels, quality 87. No synthetic content added."
+    }
+  ]
+}
