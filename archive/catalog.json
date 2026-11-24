@@ -37,6 +37,10 @@
     {
       "id": "messages",
       "label": "09 / Messages"
+    },
+    {
+      "id": "encyclopedia",
+      "label": "10 / Centauri Encyclopedia dataset"
     }
   ],
   "records": [
@@ -2738,6 +2742,14 @@
           "url": "https://science.nasa.gov/wp-content/uploads/2024/03/the-golden-record-30269492703-o.jpg"
         }
       ]
+    },
+    {
+      "path": "encyclopedia/index.json",
+      "title": "Centauri Encyclopedia — structured first edition",
+      "summary": "Nine ordered knowledge categories and 25 linked introductory article drafts.",
+      "group": "encyclopedia",
+      "status": "Unreviewed editorial draft",
+      "rights": "Original project text; open-reuse license not yet assigned"
     }
   ]
 }

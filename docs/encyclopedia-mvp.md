@@ -1,50 +1,34 @@
-# Centauri Archive — Minimum Viable Encyclopedia
+# Centauri Encyclopedia — development specification
 
-Status: editorial plan; not peer reviewed or representative of every human culture.
+Status: original editorial drafts; independent factual and cultural review pending.
 
-## Goal
-Build a small but coherent explanation of our world, using verifiable facts,
-traceable sources, diagrams, and a sequence of concepts that can be understood
-after the physical primer is decoded. English development text is not the final
-extraterrestrial-facing format.
+## Canonical hierarchy
 
-## Six chapters
-1. WHERE — Sun, Solar System, Earth, Moon, location, astronomical scale.
-2. MATTER — atoms, elements, molecules, water, carbon chemistry and energy.
-3. LIFE — cells, metabolism, heredity, DNA, evolution and biodiversity.
-4. OUR WORLD — land, oceans, atmosphere, climate and ecosystems.
-5. HUMANITY — anatomy, languages, technology, culture and diverse histories.
-6. MESSAGES — attributed personal perspectives, not a single voice for humanity.
+01. **Mathematics** — Numbers, logic, geometry, algebra, computation.
+02. **Physical universe** — Particles, elements, forces, astronomy, cosmology.
+03. **Earth** — Geology, oceans, atmosphere, geography, climate.
+04. **Life** — Biochemistry, DNA, evolution, biodiversity.
+05. **Humanity** — Anatomy, cognition, language, reproduction, society.
+06. **Civilization** — History, cultures, institutions, economics, philosophy.
+07. **Technology** — Agriculture, engineering, medicine, computing, spaceflight.
+08. **Culture and experience** — Art, music, literature, everyday life.
+09. **The archive and mission** — Origins, creators, purpose, spacecraft and historical context.
 
-## Minimum acceptance standard for each entry
-- Stable identifier, edition, title, author/editor, review status.
-- A precise core claim, with units and uncertainty where applicable.
-- Several verifiable observations and linked prerequisites.
-- At least one original, licensed or public-domain diagram when practical.
-- Sources, provenance and rights tracked in editorial metadata.
-- A plain description of what remains unknown or disputed.
-- A review pass for science and for culturally narrow framing.
+The encyclopedia is a conceptual learning path, not a claim that unfamiliar readers will understand English or JSON. The physical primer is an independent research program.
 
-## First five-entry learning path
-Earth → water → cells → DNA → humans.
+## Data model
 
-Start with this vertical slice rather than attempting to write an entire
-encyclopedia at once. The draft entry `archive/earth/water.txt` establishes
-an initial content template, not a reviewed scientific release.
+The authoritative UTF-8 dataset is `archive/encyclopedia/index.json`. It is included in the verified archive package; the website is a reader of the same bytes. Stable article IDs are CA-NN.NNN, category prefixes match the nine ordered categories. IDs are never recycled. Articles include a subcategory, prerequisites, related image IDs, related existing records, original explanatory text, limitations, revision, language, editorial credit, review status, rights, and source references.
 
-## Editorial principles
-Prefer fundamental ideas and representative diversity to exhaustive trivia.
-Include everyday life, environments and organisms alongside human inventions.
-Separate observation from opinion. A single founder's message is explicitly
-a personal testimony, not an authorized message from humanity. Do not claim
-that one culture, language or political system represents the species.
+Existing records and image links are contextual material, not substitutes for independent claim verification. The sources array is intentionally empty until exact references are checked. Draft articles must not be represented as scientifically validated. Original prose is used; no encyclopedia articles were copied.
 
-## Next acceptance gate
-Five linked entries; each with checked sources, appropriate units and
-documented review status; one original diagram tested through the decoding
-pipeline; and a documented selection and rights policy.
+## Acceptance gates
 
-## Founder contribution
-Write in your own voice: what is remarkable about Earth, what should endure,
-what humanity has done well and badly, and what you hope a reader understands.
-Keep that message attributed to you and invite other perspectives.
+- Verify each claim against exact authoritative sources, record citations and access dates; quantitative claims require units and uncertainty.
+- Obtain scientific and cultural review, confirm publication rights and record revisions.
+- Maintain a directed acyclic prerequisite graph and resolve all image/record links.
+- Test translations, symbol mappings and independent reconstruction separately.
+- Preserve original photographic master files and consent where appropriate.
+- Develop a simpler physical/raw representation; JSON and ZIP alone are not universal decoding methods.
+
+The first 25 entries constitute an introductory skeleton, not comprehensive knowledge. Future batches should fill gaps in mathematics, physics, chemistry, planetary science, anatomy, reproduction, history, medicine, engineering, world cultures, mission context and language.
