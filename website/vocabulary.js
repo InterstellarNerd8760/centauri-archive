@@ -62,6 +62,11 @@
         link.href = "encyclopedia.html?article=" + encodeURIComponent(id);
         gloss.append(link, " ");
       }
+      for (const id of entry.contrast_with || []) {
+        const link = element("a", "Compare " + id);
+        link.href = "#" + id;
+        gloss.append(link, " ");
+      }
       article.append(heading, samples, gloss);
       return article;
     }

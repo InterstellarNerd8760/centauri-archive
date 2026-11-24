@@ -80,3 +80,10 @@ color channels. The [blind interpretation protocol](blind-primer-experiment.md)
 covers both specimens. A manufactured plate, measured readout, completed
 interpretation trials and a physical-to-archive decoding demonstration remain
 development milestones.
+
+## Experiment C2
+
+[C2](primer-c2.md) adds a two-scale teaching panel, target locators and a
+held-out readout exercise. Its convention catalog names the interpretation
+rules shared with C1. The experiment tests the transition from an outer map
+to smaller marks. Physical measurements are a later step.
