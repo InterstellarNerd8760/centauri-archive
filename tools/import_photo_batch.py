@@ -8,6 +8,9 @@ asset URL, credit, descriptive caption and rights basis. The binary is copied
 into archive/photos; never hotlinked in the final gallery.
 """
 import argparse
+import time
+from email.utils import parsedate_to_datetime
+from urllib.error import HTTPError
 import json
 from io import BytesIO
 from pathlib import Path
@@ -42,12 +45,33 @@ def checked_url(value):
 
 def retrieve(url):
     request = Request(checked_url(url), headers={"User-Agent": "CentauriArchive/0.6 (+https://github.com/InterstellarNerd8760/centauri-archive)"})
-    with urlopen(request, timeout=35) as response:
-        content = response.read(MAX_DOWNLOAD + 1)
-        if len(content) > MAX_DOWNLOAD:
-            raise ValueError("Image exceeds 20 MB source download limit")
-        if response.headers.get("Content-Type", "").lower().startswith("text/"):
-            raise ValueError("Server returned text instead of a JPEG")
+    # Pace external requests; respect server backoff and do not rotate hosts.
+    time.sleep(3)
+    for attempt in range(3):
+        try:
+            with urlopen(request, timeout=35) as response:
+                content = response.read(MAX_DOWNLOAD + 1)
+                if len(content) > MAX_DOWNLOAD:
+                    raise ValueError("Image exceeds 20 MB source download limit")
+                if response.headers.get("Content-Type", "").lower().startswith("text/"):
+                    raise ValueError("Server returned text instead of a JPEG")
+            break
+        except HTTPError as exc:
+            if exc.code not in (429, 503) or attempt == 2:
+                raise
+            retry_after = exc.headers.get("Retry-After", "")
+            try:
+                seconds = float(retry_after)
+            except ValueError:
+                try:
+                    seconds = parsedate_to_datetime(retry_after).timestamp() - time.time()
+                except (TypeError, ValueError, OverflowError):
+                    seconds = 60 * (attempt + 1)
+            if seconds > 300:
+                raise
+            delay = max(60 * (attempt + 1), seconds)
+            print(f"Source requested backoff; retrying in {delay:.0f} seconds", flush=True)
+            time.sleep(delay)
     if not (8_000 <= len(content) <= MAX_DOWNLOAD and (
             content[:2] == b"\xff\xd8"
             or content[:8] == b"\x89PNG\r\n\x1a\n"
