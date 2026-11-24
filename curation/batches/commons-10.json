@@ -1,0 +1,48 @@
+{
+  "batch_id": "commons-10",
+  "description": "Three documented observations with source rights: precipitation, water phases, and bird/crocodilian coexistence.",
+  "images": [
+    {
+      "slot": "IMG-033",
+      "filename": "noaa-shelf-cloud-rain-shaft.jpg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Nssl0389_-_Flickr_-_NOAA_Photo_Library.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nssl0389_-_Flickr_-_NOAA_Photo_Library.jpg",
+      "title": "Precipitation beneath a storm cloud",
+      "summary": "A NOAA National Severe Storms Laboratory photograph shows a shelf cloud and a descending rain shaft above open grassland.",
+      "alt": "Dark storm clouds over a flat grassy landscape, with a pale curtain of falling rain on the right.",
+      "caption": "Water evaporates into the atmosphere, condenses into clouds and returns to the surface as precipitation. This photograph records the cloud and precipitation stages; evaporation and invisible water vapor are not directly visible.",
+      "credit": "NOAA National Severe Storms Laboratory / NOAA Photo Library",
+      "date": "2010-12-20 (source catalog date)",
+      "rights": "US federal NOAA work, marked public domain in the US; source Flickr license also CC BY 2.0 https://creativecommons.org/licenses/by/2.0/. Credit NOAA.",
+      "processing": "Observed source re-encoded by the archive importer as a maximum 1800-pixel JPEG, quality 87, with orientation corrected if needed; original source retained by URL. No synthetic content or compositional alterations introduced."
+    },
+    {
+      "slot": "IMG-043",
+      "filename": "iceland-foggy-iceberg-glacier-lagoon.jpg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Foggy_Iceberg_at_Glacier_Lagoon.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Foggy_Iceberg_at_Glacier_Lagoon.jpg",
+      "title": "Ice, liquid water and fog in Iceland",
+      "summary": "A photograph of an iceberg in Jökulsárlón glacier lagoon during foggy weather in southeastern Iceland.",
+      "alt": "A large pale, jagged iceberg surrounded by liquid water and fog in a grayscale photograph.",
+      "caption": "Solid ice floats in liquid water. The fog consists of suspended liquid droplets; gaseous water vapor itself is invisible. This photograph illustrates natural phase changes, not direct observation of the gaseous phase.",
+      "credit": "Tim Sackton",
+      "date": "2016-09-17",
+      "rights": "CC BY-SA 2.0, Tim Sackton; https://creativecommons.org/licenses/by-sa/2.0/. Re-encoded derivative remains under the same license.",
+      "processing": "Observed source re-encoded by the archive importer as a maximum 1800-pixel JPEG, quality 87, with orientation corrected if needed; original source retained by URL. No synthetic content or compositional alterations introduced. Source monochrome rendering retained."
+    },
+    {
+      "slot": "IMG-065",
+      "filename": "botswana-egyptian-geese-crocodile.jpg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Egyptian_Geese_family_behind_a_Crocodile%2C_Chobe_National_Park%2C_Botswana.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Egyptian_Geese_family_behind_a_Crocodile,_Chobe_National_Park,_Botswana.jpg",
+      "title": "Egyptian geese and a crocodile in Botswana",
+      "summary": "A documented wildlife photograph of Egyptian geese (Alopochen aegyptiaca) and a crocodile at Chobe National Park, Botswana.",
+      "alt": "Egyptian geese near a crocodile in a natural habitat.",
+      "caption": "Birds and crocodilians share an evolutionary ancestry within the archosaurs. Both groups still live on Earth. This photograph records representatives of both groups in one habitat; the source does not identify the crocodile to species.",
+      "credit": "Christoph Strässler",
+      "date": "2021-09-29",
+      "rights": "CC BY-SA 2.0 as verified by Commons Flickr review, Christoph Strässler; https://creativecommons.org/licenses/by-sa/2.0/. Re-encoded derivative remains under the same license.",
+      "processing": "Observed source re-encoded by the archive importer as a maximum 1800-pixel JPEG, quality 87, with orientation corrected if needed; original source retained by URL. No synthetic content or compositional alterations introduced."
+    }
+  ]
+}
