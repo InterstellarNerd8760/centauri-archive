@@ -41,6 +41,17 @@ The baseline includes 29 articles, with source leads on four entries from PR #12
 | CA-08.001 | A single article covers daily life and expression. Separate music, education, play, household and community life, architecture, philosophical and religious traditions. Obtain culturally informed review and community context where possible. |
 | CA-09.001 | Check history against original records and tie mission context to the formal proposal and actual engineering status. |
 
+## Second source-check pass
+
+Edition 0.3 revises and cites the 20 drafts remaining from edition 0.2 and adds 12 related articles. Each of the 56 articles has source references mapped to its body paragraphs and definitions for two terms. Article IDs, photographic links and supplementary records from earlier editions remain available. Original explanations are based on named sources. The record of each change appears in the article's revision history.
+
+- The mathematics entries add worked examples of counting, arithmetic, binary, scale and powers. The physical sciences use those prerequisites to explain the structure of atoms, gravity, spectra, and conservation in chemical reactions.
+- The Earth entries distinguish climate from weather and terrestrial water phases from water transport. New articles explain ocean–atmosphere exchanges and the difference between weathering and erosion.
+- The human-development and language entries distinguish observations of particular people from claims about humans generally. The history entries use identified evidence from Morocco, North America, Mesopotamia and China, with uncertainties about timing and representativeness stated where relevant.
+- The technology and culture entries add instrument calibration, a stored-program model of computing, and the role of communities in documenting living traditions. The mission entry grounds project claims in the published repository proposal and uses NASA material for the historical precedents.
+
+Independent subject and cultural reviewers still need to compare article passages, glossaries and linked media with their references. Priority cases include historical dating, science simplifications and cultural interpretations. The source checks do not determine publication rights or the engineering status of archive experiments.
+
 ## Review before release
 
 - Read the exact source for each factual statement and follow references through to their supporting evidence when practical. Record disagreements and limits in the article. Add units, reference conditions and uncertainty for quantitative claims.

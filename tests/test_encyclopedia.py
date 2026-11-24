@@ -78,13 +78,18 @@ class EncyclopediaTests(unittest.TestCase):
                     self.assertTrue(term["definition"].strip())
 
                 if stage != "ai-drafted":
+                    self.assertTrue(terms)
                     covered_paragraphs = set()
+                    source_urls = set()
                     for source in article["sources"]:
                         self.assertTrue(urlsplit(source["url"]).hostname)
+                        self.assertNotIn(source["url"], source_urls)
+                        source_urls.add(source["url"])
                         self.assertTrue(source["label"].strip())
                         date.fromisoformat(source["accessed"])
                         self.assertTrue(source["paragraphs"])
                         self.assertTrue(all(type(p) is int for p in source["paragraphs"]))
+                        self.assertEqual(source["paragraphs"], sorted(set(source["paragraphs"])))
                         covered_paragraphs.update(source["paragraphs"])
                     self.assertEqual(covered_paragraphs, set(range(1, len(article["body"]) + 1)))
                 if stage in ("independently-reviewed", "publication-ready"):
