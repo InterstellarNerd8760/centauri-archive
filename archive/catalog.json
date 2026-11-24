@@ -2416,6 +2416,282 @@
           "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Egyptian_Geese_family_behind_a_Crocodile%2C_Chobe_National_Park%2C_Botswana.jpg"
         }
       ]
+    },
+    {
+      "path": "photos/red-bead-abacus.jpg",
+      "title": "Counting with physical beads",
+      "summary": "A photographed abacus illustrates discrete objects and quantities.",
+      "group": "photos",
+      "alt": "Red beads in rows on rods in a frame.",
+      "caption": "Provisional counting example: movable beads represent quantities under human conventions. A dedicated one-to-ten arrangement is still preferable for the universal primer.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC BY 4.0, Aliva Sahoo; https://creativecommons.org/licenses/by/4.0/. Attribution and re-encoding disclosed.",
+      "photographer": "Aliva Sahoo",
+      "date": "2025-11-02",
+      "derivative": "Source image re-encoded by the existing importer as an orientation-corrected JPEG, maximum 1800 pixels, quality 87; no synthetic content added. Original retained by source URL.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Red_Bead_Abacus_Display.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Red_Bead_Abacus_Display.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/entebbe-animal-size-comparison.jpg",
+      "title": "Different animal sizes",
+      "summary": "Several herbivorous mammals at a wildlife sanctuary in Uganda.",
+      "group": "photos",
+      "alt": "Elephant, antelope and zebra in a vegetated enclosure.",
+      "caption": "Different animals have different typical body dimensions. Perspective and distance prevent this photograph from providing exact size ratios.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC BY-SA 4.0, MDK-MUSO; https://creativecommons.org/licenses/by-sa/4.0/. Archive derivative retains this license.",
+      "photographer": "MDK-MUSO",
+      "date": "2021-08-28",
+      "derivative": "Source image re-encoded by the existing importer as an orientation-corrected JPEG, maximum 1800 pixels, quality 87; no synthetic content added. Original retained by source URL.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Elephants%2C_antelope_and_zebras_living_peaceful_together.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Elephants%2C_antelope_and_zebras_living_peaceful_together.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/north-sea-beach-pebbles.jpg",
+      "title": "Natural contrast and rock textures",
+      "summary": "Pebbles and rocks of differing shapes and shades on England's North Sea coast.",
+      "group": "photos",
+      "alt": "Rounded grey stones of many sizes on a beach.",
+      "caption": "Provisional natural tonal-contrast example; the image contains intermediate shades and is not a two-state binary calibration target.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC BY-SA 4.0, Gaisarix; https://creativecommons.org/licenses/by-sa/4.0/. Archive derivative retains this license.",
+      "photographer": "Gaisarix",
+      "date": "2017-05-13",
+      "derivative": "Source image re-encoded by the existing importer as an orientation-corrected JPEG, maximum 1800 pixels, quality 87; no synthetic content added. Original retained by source URL.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Beach_rocks_and_pebbles.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Beach_rocks_and_pebbles.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/chlorosome-microscopy.jpg",
+      "title": "Microscopic light-harvesting structures",
+      "summary": "Published scientific figure combining electron micrographs and interpretive diagrams of bacterial light-harvesting structures.",
+      "group": "photos",
+      "alt": "Colored diagrams above grayscale electron microscopy panels with scale bars.",
+      "caption": "The micrographs show observed cellular structures; the colored panels are explanatory models, not photographs. Source: Nature Communications 7, 12454 (2016), doi:10.1038/ncomms12454.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC BY 4.0; https://creativecommons.org/licenses/by/4.0/. Credit source article and authors.",
+      "photographer": "J. Nielsen, N. Kulminskaya, M. Bjerring et al.",
+      "date": "2016-08-18",
+      "derivative": "Source image re-encoded by the existing importer as an orientation-corrected JPEG, maximum 1800 pixels, quality 87; no synthetic content added. Original retained by source URL. Original composite panels retained.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Organization_and_structure_overview_of_the_chlorosome_and_the_carotenosome.webp"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Organization_and_structure_overview_of_the_chlorosome_and_the_carotenosome.webp"
+        }
+      ]
+    },
+    {
+      "path": "photos/yellowstone-bacterial-mats.jpg",
+      "title": "Microbial mats in a hot spring",
+      "summary": "A close view of microbial mats near Grand Prismatic Spring, Yellowstone.",
+      "group": "photos",
+      "alt": "Orange-brown textured mats in shallow water.",
+      "caption": "Microbes form communities in geothermal water. This habitat photograph does not identify a specific species or establish that any other archived microscope specimen was collected here; independent cell observations appear elsewhere in the collection.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC BY-SA 3.0, Daniel Mayer; https://creativecommons.org/licenses/by-sa/3.0/. Archive derivative retains this license.",
+      "photographer": "Daniel Mayer",
+      "date": "2003 (autumn)",
+      "derivative": "Source image re-encoded by the existing importer as an orientation-corrected JPEG, maximum 1800 pixels, quality 87; no synthetic content added. Original retained by source URL.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Bacteria_mats_near_Grand_Prismatic_Spring_in_Yellowstone.JPG"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bacteria_mats_near_Grand_Prismatic_Spring_in_Yellowstone.JPG"
+        }
+      ]
+    },
+    {
+      "path": "photos/hypersaline-microbial-habitats.jpg",
+      "title": "Salt-loving microbes and their environments",
+      "summary": "Published multi-panel photographic figure showing hypersaline habitats and a microscopic sample from Lake Tyrrell.",
+      "group": "photos",
+      "alt": "Satellite salt ponds, field observations, colored microscopic cells, layered mineral crust and a lab sample.",
+      "caption": "The microscopic panel tentatively identifies square haloarchaeal cells alongside green algae; the other panels show distinct hypersaline environments, not necessarily the exact sampling site. Scale bar 5 micrometers. Source article doi:10.1111/1751-7915.13576.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC BY-SA 4.0, McGenity et al., with individual panel credits; https://creativecommons.org/licenses/by-sa/4.0/. Archive derivative retains this license.",
+      "photographer": "Terry J. McGenity et al.; NASA (A), Great Salt Lake Institute (B,C,G), Mike Dyall-Smith (D), Andreas Thywißen (E)",
+      "date": "2020-05-14",
+      "derivative": "Source image re-encoded by the existing importer as an orientation-corrected JPEG, maximum 1800 pixels, quality 87; no synthetic content added. Original retained by source URL. Published photographic composite preserved.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Hypersaline_environments_and_extremely_halophilic_microbes.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hypersaline_environments_and_extremely_halophilic_microbes.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/human-head-torso-model.jpg",
+      "title": "Human internal organs in a teaching model",
+      "summary": "A life-size educational model of the human head and torso made by the German Hygiene Museum in Dresden.",
+      "group": "photos",
+      "alt": "Painted anatomical model showing skull, lungs, heart, liver and intestines.",
+      "caption": "The model shows the relative positions of major organs. It is not a photograph of living tissue and does not include the whole body; compare the archived skeleton image.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC BY-SA 4.0, Wolfmann; https://creativecommons.org/licenses/by-sa/4.0/. Archive derivative retains this license.",
+      "photographer": "Wolfmann",
+      "date": "2020-01-22",
+      "derivative": "Source image re-encoded by the existing importer as an orientation-corrected JPEG, maximum 1800 pixels, quality 87; no synthetic content added. Original retained by source URL.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Anatomical_moulage_of_human_torso_(Realistic_lifelike_model_of_bodily_organs_Made_in_GDR_Deutsches_Hygiene_Museum_Dresden_Photo_Norway_2020-01-22_DSC02499.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Anatomical_moulage_of_human_torso_(Realistic_lifelike_model_of_bodily_organs_Made_in_GDR_Deutsches_Hygiene_Museum_Dresden_Photo_Norway_2020-01-22_DSC02499.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/three-generations-family-nci.jpg",
+      "title": "Three generations of a human family",
+      "summary": "National Cancer Institute photograph of three related adult women.",
+      "group": "photos",
+      "alt": "Three women of different adult generations together beneath a shelter.",
+      "caption": "Humans grow and age, and families can span multiple generations. This portrait shows adult life stages, not the entire human lifespan.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "US National Cancer Institute image marked public domain with no reuse restrictions; credit Bill Branson / NCI. Separate model release is not established; review before flight.",
+      "photographer": "Bill Branson / National Cancer Institute",
+      "date": "1991-03",
+      "derivative": "Source image re-encoded by the existing importer as an orientation-corrected JPEG, maximum 1800 pixels, quality 87; no synthetic content added. Original retained by source URL.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Three_generations_of_a_family.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Three_generations_of_a_family.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/community-media-conference.jpg",
+      "title": "Humans gathering in a community",
+      "summary": "Participants at a community broadcasting conference in Salt Lake City, United States.",
+      "group": "photos",
+      "alt": "A wide conference hall filled with people gathered around tables.",
+      "caption": "Human societies organize gatherings to exchange information and maintain institutions. This event represents one community, not a statistical sample of humanity. Subject consent for flight reuse remains to be reviewed.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC BY-SA 4.0, SerahMead; https://creativecommons.org/licenses/by-sa/4.0/. Archive derivative retains this license.",
+      "photographer": "SerahMead",
+      "date": "2025-06-10",
+      "derivative": "Source image re-encoded by the existing importer as an orientation-corrected JPEG, maximum 1800 pixels, quality 87; no synthetic content added. Original retained by source URL.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Group_Photo_Conference_Morning.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Group_Photo_Conference_Morning.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/oldowan-toolkit-museum.jpg",
+      "title": "Early human stone technology",
+      "summary": "A museum exhibit of archaeological stone implements associated with Oldowan technology.",
+      "group": "photos",
+      "alt": "Stone artifacts displayed on a museum shelf below a map.",
+      "caption": "Archaeological stone implements preserve evidence of early hominin technological activity. The photograph documents a museum display; individual artifact ages are not established here.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC BY-SA 4.0, Suyash Dwivedi; https://creativecommons.org/licenses/by-sa/4.0/. Archive derivative retains this license.",
+      "photographer": "Suyash Dwivedi",
+      "date": "2025-08-10",
+      "derivative": "Source image re-encoded by the existing importer as an orientation-corrected JPEG, maximum 1800 pixels, quality 87; no synthetic content added. Original retained by source URL.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Oldowan_toolkit.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Oldowan_toolkit.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/family-kitchen-nci.jpg",
+      "title": "Preparing food in a household",
+      "summary": "National Cancer Institute photograph of three family members preparing vegetables in a kitchen.",
+      "group": "photos",
+      "alt": "Family members gathered around a kitchen counter with vegetables.",
+      "caption": "Humans prepare food using shared work, tools and domestic spaces. One US household scene from 1989 is not representative of all cultures.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "US National Cancer Institute image marked public domain with no reuse restrictions; credit Bill Branson / NCI. Separate model release is not established; review before flight.",
+      "photographer": "Bill Branson / National Cancer Institute",
+      "date": "1989-03",
+      "derivative": "Source image re-encoded by the existing importer as an orientation-corrected JPEG, maximum 1800 pixels, quality 87; no synthetic content added. Original retained by source URL.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:Family_in_a_kitchen.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Family_in_a_kitchen.jpg"
+        }
+      ]
+    },
+    {
+      "path": "photos/terrestrial-globe-coordinate-grid.jpg",
+      "title": "A terrestrial globe and geographic coordinates",
+      "summary": "A photograph of a physical Earth globe mounted on a tilted axis, showing Asia and the Indian Ocean with geographic reference lines.",
+      "group": "photos",
+      "alt": "A blue globe on a black stand with colored continents, printed reference lines and geographic labels.",
+      "caption": "Latitude measures angular distance north or south of the equator; longitude measures angular position relative to a conventional reference meridian. The globe is a human-made model, and its political boundaries are historical conventions, not physical divisions.",
+      "status": "Photograph acquired; editorial review pending",
+      "rights": "CC BY-SA 4.0, Harshul.phadke; https://creativecommons.org/licenses/by-sa/4.0/. Archive derivative retains this license. Review any underlying cartographic rights before flight.",
+      "photographer": "Harshul.phadke",
+      "date": "2015-05-18",
+      "derivative": "Source photograph re-encoded by the existing importer as an orientation-corrected JPEG, maximum 1800 pixels, quality 87. No synthetic content added.",
+      "sources": [
+        {
+          "label": "Source description and credits",
+          "url": "https://commons.wikimedia.org/wiki/File:GEO_Globe_Image.jpg"
+        },
+        {
+          "label": "Source image before documented JPEG derivative",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/GEO_Globe_Image.jpg"
+        }
+      ]
     }
   ]
 }

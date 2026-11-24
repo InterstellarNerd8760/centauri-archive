@@ -70,10 +70,10 @@
       "category": "primer",
       "title": "Documented one-to-ten objects photograph",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/red-bead-abacus.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Red_Bead_Abacus_Display.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-002",
@@ -100,10 +100,10 @@
       "category": "primer",
       "title": "Natural size comparisons among animals",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/entebbe-animal-size-comparison.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Elephants%2C_antelope_and_zebras_living_peaceful_together.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-005",
@@ -120,10 +120,10 @@
       "category": "primer",
       "title": "Black-and-white beach stones photographed",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/north-sea-beach-pebbles.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Beach_rocks_and_pebbles.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-007",
@@ -280,10 +280,10 @@
       "category": "geography",
       "title": "Earth's latitude, longitude and polar orientation",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/terrestrial-globe-coordinate-grid.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:GEO_Globe_Image.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-023",
@@ -580,30 +580,30 @@
       "category": "molecules",
       "title": "High-resolution microscopy of molecular machinery",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/chlorosome-microscopy.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Organization_and_structure_overview_of_the_chlorosome_and_the_carotenosome.webp",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-053",
       "category": "life",
       "title": "Bacterial habitat paired with a documented specimen",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/yellowstone-bacterial-mats.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bacteria_mats_near_Grand_Prismatic_Spring_in_Yellowstone.JPG",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-054",
       "category": "life",
       "title": "Archaeal habitat paired with a documented specimen",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/hypersaline-microbial-habitats.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hypersaline_environments_and_extremely_halophilic_microbes.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-055",
@@ -730,10 +730,10 @@
       "category": "body",
       "title": "Human anatomy: full body with organs",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/human-head-torso-model.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anatomical_moulage_of_human_torso_(Realistic_lifelike_model_of_bodily_organs_Made_in_GDR_Deutsches_Hygiene_Museum_Dresden_Photo_Norway_2020-01-22_DSC02499.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-068",
@@ -790,30 +790,30 @@
       "category": "body",
       "title": "Human life stages across generations",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/three-generations-family-nci.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Three_generations_of_a_family.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-074",
       "category": "body",
       "title": "Humans together: varied ages and appearances",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/community-media-conference.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Group_Photo_Conference_Morning.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-075",
       "category": "civilization",
       "title": "Stone tools and early human technologies",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/oldowan-toolkit-museum.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Oldowan_toolkit.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-076",
@@ -920,10 +920,10 @@
       "category": "culture",
       "title": "Daily life in a household",
       "kind": "photograph, instrument image or photomicrograph",
-      "status": "planned",
-      "asset": null,
-      "source_url": null,
-      "curation_note": "No photograph acquired; verify source, rights, subjects and caption before inclusion."
+      "status": "included",
+      "asset": "photos/family-kitchen-nci.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Family_in_a_kitchen.jpg",
+      "curation_note": "Source and acquisition documented; independent editorial review pending."
     },
     {
       "id": "IMG-087",
