@@ -13,6 +13,53 @@ from physical_surface import Surface, measure as measure_surface
 from research_archive import assemble as assemble_records, frame, sample_records
 
 
+PUBLIC_ARCHIVE = "https://westonrosch.com/archive/"
+ARCHIVE_HEADER = "<!-- archive-header -->"
+NAVIGATION = (
+    ("brief.html", "Project brief"),
+    ("encyclopedia.html", "Encyclopedia"),
+    ("images.html", "Image library"),
+    ("engineering.html", "Decoding and engineering"),
+)
+SECTION_ROOTS = {
+    "proposal.html": "brief.html",
+    "library.html": "encyclopedia.html",
+    "guide.html": "engineering.html",
+    "discovery.html": "engineering.html",
+    "vocabulary.html": "engineering.html",
+}
+
+
+def publish_page(page, output):
+    html = page.read_text(encoding="utf-8")
+    if ARCHIVE_HEADER not in html:
+        return
+    relative = page.relative_to(output)
+    path = relative.as_posix()
+    prefix = "../" * (len(relative.parts) - 1)
+    overview = ' aria-current="page"' if path == "index.html" else ""
+    links = []
+    for filename, label in NAVIGATION:
+        current = ""
+        if path == filename:
+            current = ' aria-current="page"'
+        elif SECTION_ROOTS.get(path) == filename:
+            current = ' aria-current="location"'
+        links.append(f'    <a href="{prefix}{filename}"{current}>{label}</a>')
+    header = "\n".join((
+        '<header class="header">',
+        f'  <a class="brand" href="{prefix}index.html"{overview}>Centauri Archive<span class="brand-dot">.</span></a>',
+        '  <nav aria-label="Centauri Archive">',
+        *links,
+        '  </nav>',
+        '</header>',
+    ))
+    route = path.removesuffix("index.html") if relative.name == "index.html" else path.removesuffix(".html")
+    canonical = f'<link rel="canonical" href="{PUBLIC_ARCHIVE}{route}">'
+    html = html.replace(ARCHIVE_HEADER, header).replace("</head>", f"{canonical}\n</head>")
+    page.write_text(html, encoding="utf-8")
+
+
 def assemble(output):
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
@@ -59,13 +106,8 @@ def assemble(output):
     vector_directory.mkdir(exist_ok=True)
     for vector in sorted((ROOT / "tests/fixtures/photo-raster-v2").glob("*.car")):
         shutil.copyfile(vector, vector_directory / vector.name)
-    index = output / "index.html"
-    html = index.read_text(encoding="utf-8")
-    html = html.replace("__EDITION__", manifest["archive_version"])
-    html = html.replace("__SIZE__", f"{package.stat().st_size / 1_000_000:.3f}")
-    index.write_text(html, encoding="utf-8")
-    brief = output / "brief.html"
-    brief.write_text(brief.read_text(encoding="utf-8").replace("__EDITION__", manifest["archive_version"]), encoding="utf-8")
+    for page in output.rglob("*.html"):
+        publish_page(page, output)
 
 
 if __name__ == "__main__":

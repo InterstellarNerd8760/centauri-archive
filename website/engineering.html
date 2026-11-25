@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#05080f">
-  <meta name="description" content="Carrier layers, placement options, engineering questions and a parametric archive capacity calculator.">
-  <title>Engineering · Centauri Archive</title>
+  <meta name="description" content="The proposed four-layer Centauri Archive, passive storage and spacecraft integration, plus software experiments in decoding and damage recovery.">
+  <title>Decoding and engineering · Centauri Archive</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -17,29 +17,37 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="header"><a class="brand" href="index.html">Centauri Archive<span class="brand-dot">.</span></a>
-  <nav aria-label="Main navigation"><a href="index.html">Overview</a><a href="encyclopedia.html">Encyclopedia</a><a href="images.html">Image Library</a><a href="guide.html">Decoding</a><a href="engineering.html" aria-current="page">Engineering</a><a href="proposal.html">Mission Proposal</a></nav>
-</header>
-<main id="main" class="wrap mission-study">
+<!-- archive-header -->
+<main id="main" tabindex="-1" class="wrap mission-study engineering-study">
   <section class="study-intro">
-    <p class="eyebrow">Concept study</p>
-    <h1>The archive<br>as <em>hardware.</em></h1>
-    <p class="intro">A passive exterior primer would guide a reader to finer layers of scientific and cultural information. The materials, mount, storage limits and performance remain open engineering questions.</p>
-    <div class="actions"><a class="button" href="#capacity">Calculate a storage budget</a><a class="text-link" href="mission-integration.txt" download>Download the integration study</a></div>
+    <h1>Decoding and <em>engineering</em></h1>
+    <p class="intro">How could an unfamiliar reader go from markings on a spacecraft to a recoverable record of Earth? The proposed design starts with features a reader can inspect without onboard power.</p>
+    <p class="study-status">The project has demonstrated image reconstruction and bounded record recovery from digital samples. Fabrication, physical readout, independent human interpretation trials and environmental qualification remain open.</p>
+    <div class="actions"><a class="button" href="guide.html">Try the decoding experiments</a><a class="text-link" href="discovery.html">Follow the discovery sequence</a></div>
   </section>
   <nav class="study-contents" aria-label="Engineering contents">
-    <a href="#physical">Carrier layers and placement</a><a href="discovery.html">If someone finds the spacecraft</a><a href="#materials">Candidate media</a><a href="#capacity">Capacity calculator</a><a href="#recovery">Damage recovery</a><a href="#interfaces">Mission interfaces</a>
+    <a href="#physical">Four-layer architecture</a><a href="#carrier">Carrier and placement</a><a href="#materials">Candidate media</a><a href="#capacity">Capacity calculator</a><a href="#recovery">Damage recovery</a><a href="#interfaces">Mission interfaces</a>
   </nav>
   <section class="study-section" id="physical">
-    <h2>Readout from the outside in</h2>
-    <p>The exterior teaches alignment and basic reconstruction. It points to a passive, magnified layer with detailed examples and readout instructions. A dense primary layer stores protected records, with an independently discoverable second copy if placement permits. A powered device could add a separate path during any approved operational interval.</p>
+    <h2>Four-layer archive architecture</h2>
+    <ol class="study-milestones">
+      <li><strong>Physical decoding primer.</strong> Visible engraved patterns help a reader find and orient the carrier. Repeated features and paired coarse and fine marks show where to magnify and how to establish a measurement scale.</li>
+      <li><strong>Binary decoding instructions.</strong> Paired marks and worked image examples introduce two states, reading order, image dimensions, record boundaries and the information needed to check and reconstruct records.</li>
+      <li><strong>Scientific and cultural content.</strong> Diagrams, reference images, measurement examples and a visual vocabulary aim to make essential knowledge accessible across languages. Whether an unfamiliar reader can infer their meaning remains an open research question.</li>
+      <li><strong>Complete digital archive.</strong> A proposed dense encoding would store the full contents of the chosen edition, with specifications, identifiers, provenance and a recoverable inventory. The verified development ZIP is the Earth-side package and uses conventional file formats.</li>
+    </ol>
+  </section>
+  <section class="study-section" id="carrier">
+    <h2>Carrier and placement</h2>
+    <p>An inspectable exterior marker could lead to a protected, more densely marked plate or stack. Passive media would require a suitable external reader, such as optical magnification. Semiconductor storage could provide an additional readout path if approved, with its own power, controller and interface dependencies.</p>
+    <p>Repeated location markers and independently accessible copies could limit the effect of localized damage. The benefits depend on where the copies can be mounted and whether they share failure modes. Material, mark density, shielding, mounting and readout access depend on measured performance and spacecraft constraints.</p>
     <figure class="study-figure">
       <img src="carrier-layers.svg" width="850" height="470" alt="Exploded carrier on the left with four layers and a support mount. A cross-section on the right shows primer, microscopic and dense layers beneath the visible surface and an optional electronics bay.">
-      <figcaption>Exploded view and cross-section. Concept illustration, not flight hardware. Layers and clearances are schematic.</figcaption>
+      <figcaption>Exploded view and cross-section of one carrier concept. The layers of information could share physical components, such as binary instructions and reference images on the microscopic legend.</figcaption>
     </figure>
     <figure class="study-figure">
       <img src="carrier-placement.svg" width="850" height="315" alt="Generic spacecraft schematic showing readable primer on the exterior, data storage in a recessed bay, and a second copy in a separate interior bay.">
-      <figcaption>Concept illustration, not flight hardware or Fermi Explorer geometry. Candidate placement would depend on access, shadowing, exposure, load paths and use of the exterior surface.</figcaption>
+      <figcaption>Generic spacecraft layout for a placement study. Candidate positions depend on access, shadowing, exposure, load paths and use of the exterior surface.</figcaption>
     </figure>
   </section>
   <section class="study-section" id="materials">
@@ -141,7 +149,11 @@
     </details>
     <p>The logical budget includes record framing and attribution. The correction percentage is a study input. The current Reed–Solomon record prototype stores 134 record bytes in each 255-byte protected block, with any final partial block padded. Calculate its storage separately for each record. MB and GB are decimal. <a href="mission-integration.txt">Equations and prototype comparison</a></p>
   </section>
-<section class="study-section" id="recovery"><h2>Recovering information after damage</h2><p><a href="discovery.html#readout">Run through the later sampled-slot study with missing indexes and unknown alignment.</a></p><p>Correction works on each aligned block. Integrity checks then let a reader reject unusable blocks and combine verified chunks from separate copies. It cannot recover information lost from every copy beyond the code's correction limits.</p><figure class="explainer"><h3>Inside a 255-byte CAEC v1 block</h3><div class="explain-block" aria-label="57 bytes header, 134 bytes content, 32 bytes integrity digest, 32 bytes correction symbols"><span style="flex:57">57</span><span style="flex:134">134</span><span style="flex:32">32</span><span style="flex:32">32</span></div><p>57 B metadata · 134 B record content · 32 B block digest · 32 B Reed–Solomon parity. Up to 16 unknown erroneous byte symbols or 32 known erasures per codeword, subject to the mixed-error bound.</p><figcaption>Full blocks use about 1.9 encoded bytes per content byte before redundant copies.</figcaption></figure><figure class="explainer"><h3>Two damaged copies, one recovered record</h3><div class="explain-recovery"><span>Copy A</span><span class="" aria-label="Block 1: verified">✓</span><span class="" aria-label="Block 2: verified">✓</span><span class="lost" aria-label="Block 3: unavailable">×</span><span class="" aria-label="Block 4: verified">✓</span><span class="lost" aria-label="Block 5: unavailable">×</span><span class="" aria-label="Block 6: verified">✓</span><span class="" aria-label="Block 7: verified">✓</span><span class="" aria-label="Block 8: verified">✓</span></div><div class="explain-recovery"><span>Copy B</span><span class="" aria-label="Block 1: verified">✓</span><span class="lost" aria-label="Block 2: unavailable">×</span><span class="" aria-label="Block 3: verified">✓</span><span class="" aria-label="Block 4: verified">✓</span><span class="" aria-label="Block 5: verified">✓</span><span class="" aria-label="Block 6: verified">✓</span><span class="lost" aria-label="Block 7: unavailable">×</span><span class="" aria-label="Block 8: verified">✓</span></div><div class="explain-recovery"><span>Recovered</span><span class="" aria-label="Block 1: verified">✓</span><span class="" aria-label="Block 2: verified">✓</span><span class="" aria-label="Block 3: verified">✓</span><span class="" aria-label="Block 4: verified">✓</span><span class="" aria-label="Block 5: verified">✓</span><span class="" aria-label="Block 6: verified">✓</span><span class="" aria-label="Block 7: verified">✓</span><span class="" aria-label="Block 8: verified">✓</span></div><figcaption>Illustrative block map, not the actual test fixture. Recovery depends on independently accessible, verified chunks.</figcaption></figure><figure class="explainer"><h3>Controlled damage tests · 260 trials</h3><div class="explain-bar-head"><span>140 exact recoveries</span><span>120 detected failures</span></div><div class="explain-track" style="height:1rem" aria-label="140 of 260 exact recoveries, 120 detected failures"><span style="width:53.846%"></span><span class="explain-warn" style="width:46.154%"></span></div><p class="explain-note">Zero incorrect outputs accepted in this fixed-seed test suite. Deliberately severe damage is included; these are not mission survival probabilities.</p><figcaption><a href="error-correction.txt">Read the experimental correction specification and limits.</a></figcaption></figure></section>
+  <section class="study-section" id="recovery">
+    <h2>Recovering information after damage</h2>
+    <p>The software prototype uses Reed–Solomon parity to correct bounded errors and erasures within each aligned block. SHA-256 digests check the reconstructed bytes so a decoder can reject unverifiable blocks and combine verified chunks from separate copies. Recovery depends on enough verified data surviving across those copies.</p>
+    <p><a href="discovery.html#readout">Try the simulated recovery study with missing indexes and unknown alignment.</a></p>
+    <figure class="explainer"><h3>Inside a 255-byte CAEC v1 block</h3><div class="explain-block" aria-label="57 bytes header, 134 bytes content, 32 bytes integrity digest, 32 bytes correction symbols"><span style="flex:57">57</span><span style="flex:134">134</span><span style="flex:32">32</span><span style="flex:32">32</span></div><p>57 B metadata · 134 B record content · 32 B block digest · 32 B Reed–Solomon parity. Up to 16 unknown erroneous byte symbols or 32 known erasures per codeword, subject to the mixed-error bound.</p><figcaption>Full blocks use about 1.9 encoded bytes per content byte before redundant copies.</figcaption></figure><figure class="explainer"><h3>Two damaged copies, one recovered record</h3><div class="explain-recovery"><span>Copy A</span><span class="" aria-label="Block 1: verified">✓</span><span class="" aria-label="Block 2: verified">✓</span><span class="lost" aria-label="Block 3: unavailable">×</span><span class="" aria-label="Block 4: verified">✓</span><span class="lost" aria-label="Block 5: unavailable">×</span><span class="" aria-label="Block 6: verified">✓</span><span class="" aria-label="Block 7: verified">✓</span><span class="" aria-label="Block 8: verified">✓</span></div><div class="explain-recovery"><span>Copy B</span><span class="" aria-label="Block 1: verified">✓</span><span class="lost" aria-label="Block 2: unavailable">×</span><span class="" aria-label="Block 3: verified">✓</span><span class="" aria-label="Block 4: verified">✓</span><span class="" aria-label="Block 5: verified">✓</span><span class="" aria-label="Block 6: verified">✓</span><span class="lost" aria-label="Block 7: unavailable">×</span><span class="" aria-label="Block 8: verified">✓</span></div><div class="explain-recovery"><span>Recovered</span><span class="" aria-label="Block 1: verified">✓</span><span class="" aria-label="Block 2: verified">✓</span><span class="" aria-label="Block 3: verified">✓</span><span class="" aria-label="Block 4: verified">✓</span><span class="" aria-label="Block 5: verified">✓</span><span class="" aria-label="Block 6: verified">✓</span><span class="" aria-label="Block 7: verified">✓</span><span class="" aria-label="Block 8: verified">✓</span></div><figcaption>Illustrative block map, not the actual test fixture. Recovery depends on independently accessible, verified chunks.</figcaption></figure><figure class="explainer"><h3>Controlled damage tests · 260 trials</h3><div class="explain-bar-head"><span>140 exact recoveries</span><span>120 detected failures</span></div><div class="explain-track" style="height:1rem" aria-label="140 of 260 exact recoveries, 120 detected failures"><span style="width:53.846%"></span><span class="explain-warn" style="width:46.154%"></span></div><p class="explain-note">Zero incorrect outputs accepted in this fixed-seed test suite. Deliberately severe damage is included; these are not mission survival probabilities.</p><figcaption><a href="error-correction.txt">Read the experimental correction specification and limits.</a></figcaption></figure></section>
   <section class="study-section study-request" id="interfaces">
     <h2>Mission interfaces and verification</h2>
     <p>Centauri Archive has no confirmed spacecraft allocation or environment. Interface data would determine whether an external primer, a protected carrier and optional powered storage are feasible.</p>
@@ -154,8 +166,8 @@
         <tr><th scope="row">Qualification</th><td>Integration requirements, deadline, approval and review gates, applicable environmental and materials verification.</td><td>Unknown</td></tr>
       </tbody>
     </table>
-    <p>Compare etched samples using pre- and post-exposure readout. Track localized loss, mechanical and thermal changes, incomplete reconstruction, and the required instrument resolution. Environmental limits and acceptance criteria must come from the spacecraft program.</p>
-    <p class="study-citations"><a href="mission-integration.txt" download>Full engineering questionnaire</a><a href="proposal.html">Fermi Explorer mission proposal</a></p>
+    <p>Compare etched samples before and after thermal cycling, vibration, radiation and simulated particle impacts. Measure changes in optical contrast, feature resolution and recovery. Evaluate radiation dose and particle exposure at candidate placements, along with retention and single-event effects if electronics are used. Environmental limits and acceptance criteria must come from the spacecraft program.</p>
+    <p class="study-citations"><a href="mission-integration.txt" download>Full engineering questionnaire</a><a href="brief.html">Project brief</a></p>
   </section>
 </main>
 <footer class="footer wrap"><span>Centauri Archive / Independent, open-source research</span><a href="https://github.com/InterstellarNerd8760/centauri-archive">GitHub</a></footer>

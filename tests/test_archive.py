@@ -23,14 +23,39 @@ class Links(HTMLParser):
         super().__init__()
         self.targets = []
         self.anchors = set()
+        self.canonicals = []
+        self.section_nav = []
+        self.brand = None
+        self.in_section_nav = False
+        self.section_link_text = None
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         if "id" in attrs:
             self.anchors.add(attrs["id"])
+        if tag == "link" and attrs.get("rel") == "canonical":
+            self.canonicals.append(attrs.get("href"))
+        if tag == "nav" and attrs.get("aria-label") == "Centauri Archive":
+            self.in_section_nav = True
+        if tag == "a":
+            if "brand" in attrs.get("class", "").split():
+                self.brand = (attrs.get("href"), attrs.get("aria-current"))
+            if self.in_section_nav:
+                self.section_nav.append((attrs.get("href"), attrs.get("aria-current"), []))
+                self.section_link_text = self.section_nav[-1][2]
         for key in ("href", "src"):
             if key in attrs:
                 self.targets.append(attrs[key])
+
+    def handle_data(self, data):
+        if self.section_link_text is not None:
+            self.section_link_text.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "nav":
+            self.in_section_nav = False
+        if tag == "a":
+            self.section_link_text = None
 
 
 class ArchiveTests(unittest.TestCase):
@@ -229,8 +254,8 @@ class ArchiveTests(unittest.TestCase):
                             self.assertTrue(set(values) <= image_targets)
         self.assertNotIn("__EDITION__", html)
         self.assertNotIn("__SIZE__", html)
-        self.assertIn("0.8.0", html)
-        self.assertIn("guide.html", html)
+        self.assertRegex(html, r'<a\b[^>]*href="brief\.html"[^>]*>\s*Read the project brief\b')
+        self.assertRegex(html, r'<a\b[^>]*href="#archive"[^>]*>\s*Explore the archive\b')
         self.assertTrue((site / "primer-panel.svg").is_file())
         self.assertTrue((site / "encyclopedia.txt").is_file())
         for name in ("mono-3x5.car", "gray-5x2.car", "rgb-2x3.car"):
@@ -245,7 +270,8 @@ class ArchiveTests(unittest.TestCase):
         self.assertEqual((site / "image-plan.json").read_bytes(), (ROOT / "curation/images-100.json").read_bytes())
         image_html = (site / "images.html").read_text()
         image_js = (site / "images.js").read_text()
-        self.assertIn("100 images", image_html)
+        self.assertIn('aria-label="Filter by category"', image_html)
+        self.assertIn('type="search"', image_html)
         self.assertIn('id="photo-gallery" class="atlas-results"', image_html)
         self.assertIn("matches.map(imageCard)", image_js)
         self.assertIn("atlas-item-placeholder", image_js)
@@ -261,18 +287,37 @@ class ArchiveTests(unittest.TestCase):
         self.assertIn('id="record-nav"', library)
         self.assertIn("What actually goes on the probe?", (site / "guide.html").read_text())
         brief = (site / "brief.html").read_text()
-        self.assertIn("canonical summaries", brief)
-        self.assertIn('href="index.html"', brief)
         self.assertIn('href="proposal.html"', brief)
         self.assertNotIn("__EDITION__", brief)
-        self.assertIn('id="overview"', html)
-        self.assertIn('id="archive"', html)
-        self.assertIn('id="decoding"', html)
-        self.assertIn('href="proposal.html"', html)
-        self.assertNotIn("overview-grid", html)
-        self.assertNotIn("brief.html", html)
-        self.assertIn('id="carrier"', html)
-        self.assertIn("An intelligible record of a living world.", html)
+        self.assertTrue({"top", "overview", "archive", "visuals", "decoding", "engineering", "carrier"}
+                        <= pages[site / "index.html"].anchors)
+        sections = {
+            "brief.html": "Project brief",
+            "encyclopedia.html": "Encyclopedia",
+            "images.html": "Image library",
+            "engineering.html": "Decoding and engineering",
+        }
+        subsection_parents = {
+            "proposal.html": "brief.html",
+            "library.html": "encyclopedia.html",
+            "guide.html": "engineering.html",
+            "discovery.html": "engineering.html",
+            "vocabulary.html": "engineering.html",
+        }
+        for name in ("index.html", *sections, *subsection_parents):
+            with self.subTest(navigation=name):
+                parser = pages[site / name]
+                route = "" if name == "index.html" else name.removesuffix(".html")
+                self.assertEqual(parser.canonicals, [f"https://westonrosch.com/archive/{route}"])
+                self.assertEqual(parser.brand, ("index.html", "page" if name == "index.html" else None))
+                self.assertIn("#main", parser.targets)
+                self.assertEqual([(href, " ".join("".join(label).split()))
+                                  for href, _, label in parser.section_nav], list(sections.items()))
+                current = {href: state for href, state, _ in parser.section_nav if state}
+                expected = {name: "page"} if name in sections else {}
+                if name in subsection_parents:
+                    expected = {subsection_parents[name]: "location"}
+                self.assertEqual(current, expected)
         style = (site / "style.css").read_text()
         self.assertIn("--bg:#05080f", style)
         self.assertIn("Instrument Serif", style)
