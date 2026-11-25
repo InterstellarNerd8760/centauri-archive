@@ -229,6 +229,29 @@ class ArchiveTests(unittest.TestCase):
                             self.assertTrue(set(values) <= image_targets)
         self.assertNotIn("__EDITION__", html)
         self.assertNotIn("__SIZE__", html)
+        proposal = (site / "proposal.html").read_text(encoding="utf-8")
+        study = json.loads((site / "surface-study.json").read_text(encoding="utf-8"))
+        cases = list(study["cases"].values())
+        expected_records = len(study["cases"]["clean"]["records"])
+        exact = [case for case in cases if len(case["records"]) == expected_records
+                 and not case["incorrect_accepted_ids"]]
+        complete = sum(case["map_status"] == "verified" for case in exact)
+        unknown = len(exact) - complete
+        partial = len(cases) - len(exact)
+        incorrect = sum(len(case["incorrect_accepted_ids"]) for case in cases)
+        for token in ("ARTICLE_COUNT", "PHOTO_COUNT", "SPECIMEN_COUNT", "RECOVERY_CASES",
+                      "COMPLETE_CASES", "UNKNOWN_CASES", "PARTIAL_CASES", "INCORRECT_FRAMES"):
+            self.assertNotIn("__" + token + "__", html + proposal)
+        self.assertIn(f"<dt>{len(knowledge)}</dt><dd>Encyclopedia drafts", html)
+        self.assertIn(f"<dt>{sum(r['status'] == 'included' for r in records)}</dt><dd>Credited photographs", html)
+        self.assertIn(f"<dt>{expected_records}</dt><dd>Records in the mixed recovery specimen", html)
+        self.assertIn(f"{len(cases)} controlled readout scenarios", proposal)
+        self.assertIn(f"{complete} complete recoveries with verified maps, {unknown} full record recoveries with unknown completeness, {partial} partial recoveries", proposal)
+        self.assertIn(f"{incorrect} incorrectly accepted frames", proposal)
+        self.assertIn('id="mission-sequence"', proposal)
+        self.assertIn('id="knowledge-hierarchy"', proposal)
+        self.assertIn('id="recovery-evidence"', proposal)
+        self.assertTrue((site / "mission-visuals.css").is_file())
         self.assertIn("0.8.0", html)
         self.assertIn("guide.html", html)
         self.assertTrue((site / "primer-panel.svg").is_file())

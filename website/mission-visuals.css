@@ -1,0 +1,55 @@
+/* Human-facing mission illustrations. No archived content or runtime dependencies. */
+.mission-visual{margin:clamp(1.4rem,4vw,2.8rem) 0;max-width:70rem}
+.mission-visual figcaption{margin-top:.8rem;color:var(--soft);font-size:.86rem;line-height:1.5}
+.mission-visual svg{display:block;width:100%;height:auto;color:var(--sky)}
+.mission-visual strong{color:var(--white);font-weight:500}
+.mission-flow{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.9rem,3vw,2.5rem)}
+.mission-flow>li{position:relative;min-width:0;padding-block:.7rem;border-top:1px solid var(--line)}
+.mission-flow>li:not(:last-child)::after{content:"→";position:absolute;right:-1.5rem;top:2.5rem;color:var(--sky);font-size:1.2rem}
+.mission-flow svg{width:100%;height:clamp(4rem,12vw,7rem);margin-bottom:.65rem}
+.mission-flow strong,.mission-flow span{display:block}
+.mission-flow span{font-size:.86rem;color:var(--soft)}
+.mission-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem;margin:1.6rem 0 2rem;padding-block:1rem;border-block:1px solid var(--line)}
+.mission-facts div{min-width:0}
+.mission-facts dt{font:500 clamp(1.65rem,4vw,2.65rem)/1.15 var(--mono);color:var(--sky)}
+.mission-facts dd{margin:.3rem 0 0;font-size:.86rem;color:var(--soft)}
+.mission-sequence{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;list-style:none;padding:0;margin:0}
+.mission-sequence li{position:relative;padding:1rem 0 .3rem;border-top:2px solid var(--sky)}
+.mission-sequence li:last-child{border-top:2px dashed var(--soft)}
+.mission-sequence svg{height:76px;margin:0 0 .7rem}
+.mission-sequence strong,.mission-sequence small{display:block}
+.mission-sequence small{font-size:.83rem;color:var(--soft)}
+.mission-layers{list-style:none;padding:0;display:grid;gap:.42rem;margin:0}
+.mission-layers li{display:grid;grid-template-columns:2.1rem minmax(0,1fr) auto;align-items:center;gap:.6rem;padding:.65rem .85rem;border-inline-start:3px solid var(--sky);background:linear-gradient(90deg,rgba(92,200,245,.10),transparent);margin-inline:var(--layer-inset,0)}
+.mission-layers li:nth-child(5),.mission-layers li:nth-child(6){border-inline-start-color:#899cb8;background:linear-gradient(90deg,rgba(137,156,184,.10),transparent)}
+.mission-layers small{color:var(--soft);font-size:.77rem}
+.mission-layer-number{font:500 .8rem var(--mono);color:var(--sky)}
+.mission-evidence{margin:1.4rem 0}
+.mission-outcome{display:flex;gap:3px;height:1.25rem;margin:.65rem 0 .9rem}
+.mission-outcome span{flex:var(--count);min-width:0;background:#5cc8f5}
+.mission-outcome .unknown{background:#879fbc}
+.mission-outcome .partial{background:#d9aa65}
+.mission-outcome-key{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin:0;padding:0;list-style:none;font-size:.85rem}
+.mission-outcome-key li::before{content:"";display:inline-block;width:.75rem;height:.75rem;background:#5cc8f5;margin-right:.4rem}
+.mission-outcome-key .unknown::before{background:#879fbc}
+.mission-outcome-key .partial::before{background:#d9aa65}
+.mission-roadmap{list-style:none;counter-reset:mission-step;padding:0;margin:1.5rem 0;max-width:75ch}
+.mission-roadmap li{position:relative;counter-increment:mission-step;padding:.15rem 0 1.2rem 2.6rem;border-inline-start:1px solid var(--line);margin-inline-start:.9rem}
+.mission-roadmap li::before{content:counter(mission-step);position:absolute;inset-inline-start:-.95rem;top:0;width:1.8rem;height:1.8rem;display:grid;place-items:center;border:1px solid var(--sky);border-radius:50%;background:var(--bg);color:var(--sky);font:500 .8rem var(--mono)}
+.mission-roadmap li:last-child{border-inline-start-color:transparent;padding-bottom:0}
+@media(max-width:650px){
+  .mission-flow,.mission-sequence{grid-template-columns:1fr;gap:.85rem}
+  .mission-flow>li,.mission-sequence li{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:.2rem .85rem;align-items:center}
+  .mission-flow svg,.mission-sequence svg{grid-row:span 2;height:4.4rem;margin:0}
+  .mission-flow>li:not(:last-child)::after{display:none}
+  .mission-facts{gap:.75rem}
+  .mission-facts dd{font-size:.72rem}
+  .mission-layers li{margin-inline:0;grid-template-columns:1.5rem minmax(0,1fr);gap:.3rem .5rem}
+  .mission-layers small{grid-column:2}
+}
+@media print{
+  .mission-visual{break-inside:avoid}
+  .mission-outcome span,.mission-outcome-key li::before{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  .mission-visual strong,.mission-layer-number,.mission-facts dt{color:#000}
+  .mission-roadmap li::before{background:#fff;color:#000}
+}
