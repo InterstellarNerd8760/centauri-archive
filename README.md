@@ -11,7 +11,7 @@ Physical framing, correction overhead, copy count, mounting and shielding need s
 
 ## Current development package
 
-The uncompressed ZIP contains 104 curated, credited photographic records, 56 source-checked encyclopedia drafts, four original science diagrams, preliminary records, one draft message and an experimental visual vocabulary. Its manifest inventories every member by length and SHA-256. The development package uses an 80 MB software ceiling and assumes conventional Earth-side tools.
+The uncompressed ZIP contains 104 curated, credited photographic records, 56 source-checked encyclopedia drafts, twelve original science diagrams, preliminary records, one draft message and an experimental visual vocabulary. Its manifest inventories every member by length and SHA-256. The development package uses an 80 MB software ceiling and assumes conventional Earth-side tools.
 
 Separate experiments reconstruct real photos from a versioned raster, decode a codeword with parity and recover damaged records within bounded Reed–Solomon guarantees. A generated visual primer proposes a path from observable structure to raster reconstruction. The encyclopedia records its editorial status per article. Physical fabrication, first-read trials, independent editorial review and mission qualification remain open.
 
