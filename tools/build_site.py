@@ -1,4 +1,5 @@
 """Assemble a self-contained static site for local preview or Pages."""
+import json
 import shutil
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -11,6 +12,25 @@ from physical_damage_study import run_study
 from physical_recovery import encode_specimen
 from physical_surface import Surface, measure as measure_surface
 from research_archive import assemble as assemble_records, frame, sample_records
+
+
+def presentation_metrics(articles, image_plan, damage, record_count):
+    """Derive the public brief's statistics from the same source and experiment."""
+    cases = tuple(damage["cases"].values())
+    exact = tuple(case for case in cases
+                  if len(case["records"]) == record_count and not case["incorrect_accepted_ids"])
+    complete = sum(case["map_status"] == "verified" for case in exact)
+    unknown = len(exact) - complete
+    return {
+        "__ARTICLE_COUNT__": len(articles["articles"]),
+        "__PHOTO_COUNT__": sum(record["status"] == "included" for record in image_plan["records"]),
+        "__SPECIMEN_COUNT__": record_count,
+        "__RECOVERY_CASES__": len(cases),
+        "__COMPLETE_CASES__": complete,
+        "__UNKNOWN_CASES__": unknown,
+        "__PARTIAL_CASES__": len(cases) - len(exact),
+        "__INCORRECT_FRAMES__": sum(len(case["incorrect_accepted_ids"]) for case in cases),
+    }
 
 
 def assemble(output):
@@ -63,7 +83,19 @@ def assemble(output):
     html = index.read_text(encoding="utf-8")
     html = html.replace("__EDITION__", manifest["archive_version"])
     html = html.replace("__SIZE__", f"{package.stat().st_size / 1_000_000:.3f}")
+    metrics = presentation_metrics(
+        json.loads((ROOT / "archive/encyclopedia/index.json").read_text(encoding="utf-8")),
+        json.loads((ROOT / "curation/images-100.json").read_text(encoding="utf-8")),
+        damage, len(framed),
+    )
+    for token, value in metrics.items():
+        html = html.replace(token, str(value))
     index.write_text(html, encoding="utf-8")
+    proposal = output / "proposal.html"
+    proposal_html = proposal.read_text(encoding="utf-8")
+    for token, value in metrics.items():
+        proposal_html = proposal_html.replace(token, str(value))
+    proposal.write_text(proposal_html, encoding="utf-8")
     brief = output / "brief.html"
     brief.write_text(brief.read_text(encoding="utf-8").replace("__EDITION__", manifest["archive_version"]), encoding="utf-8")
 
