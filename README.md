@@ -15,7 +15,7 @@ The uncompressed ZIP contains 104 curated, credited photographic records, 56 sou
 
 Separate experiments reconstruct real photos from a versioned raster, decode a codeword with parity and recover damaged records within bounded Reed–Solomon guarantees. A generated visual primer proposes a path from observable structure to raster reconstruction. The encyclopedia records its editorial status per article. Physical fabrication, first-read trials, independent editorial review and mission qualification remain open.
 
-The static site presents the encyclopedia, image library, decoding experiments, engineering study and mission proposal. Read the deployed [Centauri Archive website](https://interstellarnerd8760.github.io/centauri-archive/) or build a preview of the current branch locally.
+The [Centauri Archive website](https://westonrosch.com/archive/) presents the project brief, encyclopedia, image library, and decoding and engineering studies. This repository builds the [standalone GitHub Pages copy](https://interstellarnerd8760.github.io/centauri-archive/) and supplies the source for the personal site's pinned import. Edit `website/` and the site builder here so both builds receive the changes.
 
 ## Build and verify
 

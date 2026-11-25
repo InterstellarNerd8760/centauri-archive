@@ -1,4 +1,4 @@
-/* Proposal and engineering share a technical document layout. */
+/* The brief, proposal and engineering pages share a document layout. */
 .mission-study {
   max-width: 72rem;
   padding-block: clamp(2.5rem, 7vw, 6.5rem) 4rem;
@@ -16,6 +16,30 @@
 .study-intro h1 em {
   color: var(--sky);
   font-weight: 400;
+}
+
+.project-brief {
+  max-width: 54rem;
+}
+
+.project-brief .study-intro {
+  padding-bottom: .5rem;
+}
+
+.project-brief .study-intro h1 {
+  font-size: clamp(3.5rem, 7vw, 6.6rem);
+}
+
+.project-brief .study-section {
+  padding-block: 1.65rem;
+}
+
+.project-brief .study-section h2 {
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+}
+
+.engineering-study .study-intro h1 {
+  font-size: clamp(3rem, 8vw, 6.5rem);
 }
 
 .study-intro .intro,
@@ -64,6 +88,10 @@
   max-width: none;
   margin: .65rem 0 1.4rem;
   font-size: .88rem;
+}
+
+.project-brief .study-citations {
+  margin-bottom: 0;
 }
 
 .edition-compare,
