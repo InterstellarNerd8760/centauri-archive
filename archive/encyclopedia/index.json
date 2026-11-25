@@ -582,7 +582,9 @@
         "CA-07.004"
       ],
       "vocabulary": [],
-      "diagrams": [],
+      "diagrams": [
+        "visuals/orders-of-magnitude.svg"
+      ],
       "edition_inclusion": {
         "core": "candidate",
         "extended": "inherited-candidate"
@@ -1250,7 +1252,9 @@
       "purpose": "Explain how stellar properties and observations change over stellar lifetimes.",
       "related": [],
       "vocabulary": [],
-      "diagrams": [],
+      "diagrams": [
+        "visuals/stellar-evolution.svg"
+      ],
       "edition_inclusion": {
         "core": "candidate",
         "extended": "inherited-candidate"
@@ -1431,7 +1435,9 @@
       "purpose": "Explain why orbital motion needs both a change in direction and a continuing velocity.",
       "related": [],
       "vocabulary": [],
-      "diagrams": [],
+      "diagrams": [
+        "visuals/gravity-orbits.svg"
+      ],
       "edition_inclusion": {
         "core": "candidate",
         "extended": "inherited-candidate"
@@ -1801,7 +1807,9 @@
         "CA-04.001"
       ],
       "vocabulary": [],
-      "diagrams": [],
+      "diagrams": [
+        "visuals/water-cycle.svg"
+      ],
       "edition_inclusion": {
         "core": "candidate",
         "extended": "inherited-candidate"
@@ -2104,7 +2112,9 @@
         "CA-03.007"
       ],
       "vocabulary": [],
-      "diagrams": [],
+      "diagrams": [
+        "visuals/plate-boundaries.svg"
+      ],
       "edition_inclusion": {
         "core": "candidate",
         "extended": "inherited-candidate"
@@ -2532,7 +2542,9 @@
         "CA-04.007"
       ],
       "vocabulary": [],
-      "diagrams": [],
+      "diagrams": [
+        "visuals/dna-pairing.svg"
+      ],
       "edition_inclusion": {
         "core": "candidate",
         "extended": "inherited-candidate"
@@ -3144,7 +3156,9 @@
         "CA-05.006"
       ],
       "vocabulary": [],
-      "diagrams": [],
+      "diagrams": [
+        "visuals/metabolism.svg"
+      ],
       "edition_inclusion": {
         "core": "candidate",
         "extended": "inherited-candidate"
@@ -4092,7 +4106,9 @@
       "purpose": "Connect sensory signals and coordinated behavior to the nervous system.",
       "related": [],
       "vocabulary": [],
-      "diagrams": [],
+      "diagrams": [
+        "visuals/sensory-signaling.svg"
+      ],
       "edition_inclusion": {
         "core": "candidate",
         "extended": "inherited-candidate"
