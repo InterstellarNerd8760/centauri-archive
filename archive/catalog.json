@@ -2786,6 +2786,190 @@
       "group": "vocabulary",
       "status": "Unvalidated teaching experiment",
       "rights": "Original project illustration; open-reuse license not yet assigned"
+    },
+    {
+      "path": "visuals/orders-of-magnitude.svg",
+      "title": "Orders of magnitude",
+      "summary": "A base-ten logarithmic number line with equal spacing for each factor of ten.",
+      "group": "visuals",
+      "alt": "A base-ten logarithmic number line with equal spacing for each factor of ten.",
+      "caption": "Equal intervals represent multiplication by ten, not addition. The values are dimensionless examples.",
+      "status": "Original explanatory schematic; independent review pending",
+      "rights": "Original project SVG; open-reuse license not yet assigned",
+      "sources": [
+        {
+          "label": "OpenStax Prealgebra 2e — Integer Exponents and Scientific Notation",
+          "url": "https://openstax.org/books/prealgebra-2e/pages/10-5-integer-exponents-and-scientific-notation"
+        }
+      ]
+    },
+    {
+      "path": "visuals/gravity-orbits.svg",
+      "title": "Gravity and orbital motion",
+      "summary": "An inverse-square force graph and a bound elliptical orbit.",
+      "group": "visuals",
+      "alt": "An inverse-square force graph and a bound elliptical orbit.",
+      "caption": "For fixed masses, doubling center-to-center distance gives one quarter of the force. In a two-body approximation the central mass is at one focus, not the center.",
+      "status": "Original explanatory schematic; independent review pending",
+      "rights": "Original project SVG; open-reuse license not yet assigned",
+      "sources": [
+        {
+          "label": "OpenStax College Physics 2e — Newton's Universal Law of Gravitation",
+          "url": "https://openstax.org/books/college-physics-2e/pages/6-5-newtons-universal-law-of-gravitation"
+        },
+        {
+          "label": "OpenStax College Physics 2e — Satellites and Kepler's Laws",
+          "url": "https://openstax.org/books/college-physics-2e/pages/6-6-satellites-and-keplers-laws-an-argument-for-simplicity"
+        }
+      ]
+    },
+    {
+      "path": "visuals/stellar-evolution.svg",
+      "title": "Stellar evolution",
+      "summary": "Two illustrative pathways through stellar evolution, depending on initial mass.",
+      "group": "visuals",
+      "alt": "Two illustrative pathways through stellar evolution, depending on initial mass.",
+      "caption": "The diagram omits many evolutionary stages and pathways. Some massive stars collapse without a bright supernova; remnants depend on mass and other conditions.",
+      "status": "Original explanatory schematic; independent review pending",
+      "rights": "Original project SVG; open-reuse license not yet assigned",
+      "sources": [
+        {
+          "label": "NASA Science — Stars (Formation, Main Sequence, Remnants)",
+          "url": "https://science.nasa.gov/universe/stars/"
+        },
+        {
+          "label": "NASA Science — Life Cycles of Sun-like and Massive Stars",
+          "url": "https://science.nasa.gov/asset/webb/life-cycles-of-sun-like-and-massive-stars/"
+        }
+      ]
+    },
+    {
+      "path": "visuals/water-cycle.svg",
+      "title": "The water cycle",
+      "summary": "Water moves among surface, atmosphere and groundwater reservoirs.",
+      "group": "visuals",
+      "alt": "Water moves among surface, atmosphere and groundwater reservoirs.",
+      "caption": "Simplified pathways. Evaporation, condensation, precipitation, surface runoff and infiltration are shown; additional transfers are omitted.",
+      "status": "Original explanatory schematic; independent review pending",
+      "rights": "Original project SVG; open-reuse license not yet assigned",
+      "sources": [
+        {
+          "label": "USGS — Text Description of the Water Cycle Diagram",
+          "url": "https://www.usgs.gov/special-topics/water-science-school/text-description-usgs-water-cycle-diagram"
+        },
+        {
+          "label": "OpenStax Chemistry 2e — Phase Transitions",
+          "url": "https://openstax.org/books/chemistry-2e/pages/10-3-phase-transitions"
+        },
+        {
+          "label": "OpenStax Chemistry 2e — Colligative Properties",
+          "url": "https://openstax.org/books/chemistry-2e/pages/11-4-colligative-properties"
+        }
+      ]
+    },
+    {
+      "path": "visuals/plate-boundaries.svg",
+      "title": "Three types of plate boundary",
+      "summary": "Schematic divergence, subduction at a convergent boundary, and transform motion.",
+      "group": "visuals",
+      "alt": "Schematic divergence, subduction at a convergent boundary, and transform motion.",
+      "caption": "The first two panels are cross sections; the third is a top view. Shapes, relative thicknesses and motion are schematic.",
+      "status": "Original explanatory schematic; independent review pending",
+      "rights": "Original project SVG; open-reuse license not yet assigned",
+      "sources": [
+        {
+          "label": "USGS Subduction Zone Science — Understanding plate motions",
+          "url": "https://www.usgs.gov/special-topics/subduction-zone-science/understanding-plate-motions"
+        },
+        {
+          "label": "National Park Service — Evidence of Plate Motions",
+          "url": "https://www.nps.gov/subjects/geology/plate-tectonics-evidence-of-plate-motions.htm"
+        },
+        {
+          "label": "USGS — How fast do tectonic plates move?",
+          "url": "https://www.usgs.gov/faqs/how-fast-do-tectonic-plates-move"
+        }
+      ]
+    },
+    {
+      "path": "visuals/dna-pairing.svg",
+      "title": "DNA and complementary bases",
+      "summary": "A schematic double helix and four examples of complementary base pairs.",
+      "group": "visuals",
+      "alt": "A schematic double helix and four examples of complementary base pairs.",
+      "caption": "A pairs with T and C with G in ordinary double-stranded DNA. The diagram omits the chemical structures and strand directionality.",
+      "status": "Original explanatory schematic; independent review pending",
+      "rights": "Original project SVG; open-reuse license not yet assigned",
+      "sources": [
+        {
+          "label": "NHGRI — DNA Fact Sheet",
+          "url": "https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet"
+        },
+        {
+          "label": "NHGRI — Crossing Over",
+          "url": "https://www.genome.gov/genetics-glossary/Crossing-Over"
+        },
+        {
+          "label": "OpenStax Biology 2e — Nucleic Acids",
+          "url": "https://openstax.org/books/biology-2e/pages/3-5-nucleic-acids"
+        }
+      ]
+    },
+    {
+      "path": "visuals/metabolism.svg",
+      "title": "Photosynthesis and respiration",
+      "summary": "Energy enters through light; carbon-containing compounds and oxygen connect photosynthesis and aerobic respiration.",
+      "group": "visuals",
+      "alt": "Energy enters through light; carbon-containing compounds and oxygen connect photosynthesis and aerobic respiration.",
+      "caption": "Simplified net exchange, not a complete chemical reaction or a closed ecosystem. Both processes occur in photosynthetic plant cells; energy is transferred rather than recycled.",
+      "status": "Original explanatory schematic; independent review pending",
+      "rights": "Original project SVG; open-reuse license not yet assigned",
+      "sources": [
+        {
+          "label": "OpenStax Biology 2e — Overview of Photosynthesis",
+          "url": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis"
+        },
+        {
+          "label": "OpenStax Biology 2e — Cellular Respiration Summary",
+          "url": "https://openstax.org/books/biology-2e/pages/7-chapter-summary"
+        },
+        {
+          "label": "OpenStax Biology 2e — Eukaryotic Cells",
+          "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells"
+        }
+      ]
+    },
+    {
+      "path": "visuals/sensory-signaling.svg",
+      "title": "From stimulus to perception",
+      "summary": "An illustrative path from a stimulus through sensory receptors and nervous-system processing.",
+      "group": "visuals",
+      "alt": "An illustrative path from a stimulus through sensory receptors and nervous-system processing.",
+      "caption": "A schematic pathway, not a literal anatomical map. Receptors transduce inputs; neural networks process and combine signals.",
+      "status": "Original explanatory schematic; independent review pending",
+      "rights": "Original project SVG; open-reuse license not yet assigned",
+      "sources": [
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — Basic Structure and Function of the Nervous System",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-1-basic-structure-and-function-of-the-nervous-system"
+        },
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — Communication Between Neurons",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-5-communication-between-neurons"
+        },
+        {
+          "label": "National Eye Institute — How the Eyes Work",
+          "url": "https://www.nei.nih.gov/eye-health-information/healthy-vision/how-eyes-work"
+        },
+        {
+          "label": "NIDCD — How Do We Hear?",
+          "url": "https://www.nidcd.nih.gov/health/how-do-we-hear"
+        },
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — Sensory Perception",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception"
+        }
+      ]
     }
   ]
 }
