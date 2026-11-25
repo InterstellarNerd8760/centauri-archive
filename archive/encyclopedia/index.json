@@ -529,14 +529,15 @@
         "IMG-042"
       ],
       "records": [
-        "primer/mathematics.txt"
+        "primer/mathematics.txt",
+        "visuals/orders-of-magnitude.svg"
       ],
       "body": [
         "An exponent shows repeated multiplication when it is a positive whole number. In base ten, ten to the third power is 10 × 10 × 10, or one thousand. A negative integer exponent gives a reciprocal. Ten to the power of minus three is one thousandth.",
         "Scientific notation can express a value as a number with magnitude at least one and less than ten multiplied by a power of ten. For example, 3,200 may be written as 3.2 × 10³. Multiplying a quantity by ten changes it by one order of magnitude. Comparing widely different scales becomes easier when both are expressed in the same units."
       ],
       "limitations": "Writing a value with a power of ten does not make a measurement more accurate. Units, significant figures and uncertainty describe different aspects of the measurement.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "rights": "Original project text; publication license pending",
       "sources": [
@@ -568,6 +569,11 @@
           "revision": 1,
           "date": "2026-11-24",
           "change": "Initial source-checked development draft"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-24",
+          "change": "Linked original explanatory schematic based on the existing article and references; independent figure review pending"
         }
       ],
       "knowledge_layer": 3,
@@ -1185,13 +1191,15 @@
         "IMG-011",
         "IMG-012"
       ],
-      "records": [],
+      "records": [
+        "visuals/stellar-evolution.svg"
+      ],
       "body": [
         "Stars form when gravity gathers gas within clouds. If the center becomes sufficiently hot and dense, nuclei can fuse there. For much of the Sun's lifetime, fusion converts hydrogen to helium in the core. Energy transported to the surface escapes as radiation.",
         "Mass influences how a star develops. A star like the Sun can expand into a red giant and eventually leave a compact white dwarf. Some much more massive stars undergo core collapse. Some such collapses produce a supernova, and a neutron star or black hole can remain."
       ],
       "limitations": "These are illustrative paths for single stars. Rotation, chemical composition and interactions with companion stars can change events and outcomes.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "rights": "Original project text; publication license pending",
       "sources": [
@@ -1228,6 +1236,11 @@
           "revision": 1,
           "date": "2026-11-24",
           "change": "Initial source-checked development draft"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-24",
+          "change": "Linked original explanatory schematic based on the existing article and references; independent figure review pending"
         }
       ],
       "review_stage": "source-checked",
@@ -1359,14 +1372,15 @@
         "IMG-018"
       ],
       "records": [
-        "earth/solar-system.txt"
+        "earth/solar-system.txt",
+        "visuals/gravity-orbits.svg"
       ],
       "body": [
         "Gravity changes the motion of objects. In Newton's model, two point masses attract each other. For the same masses, doubling the separation reduces the force to one quarter. Outside nearly spherical bodies the model uses distance between their centers.",
         "An orbit can be understood as continuing free fall. A spacecraft moving sideways falls toward Earth while its path curves around the planet. If one body is much more massive, many bound paths are approximated by an ellipse with that mass at one focus. The period is the time for one circuit of a repeating orbit."
       ],
       "limitations": "These examples use a Newtonian model with simplified bodies. Gravity from other bodies, drag, propulsion and relativistic effects can matter in more precise calculations.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "rights": "Original project text; publication license pending",
       "sources": [
@@ -1406,6 +1420,11 @@
           "revision": 1,
           "date": "2026-11-24",
           "change": "Initial source-checked development draft"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-24",
+          "change": "Linked original explanatory schematic based on the existing article and references; independent figure review pending"
         }
       ],
       "knowledge_layer": 3,
@@ -1707,14 +1726,15 @@
         "IMG-044"
       ],
       "records": [
-        "earth/water.txt"
+        "earth/water.txt",
+        "visuals/water-cycle.svg"
       ],
       "body": [
         "Water moves among the ocean, atmosphere, soil, organisms, rivers, lakes and ice. Evaporation transfers water from a liquid surface to water vapor. Cooling can produce droplets or ice in clouds. Precipitation can return water to the surface, where some runs into rivers or seeps into the ground.",
         "Near standard atmospheric pressure of 101,325 pascals, pure water freezes near 273 kelvin and boils near 373 kelvin. Changing pressure changes the temperature at which it boils. Dissolved material can also shift freezing and boiling behavior. These are examples of how the same substance changes form."
       ],
       "limitations": "The rounded temperatures describe pure water near equilibrium. A picture of a cloud shows droplets or ice rather than gaseous water vapor.",
-      "revision": 4,
+      "revision": 5,
       "language": "en",
       "status": "Source-checked draft — independent human review pending",
       "credit": "Centauri Archive editorial draft, written with AI assistance",
@@ -1755,6 +1775,11 @@
           "revision": 4,
           "date": "2026-11-24",
           "change": "Sourced distinct phase changes, and rounded temperature examples to match stated reference conditions"
+        },
+        {
+          "revision": 5,
+          "date": "2026-11-24",
+          "change": "Linked original explanatory schematic based on the existing article and references; independent figure review pending"
         }
       ],
       "terms": [
@@ -2010,14 +2035,15 @@
         "IMG-030"
       ],
       "records": [
-        "earth/geography.txt"
+        "earth/geography.txt",
+        "visuals/plate-boundaries.svg"
       ],
       "body": [
         "Earth's rigid outer layer, the lithosphere, includes the crust and uppermost mantle. It is broken into plates that move relative to one another. Where plates separate at ocean ridges, hot material can rise and form new crust. At some convergent boundaries one plate descends into the mantle beneath another. At transform boundaries plates move past one another.",
         "Patterns of earthquakes, volcanic activity and magnetic stripes on the ocean floor support this model. Instruments can also measure the motion of locations on Earth's surface over time. Satellites can observe surface forms such as the East African Rift, where parts of the lithosphere are being pulled apart."
       ],
       "limitations": "Surface shape alone does not establish the motion or whether a nearby earthquake is imminent. Plate boundaries can be wide or complex.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "rights": "Original project text; publication license pending",
       "sources": [
@@ -2062,6 +2088,11 @@
           "revision": 1,
           "date": "2026-11-24",
           "change": "Initial source-checked development draft"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-24",
+          "change": "Linked original explanatory schematic based on the existing article and references; independent figure review pending"
         }
       ],
       "review_stage": "source-checked",
@@ -2420,14 +2451,15 @@
         "IMG-051"
       ],
       "records": [
-        "biology/genetics.txt"
+        "biology/genetics.txt",
+        "visuals/dna-pairing.svg"
       ],
       "body": [
         "In cellular life, deoxyribonucleic acid (DNA) carries inherited information. Its strands consist of linked units with four common kinds of bases. The bases occur in sequences, and complementary bases can pair so that each strand can guide the copying of the other.",
         "Changes in base sequence are called mutations. Recombination can rearrange existing variation. Inheritance passes some of this information to new cells and to descendants, while genes and environments both influence how organisms develop."
       ],
       "limitations": "Genes operate within cells and environments; they do not determine every trait independently.",
-      "revision": 3,
+      "revision": 4,
       "language": "en",
       "status": "Source-checked draft — independent human review pending",
       "credit": "Centauri Archive editorial draft, written with AI assistance",
@@ -2474,6 +2506,11 @@
           "revision": 3,
           "date": "2026-11-24",
           "change": "Added definitions for prerequisite vocabulary"
+        },
+        {
+          "revision": 4,
+          "date": "2026-11-24",
+          "change": "Linked original explanatory schematic based on the existing article and references; independent figure review pending"
         }
       ],
       "terms": [
@@ -3038,14 +3075,15 @@
         "IMG-061"
       ],
       "records": [
-        "biology/cells.txt"
+        "biology/cells.txt",
+        "visuals/metabolism.svg"
       ],
       "body": [
         "In oxygen-producing photosynthesis, cells use light energy to build organic molecules from carbon dioxide. Water supplies electrons and oxygen is released. Plants, algae and cyanobacteria carry out this process. The chloroplasts visible in the leaf micrograph are sites of photosynthesis in plant cells.",
         "During aerobic cellular respiration, cells transfer energy from organic compounds into forms that can support their work. Oxygen accepts electrons at the end of a series of transfers. Cells of photosynthetic plants also respire. Other metabolic pathways enable living cells to obtain energy when oxygen is unavailable."
       ],
       "limitations": "This overview describes familiar pathways. Some forms of photosynthesis do not release oxygen, and the availability and use of light and oxygen vary among environments.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "rights": "Original project text; publication license pending",
       "sources": [
@@ -3089,6 +3127,11 @@
           "revision": 1,
           "date": "2026-11-24",
           "change": "Initial source-checked development draft"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-24",
+          "change": "Linked original explanatory schematic based on the existing article and references; independent figure review pending"
         }
       ],
       "review_stage": "source-checked",
@@ -3967,13 +4010,15 @@
         "IMG-072",
         "IMG-095"
       ],
-      "records": [],
+      "records": [
+        "visuals/sensory-signaling.svg"
+      ],
       "body": [
         "The brain and spinal cord form the central nervous system. Nerves connect it to much of the body. Neurons convey signals through changes in electrical activity and often communicate with other cells using chemical signals. These networks support movement, coordination and the processing of information.",
         "Receptor cells respond to particular kinds of input. Cells in the retina respond to light. Vibrations transmitted through the ear can move sensory cells in the inner ear and produce signals. Other receptors respond to mechanical force, chemicals or temperature. Signals from many receptors are combined during perception."
       ],
       "limitations": "The eye photograph shows an external part of the eye. The ear record depicts a model and the microscopy record shows rat neurons. Human sensory experience and abilities vary.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
       "rights": "Original project text; publication license pending",
       "sources": [
@@ -4033,6 +4078,11 @@
           "revision": 1,
           "date": "2026-11-24",
           "change": "Initial source-checked development draft"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-24",
+          "change": "Linked original explanatory schematic based on the existing article and references; independent figure review pending"
         }
       ],
       "review_stage": "source-checked",
