@@ -87,18 +87,27 @@ def recover_record(record_id, words, expected_digest=None):
     intended revision. Invalid blocks are skipped. Conflicting valid blocks
     for the same revision or record ID cause rejection.
     """
+    return assemble_record(record_id, _verified_blocks(words), expected_digest)
+
+
+def _verified_blocks(words):
+    for word in words:
+        if word is None:
+            continue
+        try:
+            yield decode_block(word)
+        except Uncorrectable:
+            continue
+
+
+def assemble_record(record_id, blocks, expected_digest=None):
+    """Join previously verified blocks and validate the complete record digest."""
     if type(record_id) is not int or not 0 < record_id < 2**32:
         raise ValueError("record ID must be a positive unsigned 32-bit integer")
     if expected_digest is not None and len(expected_digest) != DIGEST_LENGTH:
         raise ValueError("expected digest must be 32 bytes")
     chunks, identity = {}, None
-    for word in words:
-        if word is None:
-            continue
-        try:
-            block = decode_block(word)
-        except Uncorrectable:
-            continue
+    for block in blocks:
         if block.record_id != record_id:
             continue
         if expected_digest is not None and block.record_digest != expected_digest:

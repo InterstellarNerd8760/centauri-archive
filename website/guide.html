@@ -85,7 +85,82 @@
     <p id="hamming-assessment">The decoded value matches the example.</p>
     <p>Single-error correction and double-error detection are guaranteed. Three or more flips fall outside those guarantees.</p>
   </div></div>
-<figure class="explainer" id="photo-encoding"><h3>Turn a real photograph into bits</h3><p>Change the sample resolution and channel depth. The preview and binary bytes are computed from the archive's Apollo 17 photograph in your browser.</p><div class="explain-controls"><label>Maximum edge <select id="explain-resolution"><option>16</option><option>32</option><option selected>64</option><option>128</option><option>256</option></select> pixels</label><label>Encoding <select id="explain-mode"><option value="mono">1-bit monochrome</option><option value="gray">8-bit grayscale</option><option value="rgb" selected>24-bit RGB</option></select></label></div><div class="explain-photos"><figure><img id="explain-photo-source" src="records/photos/earth-apollo17.jpg" alt="Apollo 17 Blue Marble photograph"><figcaption>Source · NASA Apollo 17</figcaption></figure><figure><canvas id="explain-photo-raster" width="64" height="64" role="img" aria-label="Raster preview">Computed raster preview requires JavaScript.</canvas><figcaption>Reconstructed sample</figcaption></figure></div><p id="explain-raster-summary" aria-live="polite">Loading image…</p><code class="explain-bytes" id="explain-raster-stream">First payload bytes appear here.</code><figcaption>Browser teaching example; the canonical CAR v2 encoder, header, SHA-256, and recovery layer are specified separately. Counts exclude headers and protection. <a href="raw-raster-v2.txt">Read the specification.</a></figcaption></figure>
+  <section class="explainer reconstruction" id="photo-encoding" aria-labelledby="photo-encoding-title">
+    <h3 id="photo-encoding-title">Reconstruct a photograph from its bits</h3>
+    <p>Start with a photograph in the archive. Follow its samples into a binary frame and back to a picture. The browser verifies and reads the same CAR v2 bytes available for download.</p>
+    <div class="explain-controls">
+      <label>Photograph <select id="explain-subject" disabled></select></label>
+      <label>Maximum edge <select id="explain-resolution" disabled></select> pixels</label>
+      <label>Encoding <select id="explain-mode" disabled><option value="mono">1-bit monochrome</option><option value="gray">8-bit grayscale</option><option value="rgb" selected>24-bit RGB</option></select></label>
+    </div>
+    <ol class="reconstruction-stages">
+      <li>
+        <h4>Recognize the reference</h4>
+        <figure class="reconstruction-reference">
+          <img id="explain-photo-source" src="records/photos/earth-apollo17.jpg" alt="Full disk Earth surrounded by black space, Africa and oceans visible.">
+          <figcaption><strong id="explain-photo-title">Earth, photographed by Apollo 17</strong><br>
+          <span id="explain-photo-credit">NASA / Apollo 17 crew</span><br>
+          <small id="explain-photo-rights">US federal government photograph, public domain in the United States.</small><br>
+          <a id="explain-photo-link" href="https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg">Original source ↗</a> ·
+          <a id="explain-photo-archive" href="images.html?record=IMG-019">Archive record ↗</a></figcaption>
+        </figure>
+      </li>
+    </ol>
+    <p id="explain-raster-summary" role="status">Waiting for the raster reader. The frames can also be decoded offline.</p>
+    <noscript><p>The image comparison requires JavaScript. The raw and protected files remain available below.</p></noscript>
+    <ol class="reconstruction-stages" id="explain-verified-stages" start="2" hidden>
+      <li>
+        <h4>Sample a tiny grid</h4>
+        <div class="reconstruction-tiny"><canvas class="reconstruction-pixelated" id="explain-tiny-raster" role="img">Tiny color sample grid.</canvas>
+        <p>Each cell represents a small area of the reference photograph. In this example the long edge has just 16 cells.</p></div>
+      </li>
+      <li>
+        <h4>Pair marks with cells</h4>
+        <p>One row excerpt below pairs the two recorded states with dark and light display cells. The human labels 0 and 1 stand for those two states.</p>
+        <div id="explain-paired-marks" class="reconstruction-marks" role="group" aria-label="Eight consecutive monochrome pixels"></div>
+      </li>
+      <li>
+        <h4>Set the dimensions and reading order</h4>
+        <p id="explain-tiny-dimensions"></p>
+      </li>
+      <li>
+        <h4>Compare three ways to describe the same sample grid</h4>
+        <div class="reconstruction-variants">
+          <figure><canvas class="reconstruction-pixelated" id="explain-mono-raster" role="img">Monochrome sample.</canvas><figcaption><strong>Monochrome</strong><br>One bit chooses dark or light.</figcaption></figure>
+          <figure><canvas class="reconstruction-pixelated" id="explain-gray-raster" role="img">Grayscale sample.</canvas><figcaption><strong>Grayscale</strong><br>Eight bits choose a display level.</figcaption></figure>
+          <figure><canvas class="reconstruction-pixelated" id="explain-rgb-raster" role="img">Color sample.</canvas><figcaption><strong>RGB</strong><br>Three bytes give red, green and blue levels in a human display convention.</figcaption></figure>
+        </div>
+      </li>
+      <li>
+        <h4>Read the framed binary</h4>
+        <dl class="reconstruction-fields">
+          <dt>22-byte header, hex</dt><dd><code class="explain-bytes" id="explain-raster-header"></code></dd>
+          <dt>Beginning of sample data, binary</dt><dd><code class="explain-bytes" id="explain-raster-stream"></code></dd>
+          <dt>32-byte SHA-256 footer, hex</dt><dd><code class="explain-bytes" id="explain-raster-digest"></code></dd>
+        </dl>
+        <p>The header establishes the record ID, dimensions, mode, and payload length. The footer checks that these fields and the samples agree with the stored digest.</p>
+      </li>
+      <li>
+        <h4>Wrap the frame in protected blocks</h4>
+        <p>The 32 × 32 Earth RGB frame uses 3,126 bytes. The matching protected record uses 24 Reed–Solomon blocks totaling 6,120 bytes in one copy. Each block carries metadata, integrity checks and correction symbols. Use the command-line recovery tool to recover the frame and check its digest.</p>
+        <button type="button" id="explain-read-protected">Unwrap the intact Earth copy</button>
+        <p id="explain-protected-status" role="status">This browser example verifies intact blocks. The recovery tool can repair damage within the code’s limits.</p>
+        <canvas class="reconstruction-pixelated reconstruction-protected" id="explain-protected-raster" role="img" hidden>Verified image from the protected Earth record.</canvas>
+        <p><a href="error-correction.txt">Read the protection format and finite correction limits ↗</a></p>
+      </li>
+      <li>
+        <h4>Reconstruct the selected image</h4>
+        <figure class="reconstruction-output"><canvas class="reconstruction-pixelated" id="explain-photo-raster" role="img">The reconstructed frame requires JavaScript.</canvas>
+        <figcaption>Rendered sample-by-sample from the selected CAR v2 frame after validation. Switch record, size, or encoding to compare the reconstructed samples to the reference above.</figcaption></figure>
+      </li>
+    </ol>
+    <div class="doc-links">
+      <a id="explain-download-frame" href="photo-reconstruction/img-019-e32-rgb.car" download>Download CAR frame ↓</a>
+      <a href="photo-reconstruction/img-019-e32-rgb.caec" download>Download protected Earth record ↓</a>
+      <a href="photo-reconstruction/manifest.json">Sample inventory and credits ↗</a>
+      <a href="raw-raster-v2.txt">Raster layout and reproduction commands ↗</a>
+    </div>
+  </section>
   <div class="doc-links"><a href="raw-raster-v2.txt">Raw raster format and vectors ↗</a><a href="downloads/raster-vectors/mono-3x5.car" download>1-bit vector ↓</a><a href="downloads/raster-vectors/gray-5x2.car" download>Grayscale vector ↓</a><a href="downloads/raster-vectors/rgb-2x3.car" download>RGB vector ↓</a><a href="error-correction.txt">Archive correction experiment ↗</a></div>
 </section>
 <section class="wrap guide-section" id="primer"><p class="eyebrow">01 / THE PRIMER</p><h2>Teach the reader how to read.</h2>
@@ -105,7 +180,7 @@
 <div class="guide-experiment"><div><p class="eyebrow">EXPERIMENT B / BLIND INTERPRETATION</p><h3>Can a reader infer the rules without words?</h3><p>This new text-free specimen pairs physical counts, two-state patterns and several asymmetric rectangular rasters. It is intended for independent interpretation trials, not a demonstration that a future reader will understand the archive.</p><p><a href="primer-blind-panel.svg">Open the printable specimen ↗</a> · <a href="blind-primer-experiment.txt">Read the test protocol ↗</a></p></div><figure><img src="primer-blind-panel.svg" alt="Unlabeled experimental panel pairing grouped quantities and two-state patterns with reconstructed grids" style="width:100%;height:auto" loading="lazy"><figcaption>Unvalidated 2D research specimen</figcaption></figure></div>
 <div class="doc-links">
   <a href="primer-ladder.svg">Text-free A–E panels ↗</a>
-  <a href="primer-ladder-annotated.svg">Annotated panels ↗</a>
+  <a href="primer-ladder-annotated.svg">Annotated C1 panels ↗</a><a href="discovery.html#knowledge-layers">C2 magnification and alignment ↗</a>
   <a href="primer-ladder.txt">Primer rationale and reference units ↗</a>
   <a href="primer-ladder-trial.svg">Held-out trial sheet ↗</a>
   <a href="vocabulary.html">Visual vocabulary ↗</a>

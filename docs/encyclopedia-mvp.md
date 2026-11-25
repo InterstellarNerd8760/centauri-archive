@@ -1,6 +1,6 @@
 # Centauri Encyclopedia — development specification
 
-The development edition contains AI-assisted explanatory drafts at different stages of source checking. Independent factual and cultural review is pending.
+The development edition contains AI-assisted, source-checked explanatory drafts. Independent factual and cultural review is pending.
 
 ## Canonical hierarchy
 
@@ -20,7 +20,11 @@ The encyclopedia is a conceptual learning path, not a claim that unfamiliar read
 
 The authoritative UTF-8 dataset is `archive/encyclopedia/index.json`. It is included in the verified archive package; the website is a reader of the same bytes. Stable article IDs are CA-NN.NNN, category prefixes match the nine ordered categories. IDs are never recycled. Articles include a subcategory, prerequisites, related image IDs, related existing records, original explanatory text, limitations, revision, language, editorial credit, review status, rights, and source references.
 
-Photographs and supplementary records provide context. Claims are checked against the exact references in the `sources` array. Source-checked articles map references to numbered body paragraphs and identify the access date. Selected articles include a short glossary in `terms`. Original project prose is used, with publication rights tracked separately.
+Photographs and supplementary records provide context. Claims are checked against the exact references in the `sources` array. Source-checked articles map references to numbered body paragraphs, identify the access date, and define key concepts in `terms`. Original project prose is used, with publication rights tracked separately.
+
+### Layer and edition metadata
+
+Each article declares a knowledge layer, unique teaching purpose, prerequisite IDs, related article IDs, vocabulary IDs and linked diagrams. The current Essential candidates sit at Layer 3. Candidate edition status leaves approval pending. The physical encoding field records dependencies on mathematical framing and the language bridge. Use stable article IDs for references and separate planning IDs for the backlog. The site creates a light summary catalog and retrieves article bodies separately. Full-text search loads its own category shards on the first query. [Knowledge architecture](knowledge-architecture.md)
 
 ## Review stages
 

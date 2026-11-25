@@ -39,3 +39,12 @@ assert.equal(limits.rawBytes, 312_187_500_000_000);
 assert.equal(limits.correctionBytes, 9_999_000_000_000);
 assert.equal(limits.totalBytes, 87_992_000_000_000);
 console.log('Capacity model: default, fractional-byte rounding, Extended and valid boundary examples passed');
+
+const { contentMix } = require('../website/knowledge-capacity.js');
+assert.deepEqual(contentMix({ articles: 3, articleBytes: 12, photos: 2, edge: 3,
+  depth: 1, primer: 9, vocabulary: 5, metadata: 7 }),
+  { articles: 36, photographs: 112, logical: 169 });
+const curated = estimateCapacity({ ...defaultInput, logicalMB: 44.5, protectedOverride: 85_400_000 });
+assert.equal(curated.protectedBytes, 85_400_000);
+assert.equal(curated.correctionBytes, 40_900_000);
+assert.equal(curated.totalBytes, 170_800_000);

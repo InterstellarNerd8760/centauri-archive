@@ -1,6 +1,6 @@
 # Error correction and recoverable records
 
-Centauri Archive has two Earth-side correction experiments. Extended Hamming (8,4) makes the checks visible at the bit level. CAEC v1 protects numbered records with standard Reed–Solomon coding and separate SHA-256 integrity checks. The archive download still uses the existing ZIP development format. A physical reader would need to recover slot alignment, byte ordering and erasure positions from the carrier.
+Centauri Archive has two Earth-side correction experiments. Extended Hamming (8,4) makes the checks visible at the bit level. CAEC v1 protects numbered records with standard Reed–Solomon coding and separate SHA-256 integrity checks. The archive download still uses the existing ZIP development format. The [self-indexing readout experiment](physical-recovery.md) uses CAEC to recover slots after synthetic bit-phase shifts and longer losses. A physical reader still needs to establish mark polarity, reading direction and erasure positions from the carrier.
 
 ## Extended Hamming (8,4)
 

@@ -1,0 +1,44 @@
+{
+  "id": "enwiki-rendered-revision-sample-2026-11-24",
+  "acquisition_date": "2026-11-24",
+  "articles": [
+    {
+      "page_id": 11579,
+      "revision_id": 1386173379,
+      "title": "Fermi paradox",
+      "rest_sha256": "0191b815d72ad7d898ec6634d849f7f42f61a8663c5cd6ce0877c7851c91786a"
+    },
+    {
+      "page_id": 23053,
+      "revision_id": 1386639974,
+      "title": "Periodic table",
+      "rest_sha256": "f97f40710b2c417e254d556052e287c5a7f183fd6becca0f12b7fc1c12c9f8b5"
+    },
+    {
+      "page_id": 47242,
+      "revision_id": 1385984670,
+      "title": "Amalthea (moon)",
+      "rest_sha256": "db12cef6ae2d274ab5e5a7d65d4ff85497afffc8e236d981723da3500ae13963",
+      "history_request_limit": 2
+    },
+    {
+      "page_id": 50788,
+      "revision_id": 1387445679,
+      "title": "Māori language",
+      "rest_sha256": "6567102e4be8771c4c6aa073b13e0167f9424a22a8d528e989daa01c8614d596"
+    },
+    {
+      "page_id": 542994,
+      "revision_id": 1385878894,
+      "title": "Happy number",
+      "rest_sha256": "01ff45f1f3fbc27e07583ec97939c1ef6b6fcde783015d82814afd3e29e94871",
+      "history_request_limit": 4
+    },
+    {
+      "page_id": 26513034,
+      "revision_id": 1386629982,
+      "title": "Pythagorean theorem",
+      "rest_sha256": "4a2552ecd4248577b20daba2cd0375f34799d37db7a5a62d1a20fc2831412854"
+    }
+  ]
+}

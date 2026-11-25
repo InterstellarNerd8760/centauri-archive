@@ -2774,7 +2774,7 @@
     {
       "path": "vocabulary/index.json",
       "title": "Experimental visual vocabulary",
-      "summary": "Six visual concepts and two compositions linked to examples and existing records.",
+      "summary": "Ten visual concepts and three compositions linked to examples and existing records.",
       "group": "vocabulary",
       "status": "Unvalidated teaching experiment",
       "rights": "Original project text; open-reuse license not yet assigned"
@@ -2782,7 +2782,7 @@
     {
       "path": "vocabulary/marks.svg",
       "title": "Vocabulary marks and examples",
-      "summary": "Reusable glyphs and examples for quantity, containment and position changes.",
+      "summary": "Reusable glyphs and examples for quantity, spatial relations, length and observation order.",
       "group": "vocabulary",
       "status": "Unvalidated teaching experiment",
       "rights": "Original project illustration; open-reuse license not yet assigned"

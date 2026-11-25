@@ -10,14 +10,14 @@ Centauri Core is the candidate for an initial Fermi Explorer feasibility discuss
 | --- | --- | --- |
 | Available mass | Allowable contributor mass including mount, shielding, fasteners, harness and mass margin; mass-property and center-of-mass limits | Unknown |
 | Dimensions and area | Maximum bounding dimensions, footprint, exposed area, volume, keep-outs, access and handling envelopes | Unknown |
-| Geometry and mounting | Relevant integration drawings, candidate interior and exterior locations, coordinate frame, orientation, load path and attachment options | Unknown |
+| Geometry and mounting | Relevant integration drawings, candidate interior and exterior locations, line of sight and future access assumptions, coordinate frame, orientation, load path and attachment options | Unknown |
 | Loads | Acceleration and limit loads by axis, random vibration spectrum, shock response spectrum and relevant launch or maneuver cases | Unknown |
 | Thermal | Operational and non-operational temperatures, gradients and cycles, hot/cold dwell, conductive and radiative interfaces, perihelion exposure and attitude assumptions | Unknown |
 | Radiation | Expected ionizing dose, displacement damage, particle species and energy distributions, fluence, spectra and shielding by location | Unknown |
 | Dust and particle impacts | Expected flux, speed and angle distributions by mission phase, erosion and puncture assumptions, upstream structures and debris requirements | Unknown |
 | Mission duration | Launch/operations phases, powered interval, cruise and target encounter assumptions, and the mission’s verification horizon | Unknown |
 | Power and data | Available voltage, peak and average current, energy budget by phase, boot and shutdown policy, data interfaces and possible downlink | Unknown |
-| Storage and visibility | Permission for a passive exterior primer, passive internal storage, secondary placement, access markings and possible active memory or payload health sensing | Unknown |
+| Storage and visibility | Permission for a passive exterior primer, passive internal storage, separated placement with an independent surface witness, access markings and possible active memory or payload health sensing | Unknown |
 | Materials and contamination | Prohibited substances, outgassing and particulate limits, bakeout and cleaning processes, surface treatments, handling, bioburden and any sterilization | Unknown |
 | Mechanical integration | Attachment materials, fastener retention, allowable preload, differential expansion, fragment containment, ground handling and installation sequence | Unknown |
 | Verification and schedule | Application dates, design freezes, responsible interface owners, qualification versus acceptance tests, workmanship requirements, reviews and documentation | Unknown |

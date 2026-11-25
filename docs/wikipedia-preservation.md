@@ -53,12 +53,52 @@ Measured on Python 3.12.14 with `--expect` as shown:
 | Input rows | 7 |
 | Extracted article records | 2 |
 | Extracted body blocks, UTF-8 bytes | 202 |
-| `articles.ndjson` bytes | 2,792 |
-| `articles.ndjson` bytes with gzip level 9 and `mtime=0` | 915 |
+| `articles.ndjson` bytes | 3,074 |
+| `articles.ndjson` bytes with gzip level 9 and `mtime=0` | 955 |
 | `manifest.json` bytes | 1,130 |
-| Total uncompressed derivative including manifest | 3,922 |
+| Total uncompressed derivative including manifest | 4,204 |
 
-The SHA-256 of `articles.ndjson` was `82e3f5bde31f935fc4cdd7d56d4b428a8c8a5648991962ba2dff108e2629987e`. The tiny fixture's ratio is specific to these inputs. A separate live acquisition check fetched only the 248,160-byte Wikimedia legacy checksum list using `fetch --max-bytes 1000000`, then located the source checksum listed above.
+The SHA-256 of `articles.ndjson` was `e14b78bc93c63a2cc60125f92b3582b3f408f2451e2294bf22ce96900d5cf4b8`. The tiny fixture's ratio is specific to these inputs. A separate live acquisition check fetched the 248,160-byte Wikimedia legacy checksum list using `fetch --max-bytes 1000000`, then located the source checksum listed above.
+
+## Pinned live Wikimedia sample
+
+On 2026-11-24, the research pass acquired six specific revisions through the MediaWiki REST endpoint `revision/{id}/with_html`. The [sample configuration](wikipedia-sample.json) records title, page and revision IDs and observed SHA-256 hashes of the six exact JSON responses. This is a purposive sample of different layouts, including equation-heavy articles, a large scientific table, reference-heavy prose and the Māori language article. It represents six English Wikipedia pages, and its size distribution cannot establish whole-corpus requirements. All acquired article and contributor data are local under `build/`. [MediaWiki REST revision content and metadata](https://www.mediawiki.org/wiki/API:REST_API/Reference#Get_revision_information_with_HTML)
+
+```sh
+python tools/wikipedia_sample.py docs/wikipedia-sample.json build/wikipedia-sample
+python tools/wikipedia_snapshot.py transform \
+  build/wikipedia-sample/rendered.ndjson build/wikipedia-sample-extracted \
+  --input-format ndjson --project enwiki \
+  --snapshot-id enwiki-rendered-revision-sample-2026-11-24 --snapshot-date 2026-11-24 \
+  --source-url https://en.wikipedia.org/w/rest.php/v1/revision/ \
+  --expect sha256:21991b77fcfc266f48b85c494aafe47d69e5be07395f423191e0d0ee928aa700
+```
+
+The optional acquisition command verifies the six observed response hashes and bounds the bytes per request. It exports Enterprise-shaped records after checking page and revision metadata and preserving the publisher's license description. `source-manifest.json` lists observed source URLs, hashes and file lengths. A revision ID pins the underlying wiki revision. Rendered output and non-article response metadata can change as templates, rendering software or page metadata change. Preserve the saved, hashed `rendered.ndjson` for byte-identical reruns. If reacquisition reports a changed response hash, record the difference and either use the preserved input or document a new sample with its own checksums.
+
+| Pinned article | Rendered HTML bytes | Output record bytes | Headings | Top-level table rows | Formulae | References |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| [Fermi paradox](https://en.wikipedia.org/w/index.php?oldid=1386173379) | 874,460 | 351,469 | 60 | 0 | 13 | 205 |
+| [Periodic table](https://en.wikipedia.org/w/index.php?oldid=1386639974) | 1,933,701 | 799,564 | 32 | 149 | 12 | 316 |
+| [Amalthea (moon)](https://en.wikipedia.org/w/index.php?oldid=1385984670) | 235,263 | 84,154 | 14 | 38 | 0 | 32 |
+| [Māori language](https://en.wikipedia.org/w/index.php?oldid=1387445679) | 1,050,487 | 371,767 | 50 | 118 | 0 | 230 |
+| [Happy number](https://en.wikipedia.org/w/index.php?oldid=1385878894) | 188,940 | 72,143 | 16 | 0 | 51 | 13 |
+| [Pythagorean theorem](https://en.wikipedia.org/w/index.php?oldid=1386629982) | 801,534 | 380,280 | 42 | 23 | 100 | 97 |
+
+Totals were 5,472,219 source REST JSON bytes, 5,472,517 normalized input NDJSON bytes, 352,067 displayed body-text bytes, 2,059,377 derivative article-stream bytes and a 1,138-byte extraction manifest. Gzip level 9 with `mtime=0` produced 797,157 bytes for the normalized input and 388,621 bytes for the derivative article stream. Two local extractions took 1.024 s and 0.996 s on Python 3.12.14, and the article streams and manifests matched byte for byte. The article stream SHA-256 was `5155bf5130b29f061a260dc995e32afa87c8d9effbb3fc2fc61f894145434153`. These figures exclude physical encoding, integrity and recovery overhead.
+
+The initial extractor misplaced nested table cell content as surrounding prose, including content within Māori language tables. The updated records retain cells, nested text, header association and row/column spans. All 12 formula wrappers from the Periodic table article appeared inside references and had previously lost their mathematical representation. The reference records now preserve those formulae with their MathML and TeX when present. Counts describe extracted structures. Layout and textual equivalence to the publisher's rendering still require review.
+
+### Offline attribution experiment
+
+The sample tool requests only revision IDs and API-visible editor labels for the selected attribution pages, beginning at each pinned revision and paging backward. It saved `attribution.ndjson` at 23,424 bytes and the downloaded CC BY-SA legalcode at 52,485 bytes. Join credits to article records by `id` and `revision_id`. Each sidecar entry distinguishes an exhausted public pagination stream, a stopped request window, and pages whose contributors were never requested. Temporary-account labels remain distinguishable. Legacy anonymous editor rows and withheld editor rows are counted without recording IP addresses or suppressed identities.
+
+| Article | Public revision rows | Unique saved labels | Legacy anonymous edit rows | Withheld editor rows |
+| --- | ---: | ---: | ---: | ---: |
+| Amalthea (moon) | 611 | 254 | 82 | 0 |
+| Happy number | 1,602 | 253 | 990 | 0 |
+
+Both queried pages exhausted their visible pagination within the configured request bounds. The other four pages retain page and revision URLs and publisher rights metadata. This sidecar is a partial contributor inventory. Exhausting public pagination does not cover versions hidden by the publisher, attribution notices tied to imported material, transcluded content or credit that must be retained for anonymous contributors. Retain the notice and attribution trail for these cases in any future distribution review. A future carried corpus should also include a plain-text license representation suited to offline decoding. [MediaWiki revision API](https://www.mediawiki.org/wiki/API:Revisions) · [Wikimedia licensing terms](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use#7._Licensing_of_Content)
 
 ## Acquire and process a future source
 
@@ -83,11 +123,11 @@ The output directory contains a manifest and an article stream. The stream is on
 | Field | Meaning |
 | --- | --- |
 | `id`, `title` | ID `wiki:<project>:<page_id>` is stable across title or revision changes that keep that page ID. The title is the source title at this revision. |
-| `source` | Project, page and revision IDs, snapshot identifier/date, source and revision/history URLs, source license objects, provided attribution fields and captured license notices. |
-| `blocks` | Ordered text blocks with `kind` and `text`; heading blocks have levels 1–6, and source anchors and list depth appear when available. Table rows use vertical-bar separators. Inline sub/superscripts use `_(…)` and `^(…)`. |
+| `source` | Project, page and revision IDs, optional revision timestamp, snapshot identifier/date, source and revision/history URLs, source license objects, provided attribution fields and captured license notices. |
+| `blocks` | Ordered text blocks with `kind` and `text`. Heading blocks have levels 1–6. Source anchors and list depth appear when available. Table rows give a vertical-bar-separated text summary plus ordered `cells`, with header or data type, nested blocks, optional spans and explicit header attributes. Inline sub/superscripts use `_(…)` and `^(…)`. |
 | `formulae` | One-based entries associated with `⟦math:N⟧` tokens. Preserve available TeX, MathML and alternate text. Markup is source data. A consumer should treat it as inert unless it supplies a safe renderer. |
 | `citations`, `references`, `links` | Ordered citation marker observations (text, source anchor, target URL), separate source references (anchor, text, links), and links encountered in the reading content. |
 
 The manifest identifies the source bytes and SHA-256, expected checksum if one was supplied, uncompressed input NDJSON bytes, input/category counts, transformation notes and article stream byte count and SHA-256. The `article` input count includes duplicate candidates before deduplication. Records are a labeled derivative of rendered text. A source page appearing with a delete or visibility-change event in the same input is omitted. Conflicting payloads for one page and revision produce an error instead of an arbitrary selection.
 
-This research pass exercises a renderer-facing adapter with synthetic input. A broad source review still needs to find template loss, hidden notices, ambiguous markup, multi-column tables, layout-dependent formulae, redirects and missing revisions or links. Nested list depth is retained, while row and column spanning, reference placement within paragraphs and rich inline formatting have reduced fidelity. Review exception handling on a representative pinned sample, profile full-corpus disk space and runtime, and evaluate simple compression only after fidelity and attribution have been established.
+The adapter has been exercised with synthetic input and six real, pinned revisions. A broad source review still needs to check template loss, hidden notices, ambiguous markup, layout-dependent formulae, redirects and missing revisions or links. It preserves nested list depth and table cell spans. Reference placement within paragraphs, visual table layout, language-span markup and rich inline formatting have reduced fidelity. Profile whole-corpus disk and runtime on a larger and stratified input and compare lossless compression after inspecting fidelity and attribution.

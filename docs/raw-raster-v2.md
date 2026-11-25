@@ -137,3 +137,24 @@ PYTHON
 ```
 
 For example, keeping source JPEGs and all 512-pixel RGB frames would consume 96,641,848 logical bytes before other content. At 256 pixels, the same pair uses 51,518,392 bytes. Choosing a useful mix for Centauri Core requires reviewing legibility at candidate resolutions, especially on photographs with small annotations, scale bars or fine anatomical detail.
+
+## Canonical website reconstruction exhibit
+
+The decoding guide reads the CAR v2 bytes published in `website/photo-reconstruction/`. Its source photographs are Apollo 17 Earth (IMG-019), an Elodea microscope view (IMG-050), Grand Prismatic Spring (IMG-036), a three-generation family portrait (IMG-073), and a Hubble image of Alpha Centauri A and B (IMG-011). The companion manifest includes credits, licensing terms, original sources, archive source digests, preparation changes, dimensions, and full frame digests. In particular, retain the Elodea derivative's CC BY-SA 4.0 terms and the Alpha Centauri image's exact credit, ESA/Hubble & NASA. The family portrait's catalog records a model-release question for flight use.
+
+Each subject has 16, 32, and 64-pixel long-edge examples in all three modes. Earth also has 128-pixel examples. The page reads the actual frame fields, rejects invalid lengths or checksums, and reconstructs the sample grid from the payload. The 16-pixel samples pair marks with a row excerpt and illustrate how monochrome, grayscale and RGB represent the same grid. The selectable final preview reports its actual sample and framed byte counts.
+
+The 32 × 32 Earth RGB frame has 3,126 bytes. The matching CAEC v1 file has 24 Reed–Solomon codewords of 255 bytes each for a total of 6,120 bytes. The browser can verify and unwrap this intact exemplar using its published inventory, then verify and reconstruct the CAR v2 frame. Use the command-line decoder to apply Reed–Solomon correction within the code's guarantees. [Archive protection specification](error-correction.md).
+
+```sh
+python -m pip install -r requirements-raster.txt
+python tools/build_photo_exhibit.py build/photo-reconstruction
+diff -r website/photo-reconstruction build/photo-reconstruction
+python tools/protect_archive.py recover 19 build/recovered-earth.car \
+  website/photo-reconstruction/img-019-e32-rgb.caec
+cmp website/photo-reconstruction/img-019-e32-rgb.car build/recovered-earth.car
+python tools/photo_raster.py decode build/recovered-earth.car build/recovered-earth.ppm
+python -m unittest discover -s tests -p test_photo_exhibit.py -v
+```
+
+The checked-in examples were generated with Pillow 12.2.0 and libjpeg-turbo 3.1.4.1 on Linux x86-64. The ordinary site build copies these files without reinterpreting the source JPEGs. Browser-side checks require a secure context, which includes HTTPS deployments and a localhost development server.

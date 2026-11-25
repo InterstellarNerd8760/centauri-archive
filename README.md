@@ -11,7 +11,7 @@ Physical framing, correction overhead, copy count, mounting and shielding need s
 
 ## Current development package
 
-The uncompressed ZIP contains 104 curated, credited photographic records, 44 encyclopedia drafts, four original science diagrams, preliminary records, one draft message and an experimental visual vocabulary. Its manifest inventories every member by length and SHA-256. The development package uses an 80 MB software ceiling and assumes conventional Earth-side tools.
+The uncompressed ZIP contains 104 curated, credited photographic records, 56 source-checked encyclopedia drafts, four original science diagrams, preliminary records, one draft message and an experimental visual vocabulary. Its manifest inventories every member by length and SHA-256. The development package uses an 80 MB software ceiling and assumes conventional Earth-side tools.
 
 Separate experiments reconstruct real photos from a versioned raster, decode a codeword with parity and recover damaged records within bounded Reed–Solomon guarantees. A generated visual primer proposes a path from observable structure to raster reconstruction. The encyclopedia records its editorial status per article. Physical fabrication, first-read trials, independent editorial review and mission qualification remain open.
 
@@ -44,6 +44,17 @@ node tests/capacity.cjs
 - Reproduce the annotated and text-free A–E primer panels from structured data. Use the separate held-out exercise and protocol for an interpretation trial. [Mathematical primer and instructions](docs/primer-ladder.md) · [Visual vocabulary](docs/visual-vocabulary.md)
 - Encode a record, recover bounded errors and erasures, and rerun the seeded corruption scenarios. [Correction specification and commands](docs/error-correction.md)
 - Transform an attributed synthetic snapshot separately from the normal build. [Optional Wikipedia research and reproduction procedure](docs/wikipedia-preservation.md)
+
+Phase II adds the [discovery sequence and knowledge layers](docs/knowledge-architecture.md), a [CAX1 mixed record specimen](docs/research-archive-format.md), [CAS slot-map recovery](docs/physical-recovery.md), and [capacity projections](docs/knowledge-budget.md). The normal build publishes the small research specimens and generated web indices. The full article source stays in the development ZIP.
+
+```sh
+python3 tools/build_primer_c2.py --check
+python3 tools/research_archive.py sample build/phase-ii.cax
+node tools/research_archive_independent.cjs build/phase-ii.cax
+python3 tools/physical_damage_study.py --timing
+python3 tools/physical_surface.py
+python3 tools/knowledge_budget.py --copies 2
+```
 
 The original [monochrome raster v1 experiment](docs/raw-raster-experiment.md) remains available.
 

@@ -6,7 +6,7 @@ Centauri Core is the recommended starting point for a Fermi Explorer feasibility
 | --- | --- | --- |
 | Physical decoding primer | Directly observable examples, reference quantities, a passive bridge to framed data | Complete primer and a local bootstrap for Extended records |
 | Photographs and scientific diagrams | Curated photographic collection and original explanatory diagrams, with scoped raw raster representations | Full Core plus additional images and media as capacity permits |
-| Encyclopedia and language | Essential knowledge, experimental visual vocabulary and introductory human language | Full Core plus deeper scientific and cultural collections, with multilingual material where feasible |
+| Encyclopedia and language | Essential knowledge, experimental visual vocabulary and introductory human language, with room to study selected expanded articles | Full Core plus deeper scientific and cultural collections, with multilingual material where feasible |
 | History, culture and messages | Small curated selection with permissions, context and provenance | Broader records and additional media if feasible |
 | Encoding and recovery | Local specifications, vectors, inventory, checksums and finite correction guarantees | The same capabilities, with an independent inventory and framing for large collections |
 | Wikipedia | Outside the baseline | Candidate complete or nearly complete English article-text derivative, subject to extraction coverage, rights and size measurements |
@@ -21,3 +21,5 @@ Centauri Core is the recommended starting point for a Fermi Explorer feasibility
 The current uncompressed development ZIP uses a separate 80,000,000-byte software limit. It packages human-readable records, source photographs and manifest integrity metadata. The raw raster and error-correction experiments are separate tools. The ZIP does not instantiate either proposed physical edition.
 
 See the [mission proposal](fermi-explorer-proposal.md), [integration questionnaire](mission-integration.md) and [development milestones](roadmap.md).
+
+The [knowledge architecture](knowledge-architecture.md) defines layer dependencies. The [measured budget study](knowledge-budget.md) estimates when a curated expansion could fit within Core.

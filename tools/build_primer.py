@@ -22,16 +22,17 @@ GLYPHS = {
 class Panel:
     """Emit a small SVG using physical marks, with optional annotations."""
 
-    def __init__(self, height, annotated=False):
+    def __init__(self, height, annotated=False, *, title="Centauri Archive decoding primer C1",
+                 description="Five experimental stages introduce physical marks, quantity, "
+                             "geometry, a hydrogen reference and toy raster frames."):
         self.parts = [
             f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {height}">'
         ]
         self.annotated = annotated
         if annotated:
             self.parts += [
-                "<title>Centauri Archive decoding primer C1</title>",
-                "<desc>Five experimental stages introduce physical marks, quantity, "
-                "geometry, a hydrogen reference and toy raster frames.</desc>",
+                f"<title>{escape(title)}</title>",
+                f"<desc>{escape(description)}</desc>",
             ]
         self.rect(0, 0, WIDTH, height, "white", "none")
 
