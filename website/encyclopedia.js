@@ -142,6 +142,33 @@ function renderDiagrams(paths) {
     body.append(figure);
   }
 }
+// Small human-facing quantitative models; no dependency on archived format readers.
+function renderScientificModel(id) {
+  if (!["CA-02.009","CA-01.006"].includes(id)) return;
+  const gravity = id === "CA-02.009";
+  const section = node("section",null,"enc-model");
+  section.append(node("h3",gravity?"Explore the inverse-square relationship":"Explore powers of ten"));
+  const label = node("label",gravity?"Separation relative to reference distance":"Exponent");
+  const slider = node("input");
+  slider.type="range"; slider.min=gravity?"1":"-3"; slider.max=gravity?"8":"3"; slider.step=gravity?"0.25":"1"; slider.value=gravity?"2":"0"; slider.id="enc-model-range";
+  label.htmlFor=slider.id;
+  const result = node("output"); result.htmlFor=slider.id; result.setAttribute("aria-live","polite");
+  const track=node("div",null,"enc-model-track"); const bar=node("div"); track.append(bar); track.setAttribute("aria-hidden","true");
+  const update=()=>{
+    const v=Number(slider.value);
+    if (gravity) {
+      const force=1/(v*v);
+      result.textContent=v+" × reference distance · "+(100*force).toFixed(2)+"% of reference force";
+      bar.style.width=(100*force)+"%";
+    } else {
+      result.textContent="10^"+v+" = "+(10**v).toLocaleString("en-US",{maximumFractionDigits:3});
+      bar.style.width=((v+3)/6*100)+"%";
+    }
+  };
+  slider.addEventListener("input",update);
+  section.append(label,slider,result,track,node("p",gravity?"Fixed masses; relative Newtonian force scales as 1/r².":"The bar represents the exponent on a logarithmic scale, not the value itself.","enc-model-note"));
+  body.append(section); update();
+}
 async function select(id,push=false){
   if (!articleMap.has(id)) return;
   const request = ++selection;
@@ -167,6 +194,8 @@ async function select(id,push=false){
   body.append(node("p",a.subcategory+" · Revision "+a.revision+" · "+a.status,"enc-meta"));
   if (a.purpose) body.append(node("p", a.purpose, "enc-purpose"));
   renderParagraphs(a);
+  renderDiagrams(a.records);
+  renderScientificModel(a.id);
   renderTerms(a.terms);
   body.append(node("h3","Interpretation and limitations"),node("p",a.limitations));
   listLinks("Prerequisite concepts",a.prerequisites.map(id=>articleLink(articleMap.get(id))));
@@ -179,7 +208,6 @@ async function select(id,push=false){
   }));
   const related=a.images.map(id=>photos.get(id)).filter(p=>p&&p.asset);
   if(related.length){body.append(node("h3","Related photographic records"));const grid=node("div",null,"enc-images");for(const p of related){const link=node("a",null,"enc-image");link.href="images.html?record="+encodeURIComponent(p.asset);const img=node("img");img.src="records/"+p.asset;img.alt=p.title;img.loading="lazy";img.decoding="async";link.append(img,node("span",p.id+" · "+p.title));grid.append(link);}body.append(grid);}
-  renderDiagrams(a.records);
   listLinks("Supplementary archive records",a.records.filter(path=>!path.endsWith(".svg")).map(path=>{const link=node("a",records.get(path)?.title ?? path);link.href="records/"+path;return link;}));
   renderReferences(a);
   showCategories();
