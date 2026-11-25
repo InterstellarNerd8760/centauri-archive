@@ -1,6 +1,6 @@
 # Centauri Encyclopedia — development specification
 
-Status: original editorial drafts; independent factual and cultural review pending.
+The development edition contains AI-assisted explanatory drafts at different stages of source checking. Independent factual and cultural review is pending.
 
 ## Canonical hierarchy
 
@@ -20,7 +20,18 @@ The encyclopedia is a conceptual learning path, not a claim that unfamiliar read
 
 The authoritative UTF-8 dataset is `archive/encyclopedia/index.json`. It is included in the verified archive package; the website is a reader of the same bytes. Stable article IDs are CA-NN.NNN, category prefixes match the nine ordered categories. IDs are never recycled. Articles include a subcategory, prerequisites, related image IDs, related existing records, original explanatory text, limitations, revision, language, editorial credit, review status, rights, and source references.
 
-Existing records and image links are contextual material, not substitutes for independent claim verification. The sources array is intentionally empty until exact references are checked. Draft articles must not be represented as scientifically validated. Original prose is used; no encyclopedia articles were copied.
+Photographs and supplementary records provide context. Claims are checked against the exact references in the `sources` array. Source-checked articles map references to numbered body paragraphs and identify the access date. Selected articles include a short glossary in `terms`. Original project prose is used, with publication rights tracked separately.
+
+## Review stages
+
+| Stage | Evidence recorded |
+| --- | --- |
+| `ai-drafted` | Draft with AI assistance. Individual source leads may be present. |
+| `source-checked` | Every body paragraph maps to one or more consulted references. Independent human review is pending. |
+| `independently-reviewed` | An independent human reviewer has checked this revision. The `human_review` record identifies the reviewer, date, revision and review evidence, including the scope of the review. |
+| `publication-ready` | The revision has human review and a `publication_record` documenting the accepted editorial decision, rights clearance and any subject-specific or cultural review. |
+
+`status` is the human-readable form of `review_stage`. `revision_history` records an imported revision or dated changes made since the baseline. Earlier changes remain in Git. Increment `revision` and update the status when a substantive edit changes the evidence for that revision.
 
 ## Acceptance gates
 
@@ -31,7 +42,7 @@ Existing records and image links are contextual material, not substitutes for in
 - Preserve original photographic master files and consent where appropriate.
 - Develop a simpler physical/raw representation; JSON and ZIP alone are not universal decoding methods.
 
-The first 25 entries constitute an introductory skeleton, not comprehensive knowledge. Future batches should fill gaps in mathematics, physics, chemistry, planetary science, anatomy, reproduction, history, medicine, engineering, world cultures, mission context and language.
+The 150–250 article goal is a roadmap for several editorial passes. The current selection is an introductory learning path. See the [editorial sourcing and coverage audit](encyclopedia-sourcing.md).
 
 ## Public collection consolidation
 

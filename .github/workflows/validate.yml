@@ -13,8 +13,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install -r requirements-raster.txt
       - run: python -m unittest discover -s tests -v
-      - run: node --check website/library.js && node --check website/decoder.js && node --check website/carrier.js && node --check website/images.js
+      - run: node tests/raw_raster_independent.cjs
+      - run: node tests/capacity.cjs
+      - run: for file in website/*.js; do node --check "$file" || exit; done
       - run: python tools/archive.py build build/centauri.zip
       - run: python tools/archive.py inspect build/centauri.zip
       - run: python tools/archive.py verify build/centauri.zip

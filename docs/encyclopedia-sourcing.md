@@ -1,6 +1,6 @@
 # Editorial acquisition: how to build a deeper encyclopedia without copying noise
 
-Status: research protocol, 22 November 2026. The collection remains incomplete and unreviewed.
+Editorial protocol and coverage audit, 24 November 2026. Independent human review is pending.
 
 The goal is neither to preserve the whole public web nor to translate huge volumes of copyrighted encyclopedia text into binary. An archive built for an unknown future reader should start with intelligible definitions and images, then use concise explanations of the most generalizable facts.
 
@@ -21,18 +21,34 @@ Wikipedia's CC BY-SA 4.0 material may be reused according to its conditions; eac
 3. Compare two or more overview sources, potentially Wikipedia and Grokipedia, for missing concepts, not for prose to duplicate.
 4. Verify quantitative statements and core scientific claims from original measurement sources or authoritative syntheses.
 5. Write a fresh explanatory article with diagrams or measurable observations; label disputes, hypotheses and unknowns.
-6. Record exact references, timestamps/revisions when relevant, license/attribution obligations, author or editorial status in `archive/catalog.json`.
+6. Add exact references, access dates, supported paragraph numbers, and the consulted version when applicable. Record article credit and rights in `archive/encyclopedia/index.json`. Keep media-specific rights and provenance in `archive/catalog.json`.
 7. Conduct accuracy and cultural review before marking content released.
 8. Test how a reader navigates from the physical primer to this information.
 
-## High-value content backlog
+## Baseline audit and first editorial pass
 
-The next editorial expansion should cover the origins and evolution of the Solar System; spectra and measurable stars; atoms, light and the physical units; Earth geology and water; photosynthesis and microbial ecosystems; the origin and evolution of biological diversity; human development and health as scientific observation; agriculture and food; inventions and engineering; the origins and diversity of languages and writing; cultural expression and daily experience; and an explicitly attributed selection of human messages.
+The baseline includes 29 articles, with source leads on four entries from PR #12. The sections below describe the coverage review and remaining work. Source checks in this pass focused on life, human biology, Earth and physical science.
 
-These are topics to research, **not assertions that we have already acquired them**.
+| Baseline IDs | Finding and editorial work |
+| --- | --- |
+| CA-01.001–004 | The mathematics sequence sets up count, measure and binary. It needs examples of zero, ratios, positional notation, signed quantities and what an encoded number measures. The experimental physical primer addresses part of that sequence. |
+| CA-02.001–005 | Matter, bonding and energy assume terminology a new reader needs defined. The Solar System formation entry now maps claims to sources. The added radiation, stellar evolution and heat entries supply prerequisites for later topics. Cosmology, gravity, quantitative units and chemical reactions need dedicated coverage. |
+| CA-03.001–004 | The planetary profile's phrase “solid interior structure” could imply a wholly solid Earth. The revision identifies the liquid outer core. The water entries overlap; one introduces the cycle and the other addresses storage and transport. The numerical water phase examples and the broad atmosphere entry still need independent sources and explicit conditions. |
+| CA-04.001–005 | Cells, DNA and the genome entries repeated several concepts and compressed membranes, organelles, metabolism and inheritance into generalizations. Revisions clarify the roles of cells, inherited DNA and gene expression while keeping the stable IDs. Additional entries cover the origins of life, RNA and proteins, energy pathways, organism groups, and biodiversity. Future detail should cover life-history diversity and additional ecosystems. |
+| CA-05.001–004 | Two anatomy entries provided overlapping lists of systems with little explanation of how they work. The organization entry now serves as the prerequisite for system-specific articles with a flow schematic and correctly distinguished photographs, models and microscopy records. The older brief development and cognition entries still need substantive claim checks. |
+| CA-06.001–002 | The existing history overview compresses milestones into one timeline with few geographic examples. Check date ranges and oral and archaeological evidence independently. Develop regionally balanced accounts of migration, agriculture, writing, institutions, exchange, cooperation and conflict. |
+| CA-07.001–003 | Technology entries give broad descriptions. Next passes should explain mechanisms with documented examples of tools, manufacturing, agriculture, energy, communication, medicine, computation and instrumentation. |
+| CA-08.001 | A single article covers daily life and expression. Separate music, education, play, household and community life, architecture, philosophical and religious traditions. Obtain culturally informed review and community context where possible. |
+| CA-09.001 | Check history against original records and tie mission context to the formal proposal and actual engineering status. |
+
+## Review before release
+
+- Read the exact source for each factual statement and follow references through to their supporting evidence when practical. Record disagreements and limits in the article. Add units, reference conditions and uncertainty for quantitative claims.
+- Open each linked photo or diagram and read the catalog provenance. Distinguish specimen, model, processed image and schematic. Add comparable examples when one person's body, language or culture could be treated as representative.
+- Record source check, rights and independent review for the same revision. Retain evidence for corrections and unresolved comments.
 
 ## Separate media formats
 
-Keep the source/master, the small website derivative and the flight encoding distinct. A high-resolution color JPEG can be useful on Earth, but it does not help an unknown reader unless the decoding primer teaches JPEG or provides a simpler reconstructable representation. The proposed `curation/images-100.json` gives 100 slots, while the actual verified archive includes only three original diagrams. No third-party images or field recordings are represented as acquired.
+Keep the source/master, website derivative and experimental flight encoding distinct. JPEG decoding requires a convention a future reader would have to reconstruct. The image plan at `curation/images-100.json` tracks 104 photographic records and the catalog links their acquired derivatives and provenance. Drawings and engineering diagrams have separate catalog entries. Recorded audio is a future acquisition task.
 
 The near-term test is to reconstruct one simple image from a self-describing physical or raw-bit prototype. The long-term goal is to preserve representative knowledge, not maximize the number of megabytes.

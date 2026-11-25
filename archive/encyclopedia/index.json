@@ -2,7 +2,7 @@
   "schema_version": 1,
   "edition": "0.2",
   "title": "Centauri Encyclopedia",
-  "status": "Development drafts; not a validated universal encoding",
+  "status": "AI-assisted development articles at mixed source-check stages; independent human review pending",
   "categories": [
     {
       "id": "01",
@@ -79,10 +79,17 @@
       "limitations": "The written numerals and reading direction are human conventions.",
       "revision": 2,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 2,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-01.002",
@@ -102,10 +109,17 @@
       "limitations": "Notation does not establish meaning without examples.",
       "revision": 1,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 1,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-01.003",
@@ -128,10 +142,17 @@
       "limitations": "Ideal Euclidean geometry is a mathematical model, not a guarantee about physical spacetime.",
       "revision": 2,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 2,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-01.004",
@@ -156,10 +177,17 @@
       "limitations": "Two physical states do not intrinsically specify orientation, ordering or meaning.",
       "revision": 2,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 2,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-02.001",
@@ -183,10 +211,17 @@
       "limitations": "Atomic images are instrument measurements, not ordinary visible-light photographs.",
       "revision": 1,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 1,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-02.002",
@@ -210,10 +245,17 @@
       "limitations": "A complete physical description requires units, models and domain-specific assumptions.",
       "revision": 1,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 1,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-02.003",
@@ -238,10 +280,17 @@
       "limitations": "A molecular drawing simplifies a quantum physical system.",
       "revision": 1,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 1,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-02.004",
@@ -276,10 +325,17 @@
       "limitations": "Astronomical images may combine wavelengths or represent different scales.",
       "revision": 2,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 2,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-02.005",
@@ -299,25 +355,263 @@
         "earth/solar-system.txt"
       ],
       "body": [
-        "The Sun and its planetary system developed from a cloud of gas and dust. Gravity drew material together. As the cloud contracted, a rotating disk formed around the growing star; collisions and accumulation within the disk produced larger solid bodies.",
-        "The Solar System preserves evidence of this process in meteorites, small orbiting bodies and the arrangement of planets. Observations of disks around other stars provide additional evidence that planetary systems form through related processes. The formation of a planet is distinct from the later appearance of life on it."
+        "The Sun and its planetary system developed from material in a cloud of gas and dust. Gravity drew material together. A rotating disk surrounded the growing star. In the disk, small solid particles grew into larger bodies through accumulation and some collisions.",
+        "Meteorites preserve material from the early Solar System. Observations of disks around young stars provide another way to investigate how planetary systems form. Planet formation concerns the assembly of a planetary body. The emergence of living systems is a separate question."
       ],
       "limitations": "This is a simplified formation model; the detailed history of individual bodies remains under investigation.",
       "sources": [
         {
+          "label": "NASA Science — Solar System Facts (Formation)",
+          "url": "https://science.nasa.gov/solar-system/solar-system-facts/",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        },
+        {
           "label": "NASA Science — How did our Solar System form?",
-          "url": "https://science.nasa.gov/astrobiology/learning-resources/alp/how-did-our-solar-system-form/"
+          "url": "https://science.nasa.gov/astrobiology/learning-resources/alp/how-did-our-solar-system-form/",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
         },
         {
           "label": "NASA Science — Planetary Systems",
-          "url": "https://science.nasa.gov/universe/stars/planetary-system/"
+          "url": "https://science.nasa.gov/universe/stars/planetary-system/",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
         }
       ],
+      "revision": 2,
+      "language": "en",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance",
+      "rights": "Original project text; publication license pending",
+      "review_stage": "source-checked",
+      "revision_history": [
+        {
+          "revision": 1,
+          "change": "PR #12 imported revision"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-24",
+          "change": "Clarified disk formation and identified evidence for the model"
+        }
+      ]
+    },
+    {
+      "id": "CA-02.006",
+      "category": "02",
+      "title": "Electromagnetic radiation",
+      "subcategory": "Waves and light",
+      "prerequisites": [
+        "CA-01.003",
+        "CA-02.002"
+      ],
+      "images": [
+        "IMG-008",
+        "IMG-012",
+        "IMG-040",
+        "IMG-049"
+      ],
+      "records": [
+        "science/energy.txt"
+      ],
+      "body": [
+        "Electromagnetic radiation can carry energy through empty space. A wave description uses wavelength, the distance between equivalent points such as adjacent crests, and frequency, the number of cycles per unit time. In a vacuum, wavelength multiplied by frequency gives the speed of light. Radio waves have longer wavelengths than the radiation human eyes normally detect.",
+        "An instrument can measure intensity in a range of wavelengths and assign colors to display those measurements. The result can show structures invisible to unaided eyes. The display colors then belong to the visualization convention and need the instrument's legend to interpret."
+      ],
+      "limitations": "A wave description is sufficient for these examples. Some measurements require describing transfers of energy in discrete quanta.",
       "revision": 1,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
-      "credit": "Centauri Archive editorial draft",
-      "rights": "Original project text; publication license pending"
+      "rights": "Original project text; publication license pending",
+      "sources": [
+        {
+          "label": "NASA Science — Electromagnetics: wavelength and frequency",
+          "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter6-2/",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        },
+        {
+          "label": "NASA Science — Introduction to the Electromagnetic Spectrum",
+          "url": "https://science.nasa.gov/ems/01_intro/",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "NASA Science — Visualization: From Energy to Image",
+          "url": "https://science.nasa.gov/ems/04_energytoimage/",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "Wavelength",
+          "definition": "The distance between matching phases in neighboring cycles of a wave."
+        },
+        {
+          "term": "Spectrum",
+          "definition": "A description of radiation ordered by wavelength, frequency, or another corresponding quantity."
+        }
+      ],
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-24",
+          "change": "Initial source-checked development draft"
+        }
+      ],
+      "review_stage": "source-checked",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance"
+    },
+    {
+      "id": "CA-02.007",
+      "category": "02",
+      "title": "How stars change",
+      "subcategory": "Stellar evolution",
+      "prerequisites": [
+        "CA-02.004",
+        "CA-02.006"
+      ],
+      "images": [
+        "IMG-009",
+        "IMG-011",
+        "IMG-012"
+      ],
+      "records": [],
+      "body": [
+        "Stars form when gravity gathers gas within clouds. If the center becomes sufficiently hot and dense, nuclei can fuse there. For much of the Sun's lifetime, fusion converts hydrogen to helium in the core. Energy transported to the surface escapes as radiation.",
+        "Mass influences how a star develops. A star like the Sun can expand into a red giant and eventually leave a compact white dwarf. Some much more massive stars undergo core collapse. Some such collapses produce a supernova, and a neutron star or black hole can remain."
+      ],
+      "limitations": "These are illustrative paths for single stars. Rotation, chemical composition and interactions with companion stars can change events and outcomes.",
+      "revision": 1,
+      "language": "en",
+      "rights": "Original project text; publication license pending",
+      "sources": [
+        {
+          "label": "NASA Science — Stars (Formation, Main Sequence, Remnants)",
+          "url": "https://science.nasa.gov/universe/stars/",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "NASA Science — Life Cycles of Sun-like and Massive Stars",
+          "url": "https://science.nasa.gov/asset/webb/life-cycles-of-sun-like-and-massive-stars/",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "Nuclear fusion",
+          "definition": "A process in which nuclei combine into a heavier nucleus."
+        },
+        {
+          "term": "White dwarf",
+          "definition": "A dense remnant of a star that has stopped sustaining core fusion."
+        }
+      ],
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-24",
+          "change": "Initial source-checked development draft"
+        }
+      ],
+      "review_stage": "source-checked",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance"
+    },
+    {
+      "id": "CA-02.008",
+      "category": "02",
+      "title": "Heat, temperature and matter",
+      "subcategory": "Thermodynamics",
+      "prerequisites": [
+        "CA-02.002",
+        "CA-02.003"
+      ],
+      "images": [
+        "IMG-043",
+        "IMG-044",
+        "IMG-046"
+      ],
+      "records": [
+        "earth/water.txt"
+      ],
+      "body": [
+        "When two objects at different temperatures make thermal contact, energy tends to move from the warmer object to the cooler one. This transfer due to a temperature difference is called heat. A temperature describes the thermal condition of a system. A large and a small volume of the same liquid can share a temperature while containing different amounts of internal energy.",
+        "A phase is a form of matter with uniform physical properties. Ice and liquid water are different phases that can coexist during melting. Whether a substance is solid, liquid or gas can depend on both temperature and pressure. Boiling begins when the vapor pressure of the liquid reaches the surrounding pressure."
+      ],
+      "limitations": "These examples describe familiar materials close to thermal equilibrium. Temperature alone cannot determine the phase without additional conditions.",
+      "revision": 1,
+      "language": "en",
+      "rights": "Original project text; publication license pending",
+      "sources": [
+        {
+          "label": "OpenStax Chemistry 2e — Energy Basics",
+          "url": "https://openstax.org/books/chemistry-2e/pages/5-1-energy-basics",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        },
+        {
+          "label": "OpenStax Chemistry 2e — Phase Transitions",
+          "url": "https://openstax.org/books/chemistry-2e/pages/10-3-phase-transitions",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Chemistry 2e — Phases and Classification of Matter",
+          "url": "https://openstax.org/books/chemistry-2e/pages/1-2-phases-and-classification-of-matter",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "Heat",
+          "definition": "Energy transferred because of a temperature difference."
+        },
+        {
+          "term": "Vapor pressure",
+          "definition": "The pressure of a vapor in equilibrium with its condensed phase at a specified temperature."
+        }
+      ],
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-24",
+          "change": "Initial source-checked development draft"
+        }
+      ],
+      "review_stage": "source-checked",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance"
     },
     {
       "id": "CA-03.001",
@@ -345,15 +639,46 @@
         "earth/geography.txt"
       ],
       "body": [
-        "Earth is a rocky planet with a solid interior structure, liquid surface water and a surrounding atmosphere. Its rotation produces a repeating day-night cycle; its orbit and axial tilt influence seasonal illumination."
+        "Earth is a rocky planet with surface oceans and an atmosphere. Below the crust and mostly solid mantle lie a liquid outer core and a solid inner core.",
+        "As Earth rotates, most locations periodically move through light and shadow. Earth's rotational axis is tilted relative to the perpendicular to its orbital plane. As the planet travels around the Sun, each hemisphere receives different amounts of sunlight at different times of year."
       ],
       "limitations": "Geographic coordinates are conventions; the planet itself provides physical reference features.",
-      "revision": 2,
+      "revision": 3,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
-      "credit": "Centauri Archive editorial draft",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [
+        {
+          "label": "NASA Science — Facts About Earth (Structure and Orbit and Rotation)",
+          "url": "https://science.nasa.gov/earth/facts/",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "National Park Service — Inner Earth Model",
+          "url": "https://www.nps.gov/subjects/geology/plate-tectonics-inner-earth-model.htm",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        }
+      ],
+      "review_stage": "source-checked",
+      "revision_history": [
+        {
+          "revision": 2,
+          "change": "Imported development revision"
+        },
+        {
+          "revision": 3,
+          "date": "2026-11-24",
+          "change": "Corrected misleading description of Earth's interior"
+        }
+      ]
     },
     {
       "id": "CA-03.002",
@@ -380,10 +705,17 @@
       "limitations": "Clouds and fog consist of droplets or ice; water vapor is invisible.",
       "revision": 3,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 3,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-03.003",
@@ -414,10 +746,17 @@
       "limitations": "A single photograph cannot establish a long-term climate trend.",
       "revision": 2,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 2,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-03.004",
@@ -442,19 +781,113 @@
       "limitations": "A global conceptual diagram cannot describe local water availability, contamination or changes through time.",
       "sources": [
         {
-          "label": "USGS — Water cycle",
-          "url": "https://www.usgs.gov/special-topics/water-science-school/water-cycle"
+          "label": "USGS Water Science School — Water Pools and Fluxes Data Tables",
+          "url": "https://www.usgs.gov/water-science-school/science/water-pools-and-fluxes-data-tables",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
         },
         {
-          "label": "USGS — Hydrologic Cycle",
-          "url": "https://www.usgs.gov/centers/new-york-water-science-center/science/hydrologic-cycle"
+          "label": "USGS New York Water Science Center — Hydrologic Cycle",
+          "url": "https://www.usgs.gov/centers/new-york-water-science-center/science/hydrologic-cycle",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
         }
       ],
+      "revision": 2,
+      "language": "en",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance",
+      "rights": "Original project text; publication license pending",
+      "review_stage": "source-checked",
+      "revision_history": [
+        {
+          "revision": 1,
+          "change": "PR #12 imported revision"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-24",
+          "change": "Attached paragraph-level citations to the reservoir and transport overview"
+        }
+      ]
+    },
+    {
+      "id": "CA-03.005",
+      "category": "03",
+      "title": "Plate tectonics",
+      "subcategory": "Earth structure and motion",
+      "prerequisites": [
+        "CA-03.001",
+        "CA-03.003"
+      ],
+      "images": [
+        "IMG-021",
+        "IMG-025",
+        "IMG-030"
+      ],
+      "records": [
+        "earth/geography.txt"
+      ],
+      "body": [
+        "Earth's rigid outer layer, the lithosphere, includes the crust and uppermost mantle. It is broken into plates that move relative to one another. Where plates separate at ocean ridges, hot material can rise and form new crust. At some convergent boundaries one plate descends into the mantle beneath another. At transform boundaries plates move past one another.",
+        "Patterns of earthquakes, volcanic activity and magnetic stripes on the ocean floor support this model. Instruments can also measure the motion of locations on Earth's surface over time. Satellites can observe surface forms such as the East African Rift, where parts of the lithosphere are being pulled apart."
+      ],
+      "limitations": "Surface shape alone does not establish the motion or whether a nearby earthquake is imminent. Plate boundaries can be wide or complex.",
       "revision": 1,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
-      "credit": "Centauri Archive editorial draft",
-      "rights": "Original project text; publication license pending"
+      "rights": "Original project text; publication license pending",
+      "sources": [
+        {
+          "label": "USGS Subduction Zone Science — Understanding plate motions",
+          "url": "https://www.usgs.gov/special-topics/subduction-zone-science/understanding-plate-motions",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "National Park Service — Evidence of Plate Motions",
+          "url": "https://www.nps.gov/subjects/geology/plate-tectonics-evidence-of-plate-motions.htm",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "USGS — How fast do tectonic plates move?",
+          "url": "https://www.usgs.gov/faqs/how-fast-do-tectonic-plates-move",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "Lithosphere",
+          "definition": "Earth's mechanically rigid outer layer."
+        },
+        {
+          "term": "Subduction",
+          "definition": "The descent of one tectonic plate beneath another."
+        }
+      ],
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-24",
+          "change": "Initial source-checked development draft"
+        }
+      ],
+      "review_stage": "source-checked",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance"
     },
     {
       "id": "CA-04.001",
@@ -477,16 +910,72 @@
         "visuals/cell.svg"
       ],
       "body": [
-        "Cells are the fundamental units of known cellular life. Their boundaries separate internal chemistry from the surrounding environment. Metabolism includes the reactions by which organisms obtain materials and energy and maintain their organization.",
-        "Bacteria and archaea generally lack a membrane-enclosed nucleus, whereas eukaryotic cells contain a nucleus and often other membrane-bound structures. Mitochondria in most eukaryotes and chloroplasts in plants and algae have bacterial evolutionary origins. Enzymes accelerate reactions; ribosomes build proteins using genetic instructions. Multicellular organisms contain specialized cells that communicate and form tissues."
+        "Cells are the basic units of cellular organisms. A cell membrane helps regulate exchanges between the cell and its surroundings. The cell uses ribosomes to assemble proteins, and its internal structures let different processes take place in the same small space.",
+        "Bacteria and archaea lack a membrane-bound nucleus. In most eukaryotic cells a nucleus encloses much of the genetic material. Some specialized cells, including mature human red blood cells, lose their nucleus. Mitochondria in eukaryotes and chloroplasts in plants and many algae descend from bacteria that became incorporated into ancestral cells.",
+        "Metabolism is the set of chemical reactions in which a cell transforms matter and uses or stores energy. Multicellular organisms distribute some of this work among specialized cells and tissues."
       ],
-      "limitations": "Viruses and other noncellular replicators complicate definitions of life.",
-      "revision": 3,
+      "limitations": "The cell diagram depicts one general form of animal cell. Membranes, surface structures, organelles and dimensions vary widely.",
+      "revision": 4,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
-      "credit": "Centauri Archive editorial draft",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [
+        {
+          "label": "OpenStax Biology 2e — Prokaryotic Cells",
+          "url": "https://openstax.org/books/biology-2e/pages/4-2-prokaryotic-cells",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Eukaryotic Cells",
+          "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Energy and Metabolism",
+          "url": "https://openstax.org/books/biology-2e/pages/6-1-energy-and-metabolism",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            3
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Eukaryotic Origins",
+          "url": "https://openstax.org/books/biology-2e/pages/23-1-eukaryotic-origins",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — Erythrocytes",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-3-erythrocytes",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        }
+      ],
+      "review_stage": "source-checked",
+      "revision_history": [
+        {
+          "revision": 3,
+          "change": "Imported development revision"
+        },
+        {
+          "revision": 4,
+          "date": "2026-11-24",
+          "change": "Separated membrane, cell organization and metabolism; clarified exceptions"
+        }
+      ]
     },
     {
       "id": "CA-04.002",
@@ -504,15 +993,54 @@
         "biology/genetics.txt"
       ],
       "body": [
-        "DNA stores heritable information in sequences of chemical bases. Cellular machinery copies and interprets portions of those sequences. Variation can arise through mutation, recombination and other processes."
+        "In cellular life, deoxyribonucleic acid (DNA) carries inherited information. Its strands consist of linked units with four common kinds of bases. The bases occur in sequences, and complementary bases can pair so that each strand can guide the copying of the other.",
+        "Changes in base sequence are called mutations. Recombination can rearrange existing variation. Inheritance passes some of this information to new cells and to descendants, while genes and environments both influence how organisms develop."
       ],
       "limitations": "Genes operate within cells and environments; they do not determine every trait independently.",
-      "revision": 1,
+      "revision": 2,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
-      "credit": "Centauri Archive editorial draft",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [
+        {
+          "label": "NHGRI — DNA Fact Sheet",
+          "url": "https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "NHGRI — Crossing Over",
+          "url": "https://www.genome.gov/genetics-glossary/Crossing-Over",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Nucleic Acids",
+          "url": "https://openstax.org/books/biology-2e/pages/3-5-nucleic-acids",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        }
+      ],
+      "review_stage": "source-checked",
+      "revision_history": [
+        {
+          "revision": 1,
+          "change": "Imported development revision"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-24",
+          "change": "Distinguished DNA as the inherited material from genes and their expression"
+        }
+      ]
     },
     {
       "id": "CA-04.003",
@@ -536,15 +1064,54 @@
         "biology/foundations.txt"
       ],
       "body": [
-        "Populations change across generations as inherited variation changes in frequency. Natural selection, genetic drift, mutation and gene flow contribute to evolution. Common ancestry connects the diversity of known terrestrial organisms."
+        "The frequency of inherited variants can change across generations. One mechanism is natural selection. In a particular environment, individuals with different inherited traits can differ in how many descendants they leave. A variant contributing to greater reproductive success can become more frequent.",
+        "Frequency can also change by chance, especially in small populations. That process is genetic drift. Mutation creates new variants, and gene flow moves variants between populations. Shared features and genetic comparisons provide evidence for common ancestry."
       ],
-      "limitations": "Evolution is not a progression toward a single predetermined goal.",
-      "revision": 2,
+      "limitations": "An advantageous trait in one environment can be costly in another. Evolution has no fixed destination. Several mechanisms can operate on the same population at once.",
+      "revision": 3,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
-      "credit": "Centauri Archive editorial draft",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [
+        {
+          "label": "OpenStax Biology 2e — Population Evolution",
+          "url": "https://openstax.org/books/biology-2e/pages/19-1-population-evolution",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Population Genetics",
+          "url": "https://openstax.org/books/biology-2e/pages/19-2-population-genetics",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Perspectives on the Phylogenetic Tree",
+          "url": "https://openstax.org/books/biology-2e/pages/20-3-perspectives-on-the-phylogenetic-tree",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        }
+      ],
+      "review_stage": "source-checked",
+      "revision_history": [
+        {
+          "revision": 2,
+          "change": "Imported development revision"
+        },
+        {
+          "revision": 3,
+          "date": "2026-11-24",
+          "change": "Defined natural selection and genetic drift and sourced the population-level explanation"
+        }
+      ]
     },
     {
       "id": "CA-04.004",
@@ -574,15 +1141,54 @@
         "biology/diversity.txt"
       ],
       "body": [
-        "An ecosystem includes organisms and their physical surroundings. Energy enters many ecosystems through photosynthesis or chemical reactions and passes among organisms. Matter cycles through living and nonliving reservoirs."
+        "An ecosystem includes organisms and the parts of their surroundings with which they interact. In a food web, a link can trace matter and energy transferred when one organism consumes another. Producers use light or chemical reactions to make organic material. Consumers obtain material and energy by feeding on other organisms or their remains.",
+        "Energy enters and leaves local ecosystems. Elements such as carbon and nitrogen can be recycled between living bodies, air, water and sediment. Earth's biosphere comprises the regions where life occurs and includes many connected ecosystems."
       ],
       "limitations": "Food webs are variable and interdependent, not simple linear chains.",
-      "revision": 2,
+      "revision": 3,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
-      "credit": "Centauri Archive editorial draft",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [
+        {
+          "label": "NOAA — Aquatic food webs",
+          "url": "https://www.noaa.gov/education/resource-collections/marine-life/aquatic-food-webs",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Biogeochemical Cycles",
+          "url": "https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "IPBES — Global Assessment Summary, Key Messages A and B",
+          "url": "https://files.ipbes.net/ipbes-web-prod-public-files/2020-02/ipbes_global_assessment_report_summary_for_policymakers_en.pdf",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        }
+      ],
+      "review_stage": "source-checked",
+      "revision_history": [
+        {
+          "revision": 2,
+          "change": "Imported development revision"
+        },
+        {
+          "revision": 3,
+          "date": "2026-11-24",
+          "change": "Distinguished energy transfer from matter cycling and connected the biosphere scale"
+        }
+      ]
     },
     {
       "id": "CA-04.005",
@@ -600,34 +1206,441 @@
         "biology/genetics.txt"
       ],
       "body": [
-        "A genome is an organism's complete set of genetic information. In cellular organisms, DNA is organized into chromosomes. A gene is a region of DNA whose information contributes to the production of a functional RNA or protein.",
-        "DNA uses four common bases. Their sequence carries information; in protein production, groups of three bases in messenger RNA specify amino acids or termination signals. A chromosome contains many DNA regions with different roles, not just protein-coding genes.",
-        "Inherited variation interacts with developmental and environmental processes. Genetic information is therefore not a complete description of an organism's behavior or future."
+        "A genome is the full set of an organism's genetic information. A chromosome is an organized DNA molecule with associated material. A gene is a region of DNA whose information contributes to making a functional RNA or protein.",
+        "During protein synthesis, a ribosome reads the sequence in messenger RNA in groups of three bases. These groups specify amino acids or signals, such as when to stop. Other portions of a genome may influence when genes are used or have functions unrelated to making a protein.",
+        "Inherited variation can influence how traits develop. The influence can depend on other inherited variants and on conditions during life."
       ],
       "limitations": "The organization and interpretation of genomes vary among organisms; the genetic code has some exceptions.",
       "sources": [
         {
-          "label": "NHGRI — DNA fact sheet",
-          "url": "https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet"
-        },
-        {
-          "label": "NHGRI — Genetic Code",
-          "url": "https://www.genome.gov/genetics-glossary/Genetic-Code"
+          "label": "NHGRI — Genome",
+          "url": "https://www.genome.gov/genetics-glossary/Genome",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
         },
         {
           "label": "NHGRI — Gene",
-          "url": "https://www.genome.gov/genetics-glossary/Gene?id=70"
+          "url": "https://www.genome.gov/genetics-glossary/Gene",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
         },
         {
-          "label": "NHGRI — Genetics",
-          "url": "https://www.genome.gov/genetics-glossary/Genetics"
+          "label": "NHGRI — Genetic Code",
+          "url": "https://www.genome.gov/genetics-glossary/Genetic-Code",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "NHGRI — Human Genomic Variation",
+          "url": "https://www.genome.gov/about-genomics/educational-resources/fact-sheets/human-genomic-variation",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2,
+            3
+          ]
         }
       ],
+      "revision": 2,
+      "language": "en",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance",
+      "rights": "Original project text; publication license pending",
+      "review_stage": "source-checked",
+      "revision_history": [
+        {
+          "revision": 1,
+          "change": "PR #12 imported revision"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-24",
+          "change": "Clarified chromosome terminology and mapped existing genetic claims to sources"
+        }
+      ]
+    },
+    {
+      "id": "CA-04.006",
+      "category": "04",
+      "title": "Characteristics and origins of known life",
+      "subcategory": "Astrobiology",
+      "prerequisites": [
+        "CA-04.001",
+        "CA-04.002",
+        "CA-04.003",
+        "CA-03.002"
+      ],
+      "images": [
+        "IMG-050",
+        "IMG-053",
+        "IMG-055"
+      ],
+      "records": [
+        "biology/foundations.txt"
+      ],
+      "body": [
+        "Earth's cellular organisms maintain boundaries, exchange matter and energy with their surroundings, and carry information that can be inherited. Across generations, populations can evolve. A characteristic shared by living populations need not be expressed by every individual. For example, individual animals that cannot reproduce remain living organisms.",
+        "Evidence from ancient rocks and from comparisons among living organisms helps researchers reconstruct some of life's history. How early chemical systems began to maintain themselves, reproduce with variation and evolve remains unsettled. Scientists study several possible pathways; a demonstration that one step can happen leaves the whole historical sequence open."
+      ],
+      "limitations": "The archive describes observed properties of terrestrial life. An agreed universal definition and an independent extraterrestrial example are still missing.",
       "revision": 1,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
-      "credit": "Centauri Archive editorial draft",
-      "rights": "Original project text; publication license pending"
+      "rights": "Original project text; publication license pending",
+      "sources": [
+        {
+          "label": "NASA Astrobiology — Life Detection",
+          "url": "https://astrobiology.nasa.gov/research/life-detection/about/",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "NASA Science — How did life first emerge on Earth?",
+          "url": "https://science.nasa.gov/astrobiology/learning-resources/alp/how-did-life-first-emerge-on-earth/",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Themes and Concepts of Biology",
+          "url": "https://openstax.org/books/biology-2e/pages/1-2-themes-and-concepts-of-biology",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "Inheritance",
+          "definition": "Transfer of biological information to descendants."
+        },
+        {
+          "term": "Biosignature",
+          "definition": "A measurable feature that may indicate biological activity when alternative explanations are considered."
+        }
+      ],
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-24",
+          "change": "Initial source-checked development draft"
+        }
+      ],
+      "review_stage": "source-checked",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance"
+    },
+    {
+      "id": "CA-04.007",
+      "category": "04",
+      "title": "RNA and proteins",
+      "subcategory": "Biochemistry",
+      "prerequisites": [
+        "CA-04.002",
+        "CA-04.005"
+      ],
+      "images": [
+        "IMG-049",
+        "IMG-052"
+      ],
+      "records": [
+        "biology/genetics.txt"
+      ],
+      "body": [
+        "Ribonucleic acid, or RNA, is a family of molecules built from linked units. Messenger RNA can carry a copy of information from DNA to a ribosome. Other RNAs help the ribosome read the message and assemble amino acids in sequence. Some RNAs take part in regulation or catalyze chemical reactions.",
+        "An amino acid chain can fold into a shape that enables a protein's function. Proteins can provide mechanical structure, carry molecules or accelerate reactions. Changes in a chain or in its surroundings can change how it folds or functions."
+      ],
+      "limitations": "Gene expression and protein assembly vary across organisms and cellular circumstances. This account introduces shared roles at the level needed to read later biology articles.",
+      "revision": 1,
+      "language": "en",
+      "rights": "Original project text; publication license pending",
+      "sources": [
+        {
+          "label": "OpenStax Biology 2e — Nucleic Acids",
+          "url": "https://openstax.org/books/biology-2e/pages/3-5-nucleic-acids",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Proteins",
+          "url": "https://openstax.org/books/biology-2e/pages/3-4-proteins",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — Protein Synthesis",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/3-4-protein-synthesis",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "Ribosome",
+          "definition": "A cellular assembly of RNA and proteins that makes amino acid chains."
+        },
+        {
+          "term": "Enzyme",
+          "definition": "A biological molecule that speeds up a reaction."
+        }
+      ],
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-24",
+          "change": "Initial source-checked development draft"
+        }
+      ],
+      "review_stage": "source-checked",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance"
+    },
+    {
+      "id": "CA-04.008",
+      "category": "04",
+      "title": "Photosynthesis and cellular respiration",
+      "subcategory": "Metabolism",
+      "prerequisites": [
+        "CA-04.001",
+        "CA-04.007",
+        "CA-02.006"
+      ],
+      "images": [
+        "IMG-039",
+        "IMG-050",
+        "IMG-061"
+      ],
+      "records": [
+        "biology/cells.txt"
+      ],
+      "body": [
+        "In oxygen-producing photosynthesis, cells use light energy to build organic molecules from carbon dioxide. Water supplies electrons and oxygen is released. Plants, algae and cyanobacteria carry out this process. The chloroplasts visible in the leaf micrograph are sites of photosynthesis in plant cells.",
+        "During aerobic cellular respiration, cells transfer energy from organic compounds into forms that can support their work. Oxygen accepts electrons at the end of a series of transfers. Cells of photosynthetic plants also respire. Other metabolic pathways enable living cells to obtain energy when oxygen is unavailable."
+      ],
+      "limitations": "This overview describes familiar pathways. Some forms of photosynthesis do not release oxygen, and the availability and use of light and oxygen vary among environments.",
+      "revision": 1,
+      "language": "en",
+      "rights": "Original project text; publication license pending",
+      "sources": [
+        {
+          "label": "OpenStax Biology 2e — Overview of Photosynthesis",
+          "url": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Cellular Respiration Summary",
+          "url": "https://openstax.org/books/biology-2e/pages/7-chapter-summary",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Eukaryotic Cells",
+          "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "Organic molecule",
+          "definition": "In this context, a carbon-based compound involved in living systems."
+        },
+        {
+          "term": "Aerobic",
+          "definition": "Involving the use of oxygen."
+        }
+      ],
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-24",
+          "change": "Initial source-checked development draft"
+        }
+      ],
+      "review_stage": "source-checked",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance"
+    },
+    {
+      "id": "CA-04.009",
+      "category": "04",
+      "title": "Microorganisms, plants, fungi and animals",
+      "subcategory": "Broad groups of life",
+      "prerequisites": [
+        "CA-04.001",
+        "CA-04.003",
+        "CA-04.008"
+      ],
+      "images": [
+        "IMG-047",
+        "IMG-048",
+        "IMG-055",
+        "IMG-056",
+        "IMG-057",
+        "IMG-058",
+        "IMG-063"
+      ],
+      "records": [
+        "biology/diversity.txt"
+      ],
+      "body": [
+        "Microorganisms are organisms studied at scales that often require a microscope. They occur in multiple branches of life. Bacteria and archaea each form major groups, while many other microscopic organisms are eukaryotes, with a different internal cell organization.",
+        "Among eukaryotes, many plants use light energy to make organic material. Fungi obtain nutrients from material around them, and many decompose remains or associate with other organisms. Animals are multicellular and acquire organic nutrients from other organisms or their products. Ferns, mushrooms and fish illustrate some of these groups."
+      ],
+      "limitations": "Microorganism describes scale and mode of observation. It is a different kind of category from a lineage. The portraits show examples from many distinct branches, and no one photograph defines a group.",
+      "revision": 1,
+      "language": "en",
+      "rights": "Original project text; publication license pending",
+      "sources": [
+        {
+          "label": "OpenStax Biology 2e — Prokaryotic Cells",
+          "url": "https://openstax.org/books/biology-2e/pages/4-2-prokaryotic-cells",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Eukaryotic Cells",
+          "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Early Plant Life",
+          "url": "https://openstax.org/books/biology-2e/pages/25-1-early-plant-life",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Characteristics of Fungi",
+          "url": "https://openstax.org/books/biology-2e/pages/24-1-characteristics-of-fungi",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Features of the Animal Kingdom",
+          "url": "https://openstax.org/books/biology-2e/pages/27-1-features-of-the-animal-kingdom",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "Eukaryote",
+          "definition": "An organism belonging to the branch of life whose cells typically have a membrane-enclosed nucleus."
+        },
+        {
+          "term": "Decomposer",
+          "definition": "An organism that breaks down dead organic material and returns constituents to its surroundings."
+        }
+      ],
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-24",
+          "change": "Initial source-checked development draft"
+        }
+      ],
+      "review_stage": "source-checked",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance"
+    },
+    {
+      "id": "CA-04.010",
+      "category": "04",
+      "title": "Biodiversity and extinction",
+      "subcategory": "Ecological change",
+      "prerequisites": [
+        "CA-04.003",
+        "CA-04.004"
+      ],
+      "images": [
+        "IMG-060",
+        "IMG-066",
+        "IMG-099"
+      ],
+      "records": [
+        "biology/diversity.txt"
+      ],
+      "body": [
+        "Biodiversity includes variation among individuals, among species and among ecosystems. Different species rely on different features of their surroundings. A forest and a coral reef differ in habitat, structure and exchanges of matter and energy, even without counting individual organisms.",
+        "A species becomes extinct if its last living members die. A species can also disappear from part of its former range while surviving elsewhere. Human changes to land and oceans, direct exploitation, climate change, pollution and introduced organisms can reduce local or global biodiversity."
+      ],
+      "limitations": "Many species are poorly observed. Estimates of threatened species and of losses depend on observation, definitions, date and the scope of the assessment.",
+      "revision": 1,
+      "language": "en",
+      "rights": "Original project text; publication license pending",
+      "sources": [
+        {
+          "label": "IPBES — Global Assessment Summary, Key Messages A and B",
+          "url": "https://files.ipbes.net/ipbes-web-prod-public-files/2020-02/ipbes_global_assessment_report_summary_for_policymakers_en.pdf",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — The Biodiversity Crisis",
+          "url": "https://openstax.org/books/biology-2e/pages/47-1-the-biodiversity-crisis",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "Extinction",
+          "definition": "The global loss of a species."
+        },
+        {
+          "term": "Habitat",
+          "definition": "The environment where an organism or population lives."
+        }
+      ],
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-24",
+          "change": "Initial source-checked development draft"
+        }
+      ],
+      "review_stage": "source-checked",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance"
     },
     {
       "id": "CA-05.001",
@@ -652,10 +1665,17 @@
       "limitations": "Teaching models show selected anatomy and do not represent all individual variation.",
       "revision": 1,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 1,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-05.002",
@@ -677,10 +1697,17 @@
       "limitations": "This summary is biological, not a complete account of individual experience or health.",
       "revision": 1,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 1,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-05.003",
@@ -708,10 +1735,17 @@
       "limitations": "Language does not map one-to-one onto universal concepts; cognition is still an active field of research.",
       "revision": 2,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 2,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-05.004",
@@ -735,23 +1769,478 @@
       "limitations": "The model describes general human biology; individuals differ in anatomy, development and function.",
       "sources": [
         {
-          "label": "OpenStax — Structural Organization of the Human Body",
-          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-2-structural-organization-of-the-human-body"
+          "label": "OpenStax Anatomy and Physiology 2e — Structural Organization of the Human Body",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-2-structural-organization-of-the-human-body",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
         },
         {
-          "label": "OpenStax — Functions of Human Life",
-          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-3-functions-of-human-life"
-        },
-        {
-          "label": "OpenStax — Blood introduction",
-          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-introduction"
+          "label": "OpenStax Anatomy and Physiology 2e — Functions of Human Life",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-3-functions-of-human-life",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
         }
       ],
+      "revision": 2,
+      "language": "en",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance",
+      "rights": "Original project text; publication license pending",
+      "review_stage": "source-checked",
+      "revision_history": [
+        {
+          "revision": 1,
+          "change": "PR #12 imported revision"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-24",
+          "change": "Grounded the levels of organization and the systems overview in dedicated references"
+        }
+      ]
+    },
+    {
+      "id": "CA-05.005",
+      "category": "05",
+      "title": "Skeleton, joints and muscles",
+      "subcategory": "Movement and support",
+      "prerequisites": [
+        "CA-05.004"
+      ],
+      "images": [
+        "IMG-067",
+        "IMG-068",
+        "IMG-069"
+      ],
+      "records": [],
+      "body": [
+        "Bones support the body, protect some organs and provide surfaces on which muscles can act. A joint is where bones meet. Some joints allow a large range of motion, while others allow very little. Tendons transmit force from muscles to bones. At the elbow, muscle force can bend or straighten the arm.",
+        "Skeletal muscle can shorten as its fibers generate tension. Motion usually involves several muscles and coordinated signals from the nervous system. The pottery photograph shows one activity in which the hand's joints, muscles and sense of touch work together."
+      ],
+      "limitations": "An articulated museum skeleton shows the arrangement of bones. It omits living tissue and some features that vary with age, development, disability and individual anatomy.",
       "revision": 1,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
-      "credit": "Centauri Archive editorial draft",
-      "rights": "Original project text; publication license pending"
+      "rights": "Original project text; publication license pending",
+      "sources": [
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — Functions of the Skeletal System",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/6-1-the-functions-of-the-skeletal-system",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        },
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — Classification of Joints",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/9-1-classification-of-joints",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        },
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — Skeletal Muscle",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-2-skeletal-muscle",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "Tendon",
+          "definition": "Connective tissue that transmits force from a muscle."
+        },
+        {
+          "term": "Joint",
+          "definition": "The area at which skeletal elements meet."
+        }
+      ],
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-24",
+          "change": "Initial source-checked development draft"
+        }
+      ],
+      "review_stage": "source-checked",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance"
+    },
+    {
+      "id": "CA-05.006",
+      "category": "05",
+      "title": "Circulation and breathing",
+      "subcategory": "Transport and gas exchange",
+      "prerequisites": [
+        "CA-05.004",
+        "CA-04.008"
+      ],
+      "images": [
+        "IMG-067"
+      ],
+      "records": [
+        "visuals/blood-circulation.svg"
+      ],
+      "body": [
+        "The heart pumps blood through two connected circuits. The right side sends blood to the lungs. Blood returning from the lungs enters the left side, which pumps it through vessels to the rest of the body. Small vessels called capillaries exchange materials with surrounding tissues.",
+        "Air enters the lungs during inhalation. At small air sacs called alveoli, oxygen passes into the blood and carbon dioxide moves from the blood into air that can be exhaled. The blood transports oxygen to tissues and carries carbon dioxide away. Breathing and cellular respiration describe different processes."
+      ],
+      "limitations": "The diagram shows the flow of blood after birth at a simplified scale. The fetal circulation uses different pathways, and real blood vessels form branching networks.",
+      "revision": 1,
+      "language": "en",
+      "rights": "Original project text; publication license pending",
+      "sources": [
+        {
+          "label": "NHLBI — How Blood Flows through the Heart",
+          "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
+        },
+        {
+          "label": "NHLBI — The Respiratory System",
+          "url": "https://www.nhlbi.nih.gov/health/lungs/respiratory-system",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Biology 2e — Cellular Respiration Summary",
+          "url": "https://openstax.org/books/biology-2e/pages/7-chapter-summary",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "Pulmonary circulation",
+          "definition": "The circuit carrying blood between the heart and lungs."
+        },
+        {
+          "term": "Alveolus",
+          "definition": "A small air sac in the lung across whose surface gases are exchanged."
+        }
+      ],
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-24",
+          "change": "Initial source-checked development draft"
+        }
+      ],
+      "review_stage": "source-checked",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance"
+    },
+    {
+      "id": "CA-05.007",
+      "category": "05",
+      "title": "Digestion and nutrient absorption",
+      "subcategory": "Nutrition",
+      "prerequisites": [
+        "CA-05.004",
+        "CA-04.007"
+      ],
+      "images": [
+        "IMG-067",
+        "IMG-085",
+        "IMG-086"
+      ],
+      "records": [],
+      "body": [
+        "Digestion changes food into forms the body can use. Teeth break food into smaller pieces. In the stomach and intestines, movement mixes the contents with fluids, and enzymes split many large molecules. The liver makes bile, which helps process fats, and the pancreas supplies several digestive enzymes.",
+        "Much of the absorption of nutrients takes place across the wall of the small intestine. The large intestine absorbs water, and its microorganisms transform some compounds that reach it. Circulation distributes absorbed materials to tissues."
+      ],
+      "limitations": "Food and meals vary across communities and individuals. These descriptions explain physiology without specifying a diet or treating one daily practice as universal.",
+      "revision": 1,
+      "language": "en",
+      "rights": "Original project text; publication license pending",
+      "sources": [
+        {
+          "label": "NIDDK — Your Digestive System and How It Works",
+          "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1,
+            2
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "Digestion",
+          "definition": "Mechanical and chemical processing that makes food components available for absorption."
+        },
+        {
+          "term": "Absorption",
+          "definition": "Transfer of materials across an interface such as the intestinal lining."
+        }
+      ],
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-24",
+          "change": "Initial source-checked development draft"
+        }
+      ],
+      "review_stage": "source-checked",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance"
+    },
+    {
+      "id": "CA-05.008",
+      "category": "05",
+      "title": "Nervous system and senses",
+      "subcategory": "Sensation and coordination",
+      "prerequisites": [
+        "CA-05.004",
+        "CA-04.001",
+        "CA-02.006"
+      ],
+      "images": [
+        "IMG-070",
+        "IMG-071",
+        "IMG-072",
+        "IMG-095"
+      ],
+      "records": [],
+      "body": [
+        "The brain and spinal cord form the central nervous system. Nerves connect it to much of the body. Neurons convey signals through changes in electrical activity and often communicate with other cells using chemical signals. These networks support movement, coordination and the processing of information.",
+        "Receptor cells respond to particular kinds of input. Cells in the retina respond to light. Vibrations transmitted through the ear can move sensory cells in the inner ear and produce signals. Other receptors respond to mechanical force, chemicals or temperature. Signals from many receptors are combined during perception."
+      ],
+      "limitations": "The eye photograph shows an external part of the eye. The ear record depicts a model and the microscopy record shows rat neurons. Human sensory experience and abilities vary.",
+      "revision": 1,
+      "language": "en",
+      "rights": "Original project text; publication license pending",
+      "sources": [
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — Basic Structure and Function of the Nervous System",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-1-basic-structure-and-function-of-the-nervous-system",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        },
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — Communication Between Neurons",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-5-communication-between-neurons",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        },
+        {
+          "label": "National Eye Institute — How the Eyes Work",
+          "url": "https://www.nei.nih.gov/eye-health-information/healthy-vision/how-eyes-work",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "NIDCD — How Do We Hear?",
+          "url": "https://www.nidcd.nih.gov/health/how-do-we-hear",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — Sensory Perception",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "Neuron",
+          "definition": "A cell specialized for receiving and transmitting signals."
+        },
+        {
+          "term": "Sensory receptor",
+          "definition": "A cell or structure that responds to a physical or chemical change."
+        }
+      ],
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-24",
+          "change": "Initial source-checked development draft"
+        }
+      ],
+      "review_stage": "source-checked",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance"
+    },
+    {
+      "id": "CA-05.009",
+      "category": "05",
+      "title": "Immune function and homeostasis",
+      "subcategory": "Regulation and defense",
+      "prerequisites": [
+        "CA-05.004",
+        "CA-05.006"
+      ],
+      "images": [
+        "IMG-067"
+      ],
+      "records": [],
+      "body": [
+        "Homeostasis describes regulated conditions in the body, such as temperature, staying within ranges compatible with function. When body temperature rises, evaporation of sweat can remove heat. This is a feedback process because the response changes the condition that helped trigger it.",
+        "Several systems help protect tissue from damage and infection. Skin and other barriers restrict entry. Immune cells can respond to signs of damage or foreign material; some mount more targeted responses. Antibodies can bind specific targets, and some immune cells persist after a response, supporting a faster response on later encounters."
+      ],
+      "limitations": "Normal ranges and responses vary across people and circumstances. These examples describe basic physiology, and immune activity can also damage healthy tissue.",
+      "revision": 1,
+      "language": "en",
+      "rights": "Original project text; publication license pending",
+      "sources": [
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — Homeostasis",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-5-homeostasis",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        },
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — Barrier Defenses and the Innate Immune Response",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-2-barrier-defenses-and-the-innate-immune-response",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — B-Lymphocytes and Antibodies",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-4-the-adaptive-immune-response-b-lymphocytes-and-antibodies",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "Homeostasis",
+          "definition": "Regulation of conditions within a workable range despite changes."
+        },
+        {
+          "term": "Antibody",
+          "definition": "A protein made by cells of the immune system that binds a specific target."
+        }
+      ],
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-24",
+          "change": "Initial source-checked development draft"
+        }
+      ],
+      "review_stage": "source-checked",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance"
+    },
+    {
+      "id": "CA-05.010",
+      "category": "05",
+      "title": "Reproduction, development and variation",
+      "subcategory": "Human life stages",
+      "prerequisites": [
+        "CA-05.004",
+        "CA-04.005"
+      ],
+      "images": [
+        "IMG-073",
+        "IMG-074",
+        "IMG-102"
+      ],
+      "records": [],
+      "body": [
+        "In sexual reproduction, fertilization joins an egg and sperm, forming a cell called a zygote. As cells divide, groups specialize into tissues. During development in the uterus, the placenta supports exchanges of materials between the pregnant individual and the developing organism. Ultrasound imaging uses echoes to show some structures before birth.",
+        "Human bodies continue to change after birth. Genes, environments and lived conditions influence development and aging. Individual variation includes differences in body proportions, sensory abilities and rates of change. Images of people at different life stages can show examples of variation."
+      ],
+      "limitations": "Life stages are descriptive and can be defined differently by culture and purpose. A single ultrasound and a single group portrait show individuals at particular times.",
+      "revision": 1,
+      "language": "en",
+      "rights": "Original project text; publication license pending",
+      "sources": [
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — Fertilization",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/28-1-fertilization",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        },
+        {
+          "label": "OpenStax Anatomy and Physiology 2e — Embryonic Development",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/28-2-embryonic-development",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        },
+        {
+          "label": "FDA — Ultrasound Imaging",
+          "url": "https://www.fda.gov/radiation-emitting-products/medical-imaging/ultrasound-imaging",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            1
+          ]
+        },
+        {
+          "label": "National Institute on Aging — What Do We Know About Healthy Aging?",
+          "url": "https://www.nia.nih.gov/health/healthy-aging/what-do-we-know-about-healthy-aging",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        },
+        {
+          "label": "NHGRI — Human Genomic Variation",
+          "url": "https://www.genome.gov/about-genomics/educational-resources/fact-sheets/human-genomic-variation",
+          "accessed": "2026-11-24",
+          "paragraphs": [
+            2
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "term": "Fertilization",
+          "definition": "Joining of an egg cell and a sperm cell to form a zygote."
+        },
+        {
+          "term": "Placenta",
+          "definition": "An organ during pregnancy that supports exchange between the developing organism and the pregnant individual's circulation."
+        }
+      ],
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-24",
+          "change": "Initial source-checked development draft"
+        }
+      ],
+      "review_stage": "source-checked",
+      "status": "Source-checked draft — independent human review pending",
+      "credit": "Centauri Archive editorial draft, written with AI assistance"
     },
     {
       "id": "CA-06.001",
@@ -779,10 +2268,17 @@
       "limitations": "No single region or linear timeline adequately represents human history.",
       "revision": 3,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 3,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-06.002",
@@ -807,10 +2303,17 @@
       "limitations": "Descriptions of institutions must distinguish documented practice from ideals and contested judgments.",
       "revision": 1,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 1,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-07.001",
@@ -834,10 +2337,17 @@
       "limitations": "Technological development brings benefits, costs and unequal impacts.",
       "revision": 1,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 1,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-07.002",
@@ -858,10 +2368,17 @@
       "limitations": "Capabilities and limitations vary by system; machine output is not automatically correct or conscious.",
       "revision": 1,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 1,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-07.003",
@@ -885,10 +2402,17 @@
       "limitations": "Historical mission photographs document particular achievements, not a general measure of technological capability.",
       "revision": 1,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 1,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-08.001",
@@ -921,10 +2445,17 @@
       "limitations": "Meaning and aesthetic experience vary across people and cultures; an image or sound is only a partial record.",
       "revision": 3,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 3,
+          "change": "Imported development revision"
+        }
+      ]
     },
     {
       "id": "CA-09.001",
@@ -951,10 +2482,17 @@
       "limitations": "Fermi Explorer integration is proposed, not approved. Physical survival and interpretation by unknown readers remain open engineering and research questions.",
       "revision": 2,
       "language": "en",
-      "status": "draft — independent source and editorial review pending",
+      "status": "AI-drafted — source check pending",
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
-      "sources": []
+      "sources": [],
+      "review_stage": "ai-drafted",
+      "revision_history": [
+        {
+          "revision": 2,
+          "change": "Imported development revision"
+        }
+      ]
     }
   ]
 }

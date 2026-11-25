@@ -8,7 +8,7 @@ import unittest
 import warnings
 from zipfile import ZipFile
 from html.parser import HTMLParser
-from urllib.parse import urlsplit
+from urllib.parse import parse_qs, unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
@@ -48,7 +48,7 @@ class ArchiveTests(unittest.TestCase):
         self.assertEqual(second.read_bytes(), self.sample.read_bytes())
         self.assertTrue(1000 <= second.stat().st_size <= 80_000_000)
         self.assertEqual(examine(second, verify=True), self.manifest)
-        self.assertEqual(self.manifest["archive_version"], "0.6.1")
+        self.assertEqual(self.manifest["archive_version"], "0.7.0")
 
     def test_archive_has_meaningful_records(self):
         names = {item["path"] for item in self.manifest["files"]}
@@ -201,19 +201,41 @@ class ArchiveTests(unittest.TestCase):
         site = self.root / "site"
         assemble(site)
         html = (site / "index.html").read_text()
-        parser = Links()
-        parser.feed(html)
-        for target in parser.targets:
-            if target.startswith("#"):
-                self.assertIn(target[1:], parser.anchors)
-            elif not target.startswith(("https://", "http://")):
-                self.assertTrue((site / urlsplit(target).path).is_file(), target)
+        pages = {}
+        for page in site.rglob("*.html"):
+            parser = Links()
+            parser.feed(page.read_text(encoding="utf-8"))
+            pages[page] = parser
+        records = json.loads((site / "image-plan.json").read_text())["records"]
+        image_targets = {record["asset"] for record in records if record["status"] == "included"}
+        image_targets.update(record["id"] for record in records if record["status"] == "included")
+        knowledge = json.loads((site / "records/encyclopedia/index.json").read_text())["articles"]
+        article_targets = {article["id"] for article in knowledge}
+        for page, parser in pages.items():
+            for target in parser.targets:
+                with self.subTest(page=page.name, target=target):
+                    url = urlsplit(target)
+                    if url.scheme or url.netloc:
+                        continue
+                    file = (page.parent / unquote(url.path)).resolve() if url.path else page
+                    self.assertTrue(file.is_relative_to(site))
+                    self.assertTrue(file.is_file())
+                    if url.fragment and file in pages:
+                        self.assertIn(unquote(url.fragment), pages[file].anchors)
+                    for key, values in parse_qs(url.query).items():
+                        if key == "article" and file.name == "encyclopedia.html":
+                            self.assertTrue(set(values) <= article_targets)
+                        if key == "record" and file.name == "images.html":
+                            self.assertTrue(set(values) <= image_targets)
         self.assertNotIn("__EDITION__", html)
         self.assertNotIn("__SIZE__", html)
-        self.assertIn("0.6.1", html)
+        self.assertIn("0.7.0", html)
         self.assertIn("guide.html", html)
         self.assertTrue((site / "primer-panel.svg").is_file())
         self.assertTrue((site / "encyclopedia.txt").is_file())
+        for name in ("mono-3x5.car", "gray-5x2.car", "rgb-2x3.car"):
+            self.assertEqual((site / "downloads/raster-vectors" / name).read_bytes(),
+                             (ROOT / "tests/fixtures/photo-raster-v2" / name).read_bytes())
         self.assertTrue((site / "library.html").is_file())
         self.assertTrue((site / "library.js").is_file())
         self.assertTrue((site / "images.html").is_file())

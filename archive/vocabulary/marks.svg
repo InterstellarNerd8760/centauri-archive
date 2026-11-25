@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <circle id="disk" r="5" fill="currentColor"/>
+    <path id="square" d="M-5-5h10v10h-10z" fill="currentColor"/>
+    <path id="triangle" d="M0-6l6 11h-12z" fill="currentColor"/>
+    <rect id="boundary" x="-32" y="-20" width="64" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <g id="frames" fill="none" stroke="currentColor" stroke-width="1.2">
+      <rect x="6" y="11" width="44" height="38"/><rect x="70" y="11" width="44" height="38"/>
+    </g>
+  </defs>
+  <symbol id="V-001" viewBox="0 0 60 60"><path d="M25 14v32m10-32v32" fill="none" stroke="currentColor" stroke-width="3"/></symbol>
+  <symbol id="V-002" viewBox="0 0 60 60"><path d="M15 15h30v30H15z" fill="none" stroke="currentColor" stroke-width="3"/><use href="#disk" x="30" y="30"/></symbol>
+  <symbol id="V-003" viewBox="0 0 60 60"><path d="m13 36 34-12m-13-6 13 6-6 13" fill="none" stroke="currentColor" stroke-width="3"/></symbol>
+  <symbol id="V-004" viewBox="0 0 60 60"><circle cx="30" cy="30" r="15" fill="none" stroke="currentColor" stroke-width="3"/><path d="M15 32h30" stroke="currentColor" stroke-width="3"/></symbol>
+  <symbol id="V-005" viewBox="0 0 60 60"><path d="M30 48V12m0 19-14-9m14 4 14-9" fill="none" stroke="currentColor" stroke-width="3"/></symbol>
+  <symbol id="V-006" viewBox="0 0 60 60"><circle cx="30" cy="16" r="5" fill="currentColor"/><path d="M30 23v13m-12-7h24M22 48l8-12 8 12" fill="none" stroke="currentColor" stroke-width="3"/></symbol>
+  <symbol id="two-disks" viewBox="0 0 120 60"><use href="#disk" x="42" y="30"/><use href="#disk" x="78" y="30"/></symbol>
+  <symbol id="two-squares" viewBox="0 0 120 60"><use href="#square" x="53" y="23"/><use href="#square" x="67" y="37"/></symbol>
+  <symbol id="disk-inside" viewBox="0 0 120 60"><use href="#boundary" x="60" y="30"/><use href="#disk" x="51" y="25"/></symbol>
+  <symbol id="triangle-inside" viewBox="0 0 120 60"><circle cx="60" cy="30" r="24" fill="none" stroke="currentColor" stroke-width="1.5"/><use href="#triangle" x="67" y="35"/></symbol>
+  <symbol id="disk-moves" viewBox="0 0 120 60"><use href="#frames"/><use href="#disk" x="21" y="35"/><use href="#disk" x="98" y="20"/></symbol>
+  <symbol id="square-moves" viewBox="0 0 120 60"><use href="#frames"/><use href="#square" x="39" y="24"/><use href="#square" x="81" y="39"/></symbol>
+  <symbol id="two-disks-inside" viewBox="0 0 120 60"><use href="#boundary" x="60" y="30"/><use href="#disk" x="50" y="27"/><use href="#disk" x="70" y="35"/></symbol>
+  <symbol id="two-triangles-inside" viewBox="0 0 120 60"><circle cx="60" cy="30" r="24" fill="none" stroke="currentColor" stroke-width="1.5"/><use href="#triangle" x="51" y="21"/><use href="#triangle" x="67" y="36"/></symbol>
+  <symbol id="two-disks-move" viewBox="0 0 120 60"><use href="#frames"/><use href="#disk" x="18" y="35"/><use href="#disk" x="32" y="37"/><use href="#disk" x="90" y="23"/><use href="#disk" x="104" y="24"/></symbol>
+  <symbol id="two-squares-move" viewBox="0 0 120 60"><use href="#frames"/><use href="#square" x="33" y="22"/><use href="#square" x="39" y="35"/><use href="#square" x="82" y="28"/><use href="#square" x="88" y="41"/></symbol>
+</svg>

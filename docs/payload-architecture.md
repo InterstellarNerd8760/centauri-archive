@@ -1,6 +1,6 @@
 # Payload architecture — decision record (preliminary)
 
-Status: research options; no hardware selected, fabricated, integrated or flight-approved.
+Status: research options. Material selection, fabrication and flight integration remain open. [Centauri Core and Extended edition definitions](archive-editions.md) · [Carrier trade study](mission-integration.md)
 
 ## Separate three artifacts
 
@@ -16,7 +16,7 @@ The proposed flight archive would be a **physical information artifact** with a 
 2. Core, passive: micro-etched diagrams, pictures and/or encoded data on a material selected for the actual exposure conditions. Magnification requirements, accessibility and readout demonstrations matter at least as much as capacity.
 3. Optional digital archive: investigate at least two independently protected copies if a payload allocation permits. A simple, clearly specified low-complexity digital edition and a richer compressed edition could coexist. Distinguish *two encoded versions* from *two physical copies*. All media, readout, redundancy, mounting, controller dependencies and environmental survivability remain unselected, untested and subject to engineering review.
 
-The carrier drawing on the homepage is an artistic **concept study**. It is not a dimensioned schematic or a proof of decodeability.
+The engineering page includes a conceptual exploded view, cross-section and placement study. These drawings illustrate relative component placement and have no physical scale. [Engineering page](https://interstellarnerd8760.github.io/centauri-archive/engineering.html)
 
 ## Candidate digital redundancy study (not a hardware decision)
 
@@ -31,7 +31,7 @@ A duplicated USB device is *not* an independently interpretable archive. Neither
 
 ### Digital volume isn't the same as engraved marks
 
-If 100 images are each 1,000 by 1,000 pixels, the uncompressed image data alone are 12.5 MB at one bit per pixel, 100 MB at eight-bit grayscale, or 300 MB at 24-bit color (decimal MB). Compression and resolution selection change those figures, and metadata and redundancy add overhead. Dense physical digital storage can encode many bits in microscopic areas, while a directly inspectable engraving prioritizes interpretability over bit density. The current ZIP is a reproducible Earth-side development format, not a proposed flight payload.
+If 100 images are each 1,000 by 1,000 pixels, the uncompressed image data alone are 12.5 MB at one bit per pixel, 100 MB at eight-bit grayscale, or 300 MB at 24-bit color (decimal MB). Compression and resolution selection change those figures, and metadata and redundancy add overhead. Dense physical digital storage can encode many bits in microscopic areas, while a directly inspectable engraving prioritizes interpretability over bit density. The ZIP is the reproducible Earth-side development format. The carrier trade study gives sizing equations and the protected-record prototype gives record-level encoded sizes. [Photo raster specification and collection measurements](raw-raster-v2.md) · [Protection format](error-correction.md)
 
 ## Experimental primer ladder
 
@@ -55,7 +55,7 @@ Recognizing the data is not the same as understanding human language. Independen
 - What is the redundancy plan and how will erasure correction be demonstrated?
 - What experiments could validate readability and data recovery within the available schedule?
 
-The Fermi Explorer mission publicly describes a goal for at least a 1 kg, 10x10x10 cm payload **for the spacecraft**, not for this project. Its published plans also include a Golden Record copy and a solicitation for other scientific and artistic contributions. Do not infer a payload slot or approval from those announcements.
+The Fermi Explorer mission publicly describes a spacecraft-wide payload objective of at least 1 kg and 10 × 10 × 10 cm. Its published plans include a Golden Record copy and solicitation for scientific and artistic contributions. Centauri Archive's potential allocation and integration requirements remain unknown. [Official Fermi Explorer FAQ](https://www.fermiexplorer.org/faqs) · [September 1, 2026 announcement](https://www.fermiexplorer.org/news/fermi-explorer-set-to-launch-humanitys-first-journey-to-another-star)
 
 Sources for design precedents:
 - NASA Voyager Golden Record cover: https://science.nasa.gov/mission/voyager/golden-record-cover/
