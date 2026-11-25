@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "edition": "0.1",
+  "edition": "0.2",
   "title": "Centauri Encyclopedia",
   "status": "Development drafts; not a validated universal encoding",
   "categories": [
@@ -282,6 +282,44 @@
       "sources": []
     },
     {
+      "id": "CA-02.005",
+      "category": "02",
+      "title": "Formation of the Solar System",
+      "subcategory": "Astronomy",
+      "prerequisites": [
+        "CA-02.004",
+        "CA-02.003"
+      ],
+      "images": [
+        "IMG-009",
+        "IMG-014",
+        "IMG-015"
+      ],
+      "records": [
+        "earth/solar-system.txt"
+      ],
+      "body": [
+        "The Sun and its planetary system developed from a cloud of gas and dust. Gravity drew material together. As the cloud contracted, a rotating disk formed around the growing star; collisions and accumulation within the disk produced larger solid bodies.",
+        "The Solar System preserves evidence of this process in meteorites, small orbiting bodies and the arrangement of planets. Observations of disks around other stars provide additional evidence that planetary systems form through related processes. The formation of a planet is distinct from the later appearance of life on it."
+      ],
+      "limitations": "This is a simplified formation model; the detailed history of individual bodies remains under investigation.",
+      "sources": [
+        {
+          "label": "NASA Science — How did our Solar System form?",
+          "url": "https://science.nasa.gov/astrobiology/learning-resources/alp/how-did-our-solar-system-form/"
+        },
+        {
+          "label": "NASA Science — Planetary Systems",
+          "url": "https://science.nasa.gov/universe/stars/planetary-system/"
+        }
+      ],
+      "revision": 1,
+      "language": "en",
+      "status": "draft — independent source and editorial review pending",
+      "credit": "Centauri Archive editorial draft",
+      "rights": "Original project text; publication license pending"
+    },
+    {
       "id": "CA-03.001",
       "category": "03",
       "title": "Earth as a planet",
@@ -380,6 +418,43 @@
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
       "sources": []
+    },
+    {
+      "id": "CA-03.004",
+      "category": "03",
+      "title": "Water reservoirs and transport",
+      "subcategory": "Hydrology",
+      "prerequisites": [
+        "CA-03.002",
+        "CA-03.003"
+      ],
+      "images": [
+        "IMG-033",
+        "IMG-035"
+      ],
+      "records": [
+        "earth/water.txt"
+      ],
+      "body": [
+        "Water is distributed across Earth's ocean, inland water bodies, ice, atmosphere, soil and underground spaces. A reservoir can retain water for very different durations depending on its location and the mechanisms moving water into and out of it.",
+        "Water can enter the atmosphere from surfaces or plants, return as precipitation, infiltrate the ground, or flow through rivers toward other reservoirs. Solar heating and gravity help drive these transfers. A diagram of the cycle describes recurring processes rather than a single path that every molecule follows."
+      ],
+      "limitations": "A global conceptual diagram cannot describe local water availability, contamination or changes through time.",
+      "sources": [
+        {
+          "label": "USGS — Water cycle",
+          "url": "https://www.usgs.gov/special-topics/water-science-school/water-cycle"
+        },
+        {
+          "label": "USGS — Hydrologic Cycle",
+          "url": "https://www.usgs.gov/centers/new-york-water-science-center/science/hydrologic-cycle"
+        }
+      ],
+      "revision": 1,
+      "language": "en",
+      "status": "draft — independent source and editorial review pending",
+      "credit": "Centauri Archive editorial draft",
+      "rights": "Original project text; publication license pending"
     },
     {
       "id": "CA-04.001",
@@ -510,6 +585,51 @@
       "sources": []
     },
     {
+      "id": "CA-04.005",
+      "category": "04",
+      "title": "Genes, chromosomes and genomes",
+      "subcategory": "Genetics",
+      "prerequisites": [
+        "CA-04.001",
+        "CA-04.002"
+      ],
+      "images": [
+        "IMG-051"
+      ],
+      "records": [
+        "biology/genetics.txt"
+      ],
+      "body": [
+        "A genome is an organism's complete set of genetic information. In cellular organisms, DNA is organized into chromosomes. A gene is a region of DNA whose information contributes to the production of a functional RNA or protein.",
+        "DNA uses four common bases. Their sequence carries information; in protein production, groups of three bases in messenger RNA specify amino acids or termination signals. A chromosome contains many DNA regions with different roles, not just protein-coding genes.",
+        "Inherited variation interacts with developmental and environmental processes. Genetic information is therefore not a complete description of an organism's behavior or future."
+      ],
+      "limitations": "The organization and interpretation of genomes vary among organisms; the genetic code has some exceptions.",
+      "sources": [
+        {
+          "label": "NHGRI — DNA fact sheet",
+          "url": "https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet"
+        },
+        {
+          "label": "NHGRI — Genetic Code",
+          "url": "https://www.genome.gov/genetics-glossary/Genetic-Code"
+        },
+        {
+          "label": "NHGRI — Gene",
+          "url": "https://www.genome.gov/genetics-glossary/Gene?id=70"
+        },
+        {
+          "label": "NHGRI — Genetics",
+          "url": "https://www.genome.gov/genetics-glossary/Genetics"
+        }
+      ],
+      "revision": 1,
+      "language": "en",
+      "status": "draft — independent source and editorial review pending",
+      "credit": "Centauri Archive editorial draft",
+      "rights": "Original project text; publication license pending"
+    },
+    {
       "id": "CA-05.001",
       "category": "05",
       "title": "Human anatomy and physiology",
@@ -592,6 +712,46 @@
       "credit": "Centauri Archive editorial draft",
       "rights": "Original project text; publication license pending",
       "sources": []
+    },
+    {
+      "id": "CA-05.004",
+      "category": "05",
+      "title": "Organization of the human body",
+      "subcategory": "Anatomy",
+      "prerequisites": [
+        "CA-05.001",
+        "CA-04.001"
+      ],
+      "images": [
+        "IMG-067",
+        "IMG-068",
+        "IMG-069"
+      ],
+      "records": [],
+      "body": [
+        "The human body can be described at several scales. Molecules form cellular structures; cells cooperate within tissues; tissues form organs; and organs work together in systems. These levels describe relationships within a single living organism.",
+        "The heart, blood and blood vessels form a transport system. The respiratory system exchanges gases with the surroundings, while muscles and skeletal structures enable movement. Other systems coordinate responses, process nutrients and maintain internal conditions. Their functions overlap: no organ system is completely independent of the rest of the body."
+      ],
+      "limitations": "The model describes general human biology; individuals differ in anatomy, development and function.",
+      "sources": [
+        {
+          "label": "OpenStax — Structural Organization of the Human Body",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-2-structural-organization-of-the-human-body"
+        },
+        {
+          "label": "OpenStax — Functions of Human Life",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-3-functions-of-human-life"
+        },
+        {
+          "label": "OpenStax — Blood introduction",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-introduction"
+        }
+      ],
+      "revision": 1,
+      "language": "en",
+      "status": "draft — independent source and editorial review pending",
+      "credit": "Centauri Archive editorial draft",
+      "rights": "Original project text; publication license pending"
     },
     {
       "id": "CA-06.001",

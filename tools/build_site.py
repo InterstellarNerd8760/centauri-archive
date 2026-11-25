@@ -25,6 +25,8 @@ def assemble(output):
     for name in ("engineering", "physical-primer", "mission", "roadmap"):
         shutil.copyfile(ROOT / f"docs/{name}.md", output / f"{name}.txt")
     shutil.copyfile(ROOT / "docs/primer-panel.svg", output / "primer-panel.svg")
+    shutil.copyfile(ROOT / "docs/primer-blind-panel.svg", output / "primer-blind-panel.svg")
+    shutil.copyfile(ROOT / "docs/blind-primer-experiment.md", output / "blind-primer-experiment.txt")
     shutil.copyfile(ROOT / "docs/encyclopedia-mvp.md", output / "encyclopedia.txt")
     index = output / "index.html"
     html = index.read_text(encoding="utf-8")
