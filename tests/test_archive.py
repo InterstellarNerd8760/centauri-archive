@@ -254,8 +254,10 @@ class ArchiveTests(unittest.TestCase):
                             self.assertTrue(set(values) <= image_targets)
         self.assertNotIn("__EDITION__", html)
         self.assertNotIn("__SIZE__", html)
-        self.assertRegex(html, r'<a\b[^>]*href="brief\.html"[^>]*>\s*Read the project brief\b')
-        self.assertRegex(html, r'<a\b[^>]*href="#archive"[^>]*>\s*Explore the archive\b')
+        self.assertRegex(html, r'<a\b[^>]*href="brief\.html"[^>]*>\s*Project brief\b')
+        self.assertRegex(html, r'<a\b[^>]*href="#archive"[^>]*>\s*Explore\b')
+        self.assertRegex(html, r'<a\b[^>]*class="button"[^>]*href="encyclopedia\.html"[^>]*>\s*Encyclopedia\b')
+        self.assertRegex(html, r'<a\b[^>]*class="button"[^>]*href="images\.html"[^>]*>\s*Image library\b')
         self.assertTrue((site / "primer-panel.svg").is_file())
         self.assertTrue((site / "encyclopedia.txt").is_file())
         for name in ("mono-3x5.car", "gray-5x2.car", "rgb-2x3.car"):
