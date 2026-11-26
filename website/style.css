@@ -2213,3 +2213,19 @@ h1 {
   }
 }
 
+
+/* Compact mission-facing landing: keep the purpose and routes above the fold. */
+.archive-hero { padding-block: clamp(1.25rem, 3vw, 2.75rem); gap: clamp(1.25rem, 3vw, 3rem); }
+.archive-hero h1 { font-size: clamp(3.1rem, 5.1vw, 5rem); margin: .65rem 0 1rem; }
+.archive-hero .intro { margin-bottom: .75rem; }
+.archive-hero .archive-actions { margin: 1rem 0 .65rem; gap: .5rem; }
+.archive-hero .archive-actions .button { padding: .65rem .9rem; }
+.archive-hero .earth-cover { width: min(100%, 23rem); justify-self: center; margin: 0; }
+.archive-directory { padding-block: 1.4rem 3rem; }
+.archive-directory h2 { margin-bottom: .8rem; }
+.archive-directory a { padding-block: .85rem; }
+@media (max-width:760px) {
+  .archive-hero { gap: 1rem; }
+  .archive-hero h1 { font-size: clamp(2.9rem, 9vw, 3.6rem); }
+  .archive-hero .earth-cover { width: min(100%, 15rem); }
+}

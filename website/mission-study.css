@@ -264,3 +264,7 @@
     break-after: avoid;
   }
 }
+
+/* Engineering schematics are supporting figures, not full-page hero art. */
+.engineering-study #carrier .study-figure { width: min(100%, 31rem); margin: 1.25rem auto; }
+.engineering-study #carrier .study-figure img { width: 100%; height: auto; }
